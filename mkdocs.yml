@@ -1,0 +1,16 @@
+site_name: Boundless Exchange
+theme: boundless
+use_directory_urls: false
+pages:
+- Home: 'index.md'
+- User Guide:
+    - 'Login': 'user/login.md'
+    - 'Landing Page': 'user/landing.md'
+    - 'User Menu': 'user/menu.md'
+    - 'Explore Layers': 'user/layers.md'
+    - 'Explore Maps': 'user/maps.md'
+    - 'Explore Documents': 'user/documents.md'
+    - 'Explore People': 'user/people.md'
+    - 'Explore Groups': 'user/groups.md'
+- About:
+    - 'License': 'about/license.md'

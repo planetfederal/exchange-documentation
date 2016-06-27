@@ -1,0 +1,3 @@
+mkdocs==0.15.3
+mkdocs-pandoc==0.2.6
+git+https://github.com/boundlessgeo/mkdocs_boundless.git@master#egg=mkdocs-boundless
