@@ -216,6 +216,7 @@ You can edit the information about the map.
 1. Click the ![edit-map-button](img/maps/edit-map-button.png) button
 
 2. Click the __Edit__  button under Metadata on the Edit Map menu.
+
     ![edit-map](img/maps/edit-map.png)
 
 
@@ -232,6 +233,7 @@ By default the thumbnail images for maps will only have the vector layers. In or
 2. Click the ![edit-map-button](img/maps/edit-map-button.png) button.
 
 3. Click the __Set__ button under Thumbnail on the Edit Map menu.
+
     ![edit-map](img/maps/edit-map.png)
 
 This will set the map thumbnail with the base map and layers included.
