@@ -32,7 +32,7 @@ Once the layers are uploaded, they will be available to other users in Exchange.
 
 ### Uploading a layer
 
-1. Select the ![layers-link](img/layers/layers-link.png) link on the top toolbar. This will bring up the Explore Layers page.
+1. Select the ![layers-link](img/layers/layers-link.png) link on the top toolbar. This will bring up the __Explore Layers page__.
 
     ![explore-layers](img/layers/explore-layers.png)
 
@@ -44,9 +44,9 @@ Once the layers are uploaded, they will be available to other users in Exchange.
 
 4. Click on the ![choose-file](img/layers/choose-file.png) button. This will bring up a local file dialog. Navigate to your data folder and select the files composing the geospatial layer. Note that some data formats consist of multiple files.
 
-5. Exchange has the ability to restrict who can view, edit, and manage layers. On the right side of the page, under Who can view and download this data?, select Any registered user. This will ensure that anonymous view access is disabled.
+5. Exchange has the ability to restrict who can view, edit, and manage layers. On the right side of the page, under __Who can view and download this data?__, select Any registered user. This will ensure that anonymous view access is disabled.
 
-6. In the same area, under "Who can edit data for this layer?", type a user or users in the field that you want to restrict edit access to. This will ensure that only specific users are able to edit the data in the layer.
+6. In the same area, under __Who can edit data for this layer?__, type a user or users in the field that you want to restrict edit access to. This will ensure that only specific users are able to edit the data in the layer.
 
     ![permissions-edit](img/layers/permissions-edit.png)
 
@@ -93,7 +93,7 @@ Each layer has an information page associated to it, which has several options f
 *	Styles – What styles are associated to the layer
 *	About – Provides information on the owner, Point of Contact and Metadata Author
 
-To access Layer Information, click the Layers link on the Exchange toolbar. This will open the Explore Layers page.  Here you will see the list of all of the available layers. Each layer has a thumbnail of the image, as well as the title, author, and any associated keywords.
+To access Layer Information, click the __Layers__ link on the Exchange toolbar. This will open the Explore Layers page.  Here you will see the list of all of the available layers. Each layer has a thumbnail of the image, as well as the title, author, and any associated keywords.
 
 1. Click the layer title you want to access.
 ![layer-info-preview](img/layers/layer-info-preview.png)
@@ -137,7 +137,7 @@ Metadata is information about the layer, such as the owner, title, purpose or re
 1. Click the ![metadata-edit-layer](img/layers/metadata-edit-layer.png) button, and select the edit button under Metadata.
 ![metadata-edit](img/layers/metadata-edit.png)
 
-2. The Edit Metadata page will display.
+2. The __Edit Metadata__ page will display.
 3. Edit the information fields to include anything pertinent to the layer.
 4. Click the ![metadata-update-button](img/layers/metadata-update-button.png) button at either the top or bottom of the page to save your changes.
 
