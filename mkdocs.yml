@@ -4,13 +4,11 @@ use_directory_urls: false
 pages:
 - Home: 'index.md'
 - User Guide:
-    - 'Login': 'user/login.md'
-    - 'Landing Page': 'user/landing.md'
-    - 'User Menu': 'user/menu.md'
-    - 'Explore Layers': 'user/layers.md'
-    - 'Explore Maps': 'user/maps.md'
-    - 'Explore Documents': 'user/documents.md'
-    - 'Explore People': 'user/people.md'
-    - 'Explore Groups': 'user/groups.md'
+    - 'Accounts and Users': 'user-guide/accounts.md'
+    - 'Content Discovery in Exchange': 'user-guide/discovery.md'
+    - 'Working with  Documents': 'user-guide/documents.md'
+    - 'Working with  Layers': 'user-guide/layers.md'
+    - 'Working with  Maps': 'user-guide/maps.md'
+    - 'Editing and Version Management': 'user-guide/editing.md'
 - About:
     - 'License': 'about/license.md'
