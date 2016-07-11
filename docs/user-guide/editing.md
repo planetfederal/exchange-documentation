@@ -211,7 +211,7 @@ You can view a layer's history from the map.
 
     ![summary-of-changes](img/editing/summary-of-changes.png)
 
-5. Clicking on an edit will bring up a new window, displaying the specific changes that were made. The changes will be highlighted with the same color coding as the commits. Green means something was added. Yellow means the feature was changed. Red means the feature was deleted. In the image below, the feature was added, and so the feature on the map is highlighted in green.
+5. Click the __Show Changes__ button to bring up a new window, displaying the specific changes that were made. The changes will be highlighted with the same color coding as the commits. Green means something was added. Yellow means the feature was changed. Red means the feature was deleted. In the image below, the feature was added, and so the feature on the map is highlighted in green.
 
     ![show-feature-edits](img/editing/show-feature-edits.png)
 
@@ -222,8 +222,56 @@ In addition to viewing the history of edits on a GeoGit layer, you can also view
 
 2. Click on the __Show History__ button. The history list will expand with the commits that contain changes for that feature.
 
-    ![show-history-button](img/editing/show-history-button.png)
+    ![view-feature-history](img/editing/view-feature-history.png)
+
+3. Click on the specific commit you want to view details for. The history will update to show the edits made to the feature for that commit.
+
+    ![list-commit-edits](img/editing/list-commit-edits.png)
+
+4. Click the __Show Changes__ button to bring up a new window, displaying the specific changes that were made. The changes will be highlighted with the same color coding as the commits. Green means something was added. Yellow means the feature was changed. Red means the feature was deleted. In the image below, the feature was added, and so the feature on the map is highlighted in green.
+
+    ![show-authors](img/editing/show-authors.png)
+
+5. Click on the Show Authors button to see the names and dates for every attribute in the feature. Note that through the lifetime of a feature, there can be several authors. This is a good way to see who has contributed to a feature’s current state.
+
+    ![author-changes](img/editing/author-changes.png)
 
 ####Summarize history
+You can visualize a summary of all of the edits within a date range for a layer.
+
+1. Click the __Show History__ button for layer you want to summarize.
+
+    ![show-layer-history](img/editing/show-layer-history.png)
+
+2. Click the __History Summary__ button.
+
+    ![show-history-summary](img/editing/show-history-summary.png)
+
+3. Enter the date range for the history to summarize.
+
+    ![select-date-range](img/editing/select-date-range.png)
+
+4. Click on the Summarize button.
+
+    ![summarize-history](img/editing/summarize-history.png)
+
+5. Click the __Show Changes__ button for one of the edits in the list to see a detailed view.
 
 ####Export history
+You can export a summary of all of the edits within a date range for a layer.
+
+1. Click the __Show History__ button for layer you want to summarize.
+
+    ![show-layer-history](img/editing/show-layer-history.png)
+
+2. Click on the History Summary button.
+
+    ![show-history-summary](img/editing/show-history-summary.png)
+
+3. Enter the date range for the history to summarize.
+
+    ![select-date-range](img/editing/select-date-range.png)
+
+4. Click the __Export CSV__ button.
+
+5. When prompted to save the file, browse to the location where you want to save it, and click Ok.
