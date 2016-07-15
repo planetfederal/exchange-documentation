@@ -21,7 +21,7 @@ Boundless Exchange is a web-based platform for your content, built for your ente
     + Tag Line
 3. Registry (HHypermap) integration
 4. Registry layer display in MapLoom
-5. PYCSW transaction support
+5. pycsw transaction support
 6. Support to store configuration in the environment via variables (Twelve Factor App)
 7. Custom thumbnails for layers and maps
 8. S3 Storage support for static and media files

@@ -50,6 +50,6 @@
 
         ![filter-extent](img/discovery/filter-extent.png)
 
-### Registry Content
+### Search by CSW
 ---
 * TODO
