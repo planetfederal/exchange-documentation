@@ -4,7 +4,7 @@ hide_toc: true
 =======================================
 29 July, 2016
 
-Boundless Exchange is a web-based platform for your content, built for your enterprise. It facilitates the creation, sharing, and collaborative use of geospatial data. For power users, advanced editing capabilities for versioned workflows via the web browser are included. Boundless Exchange is powered by [GeoNode](http://geonode.org/), [GeoGig](http://geogig.org/), [OpenLayers](http://openlayers.org/), [PostGIS](http://postgis.net/) and [GeoServer](http://geoserver.org/).
+Boundless Exchange is a web-based platform for your content, built for your enterprise. It facilitates the creation, sharing, and collaborative use of geospatial data. For power users, advanced editing capabilities for versioned workflows via the web browser are included. Boundless Exchange is powered by [GeoNode](http://geonode.org/), [GeoGig](http://geogig.org/), [OpenLayers](http://openlayers.org/), [PostGIS](http://postgis.net/), [GeoServer](http://geoserver.org/) and [pycsw](http://pycsw.org).
 
 #### Additions
 1. Adjusted Templates
