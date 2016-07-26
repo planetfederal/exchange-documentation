@@ -10,6 +10,7 @@ pages:
     - 'Working with  Layers': 'user-guide/layers.md'
     - 'Working with  Maps': 'user-guide/maps.md'
     - 'Editing and Version Management': 'user-guide/editing.md'
+    - 'Registry Layers': 'user-guide/registry.md'
 - About:
     - 'Release Notes': 'about/release.md'
     - 'License': 'about/license.md'
