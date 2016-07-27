@@ -7,59 +7,17 @@ hide_toc: true
 Boundless Exchange is a web-based platform for your content, built for your enterprise. It facilitates the creation, sharing, and collaborative use of geospatial data. For power users, advanced editing capabilities for versioned workflows via the web browser are included. Boundless Exchange is powered by [GeoNode](http://geonode.org/), [GeoGig](http://geogig.org/), [OpenLayers](http://openlayers.org/), [PostGIS](http://postgis.net/), [GeoServer](http://geoserver.org/) and [pycsw](http://pycsw.org).
 
 #### Additions
-1. Adjusted Templates
-    + New logos and color scheme
-    + Upload Document/Layer and Create Basemap on Main Page
-    + Default CRS displays in remote services page
-2. Custom Skinning
-    + Banner Image
-    + Hyperlink Color
-    + Icon Image
-    + Logo Image
-    + Navigation Bar Color
-    + Site Name
-    + Tag Line
-3. Registry (HHypermap) integration
-4. Registry layer display in MapLoom
-5. pycsw transaction support
-6. Support to store configuration in the environment via variables (Twelve Factor App)
-7. Custom thumbnails for layers and maps
-8. S3 Storage support for static and media files
-9. Additional Base Map support
-    + [MapBox](https://www.mapbox.com/) (Requires Access Token)
-    + [Carto](https://carto.com/)
-    + [Stamen](http://stamen.com/)
-    + [Thunderforest](http://www.thunderforest.com/)
-    + Alternate OpenStreetMap versions
-10. LDAP Support
-11. WebGate authentication module
-
-#### Dependencies
-+ Python 2.7.11
-+ Java 1.8.0
-+ GDAL 2.1.0
-+ GEOS 3.5.0
-+ PROJ 4.8.0
-+ GeoServer 2.9
-   + GeoNode Extension
-   + GeoGig Extension
-+ ElasticSearch 1.7.5
-+ RabbitMQ Server 3.6.1
-+ PostgreSQL 9.5.3
-+ PostGIS 2.2.2
-
-#### Removals
-+ None at this time
-
-#### Changes
-+ None at this time
-
-#### Fixes
-+ None at this time
++ Customize your Exchange: You will have the ability to customize the look and feel through simple configuration panel, giving you the ability to tailor Exchange to your organization’s own branding and styling.
++ Search and Retrieve ALL Geospatial Services: Equipped with a powerful services registry based on Harvard’s Hypermap open source project, you can now quickly find and connect to any geospatial data catalog, anytime and anywhere.
++ Catalogue Service (CSW) Transaction Support: Users will now have the ability to add to the catalogue service using basic authentication.
++ Support to store configuration settings in the environment via variables (Twelve Factor App).
++ Upload Custom Thumbnails: You now have the ability to upload custom thumbnails for layers and maps to meet your organization's needs.
++ S3 Storage Support: Administrators will now be able to store Django static and media files in a Amazon S3 bucket.
++ Powerful Basemap Integration: You can now bring powerful and beautiful Mapbox, CartoDB, Stamen, Thunderforest, and a variety of other OpenStreetMap basemaps to Exchange.
++ Additional Authentication Modules: Exchange now supports LDAP and WebGate authentication.
++ Upgrade to long-term support (LTS) release of Django (1.8.7): This will allow for an end of extended support until at least April 2018.
++ GeoGig Storage in Relational Database: GeoGig the versioned datastore we make available within exchange now supports storage in PostgreSQL.
 
 #### Platform Support
 + CentOS/RHEL 6
 + CentOS/RHEL 7
-
-#### Known Issues
-+ None at this time
