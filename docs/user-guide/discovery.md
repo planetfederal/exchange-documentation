@@ -4,7 +4,7 @@
 ---
 1. __Exchange Search__ - You will find the ![search-field](img/discovery/search-field.png) field at the top of every Exchange page. When you type in the ![search-field](img/discovery/search-field.png) field, Exchange will list the Layers, Maps, and Documents that match the text you’ve entered. Select on the word in the list to go to that resource.
 
-    ![example-search](img/discovery/example-search.png)
+    ![search](img/discovery/search.png)
 
 2. __Browsing Layers__ - The Layers page lets you browse data that has been uploaded to this GeoNode. From the Layers page, you can see how many times a layer has been viewed and it’s average user rating. You can also Download the layer data, create a map, or go to a the layer detail page.
 
