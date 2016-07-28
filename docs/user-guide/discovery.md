@@ -243,7 +243,7 @@ http://exchange-dev.boundlessps.com/registry/search/csw?mode=opensearch&service=
 
 ###Transactions
 
-Resgisrty's CSW service, powered by pycsw, has the ability to process CSW Harvest and Transaction requests (CSW-T).
+Registry's CSW service, powered by pycsw, has the ability to process CSW Harvest and Transaction requests (CSW-T).
 
 ###Supported Resource types
 For transactions and harvesting, pycsw supports the following metadata resource types by default:
@@ -263,7 +263,7 @@ When harvesting OGC web services, requests can provide the base URL of the servi
 
 When harvesting other CSW servers, pycsw pages through the entire CSW in default increments of 10. This value can be modified via the _manager.csw_harvest_pagesize_ configuration option. It is strongly advised to use the _csw:ResponseHandler_ parameter for harvesting large CSW catalogues to prevent HTTP timeouts.
 
-###Transactions
+###Transaction Operations
 pycsw supports 3 modes of the Transaction operation (Insert, Update, Delete):
 
 - __Insert:__ full XML documents can be inserted as per CSW-T
