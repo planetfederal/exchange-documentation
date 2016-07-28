@@ -10,7 +10,7 @@ Registry layers can be added to an existing map, but this example demonstrates h
 
 1. To create a new map select Maps on the Boundless Exchange toolbar at the top of the page.
 
-    ![exchange-toolbar-maps](img/maps/exchange-toolbar-maps.png)
+    ![bex-toolbar](img/maps/bex-toolbar.png)
 
 
 2. Select the Create button from the Exchange homepage.

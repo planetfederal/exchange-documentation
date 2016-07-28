@@ -9,14 +9,14 @@ New maps can be created several ways. You can create a new map in the __Explore 
 #### Create a new map
 
 Click Maps on the Boundless Exchange toolbar at the top of the page.
-    ![exchange-toolbar-maps](img/maps/exchange-toolbar-maps.png)
+    ![bex-toolbar](img/maps/bex-toolbar.png)
 
 Click the ![create-new-map](img/maps/create-new-map.png) button.
 
 #### Create a new map from a layer
 
 Click Layers on the Boundless Exchange toolbar.
-    ![exchange-toolbar-layers](img/maps/exchange-toolbar-layers.png)
+    ![bex-toolbar](img/maps/bex-toolbar.png)
 
 Click ![create-a-map](img/maps/create-a-map.png) next to a layer. A new map will open with the layer as part of the map.
 

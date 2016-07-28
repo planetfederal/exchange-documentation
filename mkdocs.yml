@@ -11,7 +11,6 @@ pages:
     - 'Working with  Maps': 'user-guide/maps.md'
     - 'Editing and Version Management': 'user-guide/editing.md'
     - 'Registry Layers': 'user-guide/registry.md'
-    - 'Catalogue Service': 'user-guide/csw.md'
 - About:
     - 'Release Notes': 'about/release.md'
     - 'License': 'about/license.md'
