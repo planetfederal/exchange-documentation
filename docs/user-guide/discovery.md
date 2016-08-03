@@ -54,31 +54,38 @@
 ###Registry Catalogue Service for the Web (CSW)
 CSW (Catalogue Service for the Web) is an OGC (Open Geospatial Consortium) specification that defines common interfaces to discover, browse, and query metadata about data, services, and other potential resources.
 
-Registry provides access to its catalog via the CSW standard for both first-order and all metadata for harvested data, services and applications. The first-order CSW endpoint provides collection level filtering of all metadata records. The all metadata CSW endpoint provides all levels of metadata at varying levels of granularity.
+Registry provides access to its catalogue via the CSW standard for all metadata at varying levels of granularity. Any client supporting CSW (desktop, GIS, web application, client library, etc.) can integrate the Registry CSW endpoints.
 
-Any client supporting CSW (desktop, GIS, web application, client library, etc.) can integrate the Registry CSW endpoints.
-
-###Interacting with the Registry CSW
+####Interacting with the Registry CSW
 
 The Registry CSW endpoints are implemented using pycsw. pycsw is an OGC CSW server implementation written in Python, enabling the publishing and discovery of data and services, providing a standards-based metadata and catalogue component of spatial data infrastructures. pycsw is Certified OGC Compliant and is an OGC Reference Implementation.
 
-###Registry CSW endpoints
+####Registry CSW endpoints
 
-The Registry CSW endpoints support the OGC CSW 2.0.2 standard as well as the ISO Metadata Application 1.0.0 Profile. The CSW endpoints operate over HTTP GET, POST (XML) and SOAP.
+The Registry CSW endpoints support the OGC CSW standard (2.0.2 and 3.0.0) as well as the ISO Metadata Application 1.0.0 Profile. The CSW endpoints operate over HTTP GET, POST (XML) and SOAP. Additional discovery APIs supported include OpenSearch Geo and Time, OAI-PMH and SRU.
 
-###Making HTTP POST (XML) requests
+####Making HTTP POST (XML) requests
 
 While making HTTP GET requests is relatively straightforward, HTTP POST (XML) requests require the client to open the connection and send the request XML as the payload. Below are a few examples on how to run HTTP POST (XML) requests on the command line:
 
-![http-post-xml](img/csw/http-post-xml.png)
+```bash
+# assuming XML request is saved to csw-request.xml
 
-###Service Endpoints
+# curl
+curl -X POST -d @csw-request.xml http://catalog.data.gov/csw
 
-First-order metadata: http://exchange-dev.boundlessps.com/registry/search
+# lwp-request
+cat csw-request.xml | POST http://catalog.data.gov/csw
 
-We will use the first-order CSW endpoint for the examples below.
+# wget
+wget http://catalog.data.gov/csw --post-file=csw-request.xml
+```
 
-###GetCapabilities
+####Service Endpoints
+
+The URL of the Registry CSW is found at http://exchange-dev.boundlessps.com/registry/search/csw
+
+####GetCapabilities
 
 The __GetCapabilities__ operation provides CSW clients with service metadata about the CSW service as an XML document.
 
@@ -88,9 +95,18 @@ __HTTP GET:__ http://exchange-dev.boundlessps.com/registry/search/csw?service=CS
 
 __HTTP POST (XML):__
 
-![http-post-example](img/csw/http-post-example.png)
+```xml
+<csw:GetCapabilities xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:ows="http://www.opengis.net/ows" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/cat/csw/2.0.2 http://schemas.opengis.net/csw/2.0.2/CSW-discovery.xsd" service="CSW">
+  <ows:AcceptVersions>
+    <ows:Version>2.0.2</ows:Version>
+  </ows:AcceptVersions>
+  <ows:AcceptFormats>
+    <ows:OutputFormat>application/xml</ows:OutputFormat>
+  </ows:AcceptFormats>
+</csw:GetCapabilities>
+```
 
-###DescribeRecord
+####DescribeRecord
 
 The DescribeRecord operation provides CSW clients with elements of supported information models of the CSW service.
 
@@ -101,9 +117,13 @@ http://exchange-dev.boundlessps.com/registry/search/csw?service=CSW&version=2.0.
 
 __HTTP POST (XML):__
 
-![describe-record](img/csw/describe-record.png)
+```xml
+<csw:DescribeRecord service="CSW" version="2.0.2" outputFormat="application/xml" schemaLanguage="http://www.w3.org/XML/Schema" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/cat/csw/2.0.2 http://schemas.opengis.net/csw/2.0.2/CSW-discovery.xsd">
+  <csw:TypeName>csw:Record</csw:TypeName>
+</csw:DescribeRecord>
+```
 
-###GetDomain
+####GetDomain
 
 The GetDomain operation provides an interface to return all possible values for a given metadata property/queryable or parameter.
 
@@ -115,9 +135,19 @@ http://exchange-dev.boundlessps.com/registry/search/csw?service=CSW&version=2.0.
 
 __HTTP POST (XML):__
 
-![get-domain](img/csw/get-domain.png)
+```xml
+<csw:GetDomain xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/cat/csw/2.0.2 http://schemas.opengis.net/csw/2.0.2/CSW-discovery.xsd" version="2.0.2" service="CSW">
+  <csw:PropertyName>dc:type</csw:PropertyName>
+</csw:GetDomain>
+```
 
-###GetRecords
+```xml
+<csw:GetDomain xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/cat/csw/2.0.2 http://schemas.opengis.net/csw/2.0.2/CSW-discovery.xsd" version="2.0.2" service="CSW">
+  <csw:ParameterName>GetRecords.outputSchema</csw:ParameterName>
+</csw:GetDomain>
+```
+
+####GetRecords
 
 The GetRecords operation provides a query interface to search for data both using spatial predicates as well as attribute / temporal queries, or both. GetRecords queries are best invoked as HTTP POST (XML). Examples:
 
@@ -133,37 +163,121 @@ Notes:
 
 Returnable elements
 
-![returnable-elements](img/csw/returnable-elements.png)
+|csw:ElementSetName|Elements Returned|
+|----------|-------|
+|brief|`dc:identifier`, `dc:title`, `dc:type`, `ows:BoundingBox`|
+|summary|brief + `dc:format`, `dc:subject`, `dct:modified`, `dc:abstract`, `dct:references`|
+|full|summary + `dc:date`, `dc:creator`, `dc:publisher`, `dc:contributor`, `dc:source`, `dc:language`, `dc:rights`|
 
-####Query all records, return records 1 - 15:
+#####Query all records, return records 1 - 15:
 
-![query-all-records](img/csw/query-all-records.png)
+```xml
+<csw:GetRecords xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" service="CSW" version="2.0.2" resultType="results" startPosition="1" maxRecords="15" outputFormat="application/xml" outputSchema="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/cat/csw/2.0.2 http://schemas.opengis.net/csw/2.0.2/CSW-discovery.xsd">
+  <csw:Query typeNames="csw:Record">
+    <csw:ElementSetName>full</csw:ElementSetName>
+  </csw:Query>
+</csw:GetRecords>
+```
 
-####Query records with a bounding box:
+#####Query records with a bounding box:
 
-![query-bounding-box](img/csw/query-bounding-box.png)
+```xml
+<csw:GetRecords xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:ogc="http://www.opengis.net/ogc" service="CSW" version="2.0.2" resultType="results" startPosition="1" maxRecords="5" outputFormat="application/xml" outputSchema="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/cat/csw/2.0.2 http://schemas.opengis.net/csw/2.0.2/CSW-discovery.xsd" xmlns:gml="http://www.opengis.net/gml">
+  <csw:Query typeNames="csw:Record">
+    <csw:ElementSetName>brief</csw:ElementSetName>
+    <csw:Constraint version="1.1.0">
+      <ogc:Filter>
+        <ogc:BBOX>
+          <ogc:PropertyName>ows:BoundingBox</ogc:PropertyName>
+          <gml:Envelope>
+            <gml:lowerCorner>47 -5</gml:lowerCorner>
+            <gml:upperCorner>55 20</gml:upperCorner>
+          </gml:Envelope>
+        </ogc:BBOX>
+      </ogc:Filter>
+    </csw:Constraint>
+  </csw:Query>
+</csw:GetRecords>
+```
 
-####Query records by attribute:
+#####Query records by attribute:
 
-![query-by-attribute](img/csw/query-by-attribute.png)
+```xml
+<csw:GetRecords xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:ogc="http://www.opengis.net/ogc" service="CSW" version="2.0.2" resultType="results" startPosition="1" maxRecords="10" outputFormat="application/xml" outputSchema="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/cat/csw/2.0.2 http://schemas.opengis.net/csw/2.0.2/CSW-discovery.xsd" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:apiso="http://www.opengis.net/cat/csw/apiso/1.0">
+  <csw:Query typeNames="csw:Record">
+    <csw:ElementSetName>brief</csw:ElementSetName>
+    <csw:Constraint version="1.1.0">
+      <ogc:Filter>
+        <ogc:PropertyIsLike matchCase="false" wildCard="%" singleChar="_" escapeChar="\">
+          <ogc:PropertyName>dc:title</ogc:PropertyName>
+          <ogc:Literal>roads%</ogc:Literal>
+        </ogc:PropertyIsLike>
+      </ogc:Filter>
+    </csw:Constraint>
+  </csw:Query>
+</csw:GetRecords>
+```
 
-####Query records by full text search:
+#####Query records by full text search:
 
-![full-text-search](img/csw/full-text-search.png)
+```xml
+<csw:GetRecords xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:ogc="http://www.opengis.net/ogc" service="CSW" version="2.0.2" resultType="results" startPosition="1" maxRecords="5" outputFormat="application/xml" outputSchema="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/cat/csw/2.0.2 http://schemas.opengis.net/csw/2.0.2/CSW-discovery.xsd">
+  <csw:Query typeNames="csw:Record">
+    <csw:ElementSetName>brief</csw:ElementSetName>
+    <csw:Constraint version="1.1.0">
+      <ogc:Filter>
+        <ogc:PropertyIsEqualTo>
+          <ogc:PropertyName>csw:AnyText</ogc:PropertyName>
+          <ogc:Literal>roads</ogc:Literal>
+        </ogc:PropertyIsEqualTo>
+      </ogc:Filter>
+    </csw:Constraint>
+  </csw:Query>
+</csw:GetRecords>
+```
 
-####and part of the response:
+Partial response:
 
-![full-text-response](img/csw/full-text-response.png)
+```xml
+<!-- pycsw 2.0.0 -->
+<csw:GetRecordsResponse version="2.0.2" xsi:schemaLocation="http://www.opengis.net/cat/csw/2.0.2 http://schemas.opengis.net/csw/2.0.2/CSW-discovery.xsd">
+  <csw:SearchStatus timestamp="2016-08-01T13:10:38Z"/>
+  <csw:SearchResults nextRecord="6" numberOfRecordsMatched="27724" numberOfRecordsReturned="5" recordSchema="http://www.opengis.net/cat/csw/2.0.2" elementSet="brief">
+  ......
+```
 
-####Query records by combined bounding box and full text search:
+#####Query records by combined bounding box and full text search:
 
-![bounding-and-text](img/csw/bounding-and-text.png)
+```xml
+<csw:GetRecords xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:gml="http://www.opengis.net/gml" xmlns:ogc="http://www.opengis.net/ogc" service="CSW" version="2.0.2" resultType="results" startPosition="1" maxRecords="5" outputFormat="application/xml" outputSchema="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/cat/csw/2.0.2 http://schemas.opengis.net/csw/2.0.2/CSW-discovery.xsd">
+  <csw:Query typeNames="csw:Record">
+    <csw:ElementSetName>brief</csw:ElementSetName>
+    <csw:Constraint version="1.1.0">
+      <ogc:Filter>
+        <ogc:And>
+          <ogc:PropertyIsEqualTo>
+            <ogc:PropertyName>csw:AnyText</ogc:PropertyName>
+            <ogc:Literal>roads</ogc:Literal>
+          </ogc:PropertyIsEqualTo>
+          <ogc:BBOX>
+            <ogc:PropertyName>ows:BoundingBox</ogc:PropertyName>
+            <gml:Envelope>
+              <gml:lowerCorner>47 -5</gml:lowerCorner>
+              <gml:upperCorner>55 20</gml:upperCorner>
+            </gml:Envelope>
+          </ogc:BBOX>
+        </ogc:And>
+      </ogc:Filter>
+    </csw:Constraint>
+  </csw:Query>
+</csw:GetRecords>
+```
 
-####Query the total number of records in the catalogue (HTTP GET):
+#####Query the total number of records in the catalogue (HTTP GET):
 
 http://exchange-dev.boundlessps.com/registry/search/csw?service=CSW&version=2.0.2&request=GetRecords&typenames=csw:Record&elementsetname=brief
 
-###GetRecordById
+####GetRecordById
 
 The GetRecordById operation returns defailed information for specific metadata records.
 
@@ -183,15 +297,14 @@ http://exchange-dev.boundlessps.com/registry/search/csw?service=CSW&version=2.0.
 
 __HTTP POST (XML):__
 
-![record-byld-post-xml](img/csw/record-byld-post-xml.png)
+```xml
+<csw:GetRecordById service="CSW" version="2.0.2" outputFormat="application/xml" outputSchema="http://www.opengis.net/cat/csw/2.0.2" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/cat/csw/2.0.2 http://schemas.opengis.net/csw/2.0.2/CSW-discovery.xsd">
+  <csw:Id>16bbf4f8-8e88-45c6-a76b-6af51b2b3555</csw:Id>
+  <csw:ElementSetName>full</csw:ElementSetName>
+</csw:GetRecordById>
+```
 
-###Searching Collections
-
-The Registry CSW supports searches within for collections. The following query searches for all records that are part of a collection via the __apiso:ParentIdentifier__ core queryable:
-
-![search-collections](img/csw/search-collections.png)
-
-###OpenSearch Geo and Time Extensions
+####OpenSearch Geo and Time Extensions
 
 The Registry CSW endpoints support the OGC OpenSearch Geo and Time Extensions 1.0 standard. This provides a lightweight mechanism to query the catalogue via HTTP GET for simple spatial and temporal searches.
 
@@ -241,35 +354,115 @@ __Keywords and Bounding Box:__
 
 http://exchange-dev.boundlessps.com/registry/search/csw?mode=opensearch&service=CSW&version=2.0.2&request=GetRecords&elementsetname=full&resulttype=results&typenames=csw:Record&q=vegetation&bbox=-140,20,-40,40
 
-###Transactions
+####Transactions
 
-Registry's CSW service, powered by pycsw, has the ability to process CSW Harvest and Transaction requests (CSW-T).
+Registry's CSW service, powered by pycsw, has the ability to process CSW Harvest and Transaction requests (CSW-T).  Registry's pycsw implementation of CSW-T has been tuned to work with Registry workflows for adding supported services.
 
-###Supported Resource types
-For transactions and harvesting, pycsw supports the following metadata resource types by default:
+####Authentication
 
-![resource-types](img/csw/resource-types.png)
+CSW-T are be enabled within Registry by default.  HTTP basic authentication is required to insert/update/delete services from Registry via CSW-T.  Note you can also use Registry's admin console to insert/update/delete services.  Registry CSW-T responses will respond immediately with success and Registry will begin to harvest the service asynchronously.
 
-###Harvesting
+####Supported Resource Types
 
-__Note:__ Your server must be able to make outgoing HTTP requests for this functionality.
+For CSW transactions and harvesting, Registry supports the following metadata resource types:
 
-pycsw supports the CSW-T Harvest operation. Records which are harvested require to setup a cronjob to periodically refresh records in the local repository. A sample cronjob is available in _etc/harvest-all.cron_ which points to _pycsw-admin.py_ (you must specify the correct path to your configuration). Harvest operation results can be sent by email (via _mailto:_) or ftp (via _ftp://_) if the Harvest request specifies _csw:ResponseHandler_.
+|Name|CSW ResourceType|
+|---|---|
+|Catalogue Service for the Web (CSW)|`http://www.opengis.net/cat/csw/2.0.2`|
+|Web Map Service (WMS)|`http://www.opengis.net/wms`|
+|Web Map Tile Service (WMTS)|`http://www.opengis.net/wmts/1.0`|
+|Tile Map Service (TMS)|`https://wiki.osgeo.org/wiki/TMS`|
+|ArcGIS REST MapServer|`urn:x-esri:serviceType:ArcGIS:MapServer`|
+|ArcGIS REST ImageServer|`urn:x-esri:serviceType:ArcGIS:ImageServer`|
+|Harvard WorldMap|`http://worldmap.harvard.edu/`|
+|Mapwarper|`https://github.com/timwaters/mapwarper`|
 
-__Note:__ For _csw:ResponseHandler_ values using the mailto: protocol, you must have server.smtp_host set in your configuration.
-OGC Web Services
+####Examples
 
-When harvesting OGC web services, requests can provide the base URL of the service as part of the Harvest request. pycsw will construct a _GetCapabilities_ request dynamically.
+__Note:__ Your network __must__ be able to make outgoing HTTP requests for this functionality.
 
-When harvesting other CSW servers, pycsw pages through the entire CSW in default increments of 10. This value can be modified via the _manager.csw_harvest_pagesize_ configuration option. It is strongly advised to use the _csw:ResponseHandler_ parameter for harvesting large CSW catalogues to prevent HTTP timeouts.
+__Note:__ CSW-T Harvest requests require __only__ the base URL of a given service (not fully `GetCapabilities` request URLs).
 
-###Transaction Operations
-pycsw supports 3 modes of the Transaction operation (Insert, Update, Delete):
+__Note:__ CSW-T Harvest requests are identical in structure and syntax, with the differences being in the HTTP GET `resourcetype` / HTTP POST `csw:ResourceType` parameter being one of the abovementioned ResourceType's, as well as the HTTP GET `source` / HTTP POST `csw:Source` parameter being the desired service to add.
 
-- __Insert:__ full XML documents can be inserted as per CSW-T
-- __Update:__ updates can be made as full record updates or record properties against a _csw:Constraint_
-- __Delete:__ deletes can be made against a _csw:Constraint_
+#####Harvest a WMS
 
-Transaction operation results can be sent by email (via _mailto:_) or ftp (via _ftp://_) if the Transaction request specifies _csw:ResponseHandler_.
+__HTTP GET:__
 
-The Tester contain CSW-T request examples.
+http://exchange-dev.boundlessps.com/registry/search/csw?service=CSW&version=2.0.2&request=Harvest&resourcetype=http://www.opengis.net/wms&source=http://host/wms
+
+__HTTP POST (XML):__
+
+```xml
+<csw:Harvest xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/cat/csw/2.0.2 http://schemas.opengis.net/csw/2.0.2/CSW-publication.xsd" service="CSW" version="2.0.2">
+  <csw:Source>http://host/wms</csw:Source>
+  <csw:ResourceType>http://www.opengis.net/wms</csw:ResourceType>
+</Harvest>
+```
+
+Result
+
+```xml
+<csw:HarvestResponse xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/cat/csw/2.0.2 http://schemas.opengis.net/csw/2.0.2/CSW-publication.xsd">
+  <csw:TransactionResponse version="2.0.2">
+    <csw:TransactionSummary>
+      <csw:totalInserted>34</csw:totalInserted>
+      <csw:totalUpdated>0</csw:totalUpdated>
+      <csw:totalDeleted>0</csw:totalDeleted>
+    </csw:TransactionSummary>
+    <csw:InsertResult>
+      <csw:BriefRecord>
+        <dc:identifier>1</dc:identifier>
+        <dc:title>http://host/wms</dc:title>
+      </csw:BriefRecord>
+    </csw:InsertResult>
+  </csw:TransactionResponse>
+</csw:HarvestResponse>
+```
+
+#####Harvest a CSW
+
+__Note__: CSW-T Harvest requests made against a remote CSW will scrape the remote CSW for services and attempt to harvest those services into Registry.
+
+__HTTP GET:__
+
+http://exchange-dev.boundlessps.com/registry/search/csw?service=CSW&version=2.0.2&request=Harvest&resourcetype=http://www.opengis.net/cat/csw/2.0.2&source=http://host/csw
+
+__HTTP POST (XML):__
+
+```xml
+<csw:Harvest xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/cat/csw/2.0.2 http://schemas.opengis.net/csw/2.0.2/CSW-publication.xsd" service="CSW" version="2.0.2">
+  <csw:Source>http://host/csw</csw:Source>
+  <csw:ResourceType>http://www.opengis.net/cat/csw/2.0.2</csw:ResourceType>
+</Harvest>
+```
+
+Result
+
+```xml
+<csw:HarvestResponse xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/cat/csw/2.0.2 http://schemas.opengis.net/csw/2.0.2/CSW-publication.xsd">
+  <csw:TransactionResponse version="2.0.2">
+    <csw:TransactionSummary>
+      <csw:totalInserted>34</csw:totalInserted>
+      <csw:totalUpdated>0</csw:totalUpdated>
+      <csw:totalDeleted>0</csw:totalDeleted>
+    </csw:TransactionSummary>
+    <csw:InsertResult>
+      <csw:BriefRecord>
+        <dc:identifier>1</dc:identifier>
+        <dc:title>http://host/csw</dc:title>
+      </csw:BriefRecord>
+    </csw:InsertResult>
+  </csw:TransactionResponse>
+</csw:HarvestResponse>
+```
+
+### Using Registry CSW in QGIS MetaSearch
+
+__TODO__
+
+##References
+
+* [Data.gov Catalogue Service for the Web (CSW) API HowTo](https://gist.github.com/kalxas/6ecb06d61cdd487dc7f9)
+* [QGIS MetaSearch Catalogue Client](http://docs.qgis.org/2.8/en/docs/user_manual/plugins/plugins_metasearch.html)
+* [pycsw Documentation](http://docs.pycsw.org)
