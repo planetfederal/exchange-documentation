@@ -1,38 +1,26 @@
-# Installation
+Steps to build documents
+========================
 
-```pip install -r requirements.txt```
+1. Create virtual environment (venv)
 
-## Build MKDocs
+   `demo:boundless exchange$ virtualenv venv`
 
-```mkdocs build --clean```
+2. Activate virtual environment
 
-Copy the contents of exchange-documentation/sites to any web accessible directory or web server.
+   `demo:boundless exchange$ source venv/bin/activate`
 
-## Dependencies need for PDF Creation
+3. Install Sphinx
 
-### Ubuntu:
+   `(venv) demo:boundless exchange$ pip install -r requirements.txt`
 
-```
-apt-get install -y fonts-lmodern \
-                   lmodern \
-                   pandoc \
-                   texlive-base \
-                   texlive-latex-extra \
-                   texlive-fonts-recommended \
-                   texlive-latex-recommended \
-                   texlive-xetex
-```
+4. build html
 
-### MacOSX:
+   `make clean html`
 
-```brew install pandoc```
+   Output files will be located in `build/html`
 
-Download and Install - [MacTeX ~2.96GB](http://tug.org/cgi-bin/mactex-download/MacTeX.pkg)
+5. build wheel package for exchange
 
-## Create Pandoc File:
+   `make clean wheel`
 
-```mkdocs2pandoc > exchangedocs.pd```
-
-## Generate PDF Document:
-
-```pandoc --toc -f markdown+grid_tables+table_captions -o exchange-documentation.pdf exchangedocs.pd```
+   Output file will be located in `build\`
