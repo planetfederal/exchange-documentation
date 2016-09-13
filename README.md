@@ -13,13 +13,18 @@ Steps to build documents
 
    `(venv) demo:boundless exchange$ pip install -r requirements.txt`
 
-4. build html
+4. Add submodule (theme)
+
+   `git submodule init`
+   `git submodule update`
+
+5. build html
 
    `make clean html`
 
    Output files will be located in `build/html`
 
-5. build wheel package for exchange
+6. build wheel package for exchange
 
    `make clean wheel`
 
