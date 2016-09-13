@@ -20,3 +20,4 @@ User Guide
    maps/index
    editing/index
    registry/index
+   administration/index
