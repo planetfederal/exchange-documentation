@@ -69,6 +69,7 @@ gh-pages:
 	git checkout gh-pages
 	rm -rf *
 	touch .nojekyll
+	echo $(date) > .time
 	cp -r $(TEMPDIR)/ .
 	rm -rf $(TEMPDIR)
 	git add -A
