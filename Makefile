@@ -69,7 +69,6 @@ gh-pages:
 	mkdir -p -m 0755 $(TEMPDIR)
 	cp -r $(BUILDDIR)/html/* $(TEMPDIR)
 	git checkout gh-pages
-	git rm -r *
 	cp -r $(TEMPDIR)/ .
 	rm -rf $(TEMPDIR)
 	git add -A
