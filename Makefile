@@ -59,20 +59,22 @@ clean:
 html:
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
 
-
 .PHONY: gh-pages
 gh-pages:
 	rm -rf $(BUILDDIR)/*
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
-	MSG="Adding gh-pages docs for `git log -1 --pretty=short --abbrev-commit`"
 	rm -rf $(TEMPDIR)
 	mkdir -p -m 0755 $(TEMPDIR)
 	cp -r $(BUILDDIR)/html/* $(TEMPDIR)
 	git checkout gh-pages
+	rm -rf *
+	touch .nojekyll
 	cp -r $(TEMPDIR)/ .
 	rm -rf $(TEMPDIR)
 	git add -A
-	git commit -m "$MSG" && git push origin gh-pages
+	git commit -m "publishing updated docs..."
+	git push origin gh-pages
+	git checkout master
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
 
