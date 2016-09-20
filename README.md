@@ -29,3 +29,9 @@ Steps to build documents
    `make clean wheel`
 
    Output file will be located in `build\`
+
+7. update gh-pages
+
+   `make clean gh-pages`
+
+   Updated docs will be located `here <https://boundlessgeo.github.io/exchange-documentation/>`_.

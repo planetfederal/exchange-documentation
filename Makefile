@@ -61,7 +61,6 @@ html:
 
 .PHONY: gh-pages
 gh-pages:
-	rm -rf $(BUILDDIR)/*
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
 	rm -rf $(TEMPDIR)
 	mkdir -p -m 0755 $(TEMPDIR)
