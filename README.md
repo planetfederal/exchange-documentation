@@ -34,4 +34,4 @@ Steps to build documents
 
    `make clean gh-pages`
 
-   Updated docs will be located `here <https://boundlessgeo.github.io/exchange-documentation/>`_.
+   Updated docs will be located [here] (https://boundlessgeo.github.io/exchange-documentation/).
