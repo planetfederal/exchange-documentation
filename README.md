@@ -35,3 +35,9 @@ Steps to build documents
    `make clean gh-pages`
 
    Updated docs will be located [here] (https://boundlessgeo.github.io/exchange-documentation/).
+
+8. push to pypi, bump patch version of python package and update patch version in github master
+
+   `make clean pypi`
+
+   Updated package will be located [here] (https://pypi.python.org/pypi/django-exchange-docs).

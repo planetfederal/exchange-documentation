@@ -25,8 +25,11 @@ I18NSPHINXOPTS  = $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) source
 .PHONY: help
 help:
 	@echo "Please use \`make <target>' where <target> is one of"
+	@echo "  clean      to clean any previous builds"
 	@echo "  html       to make standalone HTML files"
-	@echo "  package    to make a wheel file"
+	@echo "  wheel      to make a wheel file"
+	@echo "  pypi       to bump patch version, deploy to pypi, and push version update to github"
+	@echo "  gh-pages   to deploy to gh-pages branch"
 	@echo "  dirhtml    to make HTML files named index.html in directories"
 	@echo "  singlehtml to make a single large HTML file"
 	@echo "  pickle     to make pickle files"
@@ -78,10 +81,33 @@ gh-pages:
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
 
+.PHONY: pypi
+pypi:
+	rm -rf $(PACKAGEDIR)/* > /dev/null 2>&1
+	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(PACKAGEDIR)
+	find $(PACKAGEDIR) -type f -name index.html -exec sed -i.bak 's@exchange_logo\"><a href=\"#\">@exchange_logo\"><a href=\"/\">@' {} +
+	find $(PACKAGEDIR) -type f -name index.html -exec sed -i.bak 's@exchange_logo\"><a href=\"\.\./index.html\">@exchange_logo\"><a href=\"/\">@' {} +
+	find $(PACKAGEDIR) -type f -name '*.bak' -exec rm {} +
+	pushd $(PACKAGE); bumpversion patch --allow-dirty; popd
+	pushd $(PACKAGE); python setup.py sdist upload -r pypi; popd
+	rm -rf $(PACKAGE)/{dist,django_exchange_docs.egg-info}
+	find $(PACKAGEDIR) -type f -exec rm -f {} +
+	find $(PACKAGEDIR) ! -name 'docs' -type d -exec rm -rf {} +
+	find $(BUILDDIR) ! -name 'build' -type d -exec rm -rf {} +
+	git add $(PACKAGE)/setup.py
+	git add $(PACKAGE)/.bumpversion.cfg
+	git commit -m "updating package patch version"
+	git push origin
+	@echo
+	@echo "Attempted to push to pypi, check server response above."
+
 .PHONY: wheel
 wheel:
 	rm -rf $(PACKAGEDIR)/* > /dev/null 2>&1
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(PACKAGEDIR)
+	find $(PACKAGEDIR) -type f -name index.html -exec sed -i.bak 's@exchange_logo\"><a href=\"#\">@exchange_logo\"><a href=\"/\">@' {} +
+	find $(PACKAGEDIR) -type f -name index.html -exec sed -i.bak 's@exchange_logo\"><a href=\"\.\./index.html\">@exchange_logo\"><a href=\"/\">@' {} +
+	find $(PACKAGEDIR) -type f -name '*.bak' -exec rm {} +
 	pip wheel --wheel-dir=$(BUILDDIR) $(PACKAGE)
 	rm -rf $(PACKAGE)/{dist,django_exchange_docs.egg-info}
 	find $(PACKAGEDIR) -type f -exec rm -f {} +
