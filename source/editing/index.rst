@@ -108,7 +108,7 @@ Coordinates for point geometries can also be edited manually. This is useful whe
 
 #. Click the :guilabel:`Save` button to save your changes.
 
-.. figure:: img/edit-point-manually.gif
+  .. figure:: img/edit-point-manually.gif
 
 Edit line or polygon geometries
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -122,6 +122,29 @@ Any existing features in an editable layer can be modified. If it is a GeoGit la
 #. Mouse over the geometry to highlight the vertex to edit. Click and drag the vertice to a new location. Repeat to edit any additional vertices.
 
 .. figure:: img/edit-polygon-geometry.gif
+
+Filter features using spatial filters
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Spatial filters are used to select features from one layer based on their location in relation to features from another layer. The overlapping, or intersecting, data will be filtered in the attribute table, and can be used for additional analysis.
+
+#. Click a feature on the map to select it. This will set the boundaries for the filter. All of the filtered data will be within this feature. You can edit the geometry of the feature to adjust the size of the filter area.
+
+#. Click the filter button to :guilabel:`Use this feature in a spatial filter`. The selected feature will change colors.
+
+#. Click a feature from the layer you want to filter, and click the :guilabel:`Show Table` button in the information window. This will open the attribute table for the entire layer. All of the features in this layer will display in the attribute table.
+
+#. Click the :guilabel:`Spatial Filter` button in the Table View. This filters the data to display only the features intersecting the original feature.
+
+  .. figure:: img/spatial-filter.gif
+
+     Filter intersecting feature attributes
+
+You can expand your spatial filter by selecting additional features from your layer. The results will be displayed in your attributes table.
+
+  .. figure:: img/additional-features.gif
+
+     In the first example, there were 15 results using the spatial filter. By selecting additional features, there are now 42 results that intersect the layer.
 
 Version Management
 ------------------
