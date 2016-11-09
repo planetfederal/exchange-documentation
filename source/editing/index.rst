@@ -128,7 +128,7 @@ Filter features using spatial filters
 
 Spatial filters are used to select features from one layer based on their location in relation to features from another layer. The overlapping, or intersecting, data will be filtered in the attribute table, and can be used for additional analysis.
 
-#. Click a feature on the map to select it. This will set the boundaries for the filter. All of the filtered data will be within this feature. You can edit the geometry of the feature to adjust the size of the filter area.
+#. Click a feature on the map to select it. This will set the boundaries for the filter. All of the filtered data will be within this feature.
 
 #. Click the filter button to :guilabel:`Use this feature in a spatial filter`. The selected feature will change colors.
 
@@ -145,6 +145,43 @@ You can expand your spatial filter by selecting additional features from your la
   .. figure:: img/additional-features.gif
 
      In the first example, there were 15 results using the spatial filter. By selecting additional features, there are now 42 results that intersect the layer.
+
+A spatial filter can also be created using an individual point with a given radius, allowing you to see how many features from a second layer fall within that radius.
+
+#. Click a point on the map from the desired layer. This will be the base point. A blue circle will highlight the point.
+
+#. Click the filter button to :guilabel:`Use this feature in a spatial filter`. The selected feature will change colors. Enter the desired radius in meters when prompted. Click the :guilabel:`Add Spatial Filter` button.
+
+#. Click a feature from the layer you want to filter, and click the :guilabel:`Show Table` button in the information window. This will open the attribute table for the entire layer. All of the features in this layer will display in the attribute table.
+
+#. Click the :guilabel:`Spatial Filter` button in the Table View. This filters the data to display only the features within the radius on the original point.
+
+  .. figure:: img/point-spatial-filter.gif
+
+     This example shows how many schools are within a 2000 meter radius of our point from the first layer. When the spatial filter is applied, six results are returned.
+
+You can edit the geometry of an existing spatial filter to adjust the size of the filter area.
+
+#. Select a spatial filter feature on the map, and click the :guilabel:`Edit Geometry` button. The selected feature will change colors and Editing Geometry window will open.
+
+#. Hover your mouse over a point on the feature to be moved. A dot will appear over the point.
+
+#. Click and drag the point to its new location. Repeat this process until all of the points have been moved to their new location.
+
+#. Select the :guilabel:`Accept Feature` button to finish your edits, and apply the new shape to your spatial filter.
+
+  .. figure:: img/edit-spfilter.gif
+
+Delete a spatial filter
+^^^^^^^^^^^^^^^^^^^^^^^
+
+Once you are finished with your spatial filter, you may want to clear the results, and remove the filter from your map.
+
+#. From the Table View of your filtered results, select the :guilabel:`Spatial Filter` button. The tabe will show all features within the layer. Close the table view window.
+
+#. Click on the feature you used in your spatial filter, and select the :guilabel:`Delete Feature` button. Confirm that you want to delete the feature.
+
+  .. figure:: img/delete-spfeature.png
 
 Version Management
 ------------------
