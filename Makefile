@@ -72,7 +72,7 @@ gh-pages:
 	rm -rf *
 	touch .nojekyll
 	echo $(date) > .time
-	cp -r $(TEMPDIR)/ .
+	cp -r $(TEMPDIR)/* .
 	rm -rf $(TEMPDIR)
 	git add -A
 	git commit -m "publishing updated docs..."
