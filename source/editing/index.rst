@@ -4,7 +4,7 @@ Editing and Version Management
 Edit Features
 -------------
 
-Vector layers can be set up so that they’re editable. If you have permissions to edit a layer, the editing tools will be available in the map. If a layer is a GeoGit layer, then you can work with the edit history as well.
+Vector layer permissions can be set so the layer can be edited by other users. The editing tools will be available to you in the map, if you have permissions to edit a layer. If a layer was saved as a GeoGit layer, then you can work with the layer's edit history as well.
 
 Add a point feature to a layer
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -123,66 +123,6 @@ Any existing features in an editable layer can be modified. If it is a GeoGit la
 
 .. figure:: img/edit-polygon-geometry.gif
 
-Filter features using spatial filters
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Spatial filters are used to select features from one layer based on their location in relation to features from another layer. The overlapping, or intersecting, data will be filtered in the attribute table, and can be used for additional analysis.
-
-#. Click a feature on the map to select it. This will set the boundaries for the filter. All of the filtered data will be within this feature.
-
-#. Click the filter button to :guilabel:`Use this feature in a spatial filter`. The selected feature will change colors.
-
-#. Click a feature from the layer you want to filter, and click the :guilabel:`Show Table` button in the information window. This will open the attribute table for the entire layer. All of the features in this layer will display in the attribute table.
-
-#. Click the :guilabel:`Spatial Filter` button in the Table View. This filters the data to display only the features intersecting the original feature.
-
-  .. figure:: img/spatial-filter.gif
-
-     Filter intersecting feature attributes
-
-You can expand your spatial filter by selecting additional features from your layer. The results will be displayed in your attributes table.
-
-  .. figure:: img/additional-features.gif
-
-     In the first example, there were 15 results using the spatial filter. By selecting additional features, there are now 42 results that intersect the layer.
-
-A spatial filter can also be created using an individual point with a given radius, allowing you to see how many features from a second layer fall within that radius.
-
-#. Click a point on the map from the desired layer. This will be the base point. A blue circle will highlight the point.
-
-#. Click the filter button to :guilabel:`Use this feature in a spatial filter`. The selected feature will change colors. Enter the desired radius in meters when prompted. Click the :guilabel:`Add Spatial Filter` button.
-
-#. Click a feature from the layer you want to filter, and click the :guilabel:`Show Table` button in the information window. This will open the attribute table for the entire layer. All of the features in this layer will display in the attribute table.
-
-#. Click the :guilabel:`Spatial Filter` button in the Table View. This filters the data to display only the features within the radius on the original point.
-
-  .. figure:: img/point-spatial-filter.gif
-
-     This example shows how many schools are within a 2000 meter radius of our point from the first layer. When the spatial filter is applied, six results are returned.
-
-You can edit the geometry of an existing spatial filter to adjust the size of the filter area.
-
-#. Select a spatial filter feature on the map, and click the :guilabel:`Edit Geometry` button. The selected feature will change colors and Editing Geometry window will open.
-
-#. Hover your mouse over a point on the feature to be moved. A dot will appear over the point.
-
-#. Click and drag the point to its new location. Repeat this process until all of the points have been moved to their new location.
-
-#. Select the :guilabel:`Accept Feature` button to finish your edits, and apply the new shape to your spatial filter.
-
-  .. figure:: img/edit-spfilter.gif
-
-Delete a spatial filter
-^^^^^^^^^^^^^^^^^^^^^^^
-
-Once you are finished with your spatial filter, you may want to clear the results, and remove the filter from your map.
-
-#. From the Table View of your filtered results, select the :guilabel:`Spatial Filter` button. The tabe will show all features within the layer. Close the table view window.
-
-#. Click on the feature you used in your spatial filter, and select the :guilabel:`Delete Feature` button. Confirm that you want to delete the feature.
-
-  .. figure:: img/delete-spfeature.png
-
 Version Management
 ------------------
 
@@ -197,7 +137,7 @@ GeoGig layers in Boundless Exchange will have a GeoGig tab in addition to the ot
 
    .. figure:: img/history-geogig-tab.png
 
-      Commit history within the GeoGig tab
+      *Commit history within the GeoGig tab*
 
 #. In order to search through the commit history, type in the search box in the GeoGig tab. You can search for any value in the commit history.
 
@@ -216,7 +156,7 @@ You can view a layer's history from the map.
 
    .. figure:: img/layer-history.png
 
-      History detail for a commit
+      *History detail for a commit*
 
 #. Click on a commit, and its history will update to show the individual edits within that commit. MapLoom will make one commit per edit. The Arbiter mobile app can upload many edits as one commit.
 
