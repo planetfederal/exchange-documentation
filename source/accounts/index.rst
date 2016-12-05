@@ -71,7 +71,7 @@ Viewing Other User Accounts
 
 Once your account is created in Exchange, you can view other accounts on the system. To see information about other users on the system complete the following steps:
 
-#. Select the :guilabel:`People` link on the top toolbar. You will see a list of thumbnails for all users registered on this system. The thumbnails will display the avatar f the user if one was provided.
+#. Select the :guilabel:`People` link on the top toolbar. You will see a list of thumbnails for all users registered on this system. Avatar thumbnails will display if the user has provided one.
 
    .. figure:: img/explore-people.png
 
