@@ -4,7 +4,7 @@ Editing and Version Management
 Edit Features
 -------------
 
-Vector layer permissions can be set so the layer can be edited by other users. The editing tools will be available to you in the map, if you have permissions to edit a layer. If a layer was saved as a GeoGit layer, then you can work with the layer's edit history as well.
+Vector layer permissions can be set so the layer can be edited by other users. The editing tools will be available to you in the map, if you have permissions to edit a layer. If a layer was saved as a GeoGig layer, then you can work with the layer's edit history as well.
 
 Add a point feature to a layer
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -23,24 +23,24 @@ A layer that is able to be edited will have the :guilabel:`Add Feature` button a
 
 .. figure:: img/add-point-feature.gif
 
-.. important:: If adding a multipoint feature the only difference is the option to select the `Add Geometry` button to add another point.
+.. important:: To add additional points or a multipoint feature, select the `Add Geometry` button.
 
 Add a line to a layer
 ^^^^^^^^^^^^^^^^^^^^^
 
-A line layer consists of lines that represent features - such as roads, powerlines, and other features.
+A line layer consists of lines that represent features such as roads, powerlines, and other features.
 
 #. Click the :guilabel:`Add Feature` button. The Drawing Geometry dialog will appear at the top of the screen.
 
-#. Click on the map to begin drawing the linear feature. Click additional points to add all of the vertices. Double-click the last vertice to finish drawing the line.
+#. Click on the map to begin drawing the linear feature. Click additional points to add all of the vertices. Double-click the last vertex to finish drawing the line.
 
 #. Click the :guilabel:`Accept Feature` button to add the geometries to the layer.
 
 #. After accepting the feature, populate the attributes in the Edit Attributes window with any required information.
 
-#. Click the :guilabel:`Save` button to save your changes
+#. Click the :guilabel:`Save` button to save your changes.
 
-.. important:: If adding a multiline feature the only difference is the option to select the `Add Geometry` button to add another line.
+.. important:: To add a multiline feature, select the `Add Geometry` button.
 
 .. figure:: img/add-line-feature.gif
 
@@ -61,7 +61,7 @@ A simple polygon layer has a single polygon per feature.
 
 #. Click the :guilabel:`Save` button to save your changes.
 
-.. important:: If adding a multipolygon feature the only difference is the option to select the `Add Geometry` button to add another polygon.
+.. important:: To add a polygon feature, select the `Add Geometry` button.
 
 .. figure:: img/add-polygon-feature.gif
 
@@ -74,7 +74,7 @@ You can edit the attributes for any features in an editable layer.
 
 #. Click the :guilabel:`Edit Attributes` button to open the Edit Attributes window.
 
-#. Add Attribute information as necessary.
+#. Add attribute information as necessary.
 
 #. Click the :guilabel:`Save` button to save your changes.
 
@@ -83,13 +83,13 @@ You can edit the attributes for any features in an editable layer.
 Edit point geometries on the map
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Point layers can be one of two types: simple points and multipoints. For simple points, there is one point per feature. Multipoints can have one or more points per feature.
+Point layers can be one of two types: simple points and multipoints. For simple points, there is one point per feature, and multipoints can have one or more points per feature.
 
 #. Click a point feature on the map to open the feature info box.
 
-#. Click the :guilabel:`Edit Geometry` button. This will open the `Drawing Geometry` dialog at the top of the screen. Your selected feature will be highlighted in blue.
+#. Click the :guilabel:`Edit Geometry` button. This will open the Drawing Geometry dialog at the top of the screen. Your selected feature will be highlighted in blue.
 
-#. Click and Drag the feature to a new location
+#. Click and drag the feature to a new location
 
 #. Click the :guilabel:`Accept Feature` button to save the new feature location. Click the :guilabel:`Cancel` button to cancel your edit.
 
@@ -113,33 +113,68 @@ Coordinates for point geometries can also be edited manually. This is useful whe
 Edit line or polygon geometries
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Any existing features in an editable layer can be modified. If it is a GeoGit layer, the history of all of the edits will be maintained to ensure the provenance of the data.
+Any existing features in an editable layer can be modified. If it is a GeoGig layer, the history of all of the edits will be maintained to ensure the provenance of the data.
 
 #. Click a feature on the map to be edited. This will open the feature info box.
 
-#. Click the :guilabel:`Edit Geometry` button. The `Editing Geometry` dialog will open.
+#. Click the :guilabel:`Edit Geometry` button. The Editing Geometry dialog will open.
 
-#. Mouse over the geometry to highlight the vertex to edit. Click and drag the vertice to a new location. Repeat to edit any additional vertices.
+#. Mouse over the geometry to highlight the vertex to edit. Click and drag the vertex to a new location. Repeat to edit any additional vertices.
 
 .. figure:: img/edit-polygon-geometry.gif
 
 Version Management
 ------------------
 
-GeoGit is a specialized database that was designed for distributed editing and supports collaborative editing of geospatial data. It is designed for vector data (point, line, polygon, etc.). When a layer has been stored in GeoGit, it maintains the history of all of the changes made to the data along with who made the changes and when. Within the web map, you can view the history for a layer and for the features.
+GeoGig is a specialized database that was designed for distributed editing, and supports collaborative editing of geospatial data. It is designed for vector data (point, line, polygon, etc.), and is recommended as the best way to maintain a reliable history of changes to your data.
+
+When a layer has been stored in GeoGig, it maintains the history of all of the edits made to the data, along with who made the changes and when. Within the web map, you can view the history for a layer and for the features.
 
 GeoGig tab in Boundless Exchange
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-GeoGig layers in Boundless Exchange will have a GeoGig tab in addition to the other tabs on the Layer detail page. The history is a list of commits that have been made to the layer.
+GeoGig layers in Boundless Exchange will have a GeoGig tab in addition to the other tabs on the Layer information page. The history is a list of commits that have been made to the layer.
 
-#. In the Layer detail page, click on the GeoGig tab to see the chronological list of commits.
+#. In the Layer information page, click on the GeoGig tab to see the chronological list of commits.
 
    .. figure:: img/history-geogig-tab.png
 
       *Commit history within the GeoGig tab*
 
 #. In order to search through the commit history, type in the search box in the GeoGig tab. You can search for any value in the commit history.
+
+Notifications
+^^^^^^^^^^^^^
+
+Because Exchange is a real time collaboration tool, it is important for users to be able to see what changes other team members are making to a project. When users upload layers, they are given the option to import the layer(s) into GeoGig, which will show who has made what changes (for more on GeoGig, please reference the Working with Layers Management section).  If another user has made modifications to a layer currently on the map, a number will appear next to the Notifications indicating how many unread notifications you have. The more notifications, the more changes that have been made to your map layers.
+
+  .. figure:: img/unread-notifications.png
+
+    *Unread notifications are listed in the layers menu of the map.*
+
+#. Click on the number of unread notifications to open the Notifications list in the layers menu. This will show you all of the changes that have been made to your layer. If there have been multiple changes, they may be grouped into sections based on when the changes occurred. Click on the grouping you would like to view.
+
+  .. figure:: img/notification-list.png
+
+    *Multiple changes were made to this layer, and have been grouped by time.*
+
+2. From here you can either select :guilabel:`View on Map` or :guilabel:`Show Changes` to see what has been modified. View on Map will show you where the changes have been made on the map.
+
+  .. figure:: img/view-on-map.png
+
+  .. figure:: img/show-changes-btn.png
+
+3. Click the :guilabel:`Show Changes` button to open a detailed side-by-side comparison of the features that have been edited.
+
+  .. figure:: img/comparison.png
+
+4. Changes made to the feature attributes will be highlighted in yellow. Hover your mouse over the highlighted area to open a detailed description of that individual edit.
+
+  .. figure:: img/query-date-details.png
+
+5. If you do not approve of the changes, or feel they were made in error, you are able to select the :guilabel:`Undo` button at the bottom of the details window to revert to the original feature.
+
+  .. figure:: img/undo-changes.png
 
 View layer history
 ^^^^^^^^^^^^^^^^^^
@@ -152,7 +187,7 @@ You can view a layer's history from the map.
 
    .. figure:: img/show-layer-history.png
 
-#. To view details about a commit, hover over it with the mouse. The color bar next to the commit indicates the type of edits that were made. Green indicates a new feature was added. Yellow indicates a feature was modified. Red indicates a feature was deleted. A commit can have multiple types of edits. In such cases, the bar will have colors representative of the types of edits that were made.
+#. Hover your mouse over a commit to view details about the changes. The color bar next to the commit indicates the type of edits that were made. Green indicates a new feature was added. Yellow indicates a feature was modified. Red indicates a feature was deleted. A commit can have multiple types of edits. In such cases, the bar will have colors representative of the types of edits that were made.
 
    .. figure:: img/layer-history.png
 
@@ -169,7 +204,7 @@ You can view a layer's history from the map.
 View feature history
 ^^^^^^^^^^^^^^^^^^^^
 
-In addition to viewing the history of edits on a GeoGit layer, you can also view the history of a feature.
+In addition to viewing the history of edits on a GeoGig layer, you can also view the history of a feature.
 
 #. Click a feature on the map. The feature details will appear.
 
