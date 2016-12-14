@@ -35,7 +35,7 @@ Create a new map from multiple layers
 
    .. figure:: img/create-map-from-cart.png
 
-   *Remove a layer from the cart by clicking the* :guilabel:`X` *next to its name.*
+*Remove a layer from the cart by clicking the* :guilabel:`X` *next to its name.*
 
 A new map will open with all of the layers displayed.
 
