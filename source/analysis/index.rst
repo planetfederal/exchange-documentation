@@ -14,6 +14,33 @@ All of the data provided for this layer will display in the Table View, though y
 
   .. figure:: img/table-view.png
 
+View attribute statistics
+-------------------------
+
+The View Statistics feature helps you visualize the data within an attribute by presenting it as either a bar graph or a pie chart. This information can be useful when you want to quickly see how data within a given attribute is distributed, or how many unique categories are represented within a single attribute.
+
+1. Click the attribute title for the data you’d like to display.
+
+  .. figure:: img/select-attribute.png
+
+2. Click the :guilabel:`View Statistics` button to open the summary statistics chart.
+
+  .. figure:: img/view-stats-button.png
+
+The attribute categories will be broken out into a bar graph, where each unique value in the field is represented by a single bar (or slice, if you are using a pie chart). The graph will show each of the unique values on the bottom axis, and the number of times that value is represented in the attribute table on the left side of the graph.
+
+The View Statistics feature will give you a count of all of the features within the layer, the number of features with data populated in the attribute you are examining, and the number of unique values of the attribute itself.
+
+*Using the chart below as an example, you can see the layer has a total of 1,460 features. The FacilityTO attribute (used to create the graph) has data populating each of those features. There are eight unique values within the FacilityTO attribute field, and the bar represents the number of times that value was entered for the attribute.*
+
+  .. figure:: img/view-statistics.png
+
+3. Click the :guilabel:`Show Pie Chart` button to change the display to a pie chart.
+
+  .. figure:: img/pie-chart-button.png
+
+  .. figure:: img/pie-chart.png
+
 Search all attributes
 ---------------------
 
