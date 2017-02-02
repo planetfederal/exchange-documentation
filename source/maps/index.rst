@@ -11,29 +11,33 @@ Maps can be created in the Explore Maps section, or from one or more layers in E
 Create a new map
 ^^^^^^^^^^^^^^^^
 
-Select the **Maps** link on the Boundless Exchange toolbar at the top of the page.
+1. Select the :guilabel:`Maps` link on the Boundless Exchange toolbar.
 
-.. figure:: img/bex-toolbar.png
+2. Click **Create Map** in the drop-down menu.
 
-Click the :guilabel:`Create a New Map` button. A new map environment will open.
+.. figure:: img/maps-pulldown.png
+
+A new map environment will open, and you can begin working.
 
 Create a new map from a single layer
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-#. Select the **Layers** link on the Boundless Exchange toolbar at the top of the page.
+Maps can be created in the Explore Layers section, or from one or more layers in Explore Maps.
 
-.. figure:: img/bex-toolbar.png
+#. Select the :guilabel:`Data` link on the Boundless Exchange toolbar, and click **Layers** in the drop-down menu.
+
+.. figure:: img/data-drop-down.png
 
 2. Select the **Create a Map** link under the layer you'd like to add to the map. A new map will open with the layer as part of the map.
 
 Create a new map from multiple layers
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-#. Click the :guilabel:`Cart` icon next to the layers you'd like to add to your map. They will display in your cart until you are ready to build your map.
+#. Click the :guilabel:`Shopping Cart` icon next to the layers you'd like to add to your map. They will display in your cart until you are ready to build your map.
 
 #. Click the :guilabel:`Create a map` button to add all of the layers to a new map.
 
-   .. figure:: img/create-map-from-cart.png
+   .. figure:: img/layers-cart.png
 
 *Remove a layer from the cart by clicking the* :guilabel:`X` *next to its name.*
 
@@ -42,32 +46,41 @@ A new map will open with all of the layers displayed.
 Add layers to a map
 -------------------
 
-Layers can also be added to the map from within the map environment using the Add Layer feature.
+You can add layers to the map from within the map environment using the Add Layer feature. Layers can be added from either the local geoserver within Exchange, or from a registry.
+
+The local geoserver hosts layers that have been added to Exchange by other registered users. Local layers can be discovered through an advanced search from the Boundless Exchange homepage, from the Explore Layers page, and from within the map.
+
+Registry is a system for building, maintaining, and deploying a public registry of web map services of various types, OGC and Esri services. From a user’s perspective, registry integration is within the mapping client. Rather than having to add multiple services into Exchange, registry exposes external services and allows the user to add them to their map.
 
 #. Click the Add Layer :guilabel:`(+)` button in the Layers field.
 
-   .. figure:: img/maps-add-layers.png
+   .. figure:: img/add-layer-bttn.png
 
-The Add Layers dialog box will open. From here you can select which layer(s) you would like to add to the map by clicking the checkbox next to the layer’s name.
+The Add Layers window will open. A list of available layers will display on the right, but you can refine your search to find specific information.
 
-   .. figure:: img/maps-add-layers-dialog.png
+   .. figure:: img/map-add-layers.png
 
-2. Click the :guilabel:`Add` button when you have selected the layers you want to add.
+2. **Using the map -** Zoom in or out to your area of interest. The list of available layers will change to show you what is within the map extent (minus any layers currently on your map).
 
-Add layers from another server
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Hover your mouse over a layer in the results list. A bounding box will display over the layer’s coverage area. Each layer will tell you whether it is from the local geoserver, or the registry.
 
-Layers can be added from a server other than your local Geoserver. You can add web mapping services (WMS), tile servers, MapQuest, MapBox and OpenStreetMap, for example.
+  .. figure:: img/add-layer-map.png
 
-#. Click the Add Layer :guilabel:`(+)` button in the Layers field.
+3. **Keywords -** Add keywords to find specific layers. Words associated in the metadata, and the title are used for results. Select the Clear link to remove the filter.
 
-#. Click the drop down menu to select a server. Select **Add New Server** to add one that is not listed.
+  .. figure:: img/keywords.png
 
-#. Add the type of server (WMS or TMS), a name for the server and the URL in the Add Server dialog box.
+4. **By owner -** Click the checkbox next to an individual’s name to return layers added by that user. If you are collaborating on a project, this is a fast way to find layers from your team members.
 
-   .. figure:: img/maps-add-server.png
+  .. figure:: img/by-owner.png
 
-#. Click the :guilabel:`Add` button to save it to the list of available servers. Once added, you can select the new server from the list, and add additional layers to the map.
+5. **Date Created -** Click and drag the time bar to filter layers by their creation date.
+
+6. **Category -** Click the checkbox next to one or more categories to filter layers by their metadata category.
+
+7. Once your results have been filtered, select the layers you’d like to add to your map from the results list, and click the :guilabel:`Add Layers` button. Your layer(s) will now display on your map, and in the layers list.
+
+  .. figure:: img/added-layers.png
 
 Change layer order
 ^^^^^^^^^^^^^^^^^^
@@ -83,7 +96,7 @@ Toggle layer visibility
 
 Toggle Visibility allows you to turn a layer’s display off and on without having to remove the layer form the map completely.
 
-.. figure:: img/toggle-layer-visibility.png
+  .. figure:: img/toggle-layer.png
 
 #. Click the Toggle Visibility button to turn a layer off.
 
@@ -98,7 +111,7 @@ The Zoom to data button allows you to center the map quickly on a particular lay
 
 #. Click the :guilabel:`Zoom to data` button. The map will zoom in and center on that particular layer's extent.
 
-   .. figure:: img/map-zoom-to-data.png
+  .. figure:: img/zoom-to-data.png
 
 .. important:: If a layer’s visibility is dependent on scale, and the data extent is at a lower scale, you will need to zoom in to view the data.
 
@@ -111,22 +124,22 @@ Information about a layer is available in the map by clicking the Show Layer Inf
 
 #. Click the :guilabel:`Show Layer Info` button.
 
-   .. figure:: img/show-layer-info.png
+  .. figure:: img/show-layer-info.png
 
 The Layer Info window will display.
 
-   .. figure:: img/layer-info.png
+   .. figure:: img/show-info.png
 
 Remove a layer from the map
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 #. To remove a layer from the map, click the name of the layer you’d like to remove, and click the :guilabel:`Remove layer` button in the layer tools.
 
-   .. figure:: img/remove-a-layer.png
+   .. figure:: img/remove-layer.png
 
 #. Click the :guilabel:`Yes` button to confirm.
 
-   .. figure:: img/confirm-remove-layer.png
+   .. figure:: img/confirm-remove.png
 
 Get feature information
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -140,24 +153,50 @@ Change attribute visibility
 
 Individual attribute visibility can be turned off and on in a feature window. This can make managing large numbers of attribute fields in a layer easier.
 
-#. In the layers list on the map, select on the layer whose attribute visibility you'd like to change. The layer’s additional options will display.
+#. In the layers list on the map, select on the layer whose attribute visibility you'd like to change.  The layer’s additional options will display.
 
-   .. figure:: img/toggle-attribute-visibility.png
+#. Click the :guilabel:`Show Attribute Visibility` button to open the list of attributes for the layer.
 
-#. Click on the visibility button for an individual icon to toggle the visibility off and on.
+  .. figure:: img/show-attribute-visibility.png
 
-#. Click a feature on the map from that layer. It will no longer appear, as it has been toggled off.
+#. Click on the :guilabel:`Toggle Visibility` button for an attribute to turn it off and on.
+
+  .. figure:: img/toggle-attribute-visibility.png
+
+#. Select a feature on the map from that layer. The attribute will no longer appear in the feature information window, as it has been toggled off. Repeat these steps to toggle it back on.
+
+Search for locations
+^^^^^^^^^^^^^^^^^^^^
+
+Find a specific location on the map simply by typing the name of a place in the Search Locations text box. Click the search button to return a list of possible matches. Scroll through the list, and select one of the matches. The map will recenter on that location. This is a simple search, and does not allow wildcards.
+
+  .. figure:: img/search-locations.png
 
 Using the legend
 ^^^^^^^^^^^^^^^^
 
 A legend displayed the symbols used for vector layers in a map. It can be toggled off and on to maximize screen space when necessary.
 
-.. figure:: img/maps-legend.png
+.. figure:: img/legend.png
 
 Click the Toggle Legend button to toggle the legend off and on.
 
-.. figure:: img/toggle-legend.png
+Additional map features
+^^^^^^^^^^^^^^^^^^^^^^^
+
+There are additional features which allow you to change your coordinate display, your full screen extent, and your map scale.
+
+1. Click the :guilabel:`Toggle Full Screen` button to maximize your map environment to the full screen.
+
+  .. figure:: img/toggle-full-screen.png
+
+2. Click the :guilabel:`Zoom In (+) / Zoom Out (-)` buttons, or click and drag the scroll bar to zoom in and out on the map. Click the :guilabel:`Zoom to World` button to return to the world view.
+
+  .. figure:: img/zoom-buttons.png
+
+3. Click the :guilabel:`Switch Coordinate Display` button, in the lower left corner of your map, to change the coordinate system. Your available options are DMS, DD (or XY) and MGRS. Click the button additional times to cycle through to your desired display. Your scale bar is located just above the coordinate display.
+
+  .. figure:: img/coord-display.png
 
 Save a map
 ^^^^^^^^^^
@@ -166,22 +205,24 @@ Saving a map allows you to maintain your preferences for the next use, as well a
 
 #. Click the Save this map button.
 
-   .. figure:: img/save-map.png
+  .. figure:: img/save-map.png
 
 #. Add a title and an abstract for your map so it is searchable by others. Click the Save button to save your changes. The name will be reflected in the title, and replace “New Map.”
 
-   .. figure:: img/save-this-map.png
+  .. figure:: img/save-this-map.png
 
 The Map is now saved in the list of maps on the Maps page.
 
 Create a copy of a map
 ^^^^^^^^^^^^^^^^^^^^^^
 
-You are able to use an existing map as a starting point for another map. This allows you to incorporate the work others have done without changing their maps.
+You can use an existing map as a starting point for another map. This allows you to incorporate the work others have done without changing their maps.
 
-#. Click **Maps** on the Boundless Exchange toolbar, and select on the map you would like to copy. This will open the map details page.
+#. Click **Maps** on the  Boundless Exchange toolbar, and select Explore Maps in the drop-down menu.
 
-#. Click the :guilabel:`Create a New Map` button under the Copy this map section.
+#. Select on the map you would like to copy. This will open the map details page.
+
+Click the :guilabel:`Create a New Map` button under the Copy this map section.
 
    .. figure:: img/copy-this-map.png
 
@@ -189,7 +230,6 @@ A new map will open, populated with all of the layers of the map you copied.
 
 #. Click the :guilabel:`Save this map` button on the toolbar.
 
-    .. figure:: img/save-map.png
 
 #. Add a new title and an abstract, possibly indicating this is a copy of another map.
 
@@ -204,11 +244,11 @@ Managing Maps
 
 Every map has its own details page, which provides more information about the map, the metadata and who has what permissions for making edits. To get to the details page for a map, click on the map title.
 
-.. figure:: img/manage-maps-details.png
+  .. figure:: img/manage-maps-details.png
 
 The map details page provides a view of the map, along with information about the map. It also tells you which layers are used in the map.
 
-.. figure:: img/map-info.png
+  .. figure:: img/map-detail-page.png
 
 Download data layers
 ^^^^^^^^^^^^^^^^^^^^
@@ -219,13 +259,13 @@ Here you can download the contents of a map that is stored in Exchange. It does 
 
 #. Select **Download Data Layers**.
 
-   .. figure:: img/download-map.png
+  .. figure:: img/download-data-layers.png
 
 If multiple layers exist, you will be able to select one or more of the available layers.
 
-   .. figure:: img/map-layers.png
+  .. figure:: img/map-layers.png
 
-#. Select the layer(s) you want to download individually, or the :guilabel:`Start downloading this map` button to begin downloading.
+3. Select the layer(s) you want to download individually, or the :guilabel:`Start downloading this map` button to begin downloading.
 
 Download Web Map Context
 ^^^^^^^^^^^^^^^^^^^^^^^^
@@ -236,9 +276,9 @@ The Web Map Context (WMC) is an open geospatial consortium (OGC) standard for me
 
 #. Select **Download Web Map Context** from the menu.
 
-   .. figure:: img/download-map.png
+   .. figure:: img/download-data-layers.png
 
-   A new tab will open with the XML for the web map context.
+A new tab will open with the XML for the web map context.
 
 Edit map metadata
 ^^^^^^^^^^^^^^^^^
@@ -270,13 +310,13 @@ By default the thumbnail images for maps will only have the vector layers. In or
 
 This will set the map thumbnail with the base map and layers included.
 
-.. figure:: img/old-thumbnail.png
+.. figure:: img/manage-maps-details.png
 
-   Old Thumbnail
+   *Old Thumbnail*
 
-.. figure:: img/new-thumbnail.png
+.. figure:: img/set-thumbnail.png
 
-   New Thumbnail
+   *New Thumbnail*
 
 Edit map permissions
 ^^^^^^^^^^^^^^^^^^^^
@@ -311,4 +351,4 @@ You are able to remove a map from Exchange. It is important to note that this wi
 
 #. Click the :guilabel:`Yes` button to confirm.
 
-   .. figure:: img/confirm-remove-map.png
+  .. figure:: img/remove-map-confirm.png

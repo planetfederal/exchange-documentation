@@ -50,35 +50,37 @@ Uploading a layer
 
 **Note:** Some file types require multiple files to create a complete layer. If you are uploading an ESRI Shapefile, be sure to include the .dbf, .prj, .shp, and .shx files.
 
-   .. figure:: img/upload-layers.png
+   .. figure:: img/upload-layer.png
 
 Setting permissions
 ^^^^^^^^^^^^^^^^^^^
 
 The social design of Exchange allows users to coordinate on projects by sharing access to the same layers and maps; however, there may be instances when you want to limit who has what access to your layers. In Exchange, you can establish permissions for who can view, edit, and manage layers. Permissions can also be set for editing styles and metadata.
 
-3. On the right side of the page, under the **Who can view** and **Who can download** sections, add the name(s) of registered users or groups. This will ensure anonymous view access is disabled, and only those registered users specified are able to see your layers.
+By default, when a layer is uploaded, the permissions are set so that only the person who uploaded the layer has access to it. If you want other people to view, download, or edit the layer, you must change the permissions to allow it. Without changing permissions, other registered users will not see it listed as an available layer.
+
+3. On the right side of the page, under the **Who can view** and **Who can download** sections, add the name(s) of registered users or groups. This will ensure anonymous view access is disabled, and only those users specified are able to see your layers.
 
 4. In the same area, under **Who can edit data for this layer?**, add the users or groups who have permission to edit the layer.
 
    .. figure:: img/permissions-edit.png
 
-#. If you are loading raster data, click the :guilabel:`Upload files` button to import your files into the default spatial data store.
+5. If you are loading raster data, click the :guilabel:`Upload files` button to import your files into the default spatial data store.
 
 **Note:** The following steps are optional. If you would like to add version control or temporal information to your *vector* data, please continue to the next step. You can add one or both options. You do not have to do either, and can click the :guilabel:`Upload files` button to complete your upload.
 
 Version management
 ^^^^^^^^^^^^^^^^^^
 
-Even with established permissions, it’s still useful to know who has made specific edits to the data.  Exchange uses GeoGig repositories to maintain version control of your vector data. By uploading layers into either an existing repository, or a newly created one, you can see the history of changes and who made them. Please reference the **Editing and Version Management** section for further information.
+Even with established permissions, it’s still useful to know who has made edits to the data.  Exchange uses GeoGig repositories to maintain version control of your vector data. By uploading layers into either an existing repository, or a newly created one, you can see the history of changes and who made them. Please reference the **Editing and Version Management** section for further information.
 
 6. Click the **Import to Geogig** checkbox.
 
-7. Either select an existing repository from the drop down list, or create a new one by typing the name of a new repository.
+7. Select an existing repository from the drop down list, or create a new one by typing the name of a new repository.
 
   .. figure:: img/import-geogig.png
 
-8. If you are *not*, configuring time attributes, click the :guilabel:`Upload files` button to complete your upload.
+8. If you are *not* configuring time attributes, click the :guilabel:`Upload files` button to complete your upload.
 
 Configure time attributes
 ^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -133,9 +135,9 @@ You will be prompted to specify more information in order to complete your uploa
 
   .. figure:: img/time-options.png
 
-11. Click the :guilabel:`Upload files` button to complete your upload. A Performing Final GeoServer Config Step dialog will display showing the progress of the upload.
+11. Click the :guilabel:`Upload files` button to complete your upload. A *Performing Final GeoServer Config Step* dialog will display showing the progress of the upload.
 
-Once your layer has finished uploading, you will be able to access the layer’s information page.
+Once your layer has finished uploading, click the :guilabel:`Layer Info` button to view the information page.
 
    .. figure:: img/successful-upload.png
 
@@ -145,7 +147,7 @@ Layer information
 Each layer has an information page associated to it, which has several options for managing the layer’s data. Information is available for the following:
 
   * Info – Displays general information about the layer
-  * Attributes - Lists the features in a layer, and the nonspatial information about the feature.
+  * Attributes - Lists the features in a layer, and the nonspatial information about the feature
   * Ratings – Based on the ratings of other users
   * Comments – Any comments on the layer from users
   * Legend – Maps using this layer – What other maps within Exchange are using the layer
@@ -161,7 +163,38 @@ Each layer has an information page associated to it, which has several options f
 
 3. The information page for the layer will open.
 
-  .. figure:: img/layer-info-page.png
+  .. figure:: img/info-page.png
+
+Using the map features
+^^^^^^^^^^^^^^^^^^^^^^
+
+Within the Map Information page, there are some map features that will help you view the layer more in depth.
+
+**Zoom -** Select the Zoom In or Zoom Out button to zoom to a specific location. Depending on the basemap, you may be able to zoom in as close as 1:10 meters.
+
+  .. figure:: img/zoom-in.png
+
+  .. figure:: img/zoom-out.png
+
+**Zoom to the Initial Extent -** Return to the original extent of the map.
+
+  .. figure:: img/initial-extent.png
+
+**Switch to Globe (3D) -** Select this button to view this map as 3D.
+
+  .. figure:: img/switch-globe.png
+
+**Print Map -** Select Print Map to print a copy of the layer.
+
+  .. figure:: img/print-map.png
+
+**Layers -** Select the Layers button to turn any of your layers off or on. 
+
+  .. figure:: img/layers.png
+
+Click the :guilabel:`Basemap` button to select a different basemap style.
+
+  .. figure:: img/basemap.png
 
 Layer detail tabs
 ^^^^^^^^^^^^^^^^^
