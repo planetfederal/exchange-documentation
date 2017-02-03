@@ -163,7 +163,7 @@ Each layer has an information page associated to it, which has several options f
 
 3. The information page for the layer will open.
 
-  .. figure:: img/info-page.png
+  .. figure:: img/layer-info.png
 
 Using the map features
 ^^^^^^^^^^^^^^^^^^^^^^
@@ -188,7 +188,7 @@ Within the Map Information page, there are some map features that will help you 
 
   .. figure:: img/print-map.png
 
-**Layers -** Select the Layers button to turn any of your layers off or on. 
+**Layers -** Select the Layers button to turn any of your layers off or on.
 
   .. figure:: img/layers.png
 

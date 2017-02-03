@@ -155,15 +155,15 @@ Individual attribute visibility can be turned off and on in a feature window. Th
 
 #. In the layers list on the map, select on the layer whose attribute visibility you'd like to change.  The layer’s additional options will display.
 
-#. Click the :guilabel:`Show Attribute Visibility` button to open the list of attributes for the layer.
+2. Click the :guilabel:`Show Attribute Visibility` button to open the list of attributes for the layer.
 
   .. figure:: img/show-attribute-visibility.png
 
-#. Click on the :guilabel:`Toggle Visibility` button for an attribute to turn it off and on.
+3. Click on the :guilabel:`Toggle Visibility` button for an attribute to turn it off and on.
 
   .. figure:: img/toggle-attribute-visibility.png
 
-#. Select a feature on the map from that layer. The attribute will no longer appear in the feature information window, as it has been toggled off. Repeat these steps to toggle it back on.
+4. Select a feature on the map from that layer. The attribute will no longer appear in the feature information window, as it has been toggled off. Repeat these steps to toggle it back on.
 
 Search for locations
 ^^^^^^^^^^^^^^^^^^^^
@@ -198,6 +198,25 @@ There are additional features which allow you to change your coordinate display,
 
   .. figure:: img/coord-display.png
 
+Measure distance or area
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+You can measure distance or areas on your map using the Measure tool.
+
+1. To measure an area or distance on the map, select the Measure field. The measure tools will open, and you can select whether you want to measure a line distance, or an area.
+
+2. **Area** - Click the :guilabel:`Area` button in the Measure tools. Begin drawing by clicking your mouse on your map at your starting point. Click subsequent points around the area you want to measure.  To complete your measurement, you will need to ensure you close your polygon by clicking on your starting point.
+
+  .. figure:: img/measure-area.gif
+
+  **Line** - Click the Length button in the Measure tools. Begin drawing by clicking your mouse at your starting point. Click subsequent points along the route or feature you want to measure.
+
+  .. figure:: img/measure-line.gif
+
+3. To complete your measurement, click your mouse at the end distance. The line will turn from a bold blue to a thin blue line. The distance will display as meters/kilometers, miles or feet, depending which unit you have selected.
+
+4. Click the :guilabel:`Stop Measuring` button to clear your map and measurements.
+
 Save a map
 ^^^^^^^^^^
 
@@ -207,7 +226,7 @@ Saving a map allows you to maintain your preferences for the next use, as well a
 
   .. figure:: img/save-map.png
 
-#. Add a title and an abstract for your map so it is searchable by others. Click the Save button to save your changes. The name will be reflected in the title, and replace “New Map.”
+2. Add a title and an abstract for your map so it is searchable by others. Click the Save button to save your changes. The name will be reflected in the title, and replace “New Map.”
 
   .. figure:: img/save-this-map.png
 
@@ -220,7 +239,7 @@ You can use an existing map as a starting point for another map. This allows you
 
 #. Click **Maps** on the  Boundless Exchange toolbar, and select Explore Maps in the drop-down menu.
 
-#. Select on the map you would like to copy. This will open the map details page.
+2. Select on the map you would like to copy. This will open the map details page.
 
 Click the :guilabel:`Create a New Map` button under the Copy this map section.
 
@@ -228,12 +247,11 @@ Click the :guilabel:`Create a New Map` button under the Copy this map section.
 
 A new map will open, populated with all of the layers of the map you copied.
 
-#. Click the :guilabel:`Save this map` button on the toolbar.
+3. Click the :guilabel:`Save this map` button on the toolbar.
 
+4. Add a new title and an abstract, possibly indicating this is a copy of another map.
 
-#. Add a new title and an abstract, possibly indicating this is a copy of another map.
-
-#. Click the :guilabel:`Save Copy` button.
+5. Click the :guilabel:`Save Copy` button.
 
 Your new map is now saved, and can be accessed from the maps page.
 
@@ -248,7 +266,7 @@ Every map has its own details page, which provides more information about the ma
 
 The map details page provides a view of the map, along with information about the map. It also tells you which layers are used in the map.
 
-  .. figure:: img/map-detail-page.png
+  .. figure:: img/map-details-page.png
 
 Download data layers
 ^^^^^^^^^^^^^^^^^^^^
