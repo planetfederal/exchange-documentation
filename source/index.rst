@@ -19,5 +19,4 @@ User Guide
    layers/index
    maps/index
    editing/index
-   registry/index
    analysis/index

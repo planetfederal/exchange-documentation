@@ -1,4 +1,4 @@
-Working with data
+Analyzing data with Exchange
 =================
 
 Working within the attribute table
@@ -12,7 +12,7 @@ To open the **Table View**, click on a layer, and select the :guilabel:`Show Tab
 
 All of the data provided for this layer will display in the Table View, though you may need to scroll up and down, or left and right to view all of the data on the page. Select the left or right arrow buttons to move to a different page.
 
-  .. figure:: img/table-view.png
+  .. figure:: img/table.png
 
 View attribute statistics
 -------------------------
@@ -25,7 +25,7 @@ The View Statistics feature helps you visualize the data within an attribute by 
 
 2. Click the :guilabel:`View Statistics` button to open the summary statistics chart.
 
-  .. figure:: img/view-stats-button.png
+  .. figure:: img/view-stats-bttn.png
 
 The attribute categories will be broken out into a bar graph, where each unique value in the field is represented by a single bar (or slice, if you are using a pie chart). The graph will show each of the unique values on the bottom axis, and the number of times that value is represented in the attribute table on the left side of the graph.
 
@@ -33,7 +33,7 @@ The View Statistics feature will give you a count of all of the features within 
 
 *Using the chart below as an example, you can see the layer has a total of 1,460 features. The FacilityTO attribute (used to create the graph) has data populating each of those features. There are eight unique values within the FacilityTO attribute field, and the bar represents the number of times that value was entered for the attribute.*
 
-  .. figure:: img/view-statistics.png
+  .. figure:: img/bar-graph.png
 
 3. Click the :guilabel:`Show Pie Chart` button to change the display to a pie chart.
 
@@ -41,10 +41,28 @@ The View Statistics feature will give you a count of all of the features within 
 
   .. figure:: img/pie-chart.png
 
+Create a heat map
+-----------------
+
+A heat map is a visual representation of your data, and allows you to see where your data is concentrated.
+
+1. Select a point feature layer from your layers list.
+
+2. Click the :guilabel:`Show heatmap` button to create a heat map layer.
+
+  .. figure:: img/show-heatmap.png
+
+On the heat map, red indicates a high area of data concentration.
+
+  .. figure:: img/heatmap.png
+
+  *In this example, the heat map indicates the areas where the Department of Health facilities are concentrated in Louisiana. The red areas are areas of higher population.*
+
+
 Search all attributes
 ---------------------
 
-The Search All Fields search examines all of the attributes in a layer, and returns all features that have your search term in any of its attribute fields. It is a simple search that will find results from any location.
+The Search All Fields search examines all of the attributes in a layer, and returns all features that have your search term in *any* of its attribute fields. It is a simple search that will find results from any location.
 
   .. figure:: img/search-all-fields.png
 
@@ -59,13 +77,13 @@ Advanced filters
 
 Advanced filters can help with your analysis by returning only the features you want to see. Whether you are looking for data matching a specific attribute, or events occurring within a certain time period, using an advanced filter will help you find what you need.
 
-#. Select the :guilabel:`Advanced Filters` button in the Table View to open the Filter by Attribute options.
+1. Select the :guilabel:`Advanced Filters` button in the Table View to open the Filter by Attribute options.
 
-#. Select an attribute type, and click the drop down menu to select whether you would like to filter for an exact match, or a term that would be contained within the results.
+2. Select an attribute type, and click the drop down menu to select whether you would like to filter for an exact match, or a term that would be contained within the results.
 
-#. Add your search term to the text box, and click the :guilabel:`Apply Filters` button. Repeat these steps to add additional filters, and refine your search even more.
+3. Add your search term to the text box, and click the :guilabel:`Apply Filters` button. Repeat these steps to add additional filters, and refine your search even more.
 
-   .. figure:: img/filter-by-attribute.png
+   .. figure:: img/advanced-filter.png
 
 You are also able to filter attributes with dates or numbers by using either an exact match, or setting a range.
 
@@ -92,13 +110,13 @@ Spatial filters are used to select features from one layer based on their locati
 
    .. figure:: img/spatial-filter.gif
 
-      *Filter intersecting feature attributes*
+    *Filter intersecting feature attributes*
 
 You can expand your spatial filter by selecting additional features from your layer. The results will be displayed in your attributes table.
 
-   .. figure:: img/additional-features.gif
+   .. figure:: img/multi-spatial.gif
 
-      *In the first example, there were 15 results using the spatial filter. By selecting additional features, there are now 42 results that intersect the layer.*
+    *In the first example, there were 15 results using the spatial filter. By selecting additional features, there are now 42 results that intersect the layer.*
 
 A spatial filter can also be created using an individual point with a given radius, allowing you to see how many features from a second layer fall within that radius.
 
@@ -110,9 +128,9 @@ A spatial filter can also be created using an individual point with a given radi
 
 #. Click the :guilabel:`Spatial Filter` button in the Table View. This filters the data to display only the features within the radius on the original point.
 
-   .. figure:: img/point-spatial-filter.gif
+   .. figure:: img/point-spatial.gif
 
-      *This example shows how many schools are within a 2000 meter radius of our point from the first layer. When the spatial filter is applied, six results are returned.*
+  *This example shows how many Department of Health facilities are within a 4000 meter radius of central Lake Charles, LA. The spatial filter narrows the results down to 17 facilities out of 1458.*
 
 You can edit the geometry of an existing spatial filter to adjust the size of the filter area.
 
@@ -124,7 +142,7 @@ You can edit the geometry of an existing spatial filter to adjust the size of th
 
 #. Select the :guilabel:`Accept Feature` button to finish your edits, and apply the new shape to your spatial filter.
 
-   .. figure:: img/edit-spfilter.gif
+   .. figure:: img/edit-spatial.gif
 
 Delete a spatial filter
 -----------------------
@@ -140,8 +158,16 @@ Combine filters for deeper analysis
 
 Combining a filter by attribute and a spatial filter allows you to dig even deeper into your data to provide better analysis. Once you have completed your spatial filter, you can use an **Advanced Filter** to drill down even further.
 
-#. After completing a spatial filter, select an attribute type, and click the drop down menu to select the appropriate criteria.
+1. With an existing spatial filter on the map, open the table view of the layer you want to further filter. Your table will display all of the features in the layer.
 
-#. Add your search term to the text box, and click the :guilabel:`Apply Filters` button.
+2. Click the Advanced Filters button, and select the attribute you’d like to add to the spatial filter. Click the drop down menu to select the appropriate criteria.
+
+3. Add your search term to the text box, and click the Apply Filters button. This will filter your layer to those features containing the attribute you want to apply to the spatial filter.
+
+4. Click the Spatial Filter button to apply the spatial filter.
 
 Not only will all of your results fall completely within the area you selected for your spatial filter, but they will also meet your advanced filter criteria.
+
+  .. figure:: img/complex-filter.gif
+
+  *Using the Department of Health layer from the previous example, we want to find out how many of the facilities within our 4000 meter radius are hospitals. We filtered all facility types (in the FacilityTO attribute) to those containing the word hospital. There were 254 results. Next, we applied the spatial filter. Our search helped us determine that out of 1458 features, four are hospitals within a 4000 meter radius of Lake Charles, LA.*
