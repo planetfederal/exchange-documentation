@@ -6,7 +6,7 @@ with open('README.rst', 'r') as inp:
 
 setup(
     name='django-exchange-docs',
-    version='1.1.2',
+    version='1.1.3',
     author='Boundless Spatial',
     author_email='contact@boundlessgeo.com',
     url='https://github.com/boundlessgeo/exchange-documentation',
