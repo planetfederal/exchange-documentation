@@ -54,7 +54,7 @@ Registry is a system for building, maintaining, and deploying a public registry 
 
 #. Click the Add Layer :guilabel:`(+)` button in the Layers field.
 
-   .. figure:: img/add-layer-bttn.png
+   .. figure:: img/add-layer-button.png
 
 The Add Layers window will open. A list of available layers will display on the right, but you can refine your search to find specific information.
 
@@ -168,7 +168,7 @@ Individual attribute visibility can be turned off and on in a feature window. Th
 Search for locations
 ^^^^^^^^^^^^^^^^^^^^
 
-Find a specific location on the map simply by typing the name of a place in the Search Locations text box. Click the search button to return a list of possible matches. Scroll through the list, and select one of the matches. The map will recenter on that location. This is a simple search, and does not allow wildcards.
+FFind a specific location on the map simply by typing the name of a place, zip code, address or lat/long (DMS or DD) in the Search Locations text box. Click the search button to return a list of possible matches. Scroll through the list, and select one of the matches. The map will recenter on that location. This is a simple search, and does not allow wildcards.
 
   .. figure:: img/search-locations.png
 
