@@ -1,5 +1,5 @@
-Content Discovery
-=================
+Discovering available content
+=============================
 
 There are many different ways to find, filter and display data throughout Exchange. Whether you know exactly what you’re looking for, or just a general idea, Exchange helps you find exactly what you need.
 
@@ -17,33 +17,48 @@ For example, if you type “te” in the search box, and press Enter, you will g
 
   .. figure:: img/bex-homepage.png
 
-**Discover the Available Datasets -** There are twelve featured datasets within Exchange, which will help you find information faster. Selecting on an available dataset will return only those results meeting the category criteria.
+**Discover the Available Datasets -** There are nineteen featured datasets within Exchange, which will help you find information faster. These datasets correspond to the categories you can add to the metadata of a layer. Selecting on an available dataset will return only those results meeting the category criteria.
 
-  .. figure:: img/available-datasets.png
+  .. figure:: img/available-dataset.png
 
-  * **Boundaries:** Political and administrative boundaries, land use maps, zoning maps, cadastral surveys, land ownership.
+  - **Geoscientific Information:** Information pertaining to earth sciences. Examples: geophysical features and processes, geology, minerals, sciences dealing with the composition, structure, and the origin of the earth’s rocks, risk of earthquakes, volcanic activity, landslides, gravity information, soils, permafrost, hydrology, erosion.
 
-  * **Buildings:** Buildings, museums, churches, factories, housing, monuments, shops, towers, energy, water and waste systems, communications infrastructure and services, military bases, structures and activities.
+  - **Farming:** Rearing of animals and/or cultivation of plants. Examples: agriculture, plantations, herding, pests and diseases affecting crops and livestock.
 
-  * **Climate:** Cloud cover, weather, climate, atmospheric conditions, climate change, precipitation.
+  - **Elevation:**  Height above or below sea level. Examples: altitude, bathymetry, digital elevation models, slope, derived products.
 
-  * **Elevation:** Altitude, bathymetry, digital elevation models, slope, derived products.
+  - **Utilities Communication:** Energy, water and waste systems and communications infrastructure and services. Examples: hydroelectricity, geothermal, solar and nuclear sources of energy, water purification and distribution, sewage collection and disposal, electricity and gas distribution, data communication, telecommunication, radio, communication networks.
 
-  * **Geology:** Geophysical features and processes, geology, minerals, sciences dealing with the composition, structure and origin of the Earth’s rocks, risk of earthquakes, volcanic activity, landslides, gravity information, soils, permafrost, hydrology, erosion.
+  - **Oceans:** Features and characteristics of salt water bodies (excluding inland waters). Examples: tides, tidal waves, coastal information, reefs.
 
-  * **Health:** Health, health services, human ecology, and safety.
+  - **Boundaries:** Legal land descriptions. Examples: political and administrative boundaries.
 
-  * **Land Cover:** Land cover, topographic maps, imagery, unclassified images, annotations.
+  - **Inland Waters:** Inland water features, drainage systems and their characteristics. Examples: rivers and glaciers, salt lates, water utilization plans, dams, currents, floods, water quality, hydrographic charts.
 
-  * **Nature:** Wildlife, vegetation, biological sciences, ecology, wilderness, sealife, wetlands, habitat, environmental resources, protection and conservation, agriculture, irrigation, aquaculture, plantations, herding, pests and diseases affecting crops and livestock.
+  - **Intelligence Military:** Military bases, structures, activities. Examples: barracks, training grounds, military transportation, information collection.
 
-  * **Places:** Addresses, geodetic networks, control points, postal zones and services, place names.
+  - **Environment:** Environmental resources, protection and conservation. Examples: environmental pollution, waste storage and treatment, environmental impact assessments, monitoring environmental risk, nature reserves, landscape.
 
-  * **Population:** Settlements, anthropology, archaeology, education, traditional beliefs, manners and customs, demographics data, recreational areas and activities, social impact assessments, crime and justice, census information, economic activities, conditions and employment.
+  - **Location:** Positional information and services. Examples: addresses, geodetic networks, control points, postal zones and services, place names.
 
-  * **Transportation:** Roads, airports/airstrips, shipping routes, tunnels, nautical charts, vehicle or vessel location, aeronautical charts, railways.
+  - **Economy:** Economic activities, conditions and employment. Examples: production, labor, revenue, commerce, industry, tourism and ecotourism, forestry, fisheries, commercial or subsistence hunting, exploration and exploitation of resources such as minerals, oil and gas.
 
-  * **Water:** Rivers and glaciers, salt lakes, water utilization plans, dams, currents, floods, water quality, hydrographic charts, tides, tidal waves, coastal information, reefs.
+  - **Planning Cadastre:** Information used for appropriate actions for future use of the land. Examples: land use maps, zoning maps, cadastral surveys, land ownership.
+
+  - **Biota:** Flora and/or fauna in natural environment.Examples: wildlife, vegetation, biological sciences, ecology, wilderness, sealife, wetlands, habitat.
+
+  - **Health:** Health, health services, human ecology, and safety. Examples: disease and illness, factors affecting health, hygiene, substance abuse, mental and physical health, health services.
+
+  - **Imagery Base Maps Earth Cover:** base maps. Examples: land cover, topographic maps, imagery, unclassified images, annotation.
+
+  - **Transportation:** Means and aids for conveying persons and/or goods. Examples: roads, airports/airstrips, shipping routes, tunnels, nautical charts, vehicle or vessel location, aeronautical charts, railways.
+
+  - **Society:** Characteristics of society and cultures. Examples: settlements, anthropology, archaeology, education, traditional beliefs, manners and customs, demographic data, recreational areas and activities, social impact assessments, crime and justice, census information.
+
+  - **Structure:** Man-made construction. Examples: Buildings, museums, churches, factories, housing, monuments, shops, towers.
+
+  - **Climatology Meteorology Atmosphere:** Processes and phenomena of the atmosphere. Examples: cloud cover, weather, climate, atmospheric conditions, climate change, precipitation.
+
 
 **Browsing Layers** - To open the Layers page, click on the Data link on the Boundless Exchange toolbar, and select Layers in the drop-down menu. Here you can browse data that has been uploaded into Exchange. From the layers page, you can see how many times a layer has been viewed, and its average user rating. Selecting on the layer’s title will take you to the information page where you can download the layer, edit metadata, or view additional information about the layer.
 
@@ -84,4 +99,3 @@ For example, if you type “te” in the search box, and press Enter, you will g
    * **Filter by Extent** - Zoom in and out to find products pertaining only to the extent displayed on the map.
 
     .. figure:: img/filter-extent.png
-    
