@@ -1,0 +1,576 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Editing and Version Management &mdash; Boundless Exchange 1.2.0b1 documentation</title>
+  
+
+  
+
+  
+  
+  
+
+  
+     <link rel="shortcut icon" href="../_static/img/exchange.ico"/>
+  
+
+  
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,700,600,800,300|Montserrat:400,700|Source+Code+Pro:300,400,500,700' rel='stylesheet' type='text/css'>
+
+<!-- Removing search because it doesn't work well
+  
+  
+    
+  
+-->
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <!-- Removing search because it doesn't work well
+    -->
+    <link rel="top" title="Boundless Exchange 1.2.0b1 documentation" href="../index.html"/>
+        <link rel="next" title="Analyzing data with Exchange" href="../analysis/index.html"/>
+        <link rel="prev" title="Working with Maps" href="../maps/index.html"/> 
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/zenbox.css" type="text/css" media="screen, projection" />
+  
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+    
+
+      <div id="header" class="selfclear">
+        
+        <div class="exchange_logo"><a href="/">Boundless Exchange 1.2.0b1 documentation</a></div>
+        
+
+        <div class="version_info">1.2.0b1</div>
+      </div>
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <!-- Removing search because it doesn't work well
+      <div class="wy-side-nav-search">
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+      </div>
+      -->
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../accounts/index.html">Accounts, Users and Groups</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../accounts/index.html#creating-a-new-account">Creating a new account</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../accounts/index.html#managing-your-profile">Managing your profile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../accounts/index.html#viewing-other-user-accounts">Viewing other user accounts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../accounts/index.html#managing-groups">Managing groups</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../discovery/index.html">Discovering available content</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../documents/index.html">Working with Documents</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../documents/index.html#uploading-documents">Uploading documents</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../documents/index.html#browsing-documents">Browsing documents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../layers/index.html">Working with Layers</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../layers/index.html#uploading-a-layer">Uploading a layer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../layers/index.html#layer-information">Layer information</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../layers/index.html#editing-metadata-and-managing-layers">Editing metadata and managing layers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../layers/index.html#downloading-data-from-a-layer">Downloading data from a layer</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../maps/index.html">Working with Maps</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../maps/index.html#create-a-map">Create a map</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../maps/index.html#add-layers-to-a-map">Add layers to a map</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../maps/index.html#managing-maps">Managing Maps</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Editing and Version Management</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#edit-features">Edit Features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#version-management">Version Management</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../analysis/index.html">Analyzing data with Exchange</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../analysis/index.html#working-within-the-attribute-table">Working within the attribute table</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analysis/index.html#view-attribute-statistics">View attribute statistics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analysis/index.html#create-a-heat-map">Create a heat map</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analysis/index.html#search-all-attributes">Search all attributes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analysis/index.html#advanced-filters">Advanced filters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analysis/index.html#filter-features-using-spatial-filters">Filter features using spatial filters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analysis/index.html#delete-a-spatial-filter">Delete a spatial filter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analysis/index.html#combine-filters-for-deeper-analysis">Combine filters for deeper analysis</a></li>
+</ul>
+</li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">Boundless Exchange documentation </a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html"> Boundless Exchange 1.2.0b1 documentation </a> &raquo;</li>
+    
+    <li>Editing and Version Management</li>
+  </ul>
+  
+  <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+    
+      <a href="../analysis/index.html" class="btn btn-neutral float-right" title="Analyzing data with Exchange">Next <span class="fa fa-arrow-circle-right"></span></a>
+    
+    
+      <a href="../maps/index.html" class="btn btn-neutral" title="Working with Maps"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+    
+  </div>
+  <hr/>
+</div>
+          <div role="main">
+          
+        	     
+  <div class="section" id="editing-and-version-management">
+<h1>Editing and Version Management<a class="headerlink" href="#editing-and-version-management" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="edit-features">
+<h2>Edit Features<a class="headerlink" href="#edit-features" title="Permalink to this headline">¶</a></h2>
+<p>Vector layer permissions can be set so the layer can be edited by other users. The editing tools will be available to you in the map, if you have permissions to edit a layer. If a layer was saved as a GeoGig layer, then you can work with the layer&#8217;s edit history as well.</p>
+<div class="section" id="add-a-point-feature-to-a-layer">
+<h3>Add a point feature to a layer<a class="headerlink" href="#add-a-point-feature-to-a-layer" title="Permalink to this headline">¶</a></h3>
+<p>A layer that is able to be edited will have the <span class="guilabel">Add Feature</span> button available.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/add-feature-bttn.png" src="../_images/add-feature-bttn.png" />
+</div>
+</div></blockquote>
+<ol class="arabic simple">
+<li>Click the <span class="guilabel">Add Feature</span> button. The Drawing Geometry dialog will appear at the top of the map.</li>
+<li>Click on the map to add your point feature.</li>
+<li>Click the <span class="guilabel">Accept Feature</span> button to keep the geometry. Click the <span class="guilabel">Cancel Feature</span> button to remove the added feature.</li>
+<li>After the feature is accepted, the Edit Attributes window will open. Fill out the fields, or select values from the dropdowns to add attribute values.</li>
+<li>Click the <span class="guilabel">Save</span> button at the bottom of the form to save the feature to the layer.</li>
+</ol>
+<div class="figure">
+<img alt="../_images/add-point-feature.gif" src="../_images/add-point-feature.gif" />
+</div>
+<p><strong>Note:</strong> To delete a feature, click on the feature to be removed, and select the Delete Feature button. Select Yes to confirm.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/delete-feature.png" src="../_images/delete-feature.png" />
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="add-a-line-to-a-layer">
+<h3>Add a line to a layer<a class="headerlink" href="#add-a-line-to-a-layer" title="Permalink to this headline">¶</a></h3>
+<p>A line layer consists of lines that represent features such as roads, powerlines, waterways, <em>etc</em>.</p>
+<ol class="arabic simple">
+<li>Click the <span class="guilabel">Add Feature</span> button. The Drawing Geometry dialog will appear at the top of the screen.</li>
+<li>Click on the map to begin drawing the linear feature. Click additional points to add all of the vertices. Double-click the last vertex to finish drawing the line.</li>
+<li>Click the <span class="guilabel">Accept Feature</span> button to add the geometries to the layer.</li>
+<li>After accepting the feature, populate the attributes in the Edit Attributes window with any required information.</li>
+<li>Click the <span class="guilabel">Save</span> button to save your changes.</li>
+</ol>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/add-lines.gif" src="../_images/add-lines.gif" />
+</div>
+</div></blockquote>
+<p><strong>Note:</strong> To add a multi-line feature, select the <cite>Add Geometry</cite> button.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/add-lines.png" src="../_images/add-lines.png" />
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="add-a-polygon-feature-to-a-layer">
+<h3>Add a polygon feature to a layer<a class="headerlink" href="#add-a-polygon-feature-to-a-layer" title="Permalink to this headline">¶</a></h3>
+<p>Polygons can be used to represent many different features, including buildings, bodies of water, hazardous areas, <em>etc.</em>
+A simple polygon layer has a single polygon per feature.</p>
+<ol class="arabic simple">
+<li>Click the <span class="guilabel">Add Feature</span> button. The Drawing Geometry dialog will appear at the top of the screen.</li>
+<li>Click on the map to begin adding the polygon. Continue to click to add all of the vertices. To finalize the polygon, close the geometry by clicking on the first vertex again.</li>
+<li>Click the Right Angles button to create right angle corners on your polygon.</li>
+<li>Click the <span class="guilabel">Accept Feature</span> button to add the geometries to the layer.</li>
+<li>After accepting the feature, populate the attributes in the Edit Attributes window with any required information.</li>
+<li>Click the <span class="guilabel">Save</span> button to save your changes.</li>
+</ol>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/add-poly.gif" src="../_images/add-poly.gif" />
+</div>
+</div></blockquote>
+<p><strong>Note:</strong> To add a multi-line feature, select the <cite>Add Geometry</cite> button.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/add-geometry.png" src="../_images/add-geometry.png" />
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="edit-attributes">
+<h3>Edit attributes<a class="headerlink" href="#edit-attributes" title="Permalink to this headline">¶</a></h3>
+<p>If a layer is able to be edited, Exchange allows you to make attribute changes directly from the map.</p>
+<ol class="arabic simple">
+<li>Select a feature on the map. The feature info box will appear.</li>
+<li>Click the <span class="guilabel">Edit Attributes</span> button to open the Edit Attributes window.</li>
+<li>Add attribute information as necessary.</li>
+<li>Click the <span class="guilabel">Save</span> button to save your changes.</li>
+</ol>
+<div class="figure">
+<img alt="../_images/edit-attributes.gif" src="../_images/edit-attributes.gif" />
+</div>
+</div>
+<div class="section" id="edit-point-geometries-on-the-map">
+<h3>Edit point geometries on the map<a class="headerlink" href="#edit-point-geometries-on-the-map" title="Permalink to this headline">¶</a></h3>
+<p>Point layers can be either simple point or multi-points layers. For simple point layer, there is one point per feature. Multi-point layers will have more than one point per feature.</p>
+<ol class="arabic simple">
+<li>Select a point feature on the map to open the feature info box.</li>
+<li>Click the <span class="guilabel">Edit Geometry</span> button. This will open the Drawing Geometry dialog at the top of the screen. Your selected feature will be highlighted in blue.</li>
+<li>Click and drag the feature to a new location.</li>
+<li>Click the <span class="guilabel">Accept Feature</span> button to save the new feature location. Click the <span class="guilabel">Cancel</span> button to cancel your edit.</li>
+</ol>
+<div class="figure">
+<img alt="../_images/edit-point-geometry.gif" src="../_images/edit-point-geometry.gif" />
+</div>
+</div>
+<div class="section" id="edit-point-geometry-manually">
+<h3>Edit point geometry manually<a class="headerlink" href="#edit-point-geometry-manually" title="Permalink to this headline">¶</a></h3>
+<p>Coordinates for point geometries can also be edited manually. This is useful when you have the coordinates from another source (such as a report or agency).</p>
+<ol class="arabic simple">
+<li>Select a point feature on the map to open the feature info box.</li>
+<li>Click the <span class="guilabel">Edit Attributes</span> button. The Edit Attributes window will open.</li>
+<li>Click the Location field to edit the point&#8217;s coordinates. Add the new location.</li>
+<li>Click the <span class="guilabel">Save</span> button to save your changes.</li>
+</ol>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/edit-points-manually.gif" src="../_images/edit-points-manually.gif" />
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="edit-line-or-polygon-geometries">
+<h3>Edit line or polygon geometries<a class="headerlink" href="#edit-line-or-polygon-geometries" title="Permalink to this headline">¶</a></h3>
+<p>Any existing feature in a layer can be modified, if you have permission to edit the layer. A layer that has been saved to GeoGig will maintain a history of all of the edits to ensure the provenance of the data.</p>
+<ol class="arabic simple">
+<li>Select a feature on the map to be edited. This will open the feature info box.</li>
+<li>Click the <span class="guilabel">Edit Geometry</span> button. The Editing Geometry dialog will open.</li>
+<li>Mouse over the geometry to highlight the vertex to edit. Click and drag the vertex to a new location. Repeat to edit any additional vertices.</li>
+</ol>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/edit-poly.gif" src="../_images/edit-poly.gif" />
+</div>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="version-management">
+<h2>Version Management<a class="headerlink" href="#version-management" title="Permalink to this headline">¶</a></h2>
+<p>GeoGig is a specialized database that was designed for distributed editing, and supports collaborative editing of geospatial data. It is designed for vector data (point, line, polygon, etc.), and is recommended as the best way to maintain a reliable history of changes to your data.</p>
+<p>When a layer has been stored in GeoGig, it maintains the history of all of the edits made to the data, along with who made the changes and when. Within the web map, you can view the history for a layer and for the features.</p>
+<div class="section" id="geogig-tab-in-boundless-exchange">
+<h3>GeoGig tab in Boundless Exchange<a class="headerlink" href="#geogig-tab-in-boundless-exchange" title="Permalink to this headline">¶</a></h3>
+<p>GeoGig layers in Boundless Exchange will have a GeoGig tab in addition to the other tabs on the Layer information page. The history is a list of commits that have been made to the layer.</p>
+<p>In the layer information page, click on the GeoGig tab to see the chronological list of commits. The number of commits, and the total number of contributors will display.</p>
+<blockquote>
+<div><div class="figure" id="id1">
+<img alt="../_images/geogig-tab.png" src="../_images/geogig-tab.png" />
+<p class="caption"><span class="caption-text"><em>Commit history within the GeoGig tab</em></span></p>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="notifications">
+<h3>Notifications<a class="headerlink" href="#notifications" title="Permalink to this headline">¶</a></h3>
+<p>Because Exchange is a real time collaboration tool, it is important for users to be able to see what changes other team members are making to a project. When users upload layers, they are given the option to import the layer(s) into GeoGig, which will show who has made what changes (for more on GeoGig, please reference the Working with Layers Management section). If another user has made modifications to a layer currently on the map, a number will appear next to the Notifications indicating how many unread notifications you have. The more notifications, the more changes that have been made to your map layers.</p>
+<ol class="arabic simple">
+<li>Click on the number of unread notifications to open the Notifications list in the layers menu. This will show you all of the changes that have been made to your layer. If there have been multiple changes, they may be grouped into sections based on when the changes occurred. Click on the grouping you would like to view.</li>
+</ol>
+<blockquote>
+<div><div class="figure" id="id2">
+<img alt="../_images/notification-list.png" src="../_images/notification-list.png" />
+<p class="caption"><span class="caption-text"><em>Multiple changes were made to this layer, and have been grouped by time.</em></span></p>
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li>From here you can either select <span class="guilabel">View on Map</span> or <span class="guilabel">Show Changes</span> to see what has been modified. View on Map will show you where the changes have been made on the map.</li>
+</ol>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/view-change-map.png" src="../_images/view-change-map.png" />
+</div>
+<div class="figure">
+<img alt="../_images/show-changes-bttn.png" src="../_images/show-changes-bttn.png" />
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li>Click the <span class="guilabel">Show Changes</span> button. Select <span class="guilabel">Yes</span> to acknowledge changes have been made to a feature, and compare the two versions.</li>
+</ol>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/compare-changes.png" src="../_images/compare-changes.png" />
+</div>
+</div></blockquote>
+<p>You will see a detailed side-by-side comparison of the features that have been edited.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/notification-changes.png" src="../_images/notification-changes.png" />
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="4">
+<li>Changes made to the feature attributes will be highlighted in red, green or yellow, depending on whether the change was a deletion, addition or edit. Click the <span class="guilabel">Show Authors</span> button and hover your mouse over the highlighted area to open a detailed description of the individual edit.</li>
+</ol>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/notification-changes-details.png" src="../_images/notification-changes-details.png" />
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="5">
+<li>If you do not approve of the changes, or feel they were made in error, you are able to select the <span class="guilabel">Undo Changes</span> button at the bottom of the details window to revert to the original feature.</li>
+</ol>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/undo-changes.png" src="../_images/undo-changes.png" />
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="view-layer-history">
+<h3>View layer history<a class="headerlink" href="#view-layer-history" title="Permalink to this headline">¶</a></h3>
+<p>You can view all of the changes made to an entire layer from the map.</p>
+<ol class="arabic">
+<li><p class="first">Select the name of the layer you want to view. The menu will expand to show additional layer options.</p>
+</li>
+<li><p class="first">Click on the <span class="guilabel">Show History</span> button. The history will expand.</p>
+<div class="figure">
+<img alt="../_images/show-history-bttn.png" src="../_images/show-history-bttn.png" />
+</div>
+</li>
+<li><p class="first">Hover your mouse over a commit to view details about the changes. The color bar next to the commit indicates the type of edits that were made. Green indicates a new feature was added. Yellow indicates a feature was modified. Red indicates a feature was deleted. A commit can have multiple types of edits. In such cases, the bar will have colors representative of the types of edits that were made.</p>
+<div class="figure" id="id3">
+<img alt="../_images/show-history-list.png" src="../_images/show-history-list.png" />
+<p class="caption"><span class="caption-text"><em>History detail for a commit</em></span></p>
+</div>
+</li>
+<li><p class="first">Click on a commit, and its history will update to show the individual edits within that commit. MapLoom will make one commit per edit.</p>
+<div class="figure">
+<img alt="../_images/show-layer-history.png" src="../_images/show-layer-history.png" />
+</div>
+</li>
+<li><p class="first">Click the <span class="guilabel">Show Changes</span> button to bring up a new window, displaying the specific changes that were made. The changes will be highlighted with the same color coding as the commits. Green means something was added. Yellow means the feature was changed. Red means the feature was deleted. In the image below, the feature was added, and so the feature on the map is highlighted in green.</p>
+<div class="figure">
+<img alt="../_images/layer-history-changes.png" src="../_images/layer-history-changes.png" />
+</div>
+</li>
+</ol>
+</div>
+<div class="section" id="view-feature-history">
+<h3>View feature history<a class="headerlink" href="#view-feature-history" title="Permalink to this headline">¶</a></h3>
+<p>In addition to viewing the history of edits on a GeoGig layer, you can also view the history of a feature.</p>
+<ol class="arabic">
+<li><p class="first">Select a feature on the map. The feature details will appear.</p>
+</li>
+<li><p class="first">Click the <span class="guilabel">Show History</span> button. The history list will expand with the commits that contain changes for that feature.</p>
+<div class="figure">
+<img alt="../_images/show-feature-history.png" src="../_images/show-feature-history.png" />
+</div>
+</li>
+<li><p class="first">Click the specific commit whose history you’d like to view. The history will update to show the edits made to the feature for that commit. Information about the feature will display as you hover your mouse over the changes.</p>
+<div class="figure">
+<img alt="../_images/commit-history-feature.png" src="../_images/commit-history-feature.png" />
+</div>
+</li>
+<li><p class="first">Click the <span class="guilabel">Show Changes</span> button to bring up a new window, displaying the specific changes that were made.</p>
+<div class="figure">
+<img alt="../_images/summary-changes-feature.png" src="../_images/summary-changes-feature.png" />
+</div>
+</li>
+</ol>
+<p>The changes will be highlighted with the same color coding as the commits. Green means something was added. Yellow means the feature was changed. Red means the feature was deleted. In the image below, the feature was added, and so the feature on the map and its attributes are highlighted in green.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/show-feature-changes.png" src="../_images/show-feature-changes.png" />
+</div>
+</div></blockquote>
+<ol class="arabic">
+<li><p class="first">Click the <span class="guilabel">Show Authors</span> button to see the names and dates for every attribute in the feature. Note that through the lifetime of a feature, there can be several authors. This is a good way to see who has contributed to a feature’s current state.</p>
+<div class="figure">
+<img alt="../_images/show-authors.png" src="../_images/show-authors.png" />
+</div>
+</li>
+</ol>
+</div>
+<div class="section" id="summarize-history">
+<h3>Summarize history<a class="headerlink" href="#summarize-history" title="Permalink to this headline">¶</a></h3>
+<p>You can visualize a summary of all of the edits within a date range for a layer.</p>
+<ol class="arabic">
+<li><p class="first">Click the <span class="guilabel">Show History</span> button for layer you want to summarize.</p>
+<div class="figure">
+<img alt="../_images/show-history-bttn.png" src="../_images/show-history-bttn.png" />
+</div>
+</li>
+<li><p class="first">Click the <span class="guilabel">History Summary</span> button.</p>
+<div class="figure">
+<img alt="../_images/history-summary.png" src="../_images/history-summary.png" />
+</div>
+</li>
+<li><p class="first">Enter the date range for the history to summarize.</p>
+<div class="figure">
+<img alt="../_images/summary-date-range.png" src="../_images/summary-date-range.png" />
+</div>
+</li>
+<li><p class="first">Click the <span class="guilabel">Summarize</span> button. The edited features will be highlighted, and will be listed under the Summary of Changes field.</p>
+<div class="figure">
+<img alt="../_images/summary.png" src="../_images/summary.png" />
+</div>
+</li>
+<li><p class="first">Click the <span class="guilabel">Show Changes</span> button for one of the edits in the list to see a detailed view.</p>
+</li>
+</ol>
+</div>
+<div class="section" id="export-history">
+<h3>Export history<a class="headerlink" href="#export-history" title="Permalink to this headline">¶</a></h3>
+<p>You can export a summary of all of the edits within a date range for a layer.</p>
+<ol class="arabic">
+<li><p class="first">Click the <span class="guilabel">Show History</span> button for layer you want to summarize.</p>
+<div class="figure">
+<img alt="../_images/show-history-bttn.png" src="../_images/show-history-bttn.png" />
+</div>
+</li>
+<li><p class="first">Click on the <span class="guilabel">History Summary</span> button</p>
+<div class="figure">
+<img alt="../_images/history-summary.png" src="../_images/history-summary.png" />
+</div>
+</li>
+<li><p class="first">Enter the date range for the history to summarize.</p>
+<div class="figure">
+<img alt="../_images/export-history.png" src="../_images/export-history.png" />
+</div>
+</li>
+<li><p class="first">Click the <span class="guilabel">Export CSV</span> button.</p>
+</li>
+<li><p class="first">When prompted to save the file, browse to the location where you want to save it, and click Ok.</p>
+</li>
+</ol>
+<p>All of the feature change history will be added to the spreadsheet.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/export-csv.png" src="../_images/export-csv.png" />
+</div>
+</div></blockquote>
+</div>
+</div>
+</div>
+
+
+          
+          </div>
+          <footer>
+  
+    
+      <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        
+          <a href="../analysis/index.html" class="btn btn-neutral float-right" title="Analyzing data with Exchange">Next <span class="fa fa-arrow-circle-right"></span></a>
+        
+        
+          <a href="../maps/index.html" class="btn btn-neutral" title="Working with Maps"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        
+      </div>
+    
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <div class="info">
+      <a class="logo-link" href="http://boundlessgeo.com">
+        <div class="boundless-logo"></div>
+      </a>
+      <div class="copyright">
+      
+        Copyright &copy; 2016, Boundless
+      
+      </div>
+    </div>
+    <div class="footer-aside">
+        
+          <a id="zenbox" class="help-contact" data="editing/index" href="https://connect.boundlessgeo.com/Community/Questions-Answers">Ask a Question</a>
+        
+      </div>
+  </div>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div> 
+   
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1.2.0b1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+   
+  
+
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+  
+
+  
+  
+    <script type="text/javascript" src="//assets.zendesk.com/external/zenbox/v2.6/zenbox.js"></script>
+    <script type="text/javascript" src="../_static/js/zendesk.js"></script>
+  
+
+</body>
+</html>

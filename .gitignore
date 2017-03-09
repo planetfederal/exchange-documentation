@@ -1,7 +1,5 @@
 build/
 venv/
 .DS_Store
-package/django-exchange-docs/dist
-package/django-exchange-docs/django_exchange_docs.egg-info
-package/django-exchange-docs/exchange-docs/static/docs/*
-*.whl
+dist/
+django_exchange_docs.egg-info/
