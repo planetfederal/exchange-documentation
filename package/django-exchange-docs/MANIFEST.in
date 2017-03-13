@@ -1,2 +1,0 @@
-include README.md
-recursive-include  exchange-docs *.eot *.woff *.tff *.svg *.js *.css *.png *.gif *.html 

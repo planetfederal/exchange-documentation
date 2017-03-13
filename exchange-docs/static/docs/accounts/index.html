@@ -1,0 +1,364 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Accounts, Users and Groups &mdash; Boundless Exchange 1.2.0b1 documentation</title>
+  
+
+  
+
+  
+  
+  
+
+  
+     <link rel="shortcut icon" href="../_static/img/exchange.ico"/>
+  
+
+  
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,700,600,800,300|Montserrat:400,700|Source+Code+Pro:300,400,500,700' rel='stylesheet' type='text/css'>
+
+<!-- Removing search because it doesn't work well
+  
+  
+    
+  
+-->
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <!-- Removing search because it doesn't work well
+    -->
+    <link rel="top" title="Boundless Exchange 1.2.0b1 documentation" href="../index.html"/>
+        <link rel="next" title="Discovering available content" href="../discovery/index.html"/>
+        <link rel="prev" title="Welcome to Boundless Exchange Documentation!" href="../index.html"/> 
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/zenbox.css" type="text/css" media="screen, projection" />
+  
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+    
+
+      <div id="header" class="selfclear">
+        
+        <div class="exchange_logo"><a href="/">Boundless Exchange 1.2.0b1 documentation</a></div>
+        
+
+        <div class="version_info">1.2.0b1</div>
+      </div>
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <!-- Removing search because it doesn't work well
+      <div class="wy-side-nav-search">
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+      </div>
+      -->
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        
+        
+            <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Accounts, Users and Groups</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#creating-a-new-account">Creating a new account</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#managing-your-profile">Managing your profile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#viewing-other-user-accounts">Viewing other user accounts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#managing-groups">Managing groups</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../discovery/index.html">Discovering available content</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../documents/index.html">Working with Documents</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../documents/index.html#uploading-documents">Uploading documents</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../documents/index.html#browsing-documents">Browsing documents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../layers/index.html">Working with Layers</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../layers/index.html#uploading-a-layer">Uploading a layer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../layers/index.html#layer-information">Layer information</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../layers/index.html#editing-metadata-and-managing-layers">Editing metadata and managing layers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../layers/index.html#downloading-data-from-a-layer">Downloading data from a layer</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../maps/index.html">Working with Maps</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../maps/index.html#create-a-map">Create a map</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../maps/index.html#add-layers-to-a-map">Add layers to a map</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../maps/index.html#managing-maps">Managing Maps</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../editing/index.html">Editing and Version Management</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../editing/index.html#edit-features">Edit Features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../editing/index.html#version-management">Version Management</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../analysis/index.html">Analyzing data with Exchange</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../analysis/index.html#working-within-the-attribute-table">Working within the attribute table</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analysis/index.html#view-attribute-statistics">View attribute statistics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analysis/index.html#create-a-heat-map">Create a heat map</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analysis/index.html#search-all-attributes">Search all attributes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analysis/index.html#advanced-filters">Advanced filters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analysis/index.html#filter-features-using-spatial-filters">Filter features using spatial filters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analysis/index.html#delete-a-spatial-filter">Delete a spatial filter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analysis/index.html#combine-filters-for-deeper-analysis">Combine filters for deeper analysis</a></li>
+</ul>
+</li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">Boundless Exchange documentation </a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html"> Boundless Exchange 1.2.0b1 documentation </a> &raquo;</li>
+    
+    <li>Accounts, Users and Groups</li>
+  </ul>
+  
+  <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+    
+      <a href="../discovery/index.html" class="btn btn-neutral float-right" title="Discovering available content">Next <span class="fa fa-arrow-circle-right"></span></a>
+    
+    
+      <a href="../index.html" class="btn btn-neutral" title="Welcome to Boundless Exchange Documentation!"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+    
+  </div>
+  <hr/>
+</div>
+          <div role="main">
+          
+        	     
+  <div class="section" id="accounts-users-and-groups">
+<h1>Accounts, Users and Groups<a class="headerlink" href="#accounts-users-and-groups" title="Permalink to this headline">¶</a></h1>
+<p>Exchange is a social platform, making the user account the primary component of any Exchange instance.</p>
+<div class="section" id="creating-a-new-account">
+<h2>Creating a new account<a class="headerlink" href="#creating-a-new-account" title="Permalink to this headline">¶</a></h2>
+<p>Depending on how the Exchange instance was configured, you may have to register for an account. If the <span class="guilabel">Register</span> link is not displayed, then you will need to contact the Site Systems Administrator to have an account created.</p>
+<p>If the <span class="guilabel">Register</span> link is displayed then register a new account by completing the following steps:</p>
+<ol class="arabic">
+<li><p class="first">Select the <span class="guilabel">Register</span> link and fill out all fields in the following form.</p>
+<div class="figure">
+<img alt="../_images/sign-up.png" src="../_images/sign-up.png" />
+</div>
+</li>
+<li><p class="first">Depending on how the Exchange site was configured you may have to confirm your email. If this is the case, follow the steps listed in the instructional email you will receive.</p>
+</li>
+</ol>
+</div>
+<div class="section" id="managing-your-profile">
+<h2>Managing your profile<a class="headerlink" href="#managing-your-profile" title="Permalink to this headline">¶</a></h2>
+<p>Your profile in Exchange is where you can add your points of contact, interests, and other related content you may want to publish. This is how other users will find you, and view your work.</p>
+<p>To adjust your profile settings complete the following steps:</p>
+<ol class="arabic">
+<li><p class="first">Click on your user name in the top right of the screen. Select <span class="guilabel">Profile</span> from the drop-down menu to enter the Profile Settings page. This will display your current profile settings.</p>
+<div class="figure">
+<img alt="../_images/example-profile.png" src="../_images/example-profile.png" />
+</div>
+</li>
+<li><p class="first">To modify your profile, select the <span class="guilabel">Edit Profile</span> link.</p>
+</li>
+<li><p class="first">On this page, you can update your information, including your avatar. It is important to include (at a minimum) your <strong>First name</strong>, <strong>Last name</strong> and <strong>Email address</strong>. This is required to properly display history of GeoGig versioned layers.</p>
+<div class="figure">
+<img alt="../_images/edit-profile.png" src="../_images/edit-profile.png" />
+</div>
+</li>
+<li><p class="first">When finished, select the <span class="guilabel">Update Profile</span> button.</p>
+</li>
+</ol>
+</div>
+<div class="section" id="viewing-other-user-accounts">
+<h2>Viewing other user accounts<a class="headerlink" href="#viewing-other-user-accounts" title="Permalink to this headline">¶</a></h2>
+<p>Once your account is created in Exchange, you will be able to view other user accounts on the system. This will let you see who else may be interested in the projects you are working on, or help you find additional data through collaboration.</p>
+<ol class="arabic simple">
+<li>Select the <span class="guilabel">About</span> link on the Exchange toolbar, and click <strong>People</strong> in the drop-down menu. You will see a list of thumbnails for all users registered on this system. Avatar images will display if the user has provided one.</li>
+</ol>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/about.png" src="../_images/about.png" />
+</div>
+<div class="figure">
+<img alt="../_images/exploring-people.png" src="../_images/exploring-people.png" />
+</div>
+</div></blockquote>
+<ol class="arabic" start="2">
+<li><p class="first">Click on an individual username to see their contact information, and any resources owned by the user. Any layers, maps or documents they have added to Exchange will be listed under Resources.</p>
+<div class="figure">
+<img alt="../_images/resources.png" src="../_images/resources.png" />
+</div>
+</li>
+<li><p class="first">You can also click on the <span class="guilabel">User Activities</span> link to see the chronological list of that user’s activities.</p>
+<div class="figure">
+<img alt="../_images/activity-feed.png" src="../_images/activity-feed.png" />
+</div>
+</li>
+</ol>
+</div>
+<div class="section" id="managing-groups">
+<h2>Managing groups<a class="headerlink" href="#managing-groups" title="Permalink to this headline">¶</a></h2>
+<p>Registered Exchange users can create and be added to groups. Groups are a great way to organize and manage your team. You can see what action has been taken by the group and its members through the activity feed.</p>
+<div class="section" id="view-an-existing-group">
+<h3>View an existing group<a class="headerlink" href="#view-an-existing-group" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>Select the <span class="guilabel">About</span> link on the Exchange toolbar, and click <strong>Groups</strong> in the drop-down menu. A list of all existing groups within Exchange will display.</li>
+</ol>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/about.png" src="../_images/about.png" />
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li>Click on the name of a group to see the contact information, a list of members, and any additional details provided by the group managers.</li>
+</ol>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/manage-group.png" src="../_images/manage-group.png" />
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="create-a-group">
+<h3>Create a group<a class="headerlink" href="#create-a-group" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>Select the <span class="guilabel">About</span> link on the Exchange toolbar, and click <strong>Groups</strong> in the drop-down menu. A list of all existing groups within Exchange will display.</li>
+<li>Click the <span class="guilabel">Create a New Group</span> button, and fill out as much information about your group as possible. Once you have added the group name, contact information, and a brief description of the group, click the <span class="guilabel">Create</span> button at the bottom of the page.</li>
+</ol>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/create-group.png" src="../_images/create-group.png" />
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li>You will be returned to your group’s information page. To add other group members, select the <span class="guilabel">Manage Group Members</span> link. Type the name of a registered Exchange user in the <strong>User identifiers</strong> textbox, and select their role as either a Member or Manager.</li>
+</ol>
+<p>You can add more than one new member at a time, as long as they are going to have the same role.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/edit-group-members.png" src="../_images/edit-group-members.png" />
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="4">
+<li>Click the <span class="guilabel">Add Group Members</span> button when you have finished.</li>
+</ol>
+<p>You can view all of the managers or members of the group by clicking on their respective tabs.</p>
+<p><strong>Note:</strong> Groups can only be deleted from Exchange by an administrator. If you have a group you no longer need, please contact your Exchange administrator.</p>
+</div>
+</div>
+</div>
+
+
+          
+          </div>
+          <footer>
+  
+    
+      <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        
+          <a href="../discovery/index.html" class="btn btn-neutral float-right" title="Discovering available content">Next <span class="fa fa-arrow-circle-right"></span></a>
+        
+        
+          <a href="../index.html" class="btn btn-neutral" title="Welcome to Boundless Exchange Documentation!"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        
+      </div>
+    
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <div class="info">
+      <a class="logo-link" href="http://boundlessgeo.com">
+        <div class="boundless-logo"></div>
+      </a>
+      <div class="copyright">
+      
+        Copyright &copy; 2016, Boundless
+      
+      </div>
+    </div>
+    <div class="footer-aside">
+        
+          <a id="zenbox" class="help-contact" data="accounts/index" href="https://connect.boundlessgeo.com/Community/Questions-Answers">Ask a Question</a>
+        
+      </div>
+  </div>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div> 
+   
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1.2.0b1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+   
+  
+
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+  
+
+  
+  
+    <script type="text/javascript" src="//assets.zendesk.com/external/zenbox/v2.6/zenbox.js"></script>
+    <script type="text/javascript" src="../_static/js/zendesk.js"></script>
+  
+
+</body>
+</html>
