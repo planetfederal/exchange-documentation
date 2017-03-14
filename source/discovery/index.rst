@@ -17,48 +17,15 @@ For example, if you type “te” in the search box, and press Enter, you will g
 
   .. figure:: img/bex-homepage.png
 
-**Discover the Available Datasets -** There are nineteen featured datasets within Exchange, which will help you find information faster. These datasets correspond to the categories you can add to the metadata of a layer. Selecting on an available dataset will return only those results meeting the category criteria.
+**Discover the Available Datasets -** In Exchange, your data is separated into multiple categories based on the content of the information. Your Exchange administrator can configure your datasets and metadata based on your settings and requirements. When searching for data, selecting on one of these available datasets will help you find information faster by returning only those results meeting the category criteria.
 
   .. figure:: img/available-dataset.png
 
-  - **Geoscientific Information:** Information pertaining to earth sciences. Examples: geophysical features and processes, geology, minerals, sciences dealing with the composition, structure, and the origin of the earth’s rocks, risk of earthquakes, volcanic activity, landslides, gravity information, soils, permafrost, hydrology, erosion.
+  *This is an example of what the available datasets could be for your Boundless Exchange instance. The specific datasets will depend on your settings and requirements. Hover over the individual categories to see what type of data is in each one.*
 
-  - **Farming:** Rearing of animals and/or cultivation of plants. Examples: agriculture, plantations, herding, pests and diseases affecting crops and livestock.
+**Featured Datasets** - Featured Datasets are available on the Boundless Exchange homepage, and allow users to immediately see maps, layers or documents which have been highlighted as important. A dataset can be featured by editing its metadata, and ensuring the Featured checkbox is selected.
 
-  - **Elevation:**  Height above or below sea level. Examples: altitude, bathymetry, digital elevation models, slope, derived products.
-
-  - **Utilities Communication:** Energy, water and waste systems and communications infrastructure and services. Examples: hydroelectricity, geothermal, solar and nuclear sources of energy, water purification and distribution, sewage collection and disposal, electricity and gas distribution, data communication, telecommunication, radio, communication networks.
-
-  - **Oceans:** Features and characteristics of salt water bodies (excluding inland waters). Examples: tides, tidal waves, coastal information, reefs.
-
-  - **Boundaries:** Legal land descriptions. Examples: political and administrative boundaries.
-
-  - **Inland Waters:** Inland water features, drainage systems and their characteristics. Examples: rivers and glaciers, salt lates, water utilization plans, dams, currents, floods, water quality, hydrographic charts.
-
-  - **Intelligence Military:** Military bases, structures, activities. Examples: barracks, training grounds, military transportation, information collection.
-
-  - **Environment:** Environmental resources, protection and conservation. Examples: environmental pollution, waste storage and treatment, environmental impact assessments, monitoring environmental risk, nature reserves, landscape.
-
-  - **Location:** Positional information and services. Examples: addresses, geodetic networks, control points, postal zones and services, place names.
-
-  - **Economy:** Economic activities, conditions and employment. Examples: production, labor, revenue, commerce, industry, tourism and ecotourism, forestry, fisheries, commercial or subsistence hunting, exploration and exploitation of resources such as minerals, oil and gas.
-
-  - **Planning Cadastre:** Information used for appropriate actions for future use of the land. Examples: land use maps, zoning maps, cadastral surveys, land ownership.
-
-  - **Biota:** Flora and/or fauna in natural environment.Examples: wildlife, vegetation, biological sciences, ecology, wilderness, sealife, wetlands, habitat.
-
-  - **Health:** Health, health services, human ecology, and safety. Examples: disease and illness, factors affecting health, hygiene, substance abuse, mental and physical health, health services.
-
-  - **Imagery Base Maps Earth Cover:** base maps. Examples: land cover, topographic maps, imagery, unclassified images, annotation.
-
-  - **Transportation:** Means and aids for conveying persons and/or goods. Examples: roads, airports/airstrips, shipping routes, tunnels, nautical charts, vehicle or vessel location, aeronautical charts, railways.
-
-  - **Society:** Characteristics of society and cultures. Examples: settlements, anthropology, archaeology, education, traditional beliefs, manners and customs, demographic data, recreational areas and activities, social impact assessments, crime and justice, census information.
-
-  - **Structure:** Man-made construction. Examples: Buildings, museums, churches, factories, housing, monuments, shops, towers.
-
-  - **Climatology Meteorology Atmosphere:** Processes and phenomena of the atmosphere. Examples: cloud cover, weather, climate, atmospheric conditions, climate change, precipitation.
-
+  .. figure:: img/featured-datasets.png
 
 **Browsing Layers** - To open the Layers page, click on the Data link on the Boundless Exchange toolbar, and select Layers in the drop-down menu. Here you can browse data that has been uploaded into Exchange. From the layers page, you can see how many times a layer has been viewed, and its average user rating. Selecting on the layer’s title will take you to the information page where you can download the layer, edit metadata, or view additional information about the layer.
 
@@ -70,15 +37,21 @@ For example, if you type “te” in the search box, and press Enter, you will g
 
    .. figure:: img/filter-text.png
 
+   * **Filter by Keywords** - If a user has associated keywords to the layer in the metadata, you can filter layers by those terms. Select on a keyword to limit results to those layers with associated keywords.
+
+   .. figure:: img/keywords.png
+
    * **Filter by Type (layers and documents)** - You can filter layers by raster, vector, remote and WMS. Documents can be sorted by text, image or presentation. The selected filter will display in blue.
 
    .. figure:: img/filter-type.png
 
    .. figure:: img/filter-doc-type.png
 
-   * **Filter by Category** - When the metadata for a layer or a map has been tagged with a specific category, it will be reflected in the Categories panel. Your layers can be added to the following categories:
+   * **Filter by Category** - When the metadata for a layer or a map has been tagged with a specific category, it will be reflected in the Categories panel. Your layers can be added to the categories created in your settings:
 
     .. figure:: img/metadata-category.png
+
+    *This is an example of what the categories will look like. They will correspond with the available datasets from the homepage, but may differ among Exchange instances.*
 
     When filtering, click on a category to limit the results list to those layers tagged with that category title. Selecting another available category expands your results to include those layers in the results list. Click on the category a second time to remove it from the layer results list.
 

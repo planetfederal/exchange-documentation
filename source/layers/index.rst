@@ -157,13 +157,13 @@ Each layer has an information page associated to it, which has several options f
 
 1. To access Layer Information, click the :guilabel:`Data` link on the Exchange toolbar, and select **Layers** from the drop-down menu. This will open the Explore Layers page. Here you will see a list of all of the available layers. Each layer has a thumbnail image, as well as the title, author, and any associated keywords.
 
-2. Click the title of the layer you want to access.
+  .. figure:: img/layers-info.png
 
-  .. figure:: img/layer-info-preview.png
+2. Click the title of the layer you want to access.
 
 3. The information page for the layer will open.
 
-  .. figure:: img/layer-info.png
+  .. figure:: img/layer-info-page.png
 
 Using the map features
 ^^^^^^^^^^^^^^^^^^^^^^
@@ -190,7 +190,7 @@ Within the Map Information page, there are some map features that will help you 
 
 **Layers -** Select the Layers button to turn any of your layers off or on.
 
-  .. figure:: img/layers.png
+  .. figure:: img/layers-button.png
 
 Click the :guilabel:`Basemap` button to select a different basemap style.
 
@@ -239,6 +239,18 @@ Metadata is information about the layer, such as the owner, title, purpose or re
 
 3. Click the :guilabel:`Update` button at either the top or bottom of the page to save your changes.
 
+Create a custom thumbnail
+^^^^^^^^^^^^^^^^^^^^^^^^^
+Custom images related to your map can be created, and will display next to the map on the Explore Maps page.
+
+1. From the layer’s info page, click the :guilabel:`Metadata Detail` button.
+
+  .. figure:: img/metadata-detail.png
+
+2. Click the :guilabel:`Choose File` button to browse to the image.
+
+3. Click the :guilabel:`Change Image` button. The new image will display.
+
 Edit permissions
 ^^^^^^^^^^^^^^^^
 
@@ -261,7 +273,7 @@ Layers can have multiple associated styles. The Styles section tells you which s
 
 1. Click the :guilabel:`Edit Layer` button, and then **Manage** under Styles
 
-  .. figure:: img/manage-edit-styles.png
+  .. figure:: img/styles-manage.png
 
 2. Click the name of a style in the left-hand list to select it, and move it to the right-hand list.
 
