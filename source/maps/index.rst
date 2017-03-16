@@ -37,7 +37,7 @@ Create a new map from multiple layers
 
 #. Click the :guilabel:`Create a map` button to add all of the layers to a new map.
 
-   .. figure:: img/layers-cart.png
+   .. figure:: img/add-to-workspace.png
 
 *Remove a layer from the cart by clicking the* :guilabel:`X` *next to its name.*
 
@@ -58,7 +58,7 @@ Registry is a system for building, maintaining, and deploying a public registry 
 
 The Add Layers window will open. A list of available layers will display on the right, but you can refine your search to find specific information.
 
-   .. figure:: img/map-add-layers.png
+   .. figure:: img/add-layers.png
 
 2. **Using the map -** Zoom in or out to your area of interest. The list of available layers will change to show you what is within the map extent (minus any layers currently on your map).
 
@@ -335,6 +335,19 @@ This will set the map thumbnail with the base map and layers included.
 .. figure:: img/set-thumbnail.png
 
    *New Thumbnail*
+
+Create a custom thumbnail
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Custom images related to your map can be created, and will display next to the map on the Explore Maps page.
+
+1. From the map’s info page, click the :guilabel:`Metadata Detail` button.
+
+  .. figure:: img/metadata-detail.png
+
+2. Click the :guilabel:`Choose File` button to browse to the image.
+
+3. Click the :guilabel:`Change Image` button. The new image will display.
 
 Edit map permissions
 ^^^^^^^^^^^^^^^^^^^^
