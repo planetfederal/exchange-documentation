@@ -12,7 +12,6 @@ Uploading documents
 
 The following file types can be uploaded: **.doc, .docx, .gif, .jpg, .jpeg, .ods, .odt, .pdf, .png, .ppt, .pptx, .rar, .sid, .tif, .tiff, .txt, .xls, .xlsx, .xml, .zip, .gz, .qml**
 
-
   .. important:: Your Site Administrators may limit specific file types.
 
 2. Add a title to the document as you would like it to appear in Exchange. It could be the same as the file name, but it doesn't have to be.
@@ -43,9 +42,13 @@ Select the checkbox next to **Anyone** to leave viewing or downloading available
 
 Enter the document’s metadata on the next page. It’s recommended that you add an abstract at a minimum. Metadata helps other users know more about what you are uploading, and why.
 
-9. Fill out as much of the metadata as you can, or as needed.
+9. Fill out as much of the metadata as you can, or as needed, to include selecting a category.
 
-10. When you have finished entering metadata, click the :guilabel:`Update` button at the bottom of the page.
+10. **Optional:** To create a custom thumbnail for a document, the image URL is needed. Copy and paste the link into the Thumbnail URL box. Custom thumbnails can also be created in this manner for maps and layers.
+
+  .. figure:: img/document-thumbnail.png
+
+11. When you have finished entering metadata, click the :guilabel:`Update` button at the bottom of the page.
 
 The document will now be listed as an available result under the Explore Documents page.
 
