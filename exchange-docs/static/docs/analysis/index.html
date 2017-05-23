@@ -122,6 +122,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#filter-features-using-spatial-filters">Filter features using spatial filters</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#delete-a-spatial-filter">Delete a spatial filter</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#combine-filters-for-deeper-analysis">Combine filters for deeper analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#filter-features-by-timeline">Filter features by timeline</a></li>
 </ul>
 </li>
 </ul>
@@ -356,6 +357,45 @@
 <img alt="../_images/complex-filter.gif" src="../_images/complex-filter.gif" />
 </div>
 <p><em>Using the Department of Health layer from the previous example, we want to find out how many of the facilities within our 4000 meter radius are hospitals. We filtered all facility types (in the FacilityTO attribute) to those containing the word hospital. There were 254 results. Next, we applied the spatial filter. Our search helped us determine that out of 1458 features, four are hospitals within a 4000 meter radius of Lake Charles, LA.</em></p>
+</div></blockquote>
+</div>
+<div class="section" id="filter-features-by-timeline">
+<h2>Filter features by timeline<a class="headerlink" href="#filter-features-by-timeline" title="Permalink to this headline">¶</a></h2>
+<p>Features will often have a time attribute detailing the specific time an event has occurred, or when a feature has changed. This information can be displayed in two ways. Continuous time focuses on the changes of a singular feature, such as the path of a tornado, or the spread of disease. Temporal data also tracks multiple features in single locations over time, such as store openings, lightning strikes, or cell phones pinging cell towers. Temporal data can be displayed in Exchange either as a whole (the entire layer at once), or it can be played back, with the features populating the map as the time bar progresses.</p>
+<blockquote>
+<div><p><strong>Note:</strong> For this feature, the layer must have a date/time attribute. The time attribute is configured when the layer is uploaded. Please see the section on Configuring Time Attributes under Working with layers for more information.</p>
+<div class="figure" id="id3">
+<img alt="../_images/playback-options.png" src="../_images/playback-options.png" />
+<p class="caption"><span class="caption-text"><em>A layer with temporal data will have a toolbar with playback options at the bottom of the map.</em></span></p>
+</div>
+</div></blockquote>
+<ol class="arabic simple">
+<li>Add the layer with the temporal data to the map. The playback options will display at the bottom of your map.</li>
+<li>Click the <span class="guilabel">Play</span> button to begin the playback for the layer. The features will populate, and display the date/time along the timeline.</li>
+</ol>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/timeline-feature.gif" src="../_images/timeline-feature.gif" />
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li>Select additional playback options. Playback options include:</li>
+</ol>
+<blockquote>
+<div><strong>Play / Pause</strong> - Begins and stops the playback feature.</div></blockquote>
+<p>You can click and drag the time slider to display features at a specific time, or click on the red lines along the timeline. The spacing of the lines indicates the times on the layer.</p>
+<blockquote>
+<div><p><strong>Repeat</strong> - Loops the playback so it automatically begins once all of the temporal features have displayed.</p>
+<p><strong>Step Back / Step Forward</strong> - Displays the previous feature again or skips forward to the next feature.</p>
+</div></blockquote>
+<ol class="arabic simple" start="4">
+<li>Select the <span class="guilabel">Filter Features by Timeline</span> button to display all of the features at once, essentially turning off the playback.</li>
+</ol>
+<blockquote>
+<div><div class="figure" id="id4">
+<img alt="../_images/time-filter-off.gif" src="../_images/time-filter-off.gif" />
+<p class="caption"><span class="caption-text"><em>Filter features by timeline turns off the timeline feature for a layer.</em></span></p>
+</div>
 </div></blockquote>
 </div>
 </div>

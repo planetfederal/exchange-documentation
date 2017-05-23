@@ -171,3 +171,36 @@ Not only will all of your results fall completely within the area you selected f
   .. figure:: img/complex-filter.gif
 
   *Using the Department of Health layer from the previous example, we want to find out how many of the facilities within our 4000 meter radius are hospitals. We filtered all facility types (in the FacilityTO attribute) to those containing the word hospital. There were 254 results. Next, we applied the spatial filter. Our search helped us determine that out of 1458 features, four are hospitals within a 4000 meter radius of Lake Charles, LA.*
+
+Filter features by timeline
+---------------------------
+
+Features will often have a time attribute detailing the specific time an event has occurred, or when a feature has changed. This information can be displayed in two ways. Continuous time focuses on the changes of a singular feature, such as the path of a tornado, or the spread of disease. Temporal data also tracks multiple features in single locations over time, such as store openings, lightning strikes, or cell phones pinging cell towers. Temporal data can be displayed in Exchange either as a whole (the entire layer at once), or it can be played back, with the features populating the map as the time bar progresses.
+
+  **Note:** For this feature, the layer must have a date/time attribute. The time attribute is configured when the layer is uploaded. Please see the section on Configuring Time Attributes under Working with layers for more information.
+
+  .. figure:: img/playback-options.png
+
+    *A layer with temporal data will have a toolbar with playback options at the bottom of the map.*
+
+1. Add the layer with the temporal data to the map. The playback options will display at the bottom of your map.
+
+2. Click the :guilabel:`Play` button to begin the playback for the layer. The features will populate, and display the date/time along the timeline.
+
+  .. figure:: img/timeline-feature.gif
+
+3. Select additional playback options. Playback options include:
+
+  **Play / Pause** - Begins and stops the playback feature.
+
+You can click and drag the time slider to display features at a specific time, or click on the red lines along the timeline. The spacing of the lines indicates the times on the layer.
+
+  **Repeat** - Loops the playback so it automatically begins once all of the temporal features have displayed.
+
+  **Step Back / Step Forward** - Displays the previous feature again or skips forward to the next feature.
+
+4. Select the :guilabel:`Filter Features by Timeline` button to display all of the features at once, essentially turning off the playback.
+
+  .. figure:: img/time-filter-off.gif
+
+    *Filter features by timeline turns off the timeline feature for a layer.*
