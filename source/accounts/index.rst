@@ -42,7 +42,7 @@ Once your account is created in Exchange, you will be able to view other user ac
 
 1. Select the :guilabel:`About` link on the Exchange toolbar, and click **People** in the drop-down menu. You will see a list of thumbnails for all users registered on this system. Avatar images will display if the user has provided one.
 
-  .. figure:: img/about.png
+  .. figure:: img/about-menu.png
 
   .. figure:: img/exploring-people.png
 
@@ -63,8 +63,6 @@ View an existing group
 ^^^^^^^^^^^^^^^^^^^^^^
 
 1. Select the :guilabel:`About` link on the Exchange toolbar, and click **Groups** in the drop-down menu. A list of all existing groups within Exchange will display.
-
-  .. figure:: img/about.png
 
 2. Click on the name of a group to see the contact information, a list of members, and any additional details provided by the group managers.
 

@@ -1,10 +1,10 @@
 Analyzing data with Exchange
-=================
+============================
 
 Working within the attribute table
 ----------------------------------
 
-In previous sections, you learned how to add data to the attribute table, and how to edit the attributes of a feature on the map. Here we will discuss how to manipulate the data from within the attribute table to find exactly what you need.
+In the **Editing and Version Management** section, you learned how to add data to the attribute table, and how to edit the attributes of a feature on the map. Here we will discuss how to manipulate the data from within the attribute table to find exactly what you need.
 
 To open the **Table View**, click on a layer, and select the :guilabel:`Show Table` button.
 
@@ -183,7 +183,7 @@ Features will often have a time attribute detailing the specific time an event h
 
     *A layer with temporal data will have a toolbar with playback options at the bottom of the map.*
 
-1. Add the layer with the temporal data to the map. The playback options will display at the bottom of your map.
+1. Add a layer with the temporal data to the map. The playback options will display at the bottom of your map.
 
 2. Click the :guilabel:`Play` button to begin the playback for the layer. The features will populate, and display the date/time along the timeline.
 

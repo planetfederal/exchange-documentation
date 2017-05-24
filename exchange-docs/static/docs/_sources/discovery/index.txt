@@ -1,31 +1,31 @@
 Discovering available content
 =============================
 
-There are many different ways to find, filter and display data throughout Exchange. Whether you know exactly what you’re looking for, or just a general idea, Exchange helps you find exactly what you need.
+There are many different ways to find, filter and display data throughout Exchange. Whether you know exactly what you’re looking for, or have just a general idea, Exchange helps you find exactly what you need.
 
-**Exchange Search** - Using just one search, you can find all of the maps, layers or documents that are available to Exchange.
+**Exchange Search** - Using just one search, you can find all of the maps, layers or documents that are available to Exchange, as well as services added by other users.
 
 Exchange supports the registration of remote geospatial content using pycsw. This allows a user to organize spatial data in catalogs, but search on all of them at the same time. Once a remote layer is registered, you are able to retrieve metadata and a thumbnail by hitting different endpoints.
 
-What does this mean for you? You can now search for records which are stored outside of Exchange. This unified search makes finding data in Exchange faster and easier than ever.
+What does this mean for you? You can search for records which are stored outside of Exchange. This unified search makes finding data in Exchange faster and easier than ever.
 
-From the Boundless Exchange homepage, simply enter your search term in the Search for Data field. When you type in the search field, Exchange will list the layers, maps, and documents matching the text you’ve entered. Select a resource in the list to open its information page, or press Enter to open the list of results that are relevant to your search terms.
+From the Boundless Exchange homepage, simply enter your search term in the Search for Content field. When you type in the search field, Exchange will list the layers, maps, and documents matching the text you’ve entered. Select a resource in the list to open its information page, or press Enter to open the list of results that are relevant to your search terms.
 
-For example, if you type “te” in the search box, and press Enter, you will get a list of all of the results that contain the letter combination “te” in the title or abstract.
+For example, if you type “te” in the search box, and press Enter, you will get a list of all of the results that begin with the letter combination “te” in the title or abstract.
 
 **Note:** You can use multiple search terms, separated by ‘and’ or ‘or’, but this is a simple search, and does not require wildcards or Boolean operators.
 
-  .. figure:: img/bex-homepage.png
+  .. figure:: img/content-search.png
 
-**Discover the Available Datasets -** In Exchange, your data is separated into multiple categories based on the content of the information. Your Exchange administrator can configure your datasets and metadata based on your settings and requirements. When searching for data, selecting on one of these available datasets will help you find information faster by returning only those results meeting the category criteria.
+**Discover the Available Content -** In Exchange, your data is separated into multiple categories based on the content of the information. Your Exchange administrator can configure your datasets and metadata based on your settings and requirements. When searching for data, selecting on one of these available datasets will help you find information faster by returning only those results meeting the category criteria.
 
-  .. figure:: img/available-dataset.png
+  .. figure:: img/discover-content.png
 
-  *This is an example of what the available datasets could be for your Boundless Exchange instance. The specific datasets will depend on your settings and requirements. Hover over the individual categories to see what type of data is in each one.*
+  *This is an example of what the content datasets could be for your Boundless Exchange instance. The specific datasets will depend on your settings and requirements. Hover over the individual categories to see what type of data is in each one.*
 
-**Featured Datasets** - Featured Datasets are available on the Boundless Exchange homepage, and allow users to immediately see maps, layers or documents which have been highlighted as important. A dataset can be featured by editing its metadata, and ensuring the Featured checkbox is selected.
+**Featured Content** - Featured datasets are available on the Boundless Exchange homepage, and allow users to immediately see maps, layers or documents which have been highlighted as important. A dataset can be featured by editing its metadata, and ensuring the Featured checkbox is selected.
 
-  .. figure:: img/featured-datasets.png
+  .. figure:: img/featured-content.png
 
 **Browsing Layers** - To open the Layers page, click on the Data link on the Boundless Exchange toolbar, and select Layers in the drop-down menu. Here you can browse data that has been uploaded into Exchange. From the layers page, you can see how many times a layer has been viewed, and its average user rating. Selecting on the layer’s title will take you to the information page where you can download the layer, edit metadata, or view additional information about the layer.
 
