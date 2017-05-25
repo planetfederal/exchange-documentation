@@ -15,7 +15,7 @@ Create a new map
 
 2. Click **Create Map** in the drop-down menu.
 
-.. figure:: img/maps-pulldown.png
+.. figure:: img/maps-menu.png
 
 A new map environment will open, and you can begin working.
 
@@ -26,7 +26,7 @@ Maps can be created in the Explore Layers section, or from one or more layers in
 
 #. Select the :guilabel:`Data` link on the Boundless Exchange toolbar, and click **Layers** in the drop-down menu.
 
-.. figure:: img/data-drop-down.png
+.. figure:: img/data-pull-down.png
 
 2. Select the **Create a Map** link under the layer you'd like to add to the map. A new map will open with the layer as part of the map.
 
@@ -262,11 +262,11 @@ Managing Maps
 
 Every map has its own details page, which provides more information about the map, the metadata and who has what permissions for making edits. To get to the details page for a map, click on the map title.
 
-  .. figure:: img/manage-maps-details.png
+  .. figure:: img/manage-details.png
 
 The map details page provides a view of the map, along with information about the map. It also tells you which layers are used in the map.
 
-  .. figure:: img/map-details-page.png
+  .. figure:: img/map-info.png
 
 Download data layers
 ^^^^^^^^^^^^^^^^^^^^
@@ -328,11 +328,11 @@ By default the thumbnail images for maps will only have the vector layers. In or
 
 This will set the map thumbnail with the base map and layers included.
 
-.. figure:: img/manage-maps-details.png
-
-   *Old Thumbnail*
-
 .. figure:: img/set-thumbnail.png
+
+  *Old Thumbnail*
+
+.. figure:: img/manage-details.png
 
    *New Thumbnail*
 
@@ -341,13 +341,11 @@ Create a custom thumbnail
 
 Custom images related to your map can be created, and will display next to the map on the Explore Maps page.
 
-1. From the map’s info page, click the :guilabel:`Metadata Detail` button.
+1. From the map’s info page, click the :guilabel:`Edit Map` button.
 
-  .. figure:: img/metadata-detail.png
+  .. figure:: img/edit-map-bttn.png
 
-2. Click the :guilabel:`Choose File` button to browse to the image.
-
-3. Click the :guilabel:`Change Image` button. The new image will display.
+2. Click the :guilabel:`Set from File` button to browse to the image. Select the image you want to use, and verify it displays in the thumbnail section.
 
 Edit map permissions
 ^^^^^^^^^^^^^^^^^^^^
@@ -365,7 +363,7 @@ The map permissions determine which users can view or edit a map. The permission
 
 #. Establish the permissions for viewing, editing, and managing according to your needs.
 
-    .. figure:: img/set-resource-permissions.png
+    .. figure:: img/set-permissions.png
 
 #. Click the **Apply Changes** button to save changes.
 
@@ -382,4 +380,4 @@ You are able to remove a map from Exchange. It is important to note that this wi
 
 #. Click the :guilabel:`Yes` button to confirm.
 
-  .. figure:: img/remove-map-confirm.png
+  .. figure:: img/remove-map.png

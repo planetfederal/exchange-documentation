@@ -97,7 +97,7 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../layers/index.html">Working with Layers</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../layers/index.html#uploading-a-layer">Uploading a layer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../layers/index.html#upload-a-layer">Upload a layer</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../layers/index.html#layer-information">Layer information</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../layers/index.html#editing-metadata-and-managing-layers">Editing metadata and managing layers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../layers/index.html#downloading-data-from-a-layer">Downloading data from a layer</a></li>
@@ -124,6 +124,10 @@
 <li class="toctree-l2"><a class="reference internal" href="../analysis/index.html#delete-a-spatial-filter">Delete a spatial filter</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../analysis/index.html#combine-filters-for-deeper-analysis">Combine filters for deeper analysis</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../analysis/index.html#filter-features-by-timeline">Filter features by timeline</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../admin/index.html">Administration</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../admin/index.html#working-with-registry">Working with Registry</a></li>
 </ul>
 </li>
 </ul>
@@ -178,7 +182,7 @@
 <li>Click <strong>Create Map</strong> in the drop-down menu.</li>
 </ol>
 <div class="figure">
-<img alt="../_images/maps-pulldown.png" src="../_images/maps-pulldown.png" />
+<img alt="../_images/maps-menu.png" src="../_images/maps-menu.png" />
 </div>
 <p>A new map environment will open, and you can begin working.</p>
 </div>
@@ -189,7 +193,7 @@
 <li>Select the <span class="guilabel">Data</span> link on the Boundless Exchange toolbar, and click <strong>Layers</strong> in the drop-down menu.</li>
 </ol>
 <div class="figure">
-<img alt="../_images/data-drop-down2.png" src="../_images/data-drop-down2.png" />
+<img alt="../_images/data-pull-down.png" src="../_images/data-pull-down.png" />
 </div>
 <ol class="arabic simple" start="2">
 <li>Select the <strong>Create a Map</strong> link under the layer you&#8217;d like to add to the map. A new map will open with the layer as part of the map.</li>
@@ -488,13 +492,13 @@
 <p>Every map has its own details page, which provides more information about the map, the metadata and who has what permissions for making edits. To get to the details page for a map, click on the map title.</p>
 <blockquote>
 <div><div class="figure">
-<img alt="../_images/manage-maps-details.png" src="../_images/manage-maps-details.png" />
+<img alt="../_images/manage-details.png" src="../_images/manage-details.png" />
 </div>
 </div></blockquote>
 <p>The map details page provides a view of the map, along with information about the map. It also tells you which layers are used in the map.</p>
 <blockquote>
 <div><div class="figure">
-<img alt="../_images/map-details-page.png" src="../_images/map-details-page.png" />
+<img alt="../_images/map-info.png" src="../_images/map-info.png" />
 </div>
 </div></blockquote>
 <div class="section" id="download-data-layers">
@@ -566,11 +570,11 @@
 </ol>
 <p>This will set the map thumbnail with the base map and layers included.</p>
 <div class="figure" id="id1">
-<img alt="../_images/manage-maps-details.png" src="../_images/manage-maps-details.png" />
+<img alt="../_images/set-thumbnail.png" src="../_images/set-thumbnail.png" />
 <p class="caption"><span class="caption-text"><em>Old Thumbnail</em></span></p>
 </div>
 <div class="figure" id="id2">
-<img alt="../_images/set-thumbnail.png" src="../_images/set-thumbnail.png" />
+<img alt="../_images/manage-details.png" src="../_images/manage-details.png" />
 <p class="caption"><span class="caption-text"><em>New Thumbnail</em></span></p>
 </div>
 </div>
@@ -578,16 +582,15 @@
 <h3>Create a custom thumbnail<a class="headerlink" href="#create-a-custom-thumbnail" title="Permalink to this headline">¶</a></h3>
 <p>Custom images related to your map can be created, and will display next to the map on the Explore Maps page.</p>
 <ol class="arabic simple">
-<li>From the map’s info page, click the <span class="guilabel">Metadata Detail</span> button.</li>
+<li>From the map’s info page, click the <span class="guilabel">Edit Map</span> button.</li>
 </ol>
 <blockquote>
 <div><div class="figure">
-<img alt="../_images/metadata-detail1.png" src="../_images/metadata-detail1.png" />
+<img alt="../_images/edit-map-bttn.png" src="../_images/edit-map-bttn.png" />
 </div>
 </div></blockquote>
 <ol class="arabic simple" start="2">
-<li>Click the <span class="guilabel">Choose File</span> button to browse to the image.</li>
-<li>Click the <span class="guilabel">Change Image</span> button. The new image will display.</li>
+<li>Click the <span class="guilabel">Set from File</span> button to browse to the image. Select the image you want to use, and verify it displays in the thumbnail section.</li>
 </ol>
 </div>
 <div class="section" id="edit-map-permissions">
@@ -610,7 +613,7 @@
 <li><p class="first">Establish the permissions for viewing, editing, and managing according to your needs.</p>
 <blockquote>
 <div><div class="figure">
-<img alt="../_images/set-resource-permissions.png" src="../_images/set-resource-permissions.png" />
+<img alt="../_images/set-permissions1.png" src="../_images/set-permissions1.png" />
 </div>
 </div></blockquote>
 </li>
@@ -634,7 +637,7 @@
 </ol>
 <blockquote>
 <div><div class="figure">
-<img alt="../_images/remove-map-confirm.png" src="../_images/remove-map-confirm.png" />
+<img alt="../_images/remove-map.png" src="../_images/remove-map.png" />
 </div>
 </div></blockquote>
 </div>

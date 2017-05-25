@@ -97,7 +97,7 @@
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Working with Layers</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#uploading-a-layer">Uploading a layer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#upload-a-layer">Upload a layer</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#layer-information">Layer information</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#editing-metadata-and-managing-layers">Editing metadata and managing layers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#downloading-data-from-a-layer">Downloading data from a layer</a></li>
@@ -124,6 +124,10 @@
 <li class="toctree-l2"><a class="reference internal" href="../analysis/index.html#delete-a-spatial-filter">Delete a spatial filter</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../analysis/index.html#combine-filters-for-deeper-analysis">Combine filters for deeper analysis</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../analysis/index.html#filter-features-by-timeline">Filter features by timeline</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../admin/index.html">Administration</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../admin/index.html#working-with-registry">Working with Registry</a></li>
 </ul>
 </li>
 </ul>
@@ -210,62 +214,43 @@
 </ul>
 <p>All file types listed can be uploaded as a Zip Archive (.zip).</p>
 <p>Once the layers are uploaded, they will be available to other users in Exchange.</p>
-<div class="section" id="uploading-a-layer">
-<h2>Uploading a layer<a class="headerlink" href="#uploading-a-layer" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="upload-a-layer">
+<h2>Upload a layer<a class="headerlink" href="#upload-a-layer" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic">
 <li><p class="first">Click the <span class="guilabel">Data</span> link on the Exchange toolbar, and select <strong>Upload Layers</strong> in the drop-down menu to open the Upload Layers page.</p>
 <div class="figure">
-<img alt="../_images/data-drop-down1.png" src="../_images/data-drop-down1.png" />
+<img alt="../_images/data-menu1.png" src="../_images/data-menu1.png" />
 </div>
 </li>
-<li><p class="first">Click the <span class="guilabel">Choose Files</span> button. This will open a local file dialog. Navigate to your data folder and select the file(s) for the geospatial layer.</p>
+<li><p class="first">Click the <a href="#id1"><span class="problematic" id="id2">:guilable:`Choose Files`</span></a> button. This will open a local file dialog. Navigate to your data folder and select the file(s) for the geospatial layer..</p>
 </li>
 </ol>
-<p><strong>OR:</strong> Drag and drop your file(s) into the <strong>Drop files here</strong> area.</p>
 <p><strong>Note:</strong> Some file types require multiple files to create a complete layer. If you are uploading an ESRI Shapefile, be sure to include the .dbf, .prj, .shp, and .shx files.</p>
 <blockquote>
 <div><div class="figure">
-<img alt="../_images/upload-layer.png" src="../_images/upload-layer.png" />
+<img alt="../_images/choose-files.png" src="../_images/choose-files.png" />
 </div>
 </div></blockquote>
-<div class="section" id="setting-permissions">
-<h3>Setting permissions<a class="headerlink" href="#setting-permissions" title="Permalink to this headline">¶</a></h3>
-<p>The social design of Exchange allows users to coordinate on projects by sharing access to the same layers and maps; however, there may be instances when you want to limit who has what access to your layers. In Exchange, you can establish permissions for who can view, edit, and manage layers. Permissions can also be set for editing styles and metadata.</p>
-<p>By default, when a layer is uploaded, the permissions are set so that only the person who uploaded the layer has access to it. If you want other people to view, download, or edit the layer, you must change the permissions to allow it. Without changing permissions, other registered users will not see it listed as an available layer.</p>
 <ol class="arabic" start="3">
-<li><p class="first">On the right side of the page, under the <strong>Who can view</strong> and <strong>Who can download</strong> sections, add the name(s) of registered users or groups. This will ensure anonymous view access is disabled, and only those users specified are able to see your layers.</p>
-</li>
-<li><p class="first">In the same area, under <strong>Who can edit data for this layer?</strong>, add the users or groups who have permission to edit the layer.</p>
-<div class="figure">
-<img alt="../_images/permissions-edit.png" src="../_images/permissions-edit.png" />
-</div>
-</li>
-<li><p class="first">If you are loading raster data, click the <span class="guilabel">Upload files</span> button to import your files into the default spatial data store.</p>
-</li>
-</ol>
-<p><strong>Note:</strong> The following steps are optional. If you would like to add version control or temporal information to your <em>vector</em> data, please continue to the next step. You can add one or both options. You do not have to do either, and can click the <span class="guilabel">Upload files</span> button to complete your upload.</p>
-</div>
-<div class="section" id="version-management">
-<h3>Version management<a class="headerlink" href="#version-management" title="Permalink to this headline">¶</a></h3>
-<p>Even with established permissions, it’s still useful to know who has made edits to the data.  Exchange uses GeoGig repositories to maintain version control of your vector data. By uploading layers into either an existing repository, or a newly created one, you can see the history of changes and who made them. Please reference the <strong>Editing and Version Management</strong> section for further information.</p>
-<ol class="arabic simple" start="6">
-<li>Click the <strong>Import to Geogig</strong> checkbox.</li>
-<li>Select an existing repository from the drop down list, or create a new one by typing the name of a new repository.</li>
-</ol>
+<li><p class="first">Click on your file under <strong>Manage Your Data</strong>. Verify the file information is correct, and select <strong>Create Layer</strong>.</p>
 <blockquote>
 <div><div class="figure">
-<img alt="../_images/import-geogig.png" src="../_images/import-geogig.png" />
+<img alt="../_images/manage-data.png" src="../_images/manage-data.png" />
 </div>
 </div></blockquote>
-<ol class="arabic simple" start="8">
-<li>If you are <em>not</em> configuring time attributes, click the <span class="guilabel">Upload files</span> button to complete your upload.</li>
-</ol>
+</li>
+<li><p class="first">Verify the name of your layer is correct, and click the <span class="guilabel">Continue</span> button. A unique identifier will be added to the end of your layer.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/name-layer.png" src="../_images/name-layer.png" />
 </div>
+</div></blockquote>
+</li>
+</ol>
 <div class="section" id="configure-time-attributes">
 <h3>Configure time attributes<a class="headerlink" href="#configure-time-attributes" title="Permalink to this headline">¶</a></h3>
-<p>A feature can currently support one or two time attributes. If a single attribute is used, the feature is considered relevant at that single point in time. If two attributes are used, the second attribute represents the end of a valid period for the feature.</p>
-<blockquote>
-<div><p>A time attribute can be:</p>
+<p>A feature can currently support one or two time attributes. If a single attribute is used, the feature is considered relevant at that single point in time (start date). If two attributes are used, the second attribute represents the end of a valid time period for the feature.</p>
+<p>A time attribute can be:</p>
 <blockquote>
 <div><ul class="simple">
 <li>A date - 02/15/2016 11:23 AM</li>
@@ -273,9 +258,9 @@
 <li>A number representing a year - 2016, 1978</li>
 </ul>
 </div></blockquote>
-</div></blockquote>
-<p>For text attributes, you can specify a custom format, or use the “best guess” approach. When selecting the Convert Text Attribute option, you will select the attribute you want to use from the drop down list. Then, either select Best Guess or Custom from the list. Custom format will allow you to add the format that exists in the attribute table, and format it to something Exchange can handle.</p>
+<p>You will select the attribute you want to use from the drop down list. Exchange can handle the following formats:</p>
 <blockquote>
+<div><blockquote>
 <div><p>The most common formatting flags are:</p>
 <blockquote>
 <div><ul class="simple">
@@ -289,7 +274,7 @@
 </ul>
 </div></blockquote>
 </div></blockquote>
-<p>The &#8220;best guess&#8221; will handle date and optional time variants of ISO-8601. In terms of the formatting flags noted above, these are:</p>
+<p>Exchange will also handle date and optional time variants of ISO-8601. In terms of the formatting flags noted above, these are:</p>
 <blockquote>
 <div><p>yyyy-MM-dd&#8217;T&#8217;HH:mm:ss.SSS&#8217;Z&#8217;</p>
 <p>yyyy-MM-dd&#8217;T&#8217;HH:mm:sss&#8217;Z&#8217;</p>
@@ -300,29 +285,52 @@
 <p>yyyy-MM</p>
 <p>yyyy</p>
 </div></blockquote>
+</div></blockquote>
 <p><strong>Note:</strong> Single quotes represent a literal character.</p>
 <p>To remove ambiguity, repeat a code to represent the maximum number of digits. For example, yyyy or MM instead of yy or M.</p>
-<ol class="arabic simple" start="9">
-<li>Click the <strong>Configure Time</strong> checkbox, and select the <span class="guilabel">Upload files</span> button.</li>
-</ol>
-<p>You will be prompted to specify more information in order to complete your upload. Select the <strong>Continue</strong> link.</p>
-<ol class="arabic simple" start="10">
-<li>Complete the time attribute information, and click the <span class="guilabel">Next</span> button.</li>
-</ol>
+<ol class="arabic" start="5">
+<li><p class="first">Select a time attribute option for your layer.</p>
 <blockquote>
 <div><div class="figure">
-<img alt="../_images/time-options.png" src="../_images/time-options.png" />
+<img alt="../_images/time-attribute.png" src="../_images/time-attribute.png" />
 </div>
-</div></blockquote>
-<ol class="arabic simple" start="11">
-<li>Click the <span class="guilabel">Upload files</span> button to complete your upload. A <em>Performing Final GeoServer Config Step</em> dialog will display showing the progress of the upload.</li>
-</ol>
-<p>Once your layer has finished uploading, click the <span class="guilabel">Layer Info</span> button to view the information page.</p>
+<p><strong>Yes -</strong> If your layer has an attribute for time configuration, and you’d like to enable the playback feature, select Yes. Configure the time attribute by selecting which data field is the Start Date. Selecting an end date is optional.</p>
 <blockquote>
 <div><div class="figure">
-<img alt="../_images/successful-upload.png" src="../_images/successful-upload.png" />
+<img alt="../_images/time-config.png" src="../_images/time-config.png" />
 </div>
 </div></blockquote>
+<p><strong>No -</strong> Select No if your data does not include temporal information.</p>
+<p>Click the Continue button.</p>
+</div></blockquote>
+</li>
+</ol>
+</div>
+<div class="section" id="enable-version-history">
+<h3>Enable version history<a class="headerlink" href="#enable-version-history" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple" start="6">
+<li>Select whether or not you’d like to enable version history.</li>
+</ol>
+<p>Exchange uses GeoGig repositories to maintain version control of your vector data. By enabling version history, you can see the history of changes and who made them. Please reference the <strong>Editing and Version Management</strong> section for further information. Establishing permissions for your layers allows you to see edits made to the information through version history. Please see the below section on <strong>Setting Permissions</strong> for more information.</p>
+<p><strong>Note:</strong> Attempting to enable version history for a raster file will cause an error, notifying you to verify your configuration before you can proceed with the import.</p>
+<blockquote>
+<div><p>Select Yes or  No, followed by the Continue button.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/enable-history.png" src="../_images/enable-history.png" />
+</div>
+</div></blockquote>
+</div></blockquote>
+<ol class="arabic" start="7">
+<li><p class="first">Click the <span class="guilabel">Create my layer</span> button to begin the import. You will be notified that the importer has successfully finished. Select the hyperlink to view your layer, or click the <span class="guilabel">Close</span> button to continue importing data.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/create-layer.png" src="../_images/create-layer.png" />
+</div>
+</div></blockquote>
+</li>
+</ol>
+<p>Selecting <strong>View the layer</strong> will take you to the layer’s information page, where you can create permissions for viewing and editing your data.</p>
 </div>
 </div>
 <div class="section" id="layer-information">
@@ -458,32 +466,47 @@
 <h3>Create a custom thumbnail<a class="headerlink" href="#create-a-custom-thumbnail" title="Permalink to this headline">¶</a></h3>
 <p>Custom images related to your map can be created, and will display next to the map on the Explore Maps page.</p>
 <ol class="arabic simple">
-<li>From the layer’s info page, click the <span class="guilabel">Metadata Detail</span> button.</li>
+<li>From the layer’s info page, click the <span class="guilabel">Edit Layer</span> button.</li>
 </ol>
 <blockquote>
 <div><div class="figure">
-<img alt="../_images/metadata-detail.png" src="../_images/metadata-detail.png" />
+<img alt="../_images/edit-layer.png" src="../_images/edit-layer.png" />
 </div>
 </div></blockquote>
 <ol class="arabic simple" start="2">
-<li>Click the <span class="guilabel">Choose File</span> button to browse to the image.</li>
-<li>Click the <span class="guilabel">Change Image</span> button. The new image will display.</li>
-</ol>
-</div>
-<div class="section" id="edit-permissions">
-<h3>Edit permissions<a class="headerlink" href="#edit-permissions" title="Permalink to this headline">¶</a></h3>
-<p>Layer permissions are established when the layer is first imported, but the administrator/owner of the layer can adjust those permissions as needed. Permissions allow you to set who can view/download the data, who can make edits, and who can manage it.</p>
-<ol class="arabic simple">
-<li>Click the <span class="guilabel">Change Layer Permissions</span> button.</li>
-<li>Set permissions for the resource to give the required access to the layer. Permissions can be granted to Anyone for viewing and downloading, if the checkbox is selected. Edit permissions can be given to registered individuals or groups.</li>
+<li>Click the <span class="guilabel">Set from file</span> button to browse to the image.</li>
 </ol>
 <blockquote>
 <div><div class="figure">
-<img alt="../_images/resource-permissions.png" src="../_images/resource-permissions.png" />
+<img alt="../_images/thumbnail.png" src="../_images/thumbnail.png" />
 </div>
 </div></blockquote>
 <ol class="arabic simple" start="3">
-<li>Click the <span class="guilabel">Apply Changes</span> button to save.</li>
+<li>Browse to the image you’d like to use. Once added, the new image will display.</li>
+</ol>
+</div>
+<div class="section" id="set-permissions">
+<h3>Set permissions<a class="headerlink" href="#set-permissions" title="Permalink to this headline">¶</a></h3>
+<p>The social design of Exchange allows users to coordinate on projects by sharing access to the same layers and maps; however, there may be instances when you want to limit who has what access to your layers. In Exchange, you can establish permissions for who can view, edit, and manage layers. Permissions can also be set for editing styles and metadata.</p>
+<p>By default, when a layer is uploaded, the permissions are set so that only the person who uploaded the layer has access to it. If you want other people to view, download, or edit the layer, you must change the permissions to allow it. Without changing permissions, other registered users will not see it listed as an available layer.</p>
+<ol class="arabic simple">
+<li>Click the <span class="guilabel">Change Layer Permissions</span> button.</li>
+</ol>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/permissions1.png" src="../_images/permissions1.png" />
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li>Under the Who can view and Who can download sections, add the name(s) of registered users or groups. This will ensure anonymous view access is disabled, and only those users specified are able to see your layers. You can also leave the checkbox checked to allow all users access to the layer.</li>
+</ol>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/set-permissions.png" src="../_images/set-permissions.png" />
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li>You can make the same changes for who can edit, change metadata, styles and who can manage the data. Add the names of users or groups who have permission to edit the layer. Click the <span class="guilabel">Apply Changes</span> button when you are finished.</li>
 </ol>
 </div>
 <div class="section" id="manage-styles">

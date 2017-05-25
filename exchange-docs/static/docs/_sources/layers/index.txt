@@ -37,109 +37,102 @@ All file types listed can be uploaded as a Zip Archive (.zip).
 
 Once the layers are uploaded, they will be available to other users in Exchange.
 
-Uploading a layer
+Upload a layer
 -----------------
 
 1. Click the :guilabel:`Data` link on the Exchange toolbar, and select **Upload Layers** in the drop-down menu to open the Upload Layers page.
 
-   .. figure:: img/data-drop-down.png
+   .. figure:: img/data-menu.png
 
-2. Click the :guilabel:`Choose Files` button. This will open a local file dialog. Navigate to your data folder and select the file(s) for the geospatial layer.
-
-**OR:** Drag and drop your file(s) into the **Drop files here** area.
+2. Click the :guilable:`Choose Files` button. This will open a local file dialog. Navigate to your data folder and select the file(s) for the geospatial layer..
 
 **Note:** Some file types require multiple files to create a complete layer. If you are uploading an ESRI Shapefile, be sure to include the .dbf, .prj, .shp, and .shx files.
 
-   .. figure:: img/upload-layer.png
+    .. figure:: img/choose-files.png
 
-Setting permissions
-^^^^^^^^^^^^^^^^^^^
+3. Click on your file under **Manage Your Data**. Verify the file information is correct, and select **Create Layer**.
 
-The social design of Exchange allows users to coordinate on projects by sharing access to the same layers and maps; however, there may be instances when you want to limit who has what access to your layers. In Exchange, you can establish permissions for who can view, edit, and manage layers. Permissions can also be set for editing styles and metadata.
+    .. figure:: img/manage-data.png
 
-By default, when a layer is uploaded, the permissions are set so that only the person who uploaded the layer has access to it. If you want other people to view, download, or edit the layer, you must change the permissions to allow it. Without changing permissions, other registered users will not see it listed as an available layer.
+4. Verify the name of your layer is correct, and click the :guilabel:`Continue` button. A unique identifier will be added to the end of your layer.
 
-3. On the right side of the page, under the **Who can view** and **Who can download** sections, add the name(s) of registered users or groups. This will ensure anonymous view access is disabled, and only those users specified are able to see your layers.
-
-4. In the same area, under **Who can edit data for this layer?**, add the users or groups who have permission to edit the layer.
-
-   .. figure:: img/permissions-edit.png
-
-5. If you are loading raster data, click the :guilabel:`Upload files` button to import your files into the default spatial data store.
-
-**Note:** The following steps are optional. If you would like to add version control or temporal information to your *vector* data, please continue to the next step. You can add one or both options. You do not have to do either, and can click the :guilabel:`Upload files` button to complete your upload.
-
-Version management
-^^^^^^^^^^^^^^^^^^
-
-Even with established permissions, it’s still useful to know who has made edits to the data.  Exchange uses GeoGig repositories to maintain version control of your vector data. By uploading layers into either an existing repository, or a newly created one, you can see the history of changes and who made them. Please reference the **Editing and Version Management** section for further information.
-
-6. Click the **Import to Geogig** checkbox.
-
-7. Select an existing repository from the drop down list, or create a new one by typing the name of a new repository.
-
-  .. figure:: img/import-geogig.png
-
-8. If you are *not* configuring time attributes, click the :guilabel:`Upload files` button to complete your upload.
+    .. figure:: img/name-layer.png
 
 Configure time attributes
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-A feature can currently support one or two time attributes. If a single attribute is used, the feature is considered relevant at that single point in time. If two attributes are used, the second attribute represents the end of a valid period for the feature.
+A feature can currently support one or two time attributes. If a single attribute is used, the feature is considered relevant at that single point in time (start date). If two attributes are used, the second attribute represents the end of a valid time period for the feature.
 
-  A time attribute can be:
+A time attribute can be:
 
-    * A date - 02/15/2016 11:23 AM
-    * Text that can be converted to a timestamp - Wednesday December 7, 2016 9:47 AM
-    * A number representing a year - 2016, 1978
+        * A date - 02/15/2016 11:23 AM
+        * Text that can be converted to a timestamp - Wednesday December 7, 2016 9:47 AM
+        * A number representing a year - 2016, 1978
 
-For text attributes, you can specify a custom format, or use the “best guess” approach. When selecting the Convert Text Attribute option, you will select the attribute you want to use from the drop down list. Then, either select Best Guess or Custom from the list. Custom format will allow you to add the format that exists in the attribute table, and format it to something Exchange can handle.
+You will select the attribute you want to use from the drop down list. Exchange can handle the following formats:
 
-  The most common formatting flags are:
+      The most common formatting flags are:
 
-    * y - year
-    * M - month
-    * d - day of month
-    * h - hour of the day (0 - 23)
-    * k - hour of the day (1-24)
-    * m - minute in an hour
-    * s - seconds in a minute
+        * y - year
+        * M - month
+        * d - day of month
+        * h - hour of the day (0 - 23)
+        * k - hour of the day (1-24)
+        * m - minute in an hour
+        * s - seconds in a minute
 
-The "best guess" will handle date and optional time variants of ISO-8601. In terms of the formatting flags noted above, these are:
+    Exchange will also handle date and optional time variants of ISO-8601. In terms of the formatting flags noted above, these are:
 
-  yyyy-MM-dd'T'HH:mm:ss.SSS'Z'
+      yyyy-MM-dd'T'HH:mm:ss.SSS'Z'
 
-  yyyy-MM-dd'T'HH:mm:sss'Z'
+      yyyy-MM-dd'T'HH:mm:sss'Z'
 
-  yyyy-MM-dd'T'HH:mm:ss'Z'
+      yyyy-MM-dd'T'HH:mm:ss'Z'
 
-  yyyy-MM-dd'T'HH:mm'Z'
+      yyyy-MM-dd'T'HH:mm'Z'
 
-  yyyy-MM-dd'T'HH'Z'
+      yyyy-MM-dd'T'HH'Z'
 
-  yyyy-MM-dd
+      yyyy-MM-dd
 
-  yyyy-MM
+      yyyy-MM
 
-  yyyy
+      yyyy
 
 **Note:** Single quotes represent a literal character.
 
 To remove ambiguity, repeat a code to represent the maximum number of digits. For example, yyyy or MM instead of yy or M.
 
-9. Click the **Configure Time** checkbox, and select the :guilabel:`Upload files` button.
+5. Select a time attribute option for your layer.
 
-You will be prompted to specify more information in order to complete your upload. Select the **Continue** link.
+    .. figure:: img/time-attribute.png
 
-10. Complete the time attribute information, and click the :guilabel:`Next` button.
+    **Yes -** If your layer has an attribute for time configuration, and you’d like to enable the playback feature, select Yes. Configure the time attribute by selecting which data field is the Start Date. Selecting an end date is optional.
 
-  .. figure:: img/time-options.png
+      .. figure:: img/time-config.png
 
-11. Click the :guilabel:`Upload files` button to complete your upload. A *Performing Final GeoServer Config Step* dialog will display showing the progress of the upload.
+    **No -** Select No if your data does not include temporal information.
 
-Once your layer has finished uploading, click the :guilabel:`Layer Info` button to view the information page.
+    Click the Continue button.
 
-   .. figure:: img/successful-upload.png
+Enable version history
+^^^^^^^^^^^^^^^^^^^^^^
+
+6. Select whether or not you’d like to enable version history.
+
+Exchange uses GeoGig repositories to maintain version control of your vector data. By enabling version history, you can see the history of changes and who made them. Please reference the **Editing and Version Management** section for further information. Establishing permissions for your layers allows you to see edits made to the information through version history. Please see the below section on **Setting Permissions** for more information.
+
+**Note:** Attempting to enable version history for a raster file will cause an error, notifying you to verify your configuration before you can proceed with the import.
+
+  Select Yes or  No, followed by the Continue button.
+
+    .. figure:: img/enable-history.png
+
+7. Click the :guilabel:`Create my layer` button to begin the import. You will be notified that the importer has successfully finished. Select the hyperlink to view your layer, or click the :guilabel:`Close` button to continue importing data.
+
+    .. figure:: img/create-layer.png
+
+Selecting **View the layer** will take you to the layer’s information page, where you can create permissions for viewing and editing your data.
 
 Layer information
 -----------------
@@ -243,26 +236,32 @@ Create a custom thumbnail
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 Custom images related to your map can be created, and will display next to the map on the Explore Maps page.
 
-1. From the layer’s info page, click the :guilabel:`Metadata Detail` button.
+1. From the layer’s info page, click the :guilabel:`Edit Layer` button.
 
-  .. figure:: img/metadata-detail.png
+  .. figure:: img/edit-layer.png
 
-2. Click the :guilabel:`Choose File` button to browse to the image.
+2. Click the :guilabel:`Set from file` button to browse to the image.
 
-3. Click the :guilabel:`Change Image` button. The new image will display.
+  .. figure:: img/thumbnail.png
 
-Edit permissions
-^^^^^^^^^^^^^^^^
+3. Browse to the image you’d like to use. Once added, the new image will display.
 
-Layer permissions are established when the layer is first imported, but the administrator/owner of the layer can adjust those permissions as needed. Permissions allow you to set who can view/download the data, who can make edits, and who can manage it.
+Set permissions
+^^^^^^^^^^^^^^^^^^^
+
+The social design of Exchange allows users to coordinate on projects by sharing access to the same layers and maps; however, there may be instances when you want to limit who has what access to your layers. In Exchange, you can establish permissions for who can view, edit, and manage layers. Permissions can also be set for editing styles and metadata.
+
+By default, when a layer is uploaded, the permissions are set so that only the person who uploaded the layer has access to it. If you want other people to view, download, or edit the layer, you must change the permissions to allow it. Without changing permissions, other registered users will not see it listed as an available layer.
 
 1. Click the :guilabel:`Change Layer Permissions` button.
 
-2. Set permissions for the resource to give the required access to the layer. Permissions can be granted to Anyone for viewing and downloading, if the checkbox is selected. Edit permissions can be given to registered individuals or groups.
+  .. figure:: img/permissions.png
 
-  .. figure:: img/resource-permissions.png
+2. Under the Who can view and Who can download sections, add the name(s) of registered users or groups. This will ensure anonymous view access is disabled, and only those users specified are able to see your layers. You can also leave the checkbox checked to allow all users access to the layer.
 
-3. Click the :guilabel:`Apply Changes` button to save.
+  .. figure:: img/set-permissions.png
+
+3. You can make the same changes for who can edit, change metadata, styles and who can manage the data. Add the names of users or groups who have permission to edit the layer. Click the :guilabel:`Apply Changes` button when you are finished.
 
 Manage styles
 ^^^^^^^^^^^^^

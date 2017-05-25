@@ -8,7 +8,7 @@ Uploading documents
 
 1. Select the :guilabel:`Data` link on the Exchange toolbar, and click **Upload Document** in the drop-down menu.
 
-  .. figure:: img/data-drop-down.png
+  .. figure:: img/data-menu.png
 
 The following file types can be uploaded: **.doc, .docx, .gif, .jpg, .jpeg, .ods, .odt, .pdf, .png, .ppt, .pptx, .rar, .sid, .tif, .tiff, .txt, .xls, .xlsx, .xml, .zip, .gz, .qml**
 
@@ -59,9 +59,9 @@ Finding documents that other Exchange users have added is quick and easy. As lon
 
 1. Select the :guilabel:`Data` link on the Exchange toolbar, and click Documents in the drop-down menu.
 
-  .. figure:: img/data-drop-down.png
+  .. figure:: img/data-menu.png
 
-As you learned in the **Content Discovery** section, you can filter the document results to find the type of documents you need.
+As you learned in the **Discovering Content** section, you can filter the document results to find the type of documents you need.
 
 2. Click on the title of the document you want to view. This will open the document’s information page.
 
