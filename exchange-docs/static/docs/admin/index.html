@@ -191,70 +191,61 @@
 </div>
 </div></blockquote>
 <ol class="arabic simple" start="2">
-<li>Fill in the following information:</li>
+<li>A list of all items registered in Exchange will open, displaying their status as Complete, Unknown, Pending, or Error. Click the <span class="guilabel">Register a new Record</span> button in the top right corner to add a new record.</li>
 </ol>
-<p><strong>Source</strong> - This is the URL address for the endpoint you are trying to add.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/registered-items.png" src="../_images/registered-items.png" />
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li>Add the <strong>Service URL</strong> - This is the URL address for the endpoint you are trying to add.</li>
+</ol>
 <blockquote>
 <div><dl class="docutils">
 <dt><em>Geoserver Example:</em></dt>
 <dd><a class="reference external" href="https://mapstory.org/geoserver/geonode/wms">https://mapstory.org/geoserver/geonode/wms</a></dd>
 <dt><em>ESRI MapServer Example:</em></dt>
-<dd><a class="reference external" href="https://ngamaps.geointapps.org/arcgis/rest/services/Hurricane_Matthew/Bahamas_Latest_Damage_Assessments/MapServer">https://ngamaps.geointapps.org/arcgis/rest/services/Hurricane_Matthew/Bahamas_Latest_Damage_Assessments/MapServer</a></dd>
+<dd><p class="first"><a class="reference external" href="https://ngamaps.geointapps.org/arcgis/rest/services/Hurricane_Matthew/Bahamas_Latest_Damage_Assessments/MapServer">https://ngamaps.geointapps.org/arcgis/rest/services/Hurricane_Matthew/Bahamas_Latest_Damage_Assessments/MapServer</a></p>
+<p class="last"><strong>Note:</strong> Entering a MapServer url will auto-populate the available services such as WMSServer, WFSServer, FeatureServer.</p>
+</dd>
 <dt><em>ESRI MapServer WMSserver Example:</em></dt>
 <dd><a class="reference external" href="https://ngamaps.geointapps.org/arcgis/services/Hurricane_Matthew/Haiti_Latest_Assessments/MapServer/wmsserver">https://ngamaps.geointapps.org/arcgis/services/Hurricane_Matthew/Haiti_Latest_Assessments/MapServer/wmsserver</a></dd>
 <dt><em>ESRI ImageServer Example:</em></dt>
 <dd><a class="reference external" href="https://gis.ngdc.noaa.gov/arcgis/rest/services/bag_hillshades/ImageServer">https://gis.ngdc.noaa.gov/arcgis/rest/services/bag_hillshades/ImageServer</a></dd>
 </dl>
 </div></blockquote>
-<p><strong>Title</strong> - The title should be related to the data, but should also be unique enough to find when performing a search for data.</p>
-<p><strong>Date Last Modified</strong> -  This field is filled in by default, but can be edited to match what is true for the data.</p>
-<p><strong>Agency/Creator</strong> - Where did the information come from?</p>
-<p><strong>Type</strong> - The type field denotes what kind of data is being added.</p>
-<p>For the services listed below, you would use the following information:</p>
+<ol class="arabic simple" start="4">
+<li><strong>Title</strong> - This field should populate automatically. The title should be related to the data, but should also be unique enough to find when performing a search. You can change the title if you don’t want what auto-filled.</li>
+<li><strong>Layer Identifier</strong> - For ESRI MapServer Services, this field will be populated automatically, however, for any other service type, the name of the layer is required for this field.</li>
+<li><strong>Category</strong> - Select a category from the list that best describes your data.</li>
+<li><strong>Abstract</strong> - The abstract should provide a brief description of the data being added.</li>
+<li><strong>Agency</strong> - Where did the information come from? This should also auto-populate. If Exchange is unable to detect who the data belongs to from the endpoint, add  the creator/agency information.</li>
+<li><strong>Contact Email</strong> - Please add your email address here.</li>
+<li><strong>Contact Phone</strong> - Please add a contact phone number here.</li>
+<li><strong>Gold</strong> -  Select this checkbox if the data is NGA-approved content.</li>
+</ol>
 <blockquote>
-<div><ul class="simple">
-<li>ESRI map server - ESRI:ArcGIS:MapServer</li>
-<li>ESRI image server - ESRI:ArcGIS:ImageServer</li>
-<li>WMS Services - dataset</li>
-</ul>
-</div></blockquote>
-<p><strong>Alternative</strong> - An ESRI service will number each of the layers (starting with zero), and when adding data from a service, the alternative field points to the id individual layer to be pulled from that server. For GeoServer OGC services, the value for the Alternative field can be pulled from the layer name which is a string that does not contain spaces.</p>
-<blockquote>
-<div><div class="figure" id="id1">
-<img alt="../_images/map-server.png" src="../_images/map-server.png" />
-<p class="caption"><span class="caption-text"><em>List of layers with ID’s for the MapServer. The layer ID for Bridge Out is ‘1’ as indicated by the value in the parenthesis.</em></span></p>
-</div>
-<div class="figure" id="id2">
-<img alt="../_images/geoserver.png" src="../_images/geoserver.png" />
-<p class="caption"><span class="caption-text"><em>Geoserver typically follows the format of &lt;workspace&gt;:&lt;name&gt;. The &lt;name&gt; portion is all that’s needed for the Alternative field.</em></span></p>
+<div><div class="figure">
+<img alt="../_images/register-record.png" src="../_images/register-record.png" />
 </div>
 </div></blockquote>
-<p><strong>Abstract</strong> - The abstract should provide a brief description of the data being added.</p>
-<p><strong>Format</strong> - This can vary depending on the kind of data being added. When registering a WMS service, format must be set to OGC:WMS.</p>
-<p><strong>Bounding Box coordinates - Upper Corner:</strong> The bounding box defaults to an area that will cover what is being added. It is recommended to leave the default settings (85.0 180, -85.0 -180) unless you have specific requirements.</p>
-<p><strong>Bounding Box- Lower Corner:</strong> Same as above.</p>
-<p><strong>Contact Email</strong> - Please add your email address here.</p>
-<p><strong>Contact Phone</strong> - Please add a contact phone number here.</p>
-<p><strong>Gold</strong> - Select this checkbox if the data is NGA-approved content.</p>
-<p><strong>Category</strong> – Select a category from the drop-down menu.</p>
+<ol class="arabic simple" start="12">
+<li>Additional services types can be added by selecting the type from the drop down menu, and adding the URL. Service types discovered from the service URL are also listed at the top of the form.</li>
+</ol>
 <blockquote>
-<div><div class="figure" id="id3">
-<img alt="../_images/wms-record.png" src="../_images/wms-record.png" />
-<p class="caption"><span class="caption-text"><em>This is an example of a record for adding a WMS.</em></span></p>
-</div>
-<div class="figure" id="id4">
-<img alt="../_images/esri-mapserver.png" src="../_images/esri-mapserver.png" />
-<p class="caption"><span class="caption-text"><em>This is an example of a record for adding an ESRI Map Service.</em></span></p>
+<div><div class="figure">
+<img alt="../_images/add-types.png" src="../_images/add-types.png" />
 </div>
 </div></blockquote>
-<ol class="arabic simple" start="3">
+<ol class="arabic simple" start="13">
 <li>Click the <span class="guilabel">Submit Record</span> button to nominate record.</li>
 </ol>
 <p>For additional examples of records that have been successfully added in Exchange, please check out: <a class="reference external" href="https://gist.github.com/davisc/219f75f42bc2a620319070a04c4fa98d">CSW Examples</a></p>
 </div>
 <div class="section" id="verify-the-record">
 <h3>Verify the record<a class="headerlink" href="#verify-the-record" title="Permalink to this headline">¶</a></h3>
-<p>To verify the record was successfully added to Registry you can search for it using the Exchange search field on the front page or use the Add Layer function from your map.</p>
+<p>Once you submit your record, you will be directed to the Registered Items page. To verify the record status in Registry, you can search for it using the Exchange search field at the top of the page, or use the Add Layer function from your map.</p>
 </div>
 </div>
 </div>
