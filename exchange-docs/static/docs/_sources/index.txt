@@ -21,3 +21,4 @@ User Guide
    editing/index
    analysis/index
    admin/index
+   support/index

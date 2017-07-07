@@ -39,6 +39,7 @@
     <!-- Removing search because it doesn't work well
     -->
     <link rel="top" title="Boundless Exchange 1.2.0b2 documentation" href="../index.html"/>
+        <link rel="next" title="Exchange Support" href="../support/index.html"/>
         <link rel="prev" title="Analyzing data with Exchange" href="../analysis/index.html"/> 
 
   
@@ -126,10 +127,17 @@
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Administration</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#django-administration">Django Administration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#accounts">Accounts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#actstream-activity-stream">Actstream (Activity Stream)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#audit-trail">Audit trail</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#announcements">Announcements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#avatars">Avatars</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#working-with-registry">Working with Registry</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#csw-record-administration">CSW Record Administration</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../support/index.html">Exchange Support</a></li>
 </ul>
 
         
@@ -158,6 +166,8 @@
   
   <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
     
+      <a href="../support/index.html" class="btn btn-neutral float-right" title="Exchange Support">Next <span class="fa fa-arrow-circle-right"></span></a>
+    
     
       <a href="../analysis/index.html" class="btn btn-neutral" title="Analyzing data with Exchange"><span class="fa fa-arrow-circle-left"></span> Previous</a>
     
@@ -169,6 +179,279 @@
         	     
   <div class="section" id="administration">
 <h1>Administration<a class="headerlink" href="#administration" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="django-administration">
+<h2>Django Administration<a class="headerlink" href="#django-administration" title="Permalink to this headline">¶</a></h2>
+<p>Exchange users with administrator privileges are able to maintain site setting through the Django Site Administration page. Here you can manage user accounts, content, and system settings.</p>
+<p>To access the Django administration site, log in to Exchange using your administrator credentials, and select Admin in the profile drop down menu. You will be directed to the Django administration site.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/profile.png" src="../_images/profile.png" />
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="accounts">
+<h2>Accounts<a class="headerlink" href="#accounts" title="Permalink to this headline">¶</a></h2>
+<p>This section covers how to add, modify and delete Exchange user accounts. All of the options in this section are available through the Account menu on the Django Site administration page.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/account-menu.png" src="../_images/account-menu.png" />
+</div>
+</div></blockquote>
+<div class="section" id="account-creation">
+<h3>Account creation<a class="headerlink" href="#account-creation" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>To create an Exchange user account, select the Add link next to Accounts.</li>
+<li>Click the green plus (+) button next to the User list to add another user.</li>
+</ol>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/add-account.png" src="../_images/add-account.png" />
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li>Create a username and password that will be remembered by the user. Confirm the password and select the Save button.</li>
+<li>Select the timezone and primary language for the user from the drop down menus.</li>
+<li>Click the <span class="guilabel">Save</span> button to save the account.</li>
+</ol>
+</div>
+<div class="section" id="modify-an-existing-account">
+<h3>Modify an existing account<a class="headerlink" href="#modify-an-existing-account" title="Permalink to this headline">¶</a></h3>
+<p>Changing a user’s password, setting permissions, and editing their email address can all be completed in the Account section.</p>
+<div class="section" id="edit-user-information">
+<h4>Edit user information<a class="headerlink" href="#edit-user-information" title="Permalink to this headline">¶</a></h4>
+<ol class="arabic simple">
+<li>Select Accounts in the Account menu, and click on the username whose information you’d like to modify.</li>
+<li>Click the pencil icon next to the username, and make the changes to the account. When you are finished, click the <span class="guilabel">Save</span> button to save your changes.</li>
+</ol>
+<p>Within the Change User screen, you can update the following user information:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Personal info - The basics</li>
+<li>User permissions - Designates what type of account the user has, groups the user belongs to</li>
+<li>Important dates</li>
+<li>Extended profile information - Organization, location, biography</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="edit-an-email-address">
+<h4>Edit an email address<a class="headerlink" href="#edit-an-email-address" title="Permalink to this headline">¶</a></h4>
+<ol class="arabic simple">
+<li>Select Email addresses in the Account menu, and click on the user name whose email you’d like to modify.</li>
+<li>Update the email address, and check the box to display if the email has been verified, and if this is the user’s primary email address.</li>
+</ol>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/edit-email.png" src="../_images/edit-email.png" />
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li>Click the save button when you are finished, or continue modifying any additional accounts.</li>
+</ol>
+</div>
+<div class="section" id="delete-a-user-account">
+<h4>Delete a user account<a class="headerlink" href="#delete-a-user-account" title="Permalink to this headline">¶</a></h4>
+<ol class="arabic simple">
+<li>Select Accounts in the Account menu, and check the box next to the user account(s) you want to delete.</li>
+<li>Select Delete selected accounts in the Action menu, and click the Go button.</li>
+</ol>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/delete-account.png" src="../_images/delete-account.png" />
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li>Click the Yes, I’m sure button to verify your selection. You will be notified that the account was successfully deleted.</li>
+</ol>
+</div>
+</div>
+<div class="section" id="signup-codes">
+<h3>Signup codes<a class="headerlink" href="#signup-codes" title="Permalink to this headline">¶</a></h3>
+<p>As an administrator, you are able to invite individuals to try Exchange. When you do this, a signup code is generated. This signup code is used to track trial users in Exchange. From this site, you can modify when the signup code expires, the number of times it can be used, or delete the code itself.</p>
+<div class="section" id="invite-users">
+<h4>Invite users<a class="headerlink" href="#invite-users" title="Permalink to this headline">¶</a></h4>
+<ol class="arabic simple">
+<li>Select Profile in your profile drop down menu, and click Invite User in the lower right corner.</li>
+</ol>
+<p><strong>Note:</strong> While this is not done in Django, you must have the required privileges to invite users.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/invite-user.png" src="../_images/invite-user.png" />
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li>Type the email address of the person you’d like to invite, and provide an easy to remember username.</li>
+<li>Click the <span class="guilabel">Invite User</span> button when you are finished.</li>
+</ol>
+<p>The guest will receive an email notifying them that they have been invited to sign up for an Exchange account.</p>
+</div>
+<div class="section" id="id1">
+<h4>Signup codes<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h4>
+<p>You will need to return to the Django administration site to modify signup codes.</p>
+<ol class="arabic simple">
+<li>Select Signup Codes in the Account menu, and click on the code you’d like to view.</li>
+<li>Make all necessary changes, and click the Save button. From this screen, you are able to:</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>Modify the number of times the code can be used</li>
+<li>Set an expiration date for the invitation</li>
+<li>Add the individual who sent the invitation</li>
+<li>Add any notes relevant to the invitation or its recipient</li>
+</ul>
+<div class="figure">
+<img alt="../_images/change-code.png" src="../_images/change-code.png" />
+</div>
+</div></blockquote>
+<p>To delete the signup code, click the <span class="guilabel">Delete</span> button, and select <strong>Yes, I’m sure</strong> to verify your choice.</p>
+</div>
+</div>
+</div>
+<div class="section" id="actstream-activity-stream">
+<h2>Actstream (Activity Stream)<a class="headerlink" href="#actstream-activity-stream" title="Permalink to this headline">¶</a></h2>
+<p>Exchange uses Django Activity Stream, which creates a list of activities generated by the actions on your site, and allows you to quickly visualize who is performing what actions. An action is a description of an action that was performed (Verb) at some instance in time by some Actor on some optional Target that results in an Action Object getting created/updated/deleted.</p>
+<p>Action events are categorized by four main components.</p>
+<blockquote>
+<div><ul class="simple">
+<li>Actor - The user who performed the activity.</li>
+<li>Verb - The verb phrase that identifies the action of the activity, such as created or deleted.</li>
+<li>Action Object - The object linked to the action itself, such as a layer or a map.</li>
+<li>Target - The object to which the activity was performed. Currently, Exchange is not using this component.</li>
+</ul>
+</div></blockquote>
+<p>For example: admin (actor) uploaded (verb) a layer (object) 12 hours ago.</p>
+<ol class="arabic simple">
+<li>Click Actions in the Actstream menu on the Django site administration page.</li>
+</ol>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/actstream.png" src="../_images/actstream.png" />
+</div>
+</div></blockquote>
+<p>All of the actions that have taken place within Exchange will be listed, along with who performed it (actor), and what they did (verb). The target and whether or not the action is public is also listed, but they are not used at this time.</p>
+<ol class="arabic simple" start="2">
+<li>Click on an action to view more details.</li>
+</ol>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/actions.png" src="../_images/actions.png" />
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="audit-trail">
+<h2>Audit trail<a class="headerlink" href="#audit-trail" title="Permalink to this headline">¶</a></h2>
+<p>The audit trail is intended to display all of the activities that happen within Exchange. It tracks who performed what actions, and when. Included is detailed information about the user, such as their IP, email address, full name and their user status.</p>
+<p>To view the audit trail, click Audit events in the Audit trail menu on the Django site administration page.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/audit-trail.png" src="../_images/audit-trail.png" />
+</div>
+</div></blockquote>
+<p>A list of all of the events that have occurred within Exchange will display. From here, administrators can filter everything for specific types of events, users, etc. using the search field. Simply type a term in the textbox, and click the Search button.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/audit-search.png" src="../_images/audit-search.png" />
+</div>
+</div></blockquote>
+<p>Audit trail is very similar to the Activity stream feature, but the primary difference is that with Audit trail, you are able to see when an event occurred, and from where. Activity stream tells you exactly what action has taken place.</p>
+</div>
+<div class="section" id="announcements">
+<h2>Announcements<a class="headerlink" href="#announcements" title="Permalink to this headline">¶</a></h2>
+<p>Administrators can create short messages for all Exchange users that will be placed at the top of their screen. Their importance level, determined by the originator, can range from general to critical, and can easily be scheduled for publication.</p>
+<div class="section" id="create-an-announcement">
+<h3>Create an announcement<a class="headerlink" href="#create-an-announcement" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>Click the green plus (+) Add button next to Announcements.</li>
+</ol>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/announcements.png" src="../_images/announcements.png" />
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li>Provide a title for your message, and select the level of importance for your message from the Level list. Your options are General, Warning and Critical, and should be determined by the nature of the announcement.</li>
+<li>Type your full message in the Content textbox.</li>
+<li>Select the checkboxes to determine whether or not you’d like your announcement to be seen site-wide, and/or for Exchange members only.</li>
+</ol>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/announcement-top.png" src="../_images/announcement-top.png" />
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="5">
+<li>Use the publish start and end options to create a display time limit for your message, and select a dismissal option from the menu.</li>
+</ol>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/announcement-bottom.png" src="../_images/announcement-bottom.png" />
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="6">
+<li>Click the <span class="guilabel">Save</span> button to create your announcement. To verify your announcement is correct, click the View on site button in the upper right corner.</li>
+</ol>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/msg-preview.png" src="../_images/msg-preview.png" />
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="delete-an-announcement">
+<h3>Delete an announcement<a class="headerlink" href="#delete-an-announcement" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>When you are ready to delete your announcement, click Announcements under the Announcements menu on the Django Site administration page.</li>
+<li>Check the box next to the announcement(s) you’d like to delete, and select <strong>Delete Selected Announcements</strong> in the Action menu, followed by the <span class="guilabel">Go</span> button.</li>
+</ol>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/delete-announcement.png" src="../_images/delete-announcement.png" />
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li>Click the <span class="guilabel">Yes, I’m sure</span> button to verify your selection. You will be notified that your announcement was successfully deleted.</li>
+</ol>
+</div>
+</div>
+<div class="section" id="avatars">
+<h2>Avatars<a class="headerlink" href="#avatars" title="Permalink to this headline">¶</a></h2>
+<p>Administrators can create, delete or manage avatars for users through the Django administration site. Valid image files are accepted (jpg, jpeg, png, tif, etc).</p>
+<div class="section" id="add-a-new-avatar">
+<h3>Add a new avatar<a class="headerlink" href="#add-a-new-avatar" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>Click the green (+)  Add button in the Avatar menu on the Django administration page.</li>
+</ol>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/avatar.png" src="../_images/avatar.png" />
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li>Select a user from the list, and determine if this will be the main image for the account by clicking the Primary checkbox.</li>
+<li>Browse to the avatar image by selecting the <span class="guilabel">Choose File</span> button. Once the file name displays, click the Save button. You will be notified that the avatar was added successfully.</li>
+</ol>
+</div>
+<div class="section" id="change-an-existing-avatar">
+<h3>Change an existing avatar<a class="headerlink" href="#change-an-existing-avatar" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>Select Avatars from the Avatar menu on the Django administration page, and click the name of the account whose avatar will change.</li>
+<li>Click the <span class="guilabel">Choose File</span> button to select a new avatar image, followed by the <span class="guilabel">Save</span> button. You will be notified that the avatar was successfully changed.</li>
+</ol>
+</div>
+<div class="section" id="delete-an-avatar">
+<h3>Delete an avatar<a class="headerlink" href="#delete-an-avatar" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>Select Avatars from the Avatar menu on the Django administration page, and click the checkbox next to the name of the avatar to be deleted.</li>
+<li>Select Delete Selected Avatar from the Action menu, and click the Go button.</li>
+</ol>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/delete-avatar.png" src="../_images/delete-avatar.png" />
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li>Verify your selection by clicking the Yes, I’m sure button.</li>
+</ol>
+<p>You will be notified that the avatar was successfully deleted.</p>
+</div>
+</div>
 <div class="section" id="working-with-registry">
 <h2>Working with Registry<a class="headerlink" href="#working-with-registry" title="Permalink to this headline">¶</a></h2>
 <p>In Exchange, there are two primary types of data that can be added to Registry, a service or a single layer. A service is two or more layers being added to the map at the same time, whereas a single layer is just an individual layer. The form is the same for either one, but you will need to have a relatively good understanding of your data in order to successfully insert your new record.</p>
@@ -230,7 +513,7 @@
 <p><strong>Contact Phone</strong> - Please add a contact phone number here.</p>
 <p><strong>Gold</strong> -  Select this checkbox if the data is NGA-approved content.</p>
 <blockquote>
-<div><div class="figure" id="id1">
+<div><div class="figure" id="id2">
 <img alt="../_images/register-record.png" src="../_images/register-record.png" />
 <p class="caption"><span class="caption-text">This is an <em>example</em> of a completed new record form.</span></p>
 </div>
@@ -288,11 +571,11 @@
 </ul>
 <p><strong>Alternative -</strong> An ESRI service will number each of the layers (starting with zero), and when adding data from a service, the alternative field points to the id individual layer to be pulled from that server. For GeoServer OGC services, the value for the Alternative field can be pulled from the layer name which is a string that does not contain spaces. If you leave the space blank, all of the associated layers will be added.</p>
 <blockquote>
-<div><div class="figure" id="id2">
+<div><div class="figure" id="id3">
 <img alt="../_images/mapserver.png" src="../_images/mapserver.png" />
 <p class="caption"><span class="caption-text">List of layers with ID’s for the MapServer. The layer ID for Bridge Out is ‘1’ as indicated by the value in the parenthesis.</span></p>
 </div>
-<div class="figure" id="id3">
+<div class="figure" id="id4">
 <img alt="../_images/geoserver.png" src="../_images/geoserver.png" />
 <p class="caption"><span class="caption-text">Geoserver typically follows the format of &lt;workspace&gt;:&lt;name&gt;. The &lt;name&gt; portion is all that’s needed for the Alternative field.</span></p>
 </div>
@@ -358,6 +641,8 @@
   
     
       <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        
+          <a href="../support/index.html" class="btn btn-neutral float-right" title="Exchange Support">Next <span class="fa fa-arrow-circle-right"></span></a>
         
         
           <a href="../analysis/index.html" class="btn btn-neutral" title="Analyzing data with Exchange"><span class="fa fa-arrow-circle-left"></span> Previous</a>

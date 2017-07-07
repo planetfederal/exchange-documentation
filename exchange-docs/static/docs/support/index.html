@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Discovering available content &mdash; Boundless Exchange 1.2.0b2 documentation</title>
+  <title>Exchange Support &mdash; Boundless Exchange 1.2.0b2 documentation</title>
   
 
   
@@ -39,8 +39,7 @@
     <!-- Removing search because it doesn't work well
     -->
     <link rel="top" title="Boundless Exchange 1.2.0b2 documentation" href="../index.html"/>
-        <link rel="next" title="Working with Documents" href="../documents/index.html"/>
-        <link rel="prev" title="Accounts, Users and Groups" href="../accounts/index.html"/> 
+        <link rel="prev" title="Administration" href="../admin/index.html"/> 
 
   
   
@@ -90,7 +89,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../accounts/index.html#managing-groups">Managing groups</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Discovering available content</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../discovery/index.html">Discovering available content</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../documents/index.html">Working with Documents</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../documents/index.html#uploading-documents">Uploading documents</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../documents/index.html#browsing-documents">Browsing documents</a></li>
@@ -137,7 +136,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../admin/index.html#csw-record-administration">CSW Record Administration</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../support/index.html">Exchange Support</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Exchange Support</a></li>
 </ul>
 
         
@@ -161,15 +160,13 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html"> Boundless Exchange 1.2.0b2 documentation </a> &raquo;</li>
     
-    <li>Discovering available content</li>
+    <li>Exchange Support</li>
   </ul>
   
   <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
     
-      <a href="../documents/index.html" class="btn btn-neutral float-right" title="Working with Documents">Next <span class="fa fa-arrow-circle-right"></span></a>
     
-    
-      <a href="../accounts/index.html" class="btn btn-neutral" title="Accounts, Users and Groups"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      <a href="../admin/index.html" class="btn btn-neutral" title="Administration"><span class="fa fa-arrow-circle-left"></span> Previous</a>
     
   </div>
   <hr/>
@@ -177,98 +174,11 @@
           <div role="main">
           
         	     
-  <div class="section" id="discovering-available-content">
-<h1>Discovering available content<a class="headerlink" href="#discovering-available-content" title="Permalink to this headline">¶</a></h1>
-<p>There are many different ways to find, filter and display data throughout Exchange. Whether you know exactly what you’re looking for, or have just a general idea, Exchange helps you find exactly what you need.</p>
-<p><strong>Exchange Search</strong> - Using just one search, you can find all of the maps, layers or documents that are available to Exchange, as well as services added by other users.</p>
-<p>Exchange supports the registration of remote geospatial content using pycsw. This allows a user to organize spatial data in catalogs, but search on all of them at the same time. Once a remote layer is registered, you are able to retrieve metadata and a thumbnail by hitting different endpoints.</p>
-<p>What does this mean for you? You can search for records which are stored outside of Exchange. This unified search makes finding data in Exchange faster and easier than ever.</p>
-<p>From the Boundless Exchange homepage, simply enter your search term in the Search for Content field. When you type in the search field, Exchange will list the layers, maps, and documents matching the text you’ve entered. Select a resource in the list to open its information page, or press Enter to open the list of results that are relevant to your search terms.</p>
-<p>For example, if you type “te” in the search box, and press Enter, you will get a list of all of the results that begin with the letter combination “te” in the title or abstract.</p>
-<p><strong>Note:</strong> You can use multiple search terms, separated by ‘and’ or ‘or’, but this is a simple search, and does not require wildcards or Boolean operators.</p>
-<blockquote>
-<div><div class="figure">
-<img alt="../_images/content-search.png" src="../_images/content-search.png" />
-</div>
-</div></blockquote>
-<p><strong>Discover the Available Content -</strong> In Exchange, your data is separated into multiple categories based on the content of the information. Your Exchange administrator can configure your datasets and metadata based on your settings and requirements. When searching for data, selecting on one of these available datasets will help you find information faster by returning only those results meeting the category criteria.</p>
-<blockquote>
-<div><div class="figure">
-<img alt="../_images/discover-content.png" src="../_images/discover-content.png" />
-</div>
-<p><em>This is an example of what the content datasets could be for your Boundless Exchange instance. The specific datasets will depend on your settings and requirements. Hover over the individual categories to see what type of data is in each one.</em></p>
-</div></blockquote>
-<p><strong>Featured Content</strong> - Featured datasets are available on the Boundless Exchange homepage, and allow users to immediately see maps, layers or documents which have been highlighted as important. A dataset can be featured by editing its metadata, and ensuring the Featured checkbox is selected.</p>
-<blockquote>
-<div><div class="figure">
-<img alt="../_images/featured-content.png" src="../_images/featured-content.png" />
-</div>
-</div></blockquote>
-<p><strong>Browsing Layers</strong> - To open the Layers page, click on the Data link on the Boundless Exchange toolbar, and select Layers in the drop-down menu. Here you can browse data that has been uploaded into Exchange. From the layers page, you can see how many times a layer has been viewed, and its average user rating. Selecting on the layer’s title will take you to the information page where you can download the layer, edit metadata, or view additional information about the layer.</p>
-<p><strong>Browsing Maps</strong> - To open the Maps page, click on the Maps link on the Boundless Exchange toolbar, and select Explore Maps. Like the Layers page, the Maps page lets you browse the available maps that have been uploaded into Exchange. The map’s rating and the number of times it has been viewed are available on this page. Similar to a layer, selecting on the title of a map will take you to its information page.</p>
-<p><strong>Filtering</strong> - Layers, maps and documents can be filtered to help you better manage the data available in Exchange. Listed below are several options to refine your search results.</p>
-<blockquote>
-<div><ul class="simple">
-<li><strong>Filter by Text</strong> - Filters results using basic search terms. Type your search terms in the text box, and select your results from the displayed list. Multiple terms can be used, separated by ‘and’ or ‘or’.</li>
-</ul>
-<div class="figure">
-<img alt="../_images/filter-text.png" src="../_images/filter-text.png" />
-</div>
-<ul class="simple">
-<li><strong>Filter by Keywords</strong> - If a user has associated keywords to the layer in the metadata, you can filter layers by those terms. Select on a keyword to limit results to those layers with associated keywords.</li>
-</ul>
-<div class="figure">
-<img alt="../_images/keywords.png" src="../_images/keywords.png" />
-</div>
-<ul class="simple">
-<li><strong>Filter by Type (layers and documents)</strong> - You can filter layers by raster, vector, remote and WMS. Documents can be sorted by text, image or presentation. The selected filter will display in blue.</li>
-</ul>
-<div class="figure">
-<img alt="../_images/filter-type.png" src="../_images/filter-type.png" />
-</div>
-<div class="figure">
-<img alt="../_images/filter-doc-type.png" src="../_images/filter-doc-type.png" />
-</div>
-<ul class="simple">
-<li><strong>Filter by Category</strong> - When the metadata for a layer or a map has been tagged with a specific category, it will be reflected in the Categories panel. Your layers can be added to the categories created in your settings:</li>
-</ul>
-<blockquote>
-<div><div class="figure">
-<img alt="../_images/metadata-category.png" src="../_images/metadata-category.png" />
-</div>
-<p><em>This is an example of what the categories will look like. They will correspond with the available datasets from the homepage, but may differ among Exchange instances.</em></p>
-<p>When filtering, click on a category to limit the results list to those layers tagged with that category title. Selecting another available category expands your results to include those layers in the results list. Click on the category a second time to remove it from the layer results list.</p>
-<div class="figure">
-<img alt="../_images/category-filter.png" src="../_images/category-filter.png" />
-</div>
-</div></blockquote>
-<ul class="simple">
-<li><strong>Filter by Owners</strong> - You can select data based on the owner of the product. This may be useful if you are trying to quickly find products created by individuals on a joint project.</li>
-</ul>
-<div class="figure">
-<img alt="../_images/filter-owners.png" src="../_images/filter-owners.png" />
-</div>
-<ul class="simple">
-<li><strong>Filter by Date</strong> - This will limit the list of products by a date range. In the Date panel, select the start date and the end date for the date range. The list will update to reflect those layers, documents or maps created within that timeframe.</li>
-</ul>
-<div class="figure">
-<img alt="../_images/filter-date.png" src="../_images/filter-date.png" />
-</div>
-<ul class="simple">
-<li><strong>Filter by Regions</strong> - Type a geographical region in the textbox to find data only associated to that region.</li>
-</ul>
-<div class="figure">
-<img alt="../_images/filter-region.png" src="../_images/filter-region.png" />
-</div>
-<ul class="simple">
-<li><strong>Filter by Extent</strong> - Zoom in and out to find products pertaining only to the extent displayed on the map.</li>
-</ul>
-<blockquote>
-<div><div class="figure">
-<img alt="../_images/filter-extent.png" src="../_images/filter-extent.png" />
-</div>
-</div></blockquote>
-</div></blockquote>
+  <div class="section" id="exchange-support">
+<h1>Exchange Support<a class="headerlink" href="#exchange-support" title="Permalink to this headline">¶</a></h1>
+<p>There are two ways to get support in Boundless Exchange.</p>
+<p>Reach out to the team via email at <a class="reference external" href="mailto:support&#37;&#52;&#48;boundlessgeo&#46;com">support<span>&#64;</span>boundlessgeo<span>&#46;</span>com</a> to receive direct help from dedicated Boundless support staff. Be sure to include as much detail as possible about your issue, as well as all of your contact info.</p>
+<p>Have a question you think someone else may have already asked? Check out the <a class="reference external" href="https://connect.boundlessgeo.com/Community/Questions-Answers">Community Question and Answer</a> section. Here you can find crowdsourced assistance, or share your knowledge with other users by answering their questions.</p>
 </div>
 
 
@@ -279,10 +189,8 @@
     
       <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
         
-          <a href="../documents/index.html" class="btn btn-neutral float-right" title="Working with Documents">Next <span class="fa fa-arrow-circle-right"></span></a>
         
-        
-          <a href="../accounts/index.html" class="btn btn-neutral" title="Accounts, Users and Groups"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+          <a href="../admin/index.html" class="btn btn-neutral" title="Administration"><span class="fa fa-arrow-circle-left"></span> Previous</a>
         
       </div>
     
@@ -303,7 +211,7 @@
     </div>
     <div class="footer-aside">
         
-          <a id="zenbox" class="help-contact" data="discovery/index" href="https://connect.boundlessgeo.com/Community/Questions-Answers">Ask a Question</a>
+          <a id="zenbox" class="help-contact" data="support/index" href="https://connect.boundlessgeo.com/Community/Questions-Answers">Ask a Question</a>
         
       </div>
   </div>
