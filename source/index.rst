@@ -20,5 +20,6 @@ User Guide
    maps/index
    editing/index
    analysis/index
+   stories/index
    admin/index
    support/index

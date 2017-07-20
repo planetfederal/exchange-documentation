@@ -25,7 +25,7 @@ To adjust your profile settings complete the following steps:
 
 1. Click on your user name in the top right of the screen. Select :guilabel:`Profile` from the drop-down menu to enter the Profile Settings page. This will display your current profile settings.
 
-   .. figure:: img/example-profile.png
+   .. figure:: img/test-profile.png
 
 2. To modify your profile, select the :guilabel:`Edit Profile` link.
 
