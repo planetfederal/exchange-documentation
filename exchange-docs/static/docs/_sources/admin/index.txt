@@ -405,3 +405,170 @@ Delete a record
 3. Select **Delete selected CSW Records** from the Action menu, and click the :guilabel`Go` button.
 
 4. Click the :guilabel:`Yes, I’m sure` button to verify your selection.
+
+Managing Storyscapes
+--------------------
+
+Through Django, administrators are able to create, delete and manage stories.
+
+  .. figure:: img/ss-menu.png
+
+Create a story
+^^^^^^^^^^^^^^
+
+Build the story index
+*********************
+
+Users with administrator privileges are able to create stories through Django by clicking the Add link next to Stories in the Storyscapes menu.
+
+1. Ensure the layers you want to use for your story have previously been uploaded, and are available in Exchange.
+
+2. Fill in as much of the form as possible; all of the fields on the form in **bold** are required.
+
+There are several options available through the Django administration site that are not available through the Exchange user interface. They provide a more detail for the story and its metadata, but typically require a little more knowledge of the datasets.
+
+  **Uuid** - This field is required, and is only auto-generated through the Exchange User Interface. You can find UUID generators online to help you create one for use here.
+
+  .. figure:: img/uuid.png
+
+  **Owner** - Select your user name from the list.
+
+  **Title** - Provide a title for your story. It should encompass all of the chapters that will make up your story.
+
+  **Date/Time** - The date and time will automatically populate with the story creation date. It is the reference date for the story, and does not need to correlate to the time period of the story data (which will be configured later).
+
+  **Date type** - This will indicate whether the date/time from above is related to the story’s creation, publication or revision.
+
+  **Edition** - If there have been revisions to your story, you can let users know by adding a version number here.
+
+  **Abstract** - Let others know what the story is about with a brief narrative summary.
+
+  **Purpose** - Provide a short description of why the story was created.
+
+  **Maintenance frequency** - From the pull down, select how often modifications and deletions are made to the data after it is first published.
+
+  .. figure:: img/maintenance-freq.png
+
+      *Maintenance frequency options*
+
+  **Keywords region** - Select a region/country from the list which best fits the data. Hold down *Control*, or *Command* on a Mac, to select more than one.
+
+  **Restrictions** - Select from a list of limitations which can be placed on the access or use of the data. Provide a description of “Other Restrictions” in the textbox.
+
+  .. figure:: img/restrictions.png
+
+  **License** - Select data licensing requirements from the list. Not all data has licensing requirements.
+
+  .. figure:: img/license.png
+
+      *License requirement options*
+
+  **Language** - Select the language used within the dataset.
+
+  **Category** - Data is divided into categories, which assists in the grouping and search of available geographic datasets. These categories correspond to those on the Exchange homepage.
+
+  **Spatial representation type** - This explains the method used to represent geographic information in the dataset.
+
+    .. figure:: img/spatial-rep.png
+
+        *Available spatial representation types*
+
+  **Temporal extent start / end** - Set the time period covered by the content of the dataset.
+
+  **Supplemental information** - Include any other descriptive information about the dataset.
+
+  **Data quality statement** - Provide a general description of the validity and legitimacy of the dataset. Explain any changes in the data over time.
+
+  **Bounding boxes** - There are four boxes to enter the coordinates for your bounding boxes. Enter the points for all of the X,Y coordinates.
+
+  The following fields will populate automatically, and don’t need to be changed. They are related to registry. Changing these fields without the proper information could cause problems with your story creation.
+
+      - Srid
+      - CSW typename
+      - CSW schema
+      - CSW source
+      - CSW type
+      - CSW WKT geometry
+
+  .. figure:: img/srid1.png
+
+  **Metadata** - Click the checkboxes to ensure the metadata is uploaded and preserved. The Metadata XML will automatically generate.
+
+  **Counts** - Popular count and Share count will update as the story is viewed and shared.
+
+  **Featured** - Click the checkbox to feature this story on the homepage under the Featured Content section.
+
+  **Is Published** - This allows others to find your story when it is completed. It will make it searchable through the Exchange search.
+
+  **Thumbnail url** - Enter the URL for the thumbnail for your story. This will be what users see when searching for your story in Exchange.
+
+  **Detail URL** - This is the number assigned to your story, and is added to the end of the Exchange URL. This can make accessing your story easier in the future; just enter the Exchange URL, followed by /story/<story number>. The detail URL is created after saving your story.
+
+  **Rating** - Once your story is published, others can provide a rating to let you know what they think of it.
+
+  **Distribution URL** -  This is for information about online sources from which the dataset, specification, or community profile name and extended metadata elements can be obtained.
+
+  **Distribution description** - Provide a detailed description of what the online resource is or does.
+
+  **Keywords** - Enter words or phrases, separated by commas, used to describe the subject, and can be search by other users.
+
+Add chapters
+************
+
+The content of the story will be chapters made from maps and layers previously uploaded into Exchange.
+
+**Note:** It is recommended that you add layers via the Map Interface to ensure all of the required fields are properly completed.
+
+  .. figure:: img/add-chapters.png
+
+This form is nearly identical to the one used for creating your story.
+
+1. Select a map from the StoryChapter object list, and type a “0” in the Chapter Index box to indicate this will be part of the first chapter. The available maps will correspond to the maps in Exchange.
+
+**Note:** The first chapter of the story must begin with 0.
+
+You can add additional layers to a chapter by repeating this step, and ensuring the chapter index is the same for all layers in a chapter. Create new chapters by changing the chapter index number.
+
+2. Click the Edit (pencil icon) next to the map name to make any necessary edits to the metadata. Save
+
+3. When you’ve finished adding all of your chapters, and they are in the desired sequential order, click the :guilabel:`Save` button.
+
+If you marked the “Is Published” checkbox, your story will now be available for other users to view in Exchange. Users can search for your story through the Exchange search on the homepage, or filter for it based on any of the keywords you selected.
+
+Verify the story
+****************
+
+To ensure your story was published, and plays properly, click the guilabel:`View on Site` button. The story will display, along with all of the chapter and layer details.
+
+  .. figure:: img/view-story.png
+
+Select the :guilabel:`Play` button under the map to begin the story. The features will display according to the time attributes.
+
+Click **Next Chapter** to skip ahead.
+
+  .. figure:: img/story-summary.png
+
+The story Summary will display all of the information provided when the story was created.
+
+  .. figure:: img/chapters-layers.png
+
+All of the chapters and layers used for the story will be listed in an index beneath the map viewer. You can toggle between the chapters to see information for the other chapters.
+
+  .. figure:: img/edit-story.png
+
+If you’d like to change anything about your story, click the :guilabel:`Change Publication Exchange` button. You will be returned to Exchange Composer site, and can make all edits from there.
+
+If you checked the Featured checkbox when creating your story, you can go to the Exchange homepage, and view it by clicking on the thumbnail under the Featured Content section.
+
+Delete a story
+^^^^^^^^^^^^^^
+
+If a story is no longer needed, it can be quickly removed through the Django administration site.
+
+1. Click the **Stories** link on the Storyscapes menu to open the list of stories within Exchange.
+
+2. Click the checkbox next to the story you’d like to delete. Select Delete selected stories from the Action menu, and click the :guilabel:`Go` button.
+
+  .. figure:: img/delete-story.png
+
+3. Verify your selection by clicking the :guilabel:`Yes, I’m sure button`. The story will be removed from Exchange.

@@ -141,6 +141,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#avatars">Avatars</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#working-with-registry">Working with Registry</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#csw-record-administration">CSW Record Administration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#managing-storyscapes">Managing Storyscapes</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../support/index.html">Exchange Support</a></li>
@@ -635,6 +636,159 @@
 <li>Click the checkbox next to the record(s) to be deleted.</li>
 <li>Select <strong>Delete selected CSW Records</strong> from the Action menu, and click the :guilabel`Go` button.</li>
 <li>Click the <span class="guilabel">Yes, I’m sure</span> button to verify your selection.</li>
+</ol>
+</div>
+</div>
+<div class="section" id="managing-storyscapes">
+<h2>Managing Storyscapes<a class="headerlink" href="#managing-storyscapes" title="Permalink to this headline">¶</a></h2>
+<p>Through Django, administrators are able to create, delete and manage stories.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/ss-menu.png" src="../_images/ss-menu.png" />
+</div>
+</div></blockquote>
+<div class="section" id="create-a-story">
+<h3>Create a story<a class="headerlink" href="#create-a-story" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="build-the-story-index">
+<h4>Build the story index<a class="headerlink" href="#build-the-story-index" title="Permalink to this headline">¶</a></h4>
+<p>Users with administrator privileges are able to create stories through Django by clicking the Add link next to Stories in the Storyscapes menu.</p>
+<ol class="arabic simple">
+<li>Ensure the layers you want to use for your story have previously been uploaded, and are available in Exchange.</li>
+<li>Fill in as much of the form as possible; all of the fields on the form in <strong>bold</strong> are required.</li>
+</ol>
+<p>There are several options available through the Django administration site that are not available through the Exchange user interface. They provide a more detail for the story and its metadata, but typically require a little more knowledge of the datasets.</p>
+<blockquote>
+<div><p><strong>Uuid</strong> - This field is required, and is only auto-generated through the Exchange User Interface. You can find UUID generators online to help you create one for use here.</p>
+<div class="figure">
+<img alt="../_images/uuid.png" src="../_images/uuid.png" />
+</div>
+<p><strong>Owner</strong> - Select your user name from the list.</p>
+<p><strong>Title</strong> - Provide a title for your story. It should encompass all of the chapters that will make up your story.</p>
+<p><strong>Date/Time</strong> - The date and time will automatically populate with the story creation date. It is the reference date for the story, and does not need to correlate to the time period of the story data (which will be configured later).</p>
+<p><strong>Date type</strong> - This will indicate whether the date/time from above is related to the story’s creation, publication or revision.</p>
+<p><strong>Edition</strong> - If there have been revisions to your story, you can let users know by adding a version number here.</p>
+<p><strong>Abstract</strong> - Let others know what the story is about with a brief narrative summary.</p>
+<p><strong>Purpose</strong> - Provide a short description of why the story was created.</p>
+<p><strong>Maintenance frequency</strong> - From the pull down, select how often modifications and deletions are made to the data after it is first published.</p>
+<div class="figure" id="id5">
+<img alt="../_images/maintenance-freq.png" src="../_images/maintenance-freq.png" />
+<p class="caption"><span class="caption-text"><em>Maintenance frequency options</em></span></p>
+</div>
+<p><strong>Keywords region</strong> - Select a region/country from the list which best fits the data. Hold down <em>Control</em>, or <em>Command</em> on a Mac, to select more than one.</p>
+<p><strong>Restrictions</strong> - Select from a list of limitations which can be placed on the access or use of the data. Provide a description of “Other Restrictions” in the textbox.</p>
+<div class="figure">
+<img alt="../_images/restrictions.png" src="../_images/restrictions.png" />
+</div>
+<p><strong>License</strong> - Select data licensing requirements from the list. Not all data has licensing requirements.</p>
+<div class="figure" id="id6">
+<img alt="../_images/license.png" src="../_images/license.png" />
+<p class="caption"><span class="caption-text"><em>License requirement options</em></span></p>
+</div>
+<p><strong>Language</strong> - Select the language used within the dataset.</p>
+<p><strong>Category</strong> - Data is divided into categories, which assists in the grouping and search of available geographic datasets. These categories correspond to those on the Exchange homepage.</p>
+<p><strong>Spatial representation type</strong> - This explains the method used to represent geographic information in the dataset.</p>
+<blockquote>
+<div><div class="figure" id="id7">
+<img alt="../_images/spatial-rep.png" src="../_images/spatial-rep.png" />
+<p class="caption"><span class="caption-text"><em>Available spatial representation types</em></span></p>
+</div>
+</div></blockquote>
+<p><strong>Temporal extent start / end</strong> - Set the time period covered by the content of the dataset.</p>
+<p><strong>Supplemental information</strong> - Include any other descriptive information about the dataset.</p>
+<p><strong>Data quality statement</strong> - Provide a general description of the validity and legitimacy of the dataset. Explain any changes in the data over time.</p>
+<p><strong>Bounding boxes</strong> - There are four boxes to enter the coordinates for your bounding boxes. Enter the points for all of the X,Y coordinates.</p>
+<p>The following fields will populate automatically, and don’t need to be changed. They are related to registry. Changing these fields without the proper information could cause problems with your story creation.</p>
+<blockquote>
+<div><ul class="simple">
+<li>Srid</li>
+<li>CSW typename</li>
+<li>CSW schema</li>
+<li>CSW source</li>
+<li>CSW type</li>
+<li>CSW WKT geometry</li>
+</ul>
+</div></blockquote>
+<div class="figure">
+<img alt="../_images/srid1.png" src="../_images/srid1.png" />
+</div>
+<p><strong>Metadata</strong> - Click the checkboxes to ensure the metadata is uploaded and preserved. The Metadata XML will automatically generate.</p>
+<p><strong>Counts</strong> - Popular count and Share count will update as the story is viewed and shared.</p>
+<p><strong>Featured</strong> - Click the checkbox to feature this story on the homepage under the Featured Content section.</p>
+<p><strong>Is Published</strong> - This allows others to find your story when it is completed. It will make it searchable through the Exchange search.</p>
+<p><strong>Thumbnail url</strong> - Enter the URL for the thumbnail for your story. This will be what users see when searching for your story in Exchange.</p>
+<p><strong>Detail URL</strong> - This is the number assigned to your story, and is added to the end of the Exchange URL. This can make accessing your story easier in the future; just enter the Exchange URL, followed by /story/&lt;story number&gt;. The detail URL is created after saving your story.</p>
+<p><strong>Rating</strong> - Once your story is published, others can provide a rating to let you know what they think of it.</p>
+<p><strong>Distribution URL</strong> -  This is for information about online sources from which the dataset, specification, or community profile name and extended metadata elements can be obtained.</p>
+<p><strong>Distribution description</strong> - Provide a detailed description of what the online resource is or does.</p>
+<p><strong>Keywords</strong> - Enter words or phrases, separated by commas, used to describe the subject, and can be search by other users.</p>
+</div></blockquote>
+</div>
+<div class="section" id="add-chapters">
+<h4>Add chapters<a class="headerlink" href="#add-chapters" title="Permalink to this headline">¶</a></h4>
+<p>The content of the story will be chapters made from maps and layers previously uploaded into Exchange.</p>
+<p><strong>Note:</strong> It is recommended that you add layers via the Map Interface to ensure all of the required fields are properly completed.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/add-chapters.png" src="../_images/add-chapters.png" />
+</div>
+</div></blockquote>
+<p>This form is nearly identical to the one used for creating your story.</p>
+<ol class="arabic simple">
+<li>Select a map from the StoryChapter object list, and type a “0” in the Chapter Index box to indicate this will be part of the first chapter. The available maps will correspond to the maps in Exchange.</li>
+</ol>
+<p><strong>Note:</strong> The first chapter of the story must begin with 0.</p>
+<p>You can add additional layers to a chapter by repeating this step, and ensuring the chapter index is the same for all layers in a chapter. Create new chapters by changing the chapter index number.</p>
+<ol class="arabic simple" start="2">
+<li>Click the Edit (pencil icon) next to the map name to make any necessary edits to the metadata. Save</li>
+<li>When you’ve finished adding all of your chapters, and they are in the desired sequential order, click the <span class="guilabel">Save</span> button.</li>
+</ol>
+<p>If you marked the “Is Published” checkbox, your story will now be available for other users to view in Exchange. Users can search for your story through the Exchange search on the homepage, or filter for it based on any of the keywords you selected.</p>
+</div>
+<div class="section" id="verify-the-story">
+<h4>Verify the story<a class="headerlink" href="#verify-the-story" title="Permalink to this headline">¶</a></h4>
+<p>To ensure your story was published, and plays properly, click the guilabel:<cite>View on Site</cite> button. The story will display, along with all of the chapter and layer details.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/view-story.png" src="../_images/view-story.png" />
+</div>
+</div></blockquote>
+<p>Select the <span class="guilabel">Play</span> button under the map to begin the story. The features will display according to the time attributes.</p>
+<p>Click <strong>Next Chapter</strong> to skip ahead.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/story-summary.png" src="../_images/story-summary.png" />
+</div>
+</div></blockquote>
+<p>The story Summary will display all of the information provided when the story was created.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/chapters-layers.png" src="../_images/chapters-layers.png" />
+</div>
+</div></blockquote>
+<p>All of the chapters and layers used for the story will be listed in an index beneath the map viewer. You can toggle between the chapters to see information for the other chapters.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/edit-story.png" src="../_images/edit-story.png" />
+</div>
+</div></blockquote>
+<p>If you’d like to change anything about your story, click the <span class="guilabel">Change Publication Exchange</span> button. You will be returned to Exchange Composer site, and can make all edits from there.</p>
+<p>If you checked the Featured checkbox when creating your story, you can go to the Exchange homepage, and view it by clicking on the thumbnail under the Featured Content section.</p>
+</div>
+</div>
+<div class="section" id="delete-a-story">
+<h3>Delete a story<a class="headerlink" href="#delete-a-story" title="Permalink to this headline">¶</a></h3>
+<p>If a story is no longer needed, it can be quickly removed through the Django administration site.</p>
+<ol class="arabic simple">
+<li>Click the <strong>Stories</strong> link on the Storyscapes menu to open the list of stories within Exchange.</li>
+<li>Click the checkbox next to the story you’d like to delete. Select Delete selected stories from the Action menu, and click the <span class="guilabel">Go</span> button.</li>
+</ol>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/delete-story.png" src="../_images/delete-story.png" />
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li>Verify your selection by clicking the <span class="guilabel">Yes, I’m sure button</span>. The story will be removed from Exchange.</li>
 </ol>
 </div>
 </div>
