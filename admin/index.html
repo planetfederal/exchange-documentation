@@ -1,0 +1,874 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Administration &mdash; Boundless Exchange 1.3.0 documentation</title>
+  
+
+  
+
+  
+  
+  
+
+  
+     <link rel="shortcut icon" href="../_static/img/exchange.ico"/>
+  
+
+  
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,700,600,800,300|Montserrat:400,700|Source+Code+Pro:300,400,500,700' rel='stylesheet' type='text/css'>
+
+<!-- Removing search because it doesn't work well
+  
+  
+    
+  
+-->
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+    <!-- Removing search because it doesn't work well
+        <link rel="search" title="Search" href="../search.html"/>
+    -->
+    <link rel="top" title="Boundless Exchange 1.3.0 documentation" href="../index.html"/>
+        <link rel="next" title="Exchange Support" href="../support/index.html"/>
+        <link rel="prev" title="Creating a story" href="../stories/index.html"/> 
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/zenbox.css" type="text/css" media="screen, projection" />
+  
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+    
+
+      <div id="header" class="selfclear">
+        
+        <div class="exchange_logo"><a href="/">Boundless Exchange 1.3.0 documentation</a></div>
+        
+
+        <div class="version_info">1.3.0</div>
+      </div>
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <!-- Removing search because it doesn't work well
+      <div class="wy-side-nav-search">
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+      </div>
+      -->
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../accounts/index.html">Accounts, Users and Groups</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../accounts/index.html#creating-a-new-account">Creating a new account</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../accounts/index.html#managing-your-profile">Managing your profile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../accounts/index.html#viewing-other-user-accounts">Viewing other user accounts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../accounts/index.html#managing-groups">Managing groups</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../discovery/index.html">Discovering available content</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../documents/index.html">Working with Documents</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../documents/index.html#uploading-documents">Uploading documents</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../documents/index.html#browsing-documents">Browsing documents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../layers/index.html">Working with Layers</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../layers/index.html#upload-a-layer">Upload a layer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../layers/index.html#layer-information">Layer information</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../layers/index.html#editing-metadata-and-managing-layers">Editing metadata and managing layers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../layers/index.html#downloading-data-from-a-layer">Downloading data from a layer</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../maps/index.html">Working with Maps</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../maps/index.html#create-a-map">Create a map</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../maps/index.html#add-layers-to-a-map">Add layers to a map</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../maps/index.html#managing-maps">Managing Maps</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../editing/index.html">Editing and Version Management</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../editing/index.html#edit-features">Edit Features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../editing/index.html#version-management">Version Management</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../analysis/index.html">Analyzing data with Exchange</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../analysis/index.html#working-within-the-attribute-table">Working within the attribute table</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analysis/index.html#view-attribute-statistics">View attribute statistics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analysis/index.html#create-a-heat-map">Create a heat map</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analysis/index.html#search-all-attributes">Search all attributes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analysis/index.html#advanced-filters">Advanced filters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analysis/index.html#filter-features-using-spatial-filters">Filter features using spatial filters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analysis/index.html#delete-a-spatial-filter">Delete a spatial filter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analysis/index.html#combine-filters-for-deeper-analysis">Combine filters for deeper analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analysis/index.html#filter-features-by-timeline">Filter features by timeline</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../stories/index.html">Creating a story</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../stories/index.html#compose-a-story">Compose a story</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../stories/index.html#add-additional-chapters">Add additional chapters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../stories/index.html#publish-your-story">Publish your story</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Administration</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#django-administration">Django Administration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#accounts">Accounts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#actstream-activity-stream">Actstream (Activity Stream)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#audit-trail">Audit trail</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#announcements">Announcements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#avatars">Avatars</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#working-with-registry">Working with Registry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#csw-record-administration">CSW Record Administration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#managing-storyscapes">Managing Storyscapes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../support/index.html">Exchange Support</a></li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">Boundless Exchange documentation </a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html"> Boundless Exchange 1.3.0 documentation </a> &raquo;</li>
+    
+    <li>Administration</li>
+  </ul>
+  
+  <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+    
+      <a href="../support/index.html" class="btn btn-neutral float-right" title="Exchange Support">Next <span class="fa fa-arrow-circle-right"></span></a>
+    
+    
+      <a href="../stories/index.html" class="btn btn-neutral" title="Creating a story"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+    
+  </div>
+  <hr/>
+</div>
+          <div role="main">
+          
+        	     
+  <div class="section" id="administration">
+<h1>Administration<a class="headerlink" href="#administration" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="django-administration">
+<h2>Django Administration<a class="headerlink" href="#django-administration" title="Permalink to this headline">¶</a></h2>
+<p>Exchange users with administrator privileges are able to maintain site setting through the Django Site Administration page. Here you can manage user accounts, content, and system settings.</p>
+<p>To access the Django administration site, log in to Exchange using your administrator credentials, and select Admin in the profile drop down menu. You will be directed to the Django administration site.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/profile.png" src="../_images/profile.png" />
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="accounts">
+<h2>Accounts<a class="headerlink" href="#accounts" title="Permalink to this headline">¶</a></h2>
+<p>This section covers how to add, modify and delete Exchange user accounts. All of the options in this section are available through the Account menu on the Django Site administration page.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/account-menu.png" src="../_images/account-menu.png" />
+</div>
+</div></blockquote>
+<div class="section" id="account-creation">
+<h3>Account creation<a class="headerlink" href="#account-creation" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>To create an Exchange user account, select the Add link next to Accounts.</li>
+<li>Click the green plus (+) button next to the User list to add another user.</li>
+</ol>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/add-account.png" src="../_images/add-account.png" />
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li>Create a username and password that will be remembered by the user. Confirm the password and select the Save button.</li>
+<li>Select the timezone and primary language for the user from the drop down menus.</li>
+<li>Click the <span class="guilabel">Save</span> button to save the account.</li>
+</ol>
+</div>
+<div class="section" id="modify-an-existing-account">
+<h3>Modify an existing account<a class="headerlink" href="#modify-an-existing-account" title="Permalink to this headline">¶</a></h3>
+<p>Changing a user’s password, setting permissions, and editing their email address can all be completed in the Account section.</p>
+<div class="section" id="edit-user-information">
+<h4>Edit user information<a class="headerlink" href="#edit-user-information" title="Permalink to this headline">¶</a></h4>
+<ol class="arabic simple">
+<li>Select Accounts in the Account menu, and click on the username whose information you’d like to modify.</li>
+<li>Click the pencil icon next to the username, and make the changes to the account. When you are finished, click the <span class="guilabel">Save</span> button to save your changes.</li>
+</ol>
+<p>Within the Change User screen, you can update the following user information:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Personal info - The basics</li>
+<li>User permissions - Designates what type of account the user has, groups the user belongs to</li>
+<li>Important dates</li>
+<li>Extended profile information - Organization, location, biography</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="edit-an-email-address">
+<h4>Edit an email address<a class="headerlink" href="#edit-an-email-address" title="Permalink to this headline">¶</a></h4>
+<ol class="arabic simple">
+<li>Select Email addresses in the Account menu, and click on the user name whose email you’d like to modify.</li>
+<li>Update the email address, and check the box to display if the email has been verified, and if this is the user’s primary email address.</li>
+</ol>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/edit-email.png" src="../_images/edit-email.png" />
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li>Click the save button when you are finished, or continue modifying any additional accounts.</li>
+</ol>
+</div>
+<div class="section" id="delete-a-user-account">
+<h4>Delete a user account<a class="headerlink" href="#delete-a-user-account" title="Permalink to this headline">¶</a></h4>
+<ol class="arabic simple">
+<li>Select Accounts in the Account menu, and check the box next to the user account(s) you want to delete.</li>
+<li>Select Delete selected accounts in the Action menu, and click the Go button.</li>
+</ol>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/delete-account.png" src="../_images/delete-account.png" />
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li>Click the Yes, I’m sure button to verify your selection. You will be notified that the account was successfully deleted.</li>
+</ol>
+</div>
+</div>
+<div class="section" id="signup-codes">
+<h3>Signup codes<a class="headerlink" href="#signup-codes" title="Permalink to this headline">¶</a></h3>
+<p>As an administrator, you are able to invite individuals to try Exchange. When you do this, a signup code is generated. This signup code is used to track trial users in Exchange. From this site, you can modify when the signup code expires, the number of times it can be used, or delete the code itself.</p>
+<div class="section" id="invite-users">
+<h4>Invite users<a class="headerlink" href="#invite-users" title="Permalink to this headline">¶</a></h4>
+<ol class="arabic simple">
+<li>Select Profile in your profile drop down menu, and click Invite User in the lower right corner.</li>
+</ol>
+<p><strong>Note:</strong> While this is not done in Django, you must have the required privileges to invite users.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/invite-user.png" src="../_images/invite-user.png" />
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li>Type the email address of the person you’d like to invite, and provide an easy to remember username.</li>
+<li>Click the <span class="guilabel">Invite User</span> button when you are finished.</li>
+</ol>
+<p>The guest will receive an email notifying them that they have been invited to sign up for an Exchange account.</p>
+</div>
+<div class="section" id="id1">
+<h4>Signup codes<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h4>
+<p>You will need to return to the Django administration site to modify signup codes.</p>
+<ol class="arabic simple">
+<li>Select Signup Codes in the Account menu, and click on the code you’d like to view.</li>
+<li>Make all necessary changes, and click the Save button. From this screen, you are able to:</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>Modify the number of times the code can be used</li>
+<li>Set an expiration date for the invitation</li>
+<li>Add the individual who sent the invitation</li>
+<li>Add any notes relevant to the invitation or its recipient</li>
+</ul>
+<div class="figure">
+<img alt="../_images/change-code.png" src="../_images/change-code.png" />
+</div>
+</div></blockquote>
+<p>To delete the signup code, click the <span class="guilabel">Delete</span> button, and select <strong>Yes, I’m sure</strong> to verify your choice.</p>
+</div>
+</div>
+</div>
+<div class="section" id="actstream-activity-stream">
+<h2>Actstream (Activity Stream)<a class="headerlink" href="#actstream-activity-stream" title="Permalink to this headline">¶</a></h2>
+<p>Exchange uses Django Activity Stream, which creates a list of activities generated by the actions on your site, and allows you to quickly visualize who is performing what actions. An action is a description of an action that was performed (Verb) at some instance in time by some Actor on some optional Target that results in an Action Object getting created/updated/deleted.</p>
+<p>Action events are categorized by four main components.</p>
+<blockquote>
+<div><ul class="simple">
+<li>Actor - The user who performed the activity.</li>
+<li>Verb - The verb phrase that identifies the action of the activity, such as created or deleted.</li>
+<li>Action Object - The object linked to the action itself, such as a layer or a map.</li>
+<li>Target - The object to which the activity was performed. Currently, Exchange is not using this component.</li>
+</ul>
+</div></blockquote>
+<p>For example: admin (actor) uploaded (verb) a layer (object) 12 hours ago.</p>
+<ol class="arabic simple">
+<li>Click Actions in the Actstream menu on the Django site administration page.</li>
+</ol>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/actstream.png" src="../_images/actstream.png" />
+</div>
+</div></blockquote>
+<p>All of the actions that have taken place within Exchange will be listed, along with who performed it (actor), and what they did (verb). The target and whether or not the action is public is also listed, but they are not used at this time.</p>
+<ol class="arabic simple" start="2">
+<li>Click on an action to view more details.</li>
+</ol>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/actions.png" src="../_images/actions.png" />
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="audit-trail">
+<h2>Audit trail<a class="headerlink" href="#audit-trail" title="Permalink to this headline">¶</a></h2>
+<p>The audit trail is intended to display all of the activities that happen within Exchange. It tracks who performed what actions, and when. Included is detailed information about the user, such as their IP, email address, full name and their user status.</p>
+<p>To view the audit trail, click Audit events in the Audit trail menu on the Django site administration page.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/audit-trail.png" src="../_images/audit-trail.png" />
+</div>
+</div></blockquote>
+<p>A list of all of the events that have occurred within Exchange will display. From here, administrators can filter everything for specific types of events, users, etc. using the search field. Simply type a term in the textbox, and click the Search button.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/audit-search.png" src="../_images/audit-search.png" />
+</div>
+</div></blockquote>
+<p>Audit trail is very similar to the Activity stream feature, but the primary difference is that with Audit trail, you are able to see when an event occurred, and from where. Activity stream tells you exactly what action has taken place.</p>
+</div>
+<div class="section" id="announcements">
+<h2>Announcements<a class="headerlink" href="#announcements" title="Permalink to this headline">¶</a></h2>
+<p>Administrators can create short messages for all Exchange users that will be placed at the top of their screen. Their importance level, determined by the originator, can range from general to critical, and can easily be scheduled for publication.</p>
+<div class="section" id="create-an-announcement">
+<h3>Create an announcement<a class="headerlink" href="#create-an-announcement" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>Click the green plus (+) Add button next to Announcements.</li>
+</ol>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/announcements.png" src="../_images/announcements.png" />
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li>Provide a title for your message, and select the level of importance for your message from the Level list. Your options are General, Warning and Critical, and should be determined by the nature of the announcement.</li>
+<li>Type your full message in the Content textbox.</li>
+<li>Select the checkboxes to determine whether or not you’d like your announcement to be seen site-wide, and/or for Exchange members only.</li>
+</ol>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/announcement-top.png" src="../_images/announcement-top.png" />
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="5">
+<li>Use the publish start and end options to create a display time limit for your message, and select a dismissal option from the menu.</li>
+</ol>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/announcement-bottom.png" src="../_images/announcement-bottom.png" />
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="6">
+<li>Click the <span class="guilabel">Save</span> button to create your announcement. To verify your announcement is correct, click the View on site button in the upper right corner.</li>
+</ol>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/msg-preview.png" src="../_images/msg-preview.png" />
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="delete-an-announcement">
+<h3>Delete an announcement<a class="headerlink" href="#delete-an-announcement" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>When you are ready to delete your announcement, click Announcements under the Announcements menu on the Django Site administration page.</li>
+<li>Check the box next to the announcement(s) you’d like to delete, and select <strong>Delete Selected Announcements</strong> in the Action menu, followed by the <span class="guilabel">Go</span> button.</li>
+</ol>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/delete-announcement.png" src="../_images/delete-announcement.png" />
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li>Click the <span class="guilabel">Yes, I’m sure</span> button to verify your selection. You will be notified that your announcement was successfully deleted.</li>
+</ol>
+</div>
+</div>
+<div class="section" id="avatars">
+<h2>Avatars<a class="headerlink" href="#avatars" title="Permalink to this headline">¶</a></h2>
+<p>Administrators can create, delete or manage avatars for users through the Django administration site. Valid image files are accepted (jpg, jpeg, png, tif, etc).</p>
+<div class="section" id="add-a-new-avatar">
+<h3>Add a new avatar<a class="headerlink" href="#add-a-new-avatar" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>Click the green (+)  Add button in the Avatar menu on the Django administration page.</li>
+</ol>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/avatar.png" src="../_images/avatar.png" />
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li>Select a user from the list, and determine if this will be the main image for the account by clicking the Primary checkbox.</li>
+<li>Browse to the avatar image by selecting the <span class="guilabel">Choose File</span> button. Once the file name displays, click the Save button. You will be notified that the avatar was added successfully.</li>
+</ol>
+</div>
+<div class="section" id="change-an-existing-avatar">
+<h3>Change an existing avatar<a class="headerlink" href="#change-an-existing-avatar" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>Select Avatars from the Avatar menu on the Django administration page, and click the name of the account whose avatar will change.</li>
+<li>Click the <span class="guilabel">Choose File</span> button to select a new avatar image, followed by the <span class="guilabel">Save</span> button. You will be notified that the avatar was successfully changed.</li>
+</ol>
+</div>
+<div class="section" id="delete-an-avatar">
+<h3>Delete an avatar<a class="headerlink" href="#delete-an-avatar" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>Select Avatars from the Avatar menu on the Django administration page, and click the checkbox next to the name of the avatar to be deleted.</li>
+<li>Select Delete Selected Avatar from the Action menu, and click the Go button.</li>
+</ol>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/delete-avatar.png" src="../_images/delete-avatar.png" />
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li>Verify your selection by clicking the Yes, I’m sure button.</li>
+</ol>
+<p>You will be notified that the avatar was successfully deleted.</p>
+</div>
+</div>
+<div class="section" id="working-with-registry">
+<h2>Working with Registry<a class="headerlink" href="#working-with-registry" title="Permalink to this headline">¶</a></h2>
+<p>In Exchange, there are two primary types of data that can be added to Registry, a service or a single layer. A service is two or more layers being added to the map at the same time, whereas a single layer is just an individual layer. The form is the same for either one, but you will need to have a relatively good understanding of your data in order to successfully insert your new record.</p>
+<p>Currently, you can add the following services in Exchange:</p>
+<blockquote>
+<div><ul class="simple">
+<li>WMS - Web Map Service</li>
+<li>MapServer - ESRI Map Service</li>
+<li>ImageServer - ESRI Image Service</li>
+</ul>
+</div></blockquote>
+<div class="section" id="add-an-individual-record-to-csw">
+<h3>Add an individual record to CSW<a class="headerlink" href="#add-an-individual-record-to-csw" title="Permalink to this headline">¶</a></h3>
+<p>Exchange users with administrator privileges are able to add <a class="reference external" href="http://www.opengeospatial.org/standards/cat">CSW</a> records through their Exchange webpage.</p>
+<ol class="arabic simple">
+<li>Click on your user name in the toolbar. Select <strong>Registry</strong> from the drop-down menu to open the record form.</li>
+</ol>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/registry-menu.png" src="../_images/registry-menu.png" />
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li>A list of all items registered in Exchange will open, displaying their status as Complete, Unknown, Pending, or Error. Click the <span class="guilabel">Register a new Record</span> button in the top right corner to add a new record.</li>
+</ol>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/registered-items.png" src="../_images/registered-items.png" />
+</div>
+</div></blockquote>
+<p>Click the <span class="guilabel">Register a new Record</span> button in the top right corner to add a new record.</p>
+<ol class="arabic simple" start="3">
+<li>Complete the form with all of the necessary information.</li>
+</ol>
+<p><strong>Service URL</strong> - This is the URL address for the endpoint you are trying to add.</p>
+<blockquote>
+<div><dl class="docutils">
+<dt><em>Geoserver Example:</em></dt>
+<dd><a class="reference external" href="https://mapstory.org/geoserver/geonode/wms">https://mapstory.org/geoserver/geonode/wms</a></dd>
+<dt><em>ESRI MapServer Example:</em></dt>
+<dd><a class="reference external" href="https://ngamaps.geointapps.org/arcgis/rest/services/Hurricane_Matthew/Bahamas_Latest_Damage_Assessments/MapServer">https://ngamaps.geointapps.org/arcgis/rest/services/Hurricane_Matthew/Bahamas_Latest_Damage_Assessments/MapServer</a></dd>
+</dl>
+</div></blockquote>
+<p><strong>Note:</strong> Entering a MapServer url will auto-populate the available services such as WMSServer, WFSServer, FeatureServer.</p>
+<blockquote>
+<div><dl class="docutils">
+<dt><em>ESRI MapServer WMSserver Example:</em></dt>
+<dd><a class="reference external" href="https://ngamaps.geointapps.org/arcgis/services/Hurricane_Matthew/Haiti_Latest_Assessments/MapServer/wmsserver">https://ngamaps.geointapps.org/arcgis/services/Hurricane_Matthew/Haiti_Latest_Assessments/MapServer/wmsserver</a></dd>
+<dt><em>ESRI ImageServer Example:</em></dt>
+<dd><a class="reference external" href="https://gis.ngdc.noaa.gov/arcgis/rest/services/bag_hillshades/ImageServer">https://gis.ngdc.noaa.gov/arcgis/rest/services/bag_hillshades/ImageServer</a></dd>
+</dl>
+</div></blockquote>
+<p><strong>Title</strong> - This field should populate automatically. The title should be related to the data, but should also be unique enough to find when performing a search. You can change the title if you don’t want what auto-filled.</p>
+<p><strong>Layer Identifier</strong> - For ESRI MapServer Services, this field will be populated automatically; however, for any other service type, the name of the layer is required for this field.</p>
+<p><strong>Category</strong> - Select a category from the list that best describes your data.</p>
+<p><strong>Abstract</strong> - The abstract should provide a brief description of the data being added.</p>
+<p><strong>Agency</strong> - Where did the information come from? This should also auto-populate. If Exchange is unable to detect who the data belongs to from the endpoint, add  the creator/agency information.</p>
+<p><strong>Contact Email</strong> - Please add your email address here.</p>
+<p><strong>Contact Phone</strong> - Please add a contact phone number here.</p>
+<p><strong>Gold</strong> -  Select this checkbox if the data is NGA-approved content.</p>
+<blockquote>
+<div><div class="figure" id="id2">
+<img alt="../_images/register-record.png" src="../_images/register-record.png" />
+<p class="caption"><span class="caption-text">This is an <em>example</em> of a completed new record form.</span></p>
+</div>
+</div></blockquote>
+<p>Additional services types (also called references) can be added by selecting the type from the drop down menu, and adding the URL. Service types discovered from the service URL are also listed at the top of the form.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/add-types.png" src="../_images/add-types.png" />
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="4">
+<li>Click the <span class="guilabel">Submit Record</span> button to nominate record.</li>
+</ol>
+<p><strong>Note:</strong> Contact your Exchange administrator if the status does not display as Complete. They will need to take a look at your record via Django administration. Please see step 5 in the record administration section below.</p>
+<p>For additional examples of records that have been successfully added in Exchange, please check out: <a class="reference external" href="https://gist.github.com/davisc/219f75f42bc2a620319070a04c4fa98d">CSW Examples</a></p>
+</div>
+<div class="section" id="verify-the-record">
+<h3>Verify the record<a class="headerlink" href="#verify-the-record" title="Permalink to this headline">¶</a></h3>
+<p>Once you submit your record, you will be directed to the Registered Items page. To verify the record status in Registry, you can search for it using the Exchange search field at the top of the page, or use the Add Layer function from your map.</p>
+</div>
+</div>
+<div class="section" id="csw-record-administration">
+<h2>CSW Record Administration<a class="headerlink" href="#csw-record-administration" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="add-a-csw-record">
+<h3>Add a CSW record<a class="headerlink" href="#add-a-csw-record" title="Permalink to this headline">¶</a></h3>
+<p>Records can also be added through the Django administration site. The form there requires you to add all data manually, and does not have an auto-populate function.</p>
+<ol class="arabic simple">
+<li>Click on your user name in the toolbar. Select <strong>Admin</strong> from the drop-down menu to open the record form.</li>
+<li>Click <strong>Add</strong> next to CSW Records from the Core menu on the Django administration site.</li>
+</ol>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/core.png" src="../_images/core.png" />
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li>Complete the form with all of the necessary information. All of the fields on the form in <strong>bold</strong> are mandatory.</li>
+</ol>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/csw-alternative.png" src="../_images/csw-alternative.png" />
+</div>
+</div></blockquote>
+<p><strong>User -</strong> Select a user from the list to be the owner of the record.</p>
+<p><strong>Classification (optional) -</strong> Unless the data resides on a classified system, this will remain blank/UNCLASSIFIED.</p>
+<p><strong>Title -</strong> The title should be related to the data, but should also be unique enough to find when performing a search for data.</p>
+<p><strong>Modified -</strong> This field is filled in by default, but can be edited to match what is true for the data.</p>
+<p><strong>Agency -</strong> Where did the information come from?</p>
+<p><strong>Record Type -</strong> The type field denotes what kind of data is being added.</p>
+<p>For the services listed below, you would use the following information:</p>
+<ul class="simple">
+<li>ESRI map server - ESRI:ArcGIS:MapServer</li>
+<li>ESRI image server - ESRI:ArcGIS:ImageServer</li>
+<li>WMS Services - dataset</li>
+</ul>
+<p><strong>Alternative -</strong> An ESRI service will number each of the layers (starting with zero), and when adding data from a service, the alternative field points to the id individual layer to be pulled from that server. For GeoServer OGC services, the value for the Alternative field can be pulled from the layer name which is a string that does not contain spaces. If you leave the space blank, all of the associated layers will be added.</p>
+<blockquote>
+<div><div class="figure" id="id3">
+<img alt="../_images/mapserver.png" src="../_images/mapserver.png" />
+<p class="caption"><span class="caption-text">List of layers with ID’s for the MapServer. The layer ID for Bridge Out is ‘1’ as indicated by the value in the parenthesis.</span></p>
+</div>
+<div class="figure" id="id4">
+<img alt="../_images/geoserver.png" src="../_images/geoserver.png" />
+<p class="caption"><span class="caption-text">Geoserver typically follows the format of &lt;workspace&gt;:&lt;name&gt;. The &lt;name&gt; portion is all that’s needed for the Alternative field.</span></p>
+</div>
+</div></blockquote>
+<p><strong>Abstract -</strong> The abstract should provide a brief description of the data being added.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/csw-format.png" src="../_images/csw-format.png" />
+</div>
+</div></blockquote>
+<p><strong>Service Endpoint -</strong> This is the URL address for the endpoint you are trying to add.</p>
+<blockquote>
+<div><dl class="docutils">
+<dt><em>Geoserver Example:</em></dt>
+<dd><a class="reference external" href="https://mapstory.org/geoserver/geonode/wms">https://mapstory.org/geoserver/geonode/wms</a></dd>
+<dt><em>ESRI MapServer Example:</em></dt>
+<dd><a class="reference external" href="https://ngamaps.geointapps.org/arcgis/rest/services/Hurricane_Matthew/Bahamas_Latest_Damage_Assessments/MapServer">https://ngamaps.geointapps.org/arcgis/rest/services/Hurricane_Matthew/Bahamas_Latest_Damage_Assessments/MapServer</a></dd>
+<dt><em>ESRI MapServer WMSserver Example:</em></dt>
+<dd><a class="reference external" href="https://ngamaps.geointapps.org/arcgis/services/Hurricane_Matthew/Haiti_Latest_Assessments/MapServer/wmsserver">https://ngamaps.geointapps.org/arcgis/services/Hurricane_Matthew/Haiti_Latest_Assessments/MapServer/wmsserver</a></dd>
+<dt><em>ESRI ImageServer Example:</em></dt>
+<dd><a class="reference external" href="https://gis.ngdc.noaa.gov/arcgis/rest/services/bag_hillshades/ImageServer">https://gis.ngdc.noaa.gov/arcgis/rest/services/bag_hillshades/ImageServer</a></dd>
+</dl>
+</div></blockquote>
+<p><strong>Relation -</strong> This field is not currently used. It is used to associate records to one another</p>
+<p><strong>Record Format -</strong> This can vary depending on the kind of data being added. When registering a WMS service, format must be set to OGC:WMS.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/csw-status-msg.png" src="../_images/csw-status-msg.png" />
+</div>
+</div></blockquote>
+<p><strong>Bounding Box coordinates: Upper Corner -</strong> The bounding box defaults to an area that will cover what is being added. It is recommended to leave the default settings (85.0 180, -85.0 -180) unless you have specific requirements.</p>
+<p><strong>Bounding Box: Lower Corner -</strong> Same as above.</p>
+<p><strong>Contact Email -</strong> Please add your email address here.</p>
+<p><strong>Contact Phone -</strong> Please add a contact phone number here.</p>
+<p><strong>Gold -</strong>  Select this checkbox if the data is NGA-approved content.</p>
+<p><strong>Category –</strong> Select a category from the drop-down menu.</p>
+<ol class="arabic simple" start="4">
+<li>Once you have completed the form, click the Save button. You will be returned to the CSW record page, and notified that your record was added successfully.</li>
+<li>A record added through the Django administration site will display the status as <strong>Unknown</strong>. Click the checkbox next to your record, and select <strong>Register Selected CSW Record</strong> from the Action menu. Click the <span class="guilabel">Go</span> button.</li>
+</ol>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/register-rec.png" src="../_images/register-rec.png" />
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="delete-a-record">
+<h3>Delete a record<a class="headerlink" href="#delete-a-record" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>Select <strong>CSW Records</strong> from the CORE menu on the Django administration site.</li>
+<li>Click the checkbox next to the record(s) to be deleted.</li>
+<li>Select <strong>Delete selected CSW Records</strong> from the Action menu, and click the :guilabel`Go` button.</li>
+<li>Click the <span class="guilabel">Yes, I’m sure</span> button to verify your selection.</li>
+</ol>
+</div>
+</div>
+<div class="section" id="managing-storyscapes">
+<h2>Managing Storyscapes<a class="headerlink" href="#managing-storyscapes" title="Permalink to this headline">¶</a></h2>
+<p>Through Django, administrators are able to create, delete and manage stories.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/ss-menu.png" src="../_images/ss-menu.png" />
+</div>
+</div></blockquote>
+<div class="section" id="create-a-story">
+<h3>Create a story<a class="headerlink" href="#create-a-story" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="build-the-story-index">
+<h4>Build the story index<a class="headerlink" href="#build-the-story-index" title="Permalink to this headline">¶</a></h4>
+<p>Users with administrator privileges are able to create stories through Django by clicking the Add link next to Stories in the Storyscapes menu.</p>
+<ol class="arabic simple">
+<li>Ensure the layers you want to use for your story have previously been uploaded, and are available in Exchange.</li>
+<li>Fill in as much of the form as possible; all of the fields on the form in <strong>bold</strong> are required.</li>
+</ol>
+<p>There are several options available through the Django administration site that are not available through the Exchange user interface. They provide a more detail for the story and its metadata, but typically require a little more knowledge of the datasets.</p>
+<blockquote>
+<div><p><strong>Uuid</strong> - This field is required, and is only auto-generated through the Exchange User Interface. You can find UUID generators online to help you create one for use here.</p>
+<div class="figure">
+<img alt="../_images/uuid.png" src="../_images/uuid.png" />
+</div>
+<p><strong>Owner</strong> - Select your user name from the list.</p>
+<p><strong>Title</strong> - Provide a title for your story. It should encompass all of the chapters that will make up your story.</p>
+<p><strong>Date/Time</strong> - The date and time will automatically populate with the story creation date. It is the reference date for the story, and does not need to correlate to the time period of the story data (which will be configured later).</p>
+<p><strong>Date type</strong> - This will indicate whether the date/time from above is related to the story’s creation, publication or revision.</p>
+<p><strong>Edition</strong> - If there have been revisions to your story, you can let users know by adding a version number here.</p>
+<p><strong>Abstract</strong> - Let others know what the story is about with a brief narrative summary.</p>
+<p><strong>Purpose</strong> - Provide a short description of why the story was created.</p>
+<p><strong>Maintenance frequency</strong> - From the pull down, select how often modifications and deletions are made to the data after it is first published.</p>
+<div class="figure" id="id5">
+<img alt="../_images/maintenance-freq.png" src="../_images/maintenance-freq.png" />
+<p class="caption"><span class="caption-text"><em>Maintenance frequency options</em></span></p>
+</div>
+<p><strong>Keywords region</strong> - Select a region/country from the list which best fits the data. Hold down <em>Control</em>, or <em>Command</em> on a Mac, to select more than one.</p>
+<p><strong>Restrictions</strong> - Select from a list of limitations which can be placed on the access or use of the data. Provide a description of “Other Restrictions” in the textbox.</p>
+<div class="figure">
+<img alt="../_images/restrictions.png" src="../_images/restrictions.png" />
+</div>
+<p><strong>License</strong> - Select data licensing requirements from the list. Not all data has licensing requirements.</p>
+<div class="figure" id="id6">
+<img alt="../_images/license.png" src="../_images/license.png" />
+<p class="caption"><span class="caption-text"><em>License requirement options</em></span></p>
+</div>
+<p><strong>Language</strong> - Select the language used within the dataset.</p>
+<p><strong>Category</strong> - Data is divided into categories, which assists in the grouping and search of available geographic datasets. These categories correspond to those on the Exchange homepage.</p>
+<p><strong>Spatial representation type</strong> - This explains the method used to represent geographic information in the dataset.</p>
+<blockquote>
+<div><div class="figure" id="id7">
+<img alt="../_images/spatial-rep.png" src="../_images/spatial-rep.png" />
+<p class="caption"><span class="caption-text"><em>Available spatial representation types</em></span></p>
+</div>
+</div></blockquote>
+<p><strong>Temporal extent start / end</strong> - Set the time period covered by the content of the dataset.</p>
+<p><strong>Supplemental information</strong> - Include any other descriptive information about the dataset.</p>
+<p><strong>Data quality statement</strong> - Provide a general description of the validity and legitimacy of the dataset. Explain any changes in the data over time.</p>
+<p><strong>Bounding boxes</strong> - There are four boxes to enter the coordinates for your bounding boxes. Enter the points for all of the X,Y coordinates.</p>
+<p>The following fields will populate automatically, and don’t need to be changed. They are related to registry. Changing these fields without the proper information could cause problems with your story creation.</p>
+<blockquote>
+<div><ul class="simple">
+<li>Srid</li>
+<li>CSW typename</li>
+<li>CSW schema</li>
+<li>CSW source</li>
+<li>CSW type</li>
+<li>CSW WKT geometry</li>
+</ul>
+</div></blockquote>
+<div class="figure">
+<img alt="../_images/srid1.png" src="../_images/srid1.png" />
+</div>
+<p><strong>Metadata</strong> - Click the checkboxes to ensure the metadata is uploaded and preserved. The Metadata XML will automatically generate.</p>
+<p><strong>Counts</strong> - Popular count and Share count will update as the story is viewed and shared.</p>
+<p><strong>Featured</strong> - Click the checkbox to feature this story on the homepage under the Featured Content section.</p>
+<p><strong>Is Published</strong> - This allows others to find your story when it is completed. It will make it searchable through the Exchange search.</p>
+<p><strong>Thumbnail url</strong> - Enter the URL for the thumbnail for your story. This will be what users see when searching for your story in Exchange.</p>
+<p><strong>Detail URL</strong> - This is the number assigned to your story, and is added to the end of the Exchange URL. This can make accessing your story easier in the future; just enter the Exchange URL, followed by /story/&lt;story number&gt;. The detail URL is created after saving your story.</p>
+<p><strong>Rating</strong> - Once your story is published, others can provide a rating to let you know what they think of it.</p>
+<p><strong>Distribution URL</strong> -  This is for information about online sources from which the dataset, specification, or community profile name and extended metadata elements can be obtained.</p>
+<p><strong>Distribution description</strong> - Provide a detailed description of what the online resource is or does.</p>
+<p><strong>Keywords</strong> - Enter words or phrases, separated by commas, used to describe the subject, and can be search by other users.</p>
+</div></blockquote>
+</div>
+<div class="section" id="add-chapters">
+<h4>Add chapters<a class="headerlink" href="#add-chapters" title="Permalink to this headline">¶</a></h4>
+<p>The content of the story will be chapters made from maps and layers previously uploaded into Exchange.</p>
+<p><strong>Note:</strong> It is recommended that you add layers via the Map Interface to ensure all of the required fields are properly completed.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/add-chapters.png" src="../_images/add-chapters.png" />
+</div>
+</div></blockquote>
+<p>This form is nearly identical to the one used for creating your story.</p>
+<ol class="arabic simple">
+<li>Select a map from the StoryChapter object list, and type a “0” in the Chapter Index box to indicate this will be part of the first chapter. The available maps will correspond to the maps in Exchange.</li>
+</ol>
+<p><strong>Note:</strong> The first chapter of the story must begin with 0.</p>
+<p>You can add additional layers to a chapter by repeating this step, and ensuring the chapter index is the same for all layers in a chapter. Create new chapters by changing the chapter index number.</p>
+<ol class="arabic simple" start="2">
+<li>Click the Edit (pencil icon) next to the map name to make any necessary edits to the metadata. Save</li>
+<li>When you’ve finished adding all of your chapters, and they are in the desired sequential order, click the <span class="guilabel">Save</span> button.</li>
+</ol>
+<p>If you marked the “Is Published” checkbox, your story will now be available for other users to view in Exchange. Users can search for your story through the Exchange search on the homepage, or filter for it based on any of the keywords you selected.</p>
+</div>
+<div class="section" id="verify-the-story">
+<h4>Verify the story<a class="headerlink" href="#verify-the-story" title="Permalink to this headline">¶</a></h4>
+<p>To ensure your story was published, and plays properly, click the guilabel:<cite>View on Site</cite> button. The story will display, along with all of the chapter and layer details.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/view-story.png" src="../_images/view-story.png" />
+</div>
+</div></blockquote>
+<p>Select the <span class="guilabel">Play</span> button under the map to begin the story. The features will display according to the time attributes.</p>
+<p>Click <strong>Next Chapter</strong> to skip ahead.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/story-summary.png" src="../_images/story-summary.png" />
+</div>
+</div></blockquote>
+<p>The story Summary will display all of the information provided when the story was created.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/chapters-layers.png" src="../_images/chapters-layers.png" />
+</div>
+</div></blockquote>
+<p>All of the chapters and layers used for the story will be listed in an index beneath the map viewer. You can toggle between the chapters to see information for the other chapters.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/edit-story.png" src="../_images/edit-story.png" />
+</div>
+</div></blockquote>
+<p>If you’d like to change anything about your story, click the <span class="guilabel">Change Publication Exchange</span> button. You will be returned to Exchange Composer site, and can make all edits from there.</p>
+<p>If you checked the Featured checkbox when creating your story, you can go to the Exchange homepage, and view it by clicking on the thumbnail under the Featured Content section.</p>
+</div>
+</div>
+<div class="section" id="delete-a-story">
+<h3>Delete a story<a class="headerlink" href="#delete-a-story" title="Permalink to this headline">¶</a></h3>
+<p>If a story is no longer needed, it can be quickly removed through the Django administration site.</p>
+<ol class="arabic simple">
+<li>Click the <strong>Stories</strong> link on the Storyscapes menu to open the list of stories within Exchange.</li>
+<li>Click the checkbox next to the story you’d like to delete. Select Delete selected stories from the Action menu, and click the <span class="guilabel">Go</span> button.</li>
+</ol>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/delete-story.png" src="../_images/delete-story.png" />
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li>Verify your selection by clicking the <span class="guilabel">Yes, I’m sure button</span>. The story will be removed from Exchange.</li>
+</ol>
+</div>
+</div>
+</div>
+
+
+          
+          </div>
+          <footer>
+  
+    
+      <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        
+          <a href="../support/index.html" class="btn btn-neutral float-right" title="Exchange Support">Next <span class="fa fa-arrow-circle-right"></span></a>
+        
+        
+          <a href="../stories/index.html" class="btn btn-neutral" title="Creating a story"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        
+      </div>
+    
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <div class="info">
+      <a class="logo-link" href="http://boundlessgeo.com">
+        <div class="boundless-logo"></div>
+      </a>
+      <div class="copyright">
+      
+        Copyright &copy; 2016, Boundless
+      
+      </div>
+    </div>
+    <div class="footer-aside">
+      <a href="https://connect.boundlessgeo.com/Community/Questions-Answers">Ask a Question</a>
+      </div>
+  </div>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div> 
+   
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1.3.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+   
+  
+
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+  
+
+</body>
+</html>
