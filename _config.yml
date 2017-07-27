@@ -1,1 +1,1 @@
-include: ["_static", "_images", "_sources"]
+include: ["*/_static", "*/_images", "*/_sources"]
