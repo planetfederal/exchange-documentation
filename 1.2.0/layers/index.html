@@ -1,0 +1,684 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Working with Layers &mdash; Boundless Exchange 1.2.0 documentation</title>
+  
+
+  
+
+  
+  
+  
+
+  
+     <link rel="shortcut icon" href="../_static/img/exchange.ico"/>
+  
+
+  
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,700,600,800,300|Montserrat:400,700|Source+Code+Pro:300,400,500,700' rel='stylesheet' type='text/css'>
+
+<!-- Removing search because it doesn't work well
+  
+  
+    
+  
+-->
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+    <!-- Removing search because it doesn't work well
+        <link rel="search" title="Search" href="../search.html"/>
+    -->
+    <link rel="top" title="Boundless Exchange 1.2.0 documentation" href="../index.html"/>
+        <link rel="next" title="Working with Maps" href="../maps/index.html"/>
+        <link rel="prev" title="Working with Documents" href="../documents/index.html"/> 
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/zenbox.css" type="text/css" media="screen, projection" />
+  
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+    
+
+      <div id="header" class="selfclear">
+        
+        <div class="exchange_logo"><a href="/">Boundless Exchange 1.2.0 documentation</a></div>
+        
+
+        <div class="version_info">1.2.0</div>
+      </div>
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <!-- Removing search because it doesn't work well
+      <div class="wy-side-nav-search">
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+      </div>
+      -->
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../accounts/index.html">Accounts, Users and Groups</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../accounts/index.html#creating-a-new-account">Creating a new account</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../accounts/index.html#managing-your-profile">Managing your profile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../accounts/index.html#viewing-other-user-accounts">Viewing other user accounts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../accounts/index.html#managing-groups">Managing groups</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../discovery/index.html">Discovering available content</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../documents/index.html">Working with Documents</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../documents/index.html#uploading-documents">Uploading documents</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../documents/index.html#browsing-documents">Browsing documents</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Working with Layers</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#upload-a-layer">Upload a layer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#layer-information">Layer information</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#editing-metadata-and-managing-layers">Editing metadata and managing layers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#downloading-data-from-a-layer">Downloading data from a layer</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../maps/index.html">Working with Maps</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../maps/index.html#create-a-map">Create a map</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../maps/index.html#add-layers-to-a-map">Add layers to a map</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../maps/index.html#managing-maps">Managing Maps</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../editing/index.html">Editing and Version Management</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../editing/index.html#edit-features">Edit Features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../editing/index.html#version-management">Version Management</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../analysis/index.html">Analyzing data with Exchange</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../analysis/index.html#working-within-the-attribute-table">Working within the attribute table</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analysis/index.html#view-attribute-statistics">View attribute statistics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analysis/index.html#create-a-heat-map">Create a heat map</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analysis/index.html#search-all-attributes">Search all attributes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analysis/index.html#advanced-filters">Advanced filters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analysis/index.html#filter-features-using-spatial-filters">Filter features using spatial filters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analysis/index.html#delete-a-spatial-filter">Delete a spatial filter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analysis/index.html#combine-filters-for-deeper-analysis">Combine filters for deeper analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analysis/index.html#filter-features-by-timeline">Filter features by timeline</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../admin/index.html">Administration</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../admin/index.html#working-with-registry">Working with Registry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../admin/index.html#csw-record-administration">CSW Record Administration</a></li>
+</ul>
+</li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">Boundless Exchange documentation </a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html"> Boundless Exchange 1.2.0 documentation </a> &raquo;</li>
+    
+    <li>Working with Layers</li>
+  </ul>
+  
+  <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+    
+      <a href="../maps/index.html" class="btn btn-neutral float-right" title="Working with Maps">Next <span class="fa fa-arrow-circle-right"></span></a>
+    
+    
+      <a href="../documents/index.html" class="btn btn-neutral" title="Working with Documents"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+    
+  </div>
+  <hr/>
+</div>
+          <div role="main">
+          
+        	     
+  <div class="section" id="working-with-layers">
+<h1>Working with Layers<a class="headerlink" href="#working-with-layers" title="Permalink to this headline">¶</a></h1>
+<p>Exchange allows you to upload layers for better visualization of your data, and to create a more detailed map.</p>
+<p>Exchange supports the following Vector formats:</p>
+<ul class="simple">
+<li>ESRI Shapefile</li>
+<li>CSV (Comma Separated Value)</li>
+<li>Google Earth KML</li>
+<li>GeoJSON</li>
+</ul>
+<p>The following are the supported Raster formats:</p>
+<ul>
+<li><p class="first">GeoTIFF</p>
+</li>
+<li><p class="first">ERDAS Imagine</p>
+</li>
+<li><p class="first">JPEG2000</p>
+</li>
+<li><p class="first">NITF (National Imagery Transmission Format)</p>
+</li>
+<li><p class="first">CIB (Controlled Image Base)</p>
+<blockquote>
+<div><ul class="simple">
+<li>1 Meter</li>
+<li>5 Meter</li>
+<li>10 Meter</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first">CADRG (Compressed Arc Digitized Raster Graphic)</p>
+<blockquote>
+<div><ul class="simple">
+<li>GNC (Global Navigation Chart)</li>
+<li>JNC (Jet Navigation Chart)</li>
+<li>ONC (Operational Navigation Chart)</li>
+<li>TPC (Tactical Pilotage Chart)</li>
+<li>JOG (Joint Operations Graphic)</li>
+<li>TLM100 (Topographic Line Map 100K)</li>
+<li>TLM50 (Topographic Line Map 50K)</li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<p>All file types listed can be uploaded as a Zip Archive (.zip).</p>
+<p>Once the layers are uploaded, they will be available to other users in Exchange.</p>
+<div class="section" id="upload-a-layer">
+<h2>Upload a layer<a class="headerlink" href="#upload-a-layer" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p class="first">Click the <span class="guilabel">Data</span> link on the Exchange toolbar, and select <strong>Upload Layers</strong> in the drop-down menu to open the Upload Layers page.</p>
+<div class="figure">
+<img alt="../_images/data-menu1.png" src="../_images/data-menu1.png" />
+</div>
+</li>
+<li><p class="first">Click the <a href="#id1"><span class="problematic" id="id2">:guilable:`Choose Files`</span></a> button. This will open a local file dialog. Navigate to your data folder and select the file(s) for the geospatial layer..</p>
+</li>
+</ol>
+<p><strong>Note:</strong> Some file types require multiple files to create a complete layer. If you are uploading an ESRI Shapefile, be sure to include the .dbf, .prj, .shp, and .shx files.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/choose-files.png" src="../_images/choose-files.png" />
+</div>
+</div></blockquote>
+<ol class="arabic" start="3">
+<li><p class="first">Click on your file under <strong>Manage Your Data</strong>. Verify the file information is correct, and select <strong>Create Layer</strong>.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/manage-data.png" src="../_images/manage-data.png" />
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">Verify the name of your layer is correct, and click the <span class="guilabel">Continue</span> button. A unique identifier will be added to the end of your layer.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/name-layer.png" src="../_images/name-layer.png" />
+</div>
+</div></blockquote>
+</li>
+</ol>
+<div class="section" id="configure-time-attributes">
+<h3>Configure time attributes<a class="headerlink" href="#configure-time-attributes" title="Permalink to this headline">¶</a></h3>
+<p>A feature can currently support one or two time attributes. If a single attribute is used, the feature is considered relevant at that single point in time (start date). If two attributes are used, the second attribute represents the end of a valid time period for the feature.</p>
+<p>A time attribute can be:</p>
+<blockquote>
+<div><ul class="simple">
+<li>A date - 02/15/2016 11:23 AM</li>
+<li>Text that can be converted to a timestamp - Wednesday December 7, 2016 9:47 AM</li>
+<li>A number representing a year - 2016, 1978</li>
+</ul>
+</div></blockquote>
+<p>You will select the attribute you want to use from the drop down list. Exchange can handle the following formats:</p>
+<blockquote>
+<div><blockquote>
+<div><p>The most common formatting flags are:</p>
+<blockquote>
+<div><ul class="simple">
+<li>y - year</li>
+<li>M - month</li>
+<li>d - day of month</li>
+<li>h - hour of the day (0 - 23)</li>
+<li>k - hour of the day (1-24)</li>
+<li>m - minute in an hour</li>
+<li>s - seconds in a minute</li>
+</ul>
+</div></blockquote>
+</div></blockquote>
+<p>Exchange will also handle date and optional time variants of ISO-8601. In terms of the formatting flags noted above, these are:</p>
+<blockquote>
+<div><p>yyyy-MM-dd’T’HH:mm:ss.SSS’Z’</p>
+<p>yyyy-MM-dd’T’HH:mm:sss’Z’</p>
+<p>yyyy-MM-dd’T’HH:mm:ss’Z’</p>
+<p>yyyy-MM-dd’T’HH:mm’Z’</p>
+<p>yyyy-MM-dd’T’HH’Z’</p>
+<p>yyyy-MM-dd</p>
+<p>yyyy-MM</p>
+<p>yyyy</p>
+</div></blockquote>
+</div></blockquote>
+<p><strong>Note:</strong> Single quotes represent a literal character.</p>
+<p>To remove ambiguity, repeat a code to represent the maximum number of digits. For example, yyyy or MM instead of yy or M.</p>
+<ol class="arabic" start="5">
+<li><p class="first">Select a time attribute option for your layer.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/time-attribute.png" src="../_images/time-attribute.png" />
+</div>
+<p><strong>Yes -</strong> If your layer has an attribute for time configuration, and you’d like to enable the playback feature, select Yes. Configure the time attribute by selecting which data field is the Start Date. Selecting an end date is optional.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/time-config.png" src="../_images/time-config.png" />
+</div>
+</div></blockquote>
+<p><strong>No -</strong> Select No if your data does not include temporal information.</p>
+<p>Click the Continue button.</p>
+</div></blockquote>
+</li>
+</ol>
+</div>
+<div class="section" id="enable-version-history">
+<h3>Enable version history<a class="headerlink" href="#enable-version-history" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple" start="6">
+<li>Select whether or not you’d like to enable version history.</li>
+</ol>
+<p>Exchange uses GeoGig repositories to maintain version control of your vector data. By enabling version history, you can see the history of changes and who made them. Please reference the <strong>Editing and Version Management</strong> section for further information. Establishing permissions for your layers allows you to see edits made to the information through version history. Please see the below section on <strong>Setting Permissions</strong> for more information.</p>
+<p><strong>Note:</strong> Attempting to enable version history for a raster file will cause an error, notifying you to verify your configuration before you can proceed with the import.</p>
+<blockquote>
+<div><p>Select Yes or  No, followed by the Continue button.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/enable-history.png" src="../_images/enable-history.png" />
+</div>
+</div></blockquote>
+</div></blockquote>
+<ol class="arabic" start="7">
+<li><p class="first">Click the <span class="guilabel">Create my layer</span> button to begin the import. You will be notified that the importer has successfully finished. Select the hyperlink to view your layer, or click the <span class="guilabel">Close</span> button to continue importing data.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/create-layer.png" src="../_images/create-layer.png" />
+</div>
+</div></blockquote>
+</li>
+</ol>
+<p>Selecting <strong>View the layer</strong> will take you to the layer’s information page, where you can create permissions for viewing and editing your data.</p>
+</div>
+</div>
+<div class="section" id="layer-information">
+<h2>Layer information<a class="headerlink" href="#layer-information" title="Permalink to this headline">¶</a></h2>
+<p>Each layer has an information page associated to it, which has several options for managing the layer’s data. Information is available for the following:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Info – Displays general information about the layer</li>
+<li>Attributes - Lists the features in a layer, and the nonspatial information about the feature</li>
+<li>Ratings – Based on the ratings of other users</li>
+<li>Comments – Any comments on the layer from users</li>
+<li>Legend – Maps using this layer – What other maps within Exchange are using the layer</li>
+<li>Permissions – How others can see or modify this layer</li>
+<li>Styles – What styles are associated to the layer</li>
+<li>About – Provides information on the owner, Point of Contact and Metadata Author</li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple">
+<li>To access Layer Information, click the <span class="guilabel">Data</span> link on the Exchange toolbar, and select <strong>Layers</strong> from the drop-down menu. This will open the Explore Layers page. Here you will see a list of all of the available layers. Each layer has a thumbnail image, as well as the title, author, and any associated keywords.</li>
+</ol>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/layers-info.png" src="../_images/layers-info.png" />
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li>Click the title of the layer you want to access.</li>
+<li>The information page for the layer will open.</li>
+</ol>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/layer-info-page.png" src="../_images/layer-info-page.png" />
+</div>
+</div></blockquote>
+<div class="section" id="using-the-map-features">
+<h3>Using the map features<a class="headerlink" href="#using-the-map-features" title="Permalink to this headline">¶</a></h3>
+<p>Within the Map Information page, there are some map features that will help you view the layer more in depth.</p>
+<p><strong>Zoom -</strong> Select the Zoom In or Zoom Out button to zoom to a specific location. Depending on the basemap, you may be able to zoom in as close as 1:10 meters.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/zoom-in.png" src="../_images/zoom-in.png" />
+</div>
+<div class="figure">
+<img alt="../_images/zoom-out.png" src="../_images/zoom-out.png" />
+</div>
+</div></blockquote>
+<p><strong>Zoom to the Initial Extent -</strong> Return to the original extent of the map.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/initial-extent.png" src="../_images/initial-extent.png" />
+</div>
+</div></blockquote>
+<p><strong>Switch to Globe (3D) -</strong> Select this button to view this map as 3D.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/switch-globe.png" src="../_images/switch-globe.png" />
+</div>
+</div></blockquote>
+<p><strong>Print Map -</strong> Select Print Map to print a copy of the layer.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/print-map.png" src="../_images/print-map.png" />
+</div>
+</div></blockquote>
+<p><strong>Layers -</strong> Select the Layers button to turn any of your layers off or on.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/layers-button.png" src="../_images/layers-button.png" />
+</div>
+</div></blockquote>
+<p>Click the <span class="guilabel">Basemap</span> button to select a different basemap style.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/basemap.png" src="../_images/basemap.png" />
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="layer-detail-tabs">
+<h3>Layer detail tabs<a class="headerlink" href="#layer-detail-tabs" title="Permalink to this headline">¶</a></h3>
+<p>There are five tabs with information pertaining to the particular layer: Info, Attributes, Ratings, Comments, and GeoGig.</p>
+<p>The Info tab is the default display, and contains basic information about the layer, such as the title, who created it, and when it was published.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/details-info.png" src="../_images/details-info.png" />
+</div>
+</div></blockquote>
+<p>The Attributes tab displays the layer attribute table. Layer attribute statistics will only display if the value is a numeric attribute, otherwise, no statistics will be calculated.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/details-attributes.png" src="../_images/details-attributes.png" />
+</div>
+</div></blockquote>
+<p>The Ratings tab displays all ratings given to a layer by other users. Click on a star to rate the layer (one to five stars). Click the <strong>Cancel this rating</strong> icon to delete your rating.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/details-ratings.png" src="../_images/details-ratings.png" />
+</div>
+</div></blockquote>
+<p>The Comments tab allows you to see what others are saying about this layer, as well as leave your own comment. Click the <span class="guilabel">Add Comment</span> button to leave a comment about the layer. When you’ve finished, click the <span class="guilabel">Submit Comment</span> button.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/details-comment.png" src="../_images/details-comment.png" />
+</div>
+</div></blockquote>
+<p>The GeoGig tab shows you the history of edits that have been made to the layer, when they were made, and by whom.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/details-geogig.png" src="../_images/details-geogig.png" />
+</div>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="editing-metadata-and-managing-layers">
+<h2>Editing metadata and managing layers<a class="headerlink" href="#editing-metadata-and-managing-layers" title="Permalink to this headline">¶</a></h2>
+<p>Each layer’s information page allows you to view the information that makes up the layer. Exchange allows you to edit metadata pertaining to a layer that you have uploaded, as well as any layers you are given permissions to access by other users.</p>
+<div class="section" id="edit-metadata">
+<h3>Edit metadata<a class="headerlink" href="#edit-metadata" title="Permalink to this headline">¶</a></h3>
+<p>Metadata is information about the layer, such as the owner, title, purpose or restrictions on a layer. You can include as much information about the layer as you feel is important; the more you can tell other users about your layer, the better. If you have questions about what to put in a field, hover your mouse over the area. An information balloon will explain what is required.</p>
+<ol class="arabic simple">
+<li>Click the <span class="guilabel">Edit Layer</span> button, and select the <span class="guilabel">Edit</span> button under Metadata. The Edit Metadata page will display.</li>
+</ol>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/metadata-edit.png" src="../_images/metadata-edit.png" />
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li>Edit the information fields to include anything pertinent to the layer. <strong>Note:</strong> Once you begin to edit the metadata, the Category field becomes mandatory, and you must select at least one.</li>
+<li>Click the <span class="guilabel">Update</span> button at either the top or bottom of the page to save your changes.</li>
+</ol>
+</div>
+<div class="section" id="create-a-custom-thumbnail">
+<h3>Create a custom thumbnail<a class="headerlink" href="#create-a-custom-thumbnail" title="Permalink to this headline">¶</a></h3>
+<p>Custom images related to your map can be created, and will display next to the map on the Explore Maps page.</p>
+<ol class="arabic simple">
+<li>From the layer’s info page, click the <span class="guilabel">Edit Layer</span> button.</li>
+</ol>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/edit-layer.png" src="../_images/edit-layer.png" />
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li>Click the <span class="guilabel">Set from file</span> button to browse to the image.</li>
+</ol>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/thumbnail.png" src="../_images/thumbnail.png" />
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li>Browse to the image you’d like to use. Once added, the new image will display.</li>
+</ol>
+</div>
+<div class="section" id="set-permissions">
+<h3>Set permissions<a class="headerlink" href="#set-permissions" title="Permalink to this headline">¶</a></h3>
+<p>The social design of Exchange allows users to coordinate on projects by sharing access to the same layers and maps; however, there may be instances when you want to limit who has what access to your layers. In Exchange, you can establish permissions for who can view, edit, and manage layers. Permissions can also be set for editing styles and metadata.</p>
+<p>By default, when a layer is uploaded, the permissions are set so that only the person who uploaded the layer has access to it. If you want other people to view, download, or edit the layer, you must change the permissions to allow it. Without changing permissions, other registered users will not see it listed as an available layer.</p>
+<ol class="arabic simple">
+<li>Click the <span class="guilabel">Change Layer Permissions</span> button.</li>
+</ol>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/permissions.png" src="../_images/permissions.png" />
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li>Under the Who can view and Who can download sections, add the name(s) of registered users or groups. This will ensure anonymous view access is disabled, and only those users specified are able to see your layers. You can also leave the checkbox checked to allow all users access to the layer.</li>
+</ol>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/set-permissions.png" src="../_images/set-permissions.png" />
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li>You can make the same changes for who can edit, change metadata, styles and who can manage the data. Add the names of users or groups who have permission to edit the layer. Click the <span class="guilabel">Apply Changes</span> button when you are finished.</li>
+</ol>
+</div>
+<div class="section" id="manage-styles">
+<h3>Manage styles<a class="headerlink" href="#manage-styles" title="Permalink to this headline">¶</a></h3>
+<p>Layers can have multiple associated styles. The Styles section tells you which style(s) is currently associated to the layer.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/styles.png" src="../_images/styles.png" />
+</div>
+</div></blockquote>
+<ol class="arabic simple">
+<li>Click the <span class="guilabel">Edit Layer</span> button, and then <strong>Manage</strong> under Styles</li>
+</ol>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/styles-manage.png" src="../_images/styles-manage.png" />
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li>Click the name of a style in the left-hand list to select it, and move it to the right-hand list.</li>
+</ol>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/manage-styles.png" src="../_images/manage-styles.png" />
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li>Click a style in the right-hand list, and click the arrows between the lists to remove a style.</li>
+<li>Click the <span class="guilabel">Update available Styles</span> button to save changes.</li>
+</ol>
+</div>
+<div class="section" id="replace-a-layer">
+<h3>Replace a layer<a class="headerlink" href="#replace-a-layer" title="Permalink to this headline">¶</a></h3>
+<p>Replacing a layer allows you to upload a new layer, taking the place of the current layer.</p>
+<ol class="arabic simple">
+<li>Click the <span class="guilabel">Edit Layer</span> button, and select the <span class="guilabel">Replace</span> button.</li>
+</ol>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/layer-remove-replace.png" src="../_images/layer-remove-replace.png" />
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li>Follow the instructions to upload a new layer.</li>
+</ol>
+</div>
+<div class="section" id="remove-a-layer">
+<h3>Remove a layer<a class="headerlink" href="#remove-a-layer" title="Permalink to this headline">¶</a></h3>
+<p>Removing a layer will delete it completely from Boundless Exchange.</p>
+<ol class="arabic simple">
+<li>Click the <span class="guilabel">Edit Layer</span> button, and select Remove.</li>
+<li>Verify your selection by clicking the <span class="guilabel">Yes, I am sure</span> button.</li>
+</ol>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/verify-remove-layer.png" src="../_images/verify-remove-layer.png" />
+</div>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="downloading-data-from-a-layer">
+<h2>Downloading data from a layer<a class="headerlink" href="#downloading-data-from-a-layer" title="Permalink to this headline">¶</a></h2>
+<p>Within Exchange, there are two ways to extract data and metadata, download a layer or download a layer’s metadata. This facilitates the flow of geospatial data in (import) and out (export) of Exchange.</p>
+<div class="section" id="download-data">
+<h3>Download data<a class="headerlink" href="#download-data" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>Click the <span class="guilabel">Download Layer</span> button.</li>
+<li>Select the format in which you’d like the data to be downloaded. Exchange currently offers the following formats for use in multiple geospatial platforms:</li>
+</ol>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/download-layer-options.png" src="../_images/download-layer-options.png" />
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li>Save the file to your computer when the Save As dialog box opens.</li>
+</ol>
+</div>
+<div class="section" id="download-metadata">
+<h3>Download metadata<a class="headerlink" href="#download-metadata" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>Click the <span class="guilabel">Download Metadata</span> button.</li>
+<li>Select the format in which you’d like to download the metadata.</li>
+</ol>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/download-meta-options.png" src="../_images/download-meta-options.png" />
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li>Save the file to your computer when prompted.</li>
+</ol>
+</div>
+</div>
+</div>
+
+
+          
+          </div>
+          <footer>
+  
+    
+      <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        
+          <a href="../maps/index.html" class="btn btn-neutral float-right" title="Working with Maps">Next <span class="fa fa-arrow-circle-right"></span></a>
+        
+        
+          <a href="../documents/index.html" class="btn btn-neutral" title="Working with Documents"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        
+      </div>
+    
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <div class="info">
+      <a class="logo-link" href="http://boundlessgeo.com">
+        <div class="boundless-logo"></div>
+      </a>
+      <div class="copyright">
+      
+        Copyright &copy; 2016, Boundless
+      
+      </div>
+    </div>
+    <div class="footer-aside">
+      <a href="https://connect.boundlessgeo.com/Community/Questions-Answers">Ask a Question</a>
+      </div>
+  </div>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div> 
+   
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1.2.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+   
+  
+
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+  
+
+</body>
+</html>
