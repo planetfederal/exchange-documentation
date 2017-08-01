@@ -259,18 +259,18 @@ Click the :guilabel:`Register a new Record` button in the top right corner to ad
 **Service URL** - This is the URL address for the endpoint you are trying to add.
 
   *Geoserver Example:*
-    https://mapstory.org/geoserver/geonode/wms
+    *https://mapstory.org/geoserver/geonode/wms*
 
   *ESRI MapServer Example:*
-    https://ngamaps.geointapps.org/arcgis/rest/services/Hurricane_Matthew/Bahamas_Latest_Damage_Assessments/MapServer
+    *https://ngamaps.geointapps.org/arcgis/rest/services/Hurricane_Matthew/Bahamas_Latest_Damage_Assessments/MapServer*
 
 **Note:** Entering a MapServer url will auto-populate the available services such as WMSServer, WFSServer, FeatureServer.
 
   *ESRI MapServer WMSserver Example:*
-    https://ngamaps.geointapps.org/arcgis/services/Hurricane_Matthew/Haiti_Latest_Assessments/MapServer/wmsserver
+    *https://ngamaps.geointapps.org/arcgis/services/Hurricane_Matthew/Haiti_Latest_Assessments/MapServer/wmsserver*
 
   *ESRI ImageServer Example:*
-    https://gis.ngdc.noaa.gov/arcgis/rest/services/bag_hillshades/ImageServer
+    *https://gis.ngdc.noaa.gov/arcgis/rest/services/bag_hillshades/ImageServer*
 
 **Title** - This field should populate automatically. The title should be related to the data, but should also be unique enough to find when performing a search. You can change the title if you don’t want what auto-filled.
 
@@ -300,7 +300,7 @@ Additional services types (also called references) can be added by selecting the
 
 **Note:** Contact your Exchange administrator if the status does not display as Complete. They will need to take a look at your record via Django administration. Please see step 5 in the record administration section below.
 
-For additional examples of records that have been successfully added in Exchange, please check out: `CSW Examples <https://gist.github.com/davisc/219f75f42bc2a620319070a04c4fa98d>`_
+For additional examples of records that have been successfully added in Exchange, please check out the Appendix.
 
 Verify the record
 ^^^^^^^^^^^^^^^^^
@@ -360,16 +360,16 @@ For the services listed below, you would use the following information:
 **Service Endpoint -** This is the URL address for the endpoint you are trying to add.
 
   *Geoserver Example:*
-    https://mapstory.org/geoserver/geonode/wms
+    *https://mapstory.org/geoserver/geonode/wms*
 
   *ESRI MapServer Example:*
-    https://ngamaps.geointapps.org/arcgis/rest/services/Hurricane_Matthew/Bahamas_Latest_Damage_Assessments/MapServer
+    *https://ngamaps.geointapps.org/arcgis/rest/services/Hurricane_Matthew/Bahamas_Latest_Damage_Assessments/MapServer*
 
   *ESRI MapServer WMSserver Example:*
-    https://ngamaps.geointapps.org/arcgis/services/Hurricane_Matthew/Haiti_Latest_Assessments/MapServer/wmsserver
+    *https://ngamaps.geointapps.org/arcgis/services/Hurricane_Matthew/Haiti_Latest_Assessments/MapServer/wmsserver*
 
   *ESRI ImageServer Example:*
-    https://gis.ngdc.noaa.gov/arcgis/rest/services/bag_hillshades/ImageServer
+    *https://gis.ngdc.noaa.gov/arcgis/rest/services/bag_hillshades/ImageServer*
 
 **Relation -** This field is not currently used. It is used to associate records to one another
 

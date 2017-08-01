@@ -44,7 +44,7 @@ Upload a layer
 
    .. figure:: img/data-menu.png
 
-2. Click the :guilable:`Choose Files` button. This will open a local file dialog. Navigate to your data folder and select the file(s) for the geospatial layer..
+2. Click the :guilabel:`Choose Files` button. This will open a local file dialog. Navigate to your data folder and select the file(s) for the geospatial layer.
 
 **Note:** Some file types require multiple files to create a complete layer. If you are uploading an ESRI Shapefile, be sure to include the .dbf, .prj, .shp, and .shx files.
 
