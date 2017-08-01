@@ -22,4 +22,5 @@ User Guide
    analysis/index
    stories/index
    admin/index
+   appendix/index
    support/index

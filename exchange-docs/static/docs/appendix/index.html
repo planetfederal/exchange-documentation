@@ -1,0 +1,568 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Appendix &mdash; Boundless Exchange 1.3.0 documentation</title>
+  
+
+  
+
+  
+  
+  
+
+  
+     <link rel="shortcut icon" href="../_static/img/exchange.ico"/>
+  
+
+  
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,700,600,800,300|Montserrat:400,700|Source+Code+Pro:300,400,500,700' rel='stylesheet' type='text/css'>
+
+<!-- Removing search because it doesn't work well
+  
+  
+    
+  
+-->
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <!-- Removing search because it doesn't work well
+    -->
+    <link rel="top" title="Boundless Exchange 1.3.0 documentation" href="../index.html"/>
+        <link rel="next" title="Exchange Support" href="../support/index.html"/>
+        <link rel="prev" title="Administration" href="../admin/index.html"/> 
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/zenbox.css" type="text/css" media="screen, projection" />
+  
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+    
+
+      <div id="header" class="selfclear">
+        
+        <div class="exchange_logo"><a href="/">Boundless Exchange 1.3.0 documentation</a></div>
+        
+
+        <div class="version_info">1.3.0</div>
+      </div>
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <!-- Removing search because it doesn't work well
+      <div class="wy-side-nav-search">
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+      </div>
+      -->
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../accounts/index.html">Accounts, Users and Groups</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../accounts/index.html#creating-a-new-account">Creating a new account</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../accounts/index.html#managing-your-profile">Managing your profile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../accounts/index.html#viewing-other-user-accounts">Viewing other user accounts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../accounts/index.html#managing-groups">Managing groups</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../discovery/index.html">Discovering available content</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../documents/index.html">Working with Documents</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../documents/index.html#uploading-documents">Uploading documents</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../documents/index.html#browsing-documents">Browsing documents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../layers/index.html">Working with Layers</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../layers/index.html#upload-a-layer">Upload a layer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../layers/index.html#layer-information">Layer information</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../layers/index.html#editing-metadata-and-managing-layers">Editing metadata and managing layers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../layers/index.html#downloading-data-from-a-layer">Downloading data from a layer</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../maps/index.html">Working with Maps</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../maps/index.html#create-a-map">Create a map</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../maps/index.html#add-layers-to-a-map">Add layers to a map</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../maps/index.html#managing-maps">Managing Maps</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../editing/index.html">Editing and Version Management</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../editing/index.html#edit-features">Edit Features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../editing/index.html#version-management">Version Management</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../analysis/index.html">Analyzing data with Exchange</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../analysis/index.html#working-within-the-attribute-table">Working within the attribute table</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analysis/index.html#view-attribute-statistics">View attribute statistics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analysis/index.html#create-a-heat-map">Create a heat map</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analysis/index.html#search-all-attributes">Search all attributes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analysis/index.html#advanced-filters">Advanced filters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analysis/index.html#filter-features-using-spatial-filters">Filter features using spatial filters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analysis/index.html#delete-a-spatial-filter">Delete a spatial filter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analysis/index.html#combine-filters-for-deeper-analysis">Combine filters for deeper analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analysis/index.html#filter-features-by-timeline">Filter features by timeline</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../stories/index.html">Creating a story</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../stories/index.html#compose-a-story">Compose a story</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../stories/index.html#add-additional-chapters">Add additional chapters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../stories/index.html#publish-your-story">Publish your story</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../admin/index.html">Administration</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../admin/index.html#django-administration">Django Administration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../admin/index.html#accounts">Accounts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../admin/index.html#actstream-activity-stream">Actstream (Activity Stream)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../admin/index.html#audit-trail">Audit trail</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../admin/index.html#announcements">Announcements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../admin/index.html#avatars">Avatars</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../admin/index.html#working-with-registry">Working with Registry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../admin/index.html#csw-record-administration">CSW Record Administration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../admin/index.html#managing-storyscapes">Managing Storyscapes</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Appendix</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../support/index.html">Exchange Support</a></li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">Boundless Exchange documentation </a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html"> Boundless Exchange 1.3.0 documentation </a> &raquo;</li>
+    
+    <li>Appendix</li>
+  </ul>
+  
+  <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+    
+      <a href="../support/index.html" class="btn btn-neutral float-right" title="Exchange Support">Next <span class="fa fa-arrow-circle-right"></span></a>
+    
+    
+      <a href="../admin/index.html" class="btn btn-neutral" title="Administration"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+    
+  </div>
+  <hr/>
+</div>
+          <div role="main">
+          
+        	     
+  <div class="section" id="appendix">
+<h1>Appendix<a class="headerlink" href="#appendix" title="Permalink to this headline">¶</a></h1>
+<p>The following is a CSW example that has been successfully added to Exchange in the past.</p>
+<blockquote>
+<div><div class="highlight-xml"><div class="highlight"><pre><span></span><span class="nt">&lt;csw:Transaction</span> <span class="na">xmlns:csw=</span><span class="s">&quot;http://www.opengis.net/cat/csw/2.0.2&quot;</span> <span class="na">xmlns:ows=</span><span class="s">&quot;http://www.opengis.net/ows&quot;</span> <span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span> <span class="na">xsi:schemaLocation=</span><span class="s">&quot;http://www.opengis.net/cat/csw/2.0.2 http://schemas.opengis.net/csw/2.0.2/CSW-publication.xsd&quot;</span> <span class="na">service=</span><span class="s">&quot;CSW&quot;</span> <span class="na">version=</span><span class="s">&quot;2.0.2&quot;</span> <span class="na">xmlns:dc=</span><span class="s">&quot;http://purl.org/dc/elements/1.1/&quot;</span> <span class="na">xmlns:dct=</span><span class="s">&quot;http://purl.org/dc/terms/&quot;</span> <span class="na">xmlns:registry=</span><span class="s">&quot;http://gis.harvard.edu/HHypermap/registry/0.1&quot;</span> <span class="nt">&gt;</span>
+  <span class="nt">&lt;csw:Insert&gt;</span>
+    <span class="nt">&lt;csw:Record</span> <span class="na">xmlns:registry=</span><span class="s">&quot;http://gis.harvard.edu/HHypermap/registry/0.1&quot;</span> <span class="nt">&gt;</span>
+      <span class="nt">&lt;dc:identifier&gt;</span>78deee94-abb0-4d55-a589-022c9aa8f83c<span class="nt">&lt;/dc:identifier&gt;</span>
+      <span class="nt">&lt;dc:title&gt;</span>American Bullfrog<span class="nt">&lt;/dc:title&gt;</span>
+      <span class="nt">&lt;dc:type&gt;</span>dataset<span class="nt">&lt;/dc:type&gt;</span>
+      <span class="nt">&lt;dc:format&gt;</span>OGC:WMS<span class="nt">&lt;/dc:format&gt;</span>
+      <span class="nt">&lt;dct:modified&gt;</span>2017-05-17<span class="nt">&lt;/dct:modified&gt;</span>
+      <span class="nt">&lt;dct:abstract&gt;</span>Jeremiah was a bullfrog<span class="nt">&lt;/dct:abstract&gt;</span>
+      <span class="nt">&lt;dc:creator&gt;</span>Boundless<span class="nt">&lt;/dc:creator&gt;</span>
+      <span class="nt">&lt;dc:source&gt;</span>https://mapstory.org/geoserver/geonode/wms<span class="nt">&lt;/dc:source&gt;</span>
+      <span class="nt">&lt;ows:BoundingBox</span> <span class="na">crs=</span><span class="s">&quot;http://www.opengis.net/def/crs/EPSG/0/4326&quot;</span> <span class="na">dimensions=</span><span class="s">&quot;2&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;ows:LowerCorner&gt;</span>-85.0 -180.0<span class="nt">&lt;/ows20:LowerCorner&gt;</span>
+      <span class="nt">&lt;ows:UpperCorner&gt;</span>85.0 180.0<span class="nt">&lt;/ows20:UpperCorner&gt;</span>
+      <span class="nt">&lt;/ows:BoundingBox&gt;</span>
+    <span class="nt">&lt;/csw:Record&gt;</span>
+    <span class="nt">&lt;csw:Record</span> <span class="na">xmlns:registry=</span><span class="s">&quot;http://gis.harvard.edu/HHypermap/registry/0.1&quot;</span> <span class="nt">&gt;</span>
+      <span class="nt">&lt;dc:identifier&gt;</span>8db10886-327c-489c-ae6a-9f4aefaed96f<span class="nt">&lt;/dc:identifier&gt;</span>
+      <span class="nt">&lt;dc:title&gt;</span>District Public Schools<span class="nt">&lt;/dc:title&gt;</span>
+      <span class="nt">&lt;dc:creator&gt;</span>cdavis<span class="nt">&lt;/dc:creator&gt;</span>
+      <span class="nt">&lt;dc:type&gt;</span>dataset<span class="nt">&lt;/dc:type&gt;</span>
+      <span class="nt">&lt;dct:alternative&gt;</span>0<span class="nt">&lt;/dct:alternative&gt;</span>
+      <span class="nt">&lt;dct:modified&gt;</span>2017-05-16T01:00:03<span class="nt">&lt;/dct:modified&gt;</span>
+      <span class="nt">&lt;dc:format&gt;</span>OGC:WMS<span class="nt">&lt;/dc:format&gt;</span>
+      <span class="nt">&lt;registry:property</span> <span class="na">name=</span><span class="s">&quot;category&quot;</span> <span class="na">value=</span><span class="s">&quot;Intelligence&quot;</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;dct:abstract&gt;</span>Provided by the Office of the Chief Technology Office <span class="nt">&lt;/dct:abstract&gt;</span>
+      <span class="nt">&lt;dc:source&gt;</span>http://maps2.dcgis.dc.gov/dcgis/services/DCGIS_APPS/CrimeMap/MapServer/WMSServer<span class="nt">&lt;/dc:source&gt;</span>
+      <span class="nt">&lt;ows:BoundingBox</span> <span class="na">crs=</span><span class="s">&quot;http://www.opengis.net/def/crs/EPSG/0/4326&quot;</span> <span class="na">dimensions=</span><span class="s">&quot;2&quot;</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;ows:UpperCorner&gt;</span>38.8269231595 -77.1006088171<span class="nt">&lt;/ows:UpperCorner&gt;</span>
+          <span class="nt">&lt;ows:LowerCorner&gt;</span>38.9845804134 -76.9198274506<span class="nt">&lt;/ows:LowerCorner&gt;</span>
+      <span class="nt">&lt;/ows:BoundingBox&gt;</span>
+    <span class="nt">&lt;/csw:Record&gt;</span>
+    <span class="nt">&lt;csw:Record</span> <span class="na">xmlns:registry=</span><span class="s">&quot;http://gis.harvard.edu/HHypermap/registry/0.1&quot;</span> <span class="nt">&gt;</span>
+      <span class="nt">&lt;dc:identifier&gt;</span>71eb8337-7300-4527-a147-eb48e0c1a217<span class="nt">&lt;/dc:identifier&gt;</span>
+      <span class="nt">&lt;dc:title&gt;</span>Independent Schools<span class="nt">&lt;/dc:title&gt;</span>
+      <span class="nt">&lt;dc:creator&gt;</span>cdavis<span class="nt">&lt;/dc:creator&gt;</span>
+      <span class="nt">&lt;dc:type&gt;</span>dataset<span class="nt">&lt;/dc:type&gt;</span>
+      <span class="nt">&lt;dct:alternative&gt;</span>1<span class="nt">&lt;/dct:alternative&gt;</span>
+      <span class="nt">&lt;dct:modified&gt;</span>2017-05-16T01:00:03<span class="nt">&lt;/dct:modified&gt;</span>
+      <span class="nt">&lt;dc:format&gt;</span>OGC:WMS<span class="nt">&lt;/dc:format&gt;</span>
+      <span class="nt">&lt;registry:property</span> <span class="na">name=</span><span class="s">&quot;category&quot;</span> <span class="na">value=</span><span class="s">&quot;Intelligence&quot;</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;dct:abstract&gt;</span>Provided by the Office of the Chief Technology Office <span class="nt">&lt;/dct:abstract&gt;</span>
+      <span class="nt">&lt;dc:source&gt;</span>http://maps2.dcgis.dc.gov/dcgis/services/DCGIS_APPS/CrimeMap/MapServer/WMSServer<span class="nt">&lt;/dc:source&gt;</span>
+      <span class="nt">&lt;ows:BoundingBox</span> <span class="na">crs=</span><span class="s">&quot;http://www.opengis.net/def/crs/EPSG/0/4326&quot;</span> <span class="na">dimensions=</span><span class="s">&quot;2&quot;</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;ows:UpperCorner&gt;</span>38.8249954929 -77.0945924037<span class="nt">&lt;/ows:UpperCorner&gt;</span>
+          <span class="nt">&lt;ows:LowerCorner&gt;</span>38.9847727049 -76.9288253097<span class="nt">&lt;/ows:LowerCorner&gt;</span>
+      <span class="nt">&lt;/ows:BoundingBox&gt;</span>
+    <span class="nt">&lt;/csw:Record&gt;</span>
+    <span class="nt">&lt;csw:Record</span> <span class="na">xmlns:registry=</span><span class="s">&quot;http://gis.harvard.edu/HHypermap/registry/0.1&quot;</span> <span class="nt">&gt;</span>
+      <span class="nt">&lt;dc:identifier&gt;</span>48e9fcb5-f334-4fc1-b740-a413fd359ffb<span class="nt">&lt;/dc:identifier&gt;</span>
+      <span class="nt">&lt;dc:title&gt;</span>Charter Schools<span class="nt">&lt;/dc:title&gt;</span>
+      <span class="nt">&lt;dc:creator&gt;</span>cdavis<span class="nt">&lt;/dc:creator&gt;</span>
+      <span class="nt">&lt;dc:type&gt;</span>dataset<span class="nt">&lt;/dc:type&gt;</span>
+      <span class="nt">&lt;dct:alternative&gt;</span>2<span class="nt">&lt;/dct:alternative&gt;</span>
+      <span class="nt">&lt;dct:modified&gt;</span>2017-05-16T01:00:03<span class="nt">&lt;/dct:modified&gt;</span>
+      <span class="nt">&lt;dc:format&gt;</span>OGC:WMS<span class="nt">&lt;/dc:format&gt;</span>
+      <span class="nt">&lt;registry:property</span> <span class="na">name=</span><span class="s">&quot;category&quot;</span> <span class="na">value=</span><span class="s">&quot;Intelligence&quot;</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;dct:abstract&gt;</span>Provided by the Office of the Chief Technology Office <span class="nt">&lt;/dct:abstract&gt;</span>
+      <span class="nt">&lt;dc:source&gt;</span>http://maps2.dcgis.dc.gov/dcgis/services/DCGIS_APPS/CrimeMap/MapServer/WMSServer<span class="nt">&lt;/dc:source&gt;</span>
+      <span class="nt">&lt;ows:BoundingBox</span> <span class="na">crs=</span><span class="s">&quot;http://www.opengis.net/def/crs/EPSG/0/4326&quot;</span> <span class="na">dimensions=</span><span class="s">&quot;2&quot;</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;ows:UpperCorner&gt;</span>38.823876698 -77.0405716006<span class="nt">&lt;/ows:UpperCorner&gt;</span>
+          <span class="nt">&lt;ows:LowerCorner&gt;</span>38.9662259566 -76.920550725<span class="nt">&lt;/ows:LowerCorner&gt;</span>
+      <span class="nt">&lt;/ows:BoundingBox&gt;</span>
+    <span class="nt">&lt;/csw:Record&gt;</span>
+    <span class="nt">&lt;csw:Record</span> <span class="na">xmlns:registry=</span><span class="s">&quot;http://gis.harvard.edu/HHypermap/registry/0.1&quot;</span> <span class="nt">&gt;</span>
+      <span class="nt">&lt;dc:identifier&gt;</span>206a7b62-44fe-44cc-ac12-4a3981e0d4cb<span class="nt">&lt;/dc:identifier&gt;</span>
+      <span class="nt">&lt;dc:title&gt;</span>Colleges and Universities<span class="nt">&lt;/dc:title&gt;</span>
+      <span class="nt">&lt;dc:creator&gt;</span>cdavis<span class="nt">&lt;/dc:creator&gt;</span>
+      <span class="nt">&lt;dc:type&gt;</span>dataset<span class="nt">&lt;/dc:type&gt;</span>
+      <span class="nt">&lt;dct:alternative&gt;</span>3<span class="nt">&lt;/dct:alternative&gt;</span>
+      <span class="nt">&lt;dct:modified&gt;</span>2017-05-16T01:00:03<span class="nt">&lt;/dct:modified&gt;</span>
+      <span class="nt">&lt;dc:format&gt;</span>OGC:WMS<span class="nt">&lt;/dc:format&gt;</span>
+      <span class="nt">&lt;registry:property</span> <span class="na">name=</span><span class="s">&quot;category&quot;</span> <span class="na">value=</span><span class="s">&quot;Intelligence&quot;</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;dct:abstract&gt;</span>Provided by the Office of the Chief Technology Office <span class="nt">&lt;/dct:abstract&gt;</span>
+      <span class="nt">&lt;dc:source&gt;</span>http://maps2.dcgis.dc.gov/dcgis/services/DCGIS_APPS/CrimeMap/MapServer/WMSServer<span class="nt">&lt;/dc:source&gt;</span>
+      <span class="nt">&lt;ows:BoundingBox</span> <span class="na">crs=</span><span class="s">&quot;http://www.opengis.net/def/crs/EPSG/0/4326&quot;</span> <span class="na">dimensions=</span><span class="s">&quot;2&quot;</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;ows:UpperCorner&gt;</span>38.8664105135 -77.0949257657<span class="nt">&lt;/ows:UpperCorner&gt;</span>
+          <span class="nt">&lt;ows:LowerCorner&gt;</span>38.9773671482 -76.9845781497<span class="nt">&lt;/ows:LowerCorner&gt;</span>
+      <span class="nt">&lt;/ows:BoundingBox&gt;</span>
+    <span class="nt">&lt;/csw:Record&gt;</span>
+    <span class="nt">&lt;csw:Record</span> <span class="na">xmlns:registry=</span><span class="s">&quot;http://gis.harvard.edu/HHypermap/registry/0.1&quot;</span> <span class="nt">&gt;</span>
+      <span class="nt">&lt;dc:identifier&gt;</span>784fa753-ff86-4b93-9173-5a9f2f663caa<span class="nt">&lt;/dc:identifier&gt;</span>
+      <span class="nt">&lt;dc:title&gt;</span>Recreation Center<span class="nt">&lt;/dc:title&gt;</span>
+      <span class="nt">&lt;dc:creator&gt;</span>cdavis<span class="nt">&lt;/dc:creator&gt;</span>
+      <span class="nt">&lt;dc:type&gt;</span>dataset<span class="nt">&lt;/dc:type&gt;</span>
+      <span class="nt">&lt;dct:alternative&gt;</span>4<span class="nt">&lt;/dct:alternative&gt;</span>
+      <span class="nt">&lt;dct:modified&gt;</span>2017-05-16T01:00:03<span class="nt">&lt;/dct:modified&gt;</span>
+      <span class="nt">&lt;dc:format&gt;</span>OGC:WMS<span class="nt">&lt;/dc:format&gt;</span>
+      <span class="nt">&lt;registry:property</span> <span class="na">name=</span><span class="s">&quot;category&quot;</span> <span class="na">value=</span><span class="s">&quot;Intelligence&quot;</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;dct:abstract&gt;</span>Provided by the Office of the Chief Technology Office <span class="nt">&lt;/dct:abstract&gt;</span>
+      <span class="nt">&lt;dc:source&gt;</span>http://maps2.dcgis.dc.gov/dcgis/services/DCGIS_APPS/CrimeMap/MapServer/WMSServer<span class="nt">&lt;/dc:source&gt;</span>
+      <span class="nt">&lt;ows:BoundingBox</span> <span class="na">crs=</span><span class="s">&quot;http://www.opengis.net/def/crs/EPSG/0/4326&quot;</span> <span class="na">dimensions=</span><span class="s">&quot;2&quot;</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;ows:UpperCorner&gt;</span>38.8188250508 -77.1046411529<span class="nt">&lt;/ows:UpperCorner&gt;</span>
+          <span class="nt">&lt;ows:LowerCorner&gt;</span>38.9702403318 -76.9122142032<span class="nt">&lt;/ows:LowerCorner&gt;</span>
+      <span class="nt">&lt;/ows:BoundingBox&gt;</span>
+    <span class="nt">&lt;/csw:Record&gt;</span>
+    <span class="nt">&lt;csw:Record</span> <span class="na">xmlns:registry=</span><span class="s">&quot;http://gis.harvard.edu/HHypermap/registry/0.1&quot;</span> <span class="nt">&gt;</span>
+      <span class="nt">&lt;dc:identifier&gt;</span>6b287e6d-1df2-4441-bf30-74bfc883cf16<span class="nt">&lt;/dc:identifier&gt;</span>
+      <span class="nt">&lt;dc:title&gt;</span>Hospitals<span class="nt">&lt;/dc:title&gt;</span>
+      <span class="nt">&lt;dc:creator&gt;</span>cdavis<span class="nt">&lt;/dc:creator&gt;</span>
+      <span class="nt">&lt;dc:type&gt;</span>dataset<span class="nt">&lt;/dc:type&gt;</span>
+      <span class="nt">&lt;dct:alternative&gt;</span>5<span class="nt">&lt;/dct:alternative&gt;</span>
+      <span class="nt">&lt;dct:modified&gt;</span>2017-05-16T01:00:03<span class="nt">&lt;/dct:modified&gt;</span>
+      <span class="nt">&lt;dc:format&gt;</span>OGC:WMS<span class="nt">&lt;/dc:format&gt;</span>
+      <span class="nt">&lt;registry:property</span> <span class="na">name=</span><span class="s">&quot;category&quot;</span> <span class="na">value=</span><span class="s">&quot;Intelligence&quot;</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;dct:abstract&gt;</span>Provided by the Office of the Chief Technology Office <span class="nt">&lt;/dct:abstract&gt;</span>
+      <span class="nt">&lt;dc:source&gt;</span>http://maps2.dcgis.dc.gov/dcgis/services/DCGIS_APPS/CrimeMap/MapServer/WMSServer<span class="nt">&lt;/dc:source&gt;</span>
+      <span class="nt">&lt;ows:BoundingBox</span> <span class="na">crs=</span><span class="s">&quot;http://www.opengis.net/def/crs/EPSG/0/4326&quot;</span> <span class="na">dimensions=</span><span class="s">&quot;2&quot;</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;ows:UpperCorner&gt;</span>38.8248007187 -77.1092506249<span class="nt">&lt;/ows:UpperCorner&gt;</span>
+          <span class="nt">&lt;ows:LowerCorner&gt;</span>38.9439270821 -76.9810381647<span class="nt">&lt;/ows:LowerCorner&gt;</span>
+      <span class="nt">&lt;/ows:BoundingBox&gt;</span>
+    <span class="nt">&lt;/csw:Record&gt;</span>
+    <span class="nt">&lt;csw:Record</span> <span class="na">xmlns:registry=</span><span class="s">&quot;http://gis.harvard.edu/HHypermap/registry/0.1&quot;</span> <span class="nt">&gt;</span>
+      <span class="nt">&lt;dc:identifier&gt;</span>53855400-5fb5-4bd3-80f7-1b1e82a17926<span class="nt">&lt;/dc:identifier&gt;</span>
+      <span class="nt">&lt;dc:title&gt;</span>Libraries<span class="nt">&lt;/dc:title&gt;</span>
+      <span class="nt">&lt;dc:creator&gt;</span>cdavis<span class="nt">&lt;/dc:creator&gt;</span>
+      <span class="nt">&lt;dc:type&gt;</span>dataset<span class="nt">&lt;/dc:type&gt;</span>
+      <span class="nt">&lt;dct:alternative&gt;</span>6<span class="nt">&lt;/dct:alternative&gt;</span>
+      <span class="nt">&lt;dct:modified&gt;</span>2017-05-16T01:00:03<span class="nt">&lt;/dct:modified&gt;</span>
+      <span class="nt">&lt;dc:format&gt;</span>OGC:WMS<span class="nt">&lt;/dc:format&gt;</span>
+      <span class="nt">&lt;registry:property</span> <span class="na">name=</span><span class="s">&quot;category&quot;</span> <span class="na">value=</span><span class="s">&quot;Intelligence&quot;</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;dct:abstract&gt;</span>Provided by the Office of the Chief Technology Office <span class="nt">&lt;/dct:abstract&gt;</span>
+      <span class="nt">&lt;dc:source&gt;</span>http://maps2.dcgis.dc.gov/dcgis/services/DCGIS_APPS/CrimeMap/MapServer/WMSServer<span class="nt">&lt;/dc:source&gt;</span>
+      <span class="nt">&lt;ows:BoundingBox</span> <span class="na">crs=</span><span class="s">&quot;http://www.opengis.net/def/crs/EPSG/0/4326&quot;</span> <span class="na">dimensions=</span><span class="s">&quot;2&quot;</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;ows:UpperCorner&gt;</span>38.8312905811 -77.0972590041<span class="nt">&lt;/ows:UpperCorner&gt;</span>
+          <span class="nt">&lt;ows:LowerCorner&gt;</span>38.9802624203 -76.9294869699<span class="nt">&lt;/ows:LowerCorner&gt;</span>
+      <span class="nt">&lt;/ows:BoundingBox&gt;</span>
+    <span class="nt">&lt;/csw:Record&gt;</span>
+    <span class="nt">&lt;csw:Record</span> <span class="na">xmlns:registry=</span><span class="s">&quot;http://gis.harvard.edu/HHypermap/registry/0.1&quot;</span> <span class="nt">&gt;</span>
+      <span class="nt">&lt;dc:identifier&gt;</span>8d2cdeee-4c20-4c27-ac84-83a031ba44cd<span class="nt">&lt;/dc:identifier&gt;</span>
+      <span class="nt">&lt;dc:title&gt;</span>Places of Worship<span class="nt">&lt;/dc:title&gt;</span>
+      <span class="nt">&lt;dc:creator&gt;</span>cdavis<span class="nt">&lt;/dc:creator&gt;</span>
+      <span class="nt">&lt;dc:type&gt;</span>dataset<span class="nt">&lt;/dc:type&gt;</span>
+      <span class="nt">&lt;dct:alternative&gt;</span>7<span class="nt">&lt;/dct:alternative&gt;</span>
+      <span class="nt">&lt;dct:modified&gt;</span>2017-05-16T01:00:03<span class="nt">&lt;/dct:modified&gt;</span>
+      <span class="nt">&lt;dc:format&gt;</span>OGC:WMS<span class="nt">&lt;/dc:format&gt;</span>
+      <span class="nt">&lt;registry:property</span> <span class="na">name=</span><span class="s">&quot;category&quot;</span> <span class="na">value=</span><span class="s">&quot;Intelligence&quot;</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;dct:abstract&gt;</span>Provided by the Office of the Chief Technology Office <span class="nt">&lt;/dct:abstract&gt;</span>
+      <span class="nt">&lt;dc:source&gt;</span>http://maps2.dcgis.dc.gov/dcgis/services/DCGIS_APPS/CrimeMap/MapServer/WMSServer<span class="nt">&lt;/dc:source&gt;</span>
+      <span class="nt">&lt;ows:BoundingBox</span> <span class="na">crs=</span><span class="s">&quot;http://www.opengis.net/def/crs/EPSG/0/4326&quot;</span> <span class="na">dimensions=</span><span class="s">&quot;2&quot;</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;ows:UpperCorner&gt;</span>38.8250436157 -77.1059504235<span class="nt">&lt;/ows:UpperCorner&gt;</span>
+          <span class="nt">&lt;ows:LowerCorner&gt;</span>38.9876984845 -76.9104702214<span class="nt">&lt;/ows:LowerCorner&gt;</span>
+      <span class="nt">&lt;/ows:BoundingBox&gt;</span>
+    <span class="nt">&lt;/csw:Record&gt;</span>
+    <span class="nt">&lt;csw:Record</span> <span class="na">xmlns:registry=</span><span class="s">&quot;http://gis.harvard.edu/HHypermap/registry/0.1&quot;</span> <span class="nt">&gt;</span>
+      <span class="nt">&lt;dc:identifier&gt;</span>6b678638-bc8d-4553-a4c8-f519aeb1e85b<span class="nt">&lt;/dc:identifier&gt;</span>
+      <span class="nt">&lt;dc:title&gt;</span>Points of Interest - MAR Aliases<span class="nt">&lt;/dc:title&gt;</span>
+      <span class="nt">&lt;dc:creator&gt;</span>cdavis<span class="nt">&lt;/dc:creator&gt;</span>
+      <span class="nt">&lt;dc:type&gt;</span>dataset<span class="nt">&lt;/dc:type&gt;</span>
+      <span class="nt">&lt;dct:alternative&gt;</span>8<span class="nt">&lt;/dct:alternative&gt;</span>
+      <span class="nt">&lt;dct:modified&gt;</span>2017-05-16T01:00:03<span class="nt">&lt;/dct:modified&gt;</span>
+      <span class="nt">&lt;dc:format&gt;</span>OGC:WMS<span class="nt">&lt;/dc:format&gt;</span>
+      <span class="nt">&lt;registry:property</span> <span class="na">name=</span><span class="s">&quot;category&quot;</span> <span class="na">value=</span><span class="s">&quot;Intelligence&quot;</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;dct:abstract&gt;</span>Provided by the Office of the Chief Technology Office <span class="nt">&lt;/dct:abstract&gt;</span>
+      <span class="nt">&lt;dc:source&gt;</span>http://maps2.dcgis.dc.gov/dcgis/services/DCGIS_APPS/CrimeMap/MapServer/WMSServer<span class="nt">&lt;/dc:source&gt;</span>
+      <span class="nt">&lt;ows:BoundingBox</span> <span class="na">crs=</span><span class="s">&quot;http://www.opengis.net/def/crs/EPSG/0/4326&quot;</span> <span class="na">dimensions=</span><span class="s">&quot;2&quot;</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;ows:UpperCorner&gt;</span>38.7931910435 -77.1143061942<span class="nt">&lt;/ows:UpperCorner&gt;</span>
+          <span class="nt">&lt;ows:LowerCorner&gt;</span>38.9922426245 -76.9121870912<span class="nt">&lt;/ows:LowerCorner&gt;</span>
+      <span class="nt">&lt;/ows:BoundingBox&gt;</span>
+    <span class="nt">&lt;/csw:Record&gt;</span>
+    <span class="nt">&lt;csw:Record</span> <span class="na">xmlns:registry=</span><span class="s">&quot;http://gis.harvard.edu/HHypermap/registry/0.1&quot;</span> <span class="nt">&gt;</span>
+      <span class="nt">&lt;dc:identifier&gt;</span>487bb369-5893-4f8f-b2c6-e2d617b87189<span class="nt">&lt;/dc:identifier&gt;</span>
+      <span class="nt">&lt;dc:title&gt;</span>District Boundary<span class="nt">&lt;/dc:title&gt;</span>
+      <span class="nt">&lt;dc:creator&gt;</span>cdavis<span class="nt">&lt;/dc:creator&gt;</span>
+      <span class="nt">&lt;dc:type&gt;</span>dataset<span class="nt">&lt;/dc:type&gt;</span>
+      <span class="nt">&lt;dct:alternative&gt;</span>9<span class="nt">&lt;/dct:alternative&gt;</span>
+      <span class="nt">&lt;dct:modified&gt;</span>2017-05-16T01:00:03<span class="nt">&lt;/dct:modified&gt;</span>
+      <span class="nt">&lt;dc:format&gt;</span>OGC:WMS<span class="nt">&lt;/dc:format&gt;</span>
+      <span class="nt">&lt;registry:property</span> <span class="na">name=</span><span class="s">&quot;category&quot;</span> <span class="na">value=</span><span class="s">&quot;Intelligence&quot;</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;dct:abstract&gt;</span>Provided by the Office of the Chief Technology Office <span class="nt">&lt;/dct:abstract&gt;</span>
+      <span class="nt">&lt;dc:source&gt;</span>http://maps2.dcgis.dc.gov/dcgis/services/DCGIS_APPS/CrimeMap/MapServer/WMSServer<span class="nt">&lt;/dc:source&gt;</span>
+      <span class="nt">&lt;ows:BoundingBox</span> <span class="na">crs=</span><span class="s">&quot;http://www.opengis.net/def/crs/EPSG/0/4326&quot;</span> <span class="na">dimensions=</span><span class="s">&quot;2&quot;</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;ows:UpperCorner&gt;</span>38.7915818645 -77.1198963847<span class="nt">&lt;/ows:UpperCorner&gt;</span>
+          <span class="nt">&lt;ows:LowerCorner&gt;</span>38.9959320315 -76.9090163311<span class="nt">&lt;/ows:LowerCorner&gt;</span>
+      <span class="nt">&lt;/ows:BoundingBox&gt;</span>
+    <span class="nt">&lt;/csw:Record&gt;</span>
+    <span class="nt">&lt;csw:Record</span> <span class="na">xmlns:registry=</span><span class="s">&quot;http://gis.harvard.edu/HHypermap/registry/0.1&quot;</span> <span class="nt">&gt;</span>
+      <span class="nt">&lt;dc:identifier&gt;</span>f6884703-9216-45ce-bddc-4b8406a60fea<span class="nt">&lt;/dc:identifier&gt;</span>
+      <span class="nt">&lt;dc:title&gt;</span>2012 Wards<span class="nt">&lt;/dc:title&gt;</span>
+      <span class="nt">&lt;dc:creator&gt;</span>cdavis<span class="nt">&lt;/dc:creator&gt;</span>
+      <span class="nt">&lt;dc:type&gt;</span>dataset<span class="nt">&lt;/dc:type&gt;</span>
+      <span class="nt">&lt;dct:alternative&gt;</span>10<span class="nt">&lt;/dct:alternative&gt;</span>
+      <span class="nt">&lt;dct:modified&gt;</span>2017-05-16T01:00:03<span class="nt">&lt;/dct:modified&gt;</span>
+      <span class="nt">&lt;dc:format&gt;</span>OGC:WMS<span class="nt">&lt;/dc:format&gt;</span>
+      <span class="nt">&lt;registry:property</span> <span class="na">name=</span><span class="s">&quot;category&quot;</span> <span class="na">value=</span><span class="s">&quot;Intelligence&quot;</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;dct:abstract&gt;</span>Provided by the Office of the Chief Technology Office <span class="nt">&lt;/dct:abstract&gt;</span>
+      <span class="nt">&lt;dc:source&gt;</span>http://maps2.dcgis.dc.gov/dcgis/services/DCGIS_APPS/CrimeMap/MapServer/WMSServer<span class="nt">&lt;/dc:source&gt;</span>
+      <span class="nt">&lt;ows:BoundingBox</span> <span class="na">crs=</span><span class="s">&quot;http://www.opengis.net/def/crs/EPSG/0/4326&quot;</span> <span class="na">dimensions=</span><span class="s">&quot;2&quot;</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;ows:UpperCorner&gt;</span>38.7915818645 -77.1198963847<span class="nt">&lt;/ows:UpperCorner&gt;</span>
+          <span class="nt">&lt;ows:LowerCorner&gt;</span>38.9959320315 -76.9090163311<span class="nt">&lt;/ows:LowerCorner&gt;</span>
+      <span class="nt">&lt;/ows:BoundingBox&gt;</span>
+    <span class="nt">&lt;/csw:Record&gt;</span>
+    <span class="nt">&lt;csw:Record</span> <span class="na">xmlns:registry=</span><span class="s">&quot;http://gis.harvard.edu/HHypermap/registry/0.1&quot;</span> <span class="nt">&gt;</span>
+      <span class="nt">&lt;dc:identifier&gt;</span>97ffb982-e1db-4214-af77-0b9621c5b697<span class="nt">&lt;/dc:identifier&gt;</span>
+      <span class="nt">&lt;dc:title&gt;</span>2013 Advisory Neighborhood Commission<span class="nt">&lt;/dc:title&gt;</span>
+      <span class="nt">&lt;dc:creator&gt;</span>cdavis<span class="nt">&lt;/dc:creator&gt;</span>
+      <span class="nt">&lt;dc:type&gt;</span>dataset<span class="nt">&lt;/dc:type&gt;</span>
+      <span class="nt">&lt;dct:alternative&gt;</span>11<span class="nt">&lt;/dct:alternative&gt;</span>
+      <span class="nt">&lt;dct:modified&gt;</span>2017-05-16T01:00:03<span class="nt">&lt;/dct:modified&gt;</span>
+      <span class="nt">&lt;dc:format&gt;</span>OGC:WMS<span class="nt">&lt;/dc:format&gt;</span>
+      <span class="nt">&lt;registry:property</span> <span class="na">name=</span><span class="s">&quot;category&quot;</span> <span class="na">value=</span><span class="s">&quot;Intelligence&quot;</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;dct:abstract&gt;</span>Provided by the Office of the Chief Technology Office <span class="nt">&lt;/dct:abstract&gt;</span>
+      <span class="nt">&lt;dc:source&gt;</span>http://maps2.dcgis.dc.gov/dcgis/services/DCGIS_APPS/CrimeMap/MapServer/WMSServer<span class="nt">&lt;/dc:source&gt;</span>
+      <span class="nt">&lt;ows:BoundingBox</span> <span class="na">crs=</span><span class="s">&quot;http://www.opengis.net/def/crs/EPSG/0/4326&quot;</span> <span class="na">dimensions=</span><span class="s">&quot;2&quot;</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;ows:UpperCorner&gt;</span>38.7915818645 -77.1198963847<span class="nt">&lt;/ows:UpperCorner&gt;</span>
+          <span class="nt">&lt;ows:LowerCorner&gt;</span>38.9959320315 -76.9090163311<span class="nt">&lt;/ows:LowerCorner&gt;</span>
+      <span class="nt">&lt;/ows:BoundingBox&gt;</span>
+    <span class="nt">&lt;/csw:Record&gt;</span>
+    <span class="nt">&lt;csw:Record</span> <span class="na">xmlns:registry=</span><span class="s">&quot;http://gis.harvard.edu/HHypermap/registry/0.1&quot;</span> <span class="nt">&gt;</span>
+      <span class="nt">&lt;dc:identifier&gt;</span>4fd1ac4a-bdf2-4b0f-809b-ddbfbd76e8c5<span class="nt">&lt;/dc:identifier&gt;</span>
+      <span class="nt">&lt;dc:title&gt;</span>Police Service Areas<span class="nt">&lt;/dc:title&gt;</span>
+      <span class="nt">&lt;dc:creator&gt;</span>cdavis<span class="nt">&lt;/dc:creator&gt;</span>
+      <span class="nt">&lt;dc:type&gt;</span>dataset<span class="nt">&lt;/dc:type&gt;</span>
+      <span class="nt">&lt;dct:alternative&gt;</span>12<span class="nt">&lt;/dct:alternative&gt;</span>
+      <span class="nt">&lt;dct:modified&gt;</span>2017-05-16T01:00:03<span class="nt">&lt;/dct:modified&gt;</span>
+      <span class="nt">&lt;dc:format&gt;</span>OGC:WMS<span class="nt">&lt;/dc:format&gt;</span>
+      <span class="nt">&lt;registry:property</span> <span class="na">name=</span><span class="s">&quot;category&quot;</span> <span class="na">value=</span><span class="s">&quot;Intelligence&quot;</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;dct:abstract&gt;</span>Provided by the Office of the Chief Technology Office <span class="nt">&lt;/dct:abstract&gt;</span>
+      <span class="nt">&lt;dc:source&gt;</span>http://maps2.dcgis.dc.gov/dcgis/services/DCGIS_APPS/CrimeMap/MapServer/WMSServer<span class="nt">&lt;/dc:source&gt;</span>
+      <span class="nt">&lt;ows:BoundingBox</span> <span class="na">crs=</span><span class="s">&quot;http://www.opengis.net/def/crs/EPSG/0/4326&quot;</span> <span class="na">dimensions=</span><span class="s">&quot;2&quot;</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;ows:UpperCorner&gt;</span>38.7915818645 -77.1198963847<span class="nt">&lt;/ows:UpperCorner&gt;</span>
+          <span class="nt">&lt;ows:LowerCorner&gt;</span>38.9959320315 -76.9090163311<span class="nt">&lt;/ows:LowerCorner&gt;</span>
+      <span class="nt">&lt;/ows:BoundingBox&gt;</span>
+    <span class="nt">&lt;/csw:Record&gt;</span>
+    <span class="nt">&lt;csw:Record</span> <span class="na">xmlns:registry=</span><span class="s">&quot;http://gis.harvard.edu/HHypermap/registry/0.1&quot;</span> <span class="nt">&gt;</span>
+      <span class="nt">&lt;dc:identifier&gt;</span>5bad8a09-112c-44b8-867c-1d63a7f6c1f9<span class="nt">&lt;/dc:identifier&gt;</span>
+      <span class="nt">&lt;dc:title&gt;</span>Metropolitan Police Department (MPD) Districts<span class="nt">&lt;/dc:title&gt;</span>
+      <span class="nt">&lt;dc:creator&gt;</span>cdavis<span class="nt">&lt;/dc:creator&gt;</span>
+      <span class="nt">&lt;dc:type&gt;</span>dataset<span class="nt">&lt;/dc:type&gt;</span>
+      <span class="nt">&lt;dct:alternative&gt;</span>13<span class="nt">&lt;/dct:alternative&gt;</span>
+      <span class="nt">&lt;dct:modified&gt;</span>2017-05-16T01:00:03<span class="nt">&lt;/dct:modified&gt;</span>
+      <span class="nt">&lt;dc:format&gt;</span>OGC:WMS<span class="nt">&lt;/dc:format&gt;</span>
+      <span class="nt">&lt;registry:property</span> <span class="na">name=</span><span class="s">&quot;category&quot;</span> <span class="na">value=</span><span class="s">&quot;Intelligence&quot;</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;dct:abstract&gt;</span>Provided by the Office of the Chief Technology Office <span class="nt">&lt;/dct:abstract&gt;</span>
+      <span class="nt">&lt;dc:source&gt;</span>http://maps2.dcgis.dc.gov/dcgis/services/DCGIS_APPS/CrimeMap/MapServer/WMSServer<span class="nt">&lt;/dc:source&gt;</span>
+      <span class="nt">&lt;ows:BoundingBox</span> <span class="na">crs=</span><span class="s">&quot;http://www.opengis.net/def/crs/EPSG/0/4326&quot;</span> <span class="na">dimensions=</span><span class="s">&quot;2&quot;</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;ows:UpperCorner&gt;</span>38.7915100502 -77.1199125397<span class="nt">&lt;/ows:UpperCorner&gt;</span>
+          <span class="nt">&lt;ows:LowerCorner&gt;</span>38.9959283519 -76.9090341132<span class="nt">&lt;/ows:LowerCorner&gt;</span>
+      <span class="nt">&lt;/ows:BoundingBox&gt;</span>
+    <span class="nt">&lt;/csw:Record&gt;</span>
+    <span class="nt">&lt;csw:Record</span> <span class="na">xmlns:registry=</span><span class="s">&quot;http://gis.harvard.edu/HHypermap/registry/0.1&quot;</span> <span class="nt">&gt;</span>
+      <span class="nt">&lt;dc:identifier&gt;</span>01344237-49b0-43a3-80eb-8907108bffe9<span class="nt">&lt;/dc:identifier&gt;</span>
+      <span class="nt">&lt;dc:title&gt;</span>Police Stations<span class="nt">&lt;/dc:title&gt;</span>
+      <span class="nt">&lt;dc:creator&gt;</span>cdavis<span class="nt">&lt;/dc:creator&gt;</span>
+      <span class="nt">&lt;dc:type&gt;</span>dataset<span class="nt">&lt;/dc:type&gt;</span>
+      <span class="nt">&lt;dct:alternative&gt;</span>14<span class="nt">&lt;/dct:alternative&gt;</span>
+      <span class="nt">&lt;dct:modified&gt;</span>2017-05-16T01:00:03<span class="nt">&lt;/dct:modified&gt;</span>
+      <span class="nt">&lt;dc:format&gt;</span>OGC:WMS<span class="nt">&lt;/dc:format&gt;</span>
+      <span class="nt">&lt;registry:property</span> <span class="na">name=</span><span class="s">&quot;category&quot;</span> <span class="na">value=</span><span class="s">&quot;Intelligence&quot;</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;dct:abstract&gt;</span>Provided by the Office of the Chief Technology Office <span class="nt">&lt;/dct:abstract&gt;</span>
+      <span class="nt">&lt;dc:source&gt;</span>http://maps2.dcgis.dc.gov/dcgis/services/DCGIS_APPS/CrimeMap/MapServer/WMSServer<span class="nt">&lt;/dc:source&gt;</span>
+      <span class="nt">&lt;ows:BoundingBox</span> <span class="na">crs=</span><span class="s">&quot;http://www.opengis.net/def/crs/EPSG/0/4326&quot;</span> <span class="na">dimensions=</span><span class="s">&quot;2&quot;</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;ows:UpperCorner&gt;</span>38.8533358106 -77.0748677251<span class="nt">&lt;/ows:UpperCorner&gt;</span>
+          <span class="nt">&lt;ows:LowerCorner&gt;</span>38.9631146859 -76.9428287157<span class="nt">&lt;/ows:LowerCorner&gt;</span>
+      <span class="nt">&lt;/ows:BoundingBox&gt;</span>
+    <span class="nt">&lt;/csw:Record&gt;</span>
+    <span class="nt">&lt;csw:Record</span> <span class="na">xmlns:registry=</span><span class="s">&quot;http://gis.harvard.edu/HHypermap/registry/0.1&quot;</span> <span class="nt">&gt;</span>
+      <span class="nt">&lt;dc:identifier&gt;</span>b0aada68-0a60-4c8a-acb9-da8088f839bd<span class="nt">&lt;/dc:identifier&gt;</span>
+      <span class="nt">&lt;dc:title&gt;</span>Fire Stations<span class="nt">&lt;/dc:title&gt;</span>
+      <span class="nt">&lt;dc:creator&gt;</span>cdavis<span class="nt">&lt;/dc:creator&gt;</span>
+      <span class="nt">&lt;dc:type&gt;</span>dataset<span class="nt">&lt;/dc:type&gt;</span>
+      <span class="nt">&lt;dct:alternative&gt;</span>15<span class="nt">&lt;/dct:alternative&gt;</span>
+      <span class="nt">&lt;dct:modified&gt;</span>2017-05-16T01:00:03<span class="nt">&lt;/dct:modified&gt;</span>
+      <span class="nt">&lt;dc:format&gt;</span>OGC:WMS<span class="nt">&lt;/dc:format&gt;</span>
+      <span class="nt">&lt;registry:property</span> <span class="na">name=</span><span class="s">&quot;category&quot;</span> <span class="na">value=</span><span class="s">&quot;Intelligence&quot;</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;dct:abstract&gt;</span>Provided by the Office of the Chief Technology Office <span class="nt">&lt;/dct:abstract&gt;</span>
+      <span class="nt">&lt;dc:source&gt;</span>http://maps2.dcgis.dc.gov/dcgis/services/DCGIS_APPS/CrimeMap/MapServer/WMSServer<span class="nt">&lt;/dc:source&gt;</span>
+      <span class="nt">&lt;ows:BoundingBox</span> <span class="na">crs=</span><span class="s">&quot;http://www.opengis.net/def/crs/EPSG/0/4326&quot;</span> <span class="na">dimensions=</span><span class="s">&quot;2&quot;</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;ows:UpperCorner&gt;</span>38.8308577245 -77.093581872<span class="nt">&lt;/ows:UpperCorner&gt;</span>
+          <span class="nt">&lt;ows:LowerCorner&gt;</span>38.9599655049 -76.9333316317<span class="nt">&lt;/ows:LowerCorner&gt;</span>
+      <span class="nt">&lt;/ows:BoundingBox&gt;</span>
+    <span class="nt">&lt;/csw:Record&gt;</span>
+    <span class="nt">&lt;csw:Record</span> <span class="na">xmlns:registry=</span><span class="s">&quot;http://gis.harvard.edu/HHypermap/registry/0.1&quot;</span> <span class="nt">&gt;</span>
+      <span class="nt">&lt;dc:identifier&gt;</span>61e079a7-410e-441d-8cde-b35fe8fc7c76<span class="nt">&lt;/dc:identifier&gt;</span>
+      <span class="nt">&lt;dc:title&gt;</span>Business Improvement Districts<span class="nt">&lt;/dc:title&gt;</span>
+      <span class="nt">&lt;dc:creator&gt;</span>cdavis<span class="nt">&lt;/dc:creator&gt;</span>
+      <span class="nt">&lt;dc:type&gt;</span>dataset<span class="nt">&lt;/dc:type&gt;</span>
+      <span class="nt">&lt;dct:alternative&gt;</span>16<span class="nt">&lt;/dct:alternative&gt;</span>
+      <span class="nt">&lt;dct:modified&gt;</span>2017-05-16T01:00:03<span class="nt">&lt;/dct:modified&gt;</span>
+      <span class="nt">&lt;dc:format&gt;</span>OGC:WMS<span class="nt">&lt;/dc:format&gt;</span>
+      <span class="nt">&lt;registry:property</span> <span class="na">name=</span><span class="s">&quot;category&quot;</span> <span class="na">value=</span><span class="s">&quot;Intelligence&quot;</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;dct:abstract&gt;</span>Provided by the Office of the Chief Technology Office <span class="nt">&lt;/dct:abstract&gt;</span>
+      <span class="nt">&lt;dc:source&gt;</span>http://maps2.dcgis.dc.gov/dcgis/services/DCGIS_APPS/CrimeMap/MapServer/WMSServer<span class="nt">&lt;/dc:source&gt;</span>
+      <span class="nt">&lt;ows:BoundingBox</span> <span class="na">crs=</span><span class="s">&quot;http://www.opengis.net/def/crs/EPSG/0/4326&quot;</span> <span class="na">dimensions=</span><span class="s">&quot;2&quot;</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;ows:UpperCorner&gt;</span>38.8517780653 -77.0715295454<span class="nt">&lt;/ows:UpperCorner&gt;</span>
+          <span class="nt">&lt;ows:LowerCorner&gt;</span>38.9266760983 -76.9789379543<span class="nt">&lt;/ows:LowerCorner&gt;</span>
+      <span class="nt">&lt;/ows:BoundingBox&gt;</span>
+    <span class="nt">&lt;/csw:Record&gt;</span>
+  <span class="nt">&lt;/csw:Insert&gt;</span>
+<span class="nt">&lt;/csw:Transaction&gt;</span>
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+
+
+          
+          </div>
+          <footer>
+  
+    
+      <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        
+          <a href="../support/index.html" class="btn btn-neutral float-right" title="Exchange Support">Next <span class="fa fa-arrow-circle-right"></span></a>
+        
+        
+          <a href="../admin/index.html" class="btn btn-neutral" title="Administration"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        
+      </div>
+    
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <div class="info">
+      <a class="logo-link" href="http://boundlessgeo.com">
+        <div class="boundless-logo"></div>
+      </a>
+      <div class="copyright">
+      
+        Copyright &copy; 2016, Boundless
+      
+      </div>
+    </div>
+    <div class="footer-aside">
+        
+          <a id="zenbox" class="help-contact" data="appendix/index" href="https://connect.boundlessgeo.com/Community/Questions-Answers">Ask a Question</a>
+        
+      </div>
+  </div>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div> 
+   
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1.3.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+   
+  
+
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+  
+
+  
+  
+    <script type="text/javascript" src="//assets.zendesk.com/external/zenbox/v2.6/zenbox.js"></script>
+    <script type="text/javascript" src="../_static/js/zendesk.js"></script>
+  
+
+</body>
+</html>
