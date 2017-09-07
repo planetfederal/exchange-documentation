@@ -142,6 +142,8 @@
 <li class="toctree-l2"><a class="reference internal" href="#avatars">Avatars</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#documents">Documents</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#groups">Groups</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#layers">Layers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#osgeo-importer">Osgeo_Importer</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#working-with-registry">Working with Registry</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#csw-record-administration">CSW Record Administration</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#managing-storyscapes">Managing Storyscapes</a></li>
@@ -677,6 +679,116 @@
 </ol>
 </div>
 </div>
+<div class="section" id="layers">
+<h2>Layers<a class="headerlink" href="#layers" title="Permalink to this headline">¶</a></h2>
+<p>The Layers section of the Django administration site is used to maintain features for a layer. The primary function used in this section is the ability to edit individual attributes for a layer. The other options in the Layers section are not covered in this documentation.</p>
+<div class="section" id="edit-attribute-fields-for-a-layer">
+<h3>Edit attribute fields for a layer<a class="headerlink" href="#edit-attribute-fields-for-a-layer" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>Click the Layers link in the Layers menu on the Django administration page. This will open a list of all layers available on your site.</li>
+</ol>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/layers.png" src="../_images/layers.png" />
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li>Find the layer whose attributes you’d like to edit. You can do this multiple ways:</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>Type all or part of the layer name in the search field at the top of the page.</li>
+<li>Select a filter term on the right side of the page to minimize layer results.</li>
+<li>Scroll through the list of results.</li>
+</ul>
+<div class="figure">
+<img alt="../_images/layers-list.png" src="../_images/layers-list.png" />
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li>Once you have found the layer you’d like to edit, click on the ID number. This will open the Change Layer page. Scroll to the Attributes section at the bottom of the page.</li>
+</ol>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/layers-attribute.png" src="../_images/layers-attribute.png" />
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="4">
+<li>Type the new attribute label and description in the text box. To turn visibility off/on for an attribute, click the visibility check box. Click the save button at the bottom of the page when you are finished.</li>
+</ol>
+</div>
+</div>
+<div class="section" id="osgeo-importer">
+<h2>Osgeo_Importer<a class="headerlink" href="#osgeo-importer" title="Permalink to this headline">¶</a></h2>
+<p>The primary use of the Osgeo_Importer section is to help Exchange admin users manage data, files and layers imported through the web user interface. This section will cover how to view and delete existing uploaded files. All of the options in this section are available through the Osgeo_Importer section on the Django Site administration page.</p>
+<div class="section" id="view-uploaded-data">
+<h3>View Uploaded data<a class="headerlink" href="#view-uploaded-data" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>Click the <strong>Upload data</strong> link under the Osgeo_Importer menu on the Django Administration site Osgeo-Importer menu.</li>
+</ol>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/osgeo-menu.png" src="../_images/osgeo-menu.png" />
+</div>
+</div></blockquote>
+<p>Data that has been uploaded into Exchange will be listed on the page. Information is listed for the name of the data file, the user who uploaded it, the state of the file (typically will display UPLOADED), and the size of the file. A green checkmark will display, indicating the data upload was completed successfully.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/osgeo-upload.png" src="../_images/osgeo-upload.png" />
+</div>
+</div></blockquote>
+<p>Uploaded data can be filtered by selecting one of the filter options. Available options allow you to filter by user, by state and by complete. Select on one of the links to narrow the results displayed to fit your filter criteria.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/osgeo-filter.png" src="../_images/osgeo-filter.png" />
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li>Click on a file name to view the individual file information.</li>
+</ol>
+<p><strong>Note:</strong> These fields were populated at the time the file was imported, and should not be changed. This section should be thought of as for informational purposes only to view the status, size or file type for a file.</p>
+<ol class="arabic simple" start="3">
+<li>Click the browser’s back arrow to return to the previous page.</li>
+</ol>
+</div>
+<div class="section" id="view-uploaded-files-and-uploaded-layers">
+<h3>View Uploaded files and Uploaded layers<a class="headerlink" href="#view-uploaded-files-and-uploaded-layers" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>Click either the <strong>Upload files</strong> or <strong>Upload layers</strong> link under the Osgeo_Importer menu on the Django Administration site Osgeo-Importer menu.</li>
+</ol>
+<p>The Upload files page will display the directory link for the file.</p>
+<blockquote>
+<div><div class="figure" id="id3">
+<img alt="../_images/uploaded-files.png" src="../_images/uploaded-files.png" />
+<p class="caption"><span class="caption-text"><em>List of uploaded files</em></span></p>
+</div>
+</div></blockquote>
+<p>Clicking on the file link will open the Change file upload page, where you can change the uploaded file or view the file type. It is not recommended that this information is changed, as it could lead to loss of data. This is intended for reference only.</p>
+<p>Selecting <strong>Upload layers</strong> will display the list of layers by name and feature count. The task ID will be the unique ID assigned to the layer upon upload.</p>
+<blockquote>
+<div><div class="figure" id="id4">
+<img alt="../_images/uploaded-layers.png" src="../_images/uploaded-layers.png" />
+<p class="caption"><span class="caption-text"><em>List of uploaded layers</em></span></p>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="delete-uploaded-data-files-layers">
+<h3>Delete uploaded data/files/layers<a class="headerlink" href="#delete-uploaded-data-files-layers" title="Permalink to this headline">¶</a></h3>
+<p>Users with administrator privileges are able to delete uploaded content from within the Django Administration site quickly, and easily.</p>
+<ol class="arabic simple">
+<li>From the list of uploaded content, click the checkbox next to the name of the data/files/layers you’d like to delete.</li>
+<li>Select the delete option from the Action drop down menu, and click the <strong>Go</strong> button.</li>
+</ol>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/delete-uploads.png" src="../_images/delete-uploads.png" />
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li>Verify your selection by clicking the <span class="guilabel">Yes, I’m sure</span> button.</li>
+</ol>
+</div>
+</div>
 <div class="section" id="working-with-registry">
 <h2>Working with Registry<a class="headerlink" href="#working-with-registry" title="Permalink to this headline">¶</a></h2>
 <p>In Exchange, there are two primary types of data that can be added to Registry, a service or a single layer. A service is two or more layers being added to the map at the same time, whereas a single layer is just an individual layer. The form is the same for either one, but you will need to have a relatively good understanding of your data in order to successfully insert your new record.</p>
@@ -738,7 +850,7 @@
 <p><strong>Contact Phone</strong> - Please add a contact phone number here.</p>
 <p><strong>Gold</strong> -  Select this checkbox if the data is NGA-approved content.</p>
 <blockquote>
-<div><div class="figure" id="id3">
+<div><div class="figure" id="id5">
 <img alt="../_images/register-record.png" src="../_images/register-record.png" />
 <p class="caption"><span class="caption-text">This is an <em>example</em> of a completed new record form.</span></p>
 </div>
@@ -796,11 +908,11 @@
 </ul>
 <p><strong>Alternative -</strong> An ESRI service will number each of the layers (starting with zero), and when adding data from a service, the alternative field points to the id individual layer to be pulled from that server. For GeoServer OGC services, the value for the Alternative field can be pulled from the layer name which is a string that does not contain spaces. If you leave the space blank, all of the associated layers will be added.</p>
 <blockquote>
-<div><div class="figure" id="id4">
+<div><div class="figure" id="id6">
 <img alt="../_images/mapserver.png" src="../_images/mapserver.png" />
 <p class="caption"><span class="caption-text">List of layers with ID’s for the MapServer. The layer ID for Bridge Out is ‘1’ as indicated by the value in the parenthesis.</span></p>
 </div>
-<div class="figure" id="id5">
+<div class="figure" id="id7">
 <img alt="../_images/geoserver.png" src="../_images/geoserver.png" />
 <p class="caption"><span class="caption-text">Geoserver typically follows the format of &lt;workspace&gt;:&lt;name&gt;. The &lt;name&gt; portion is all that’s needed for the Alternative field.</span></p>
 </div>
@@ -888,7 +1000,7 @@
 <p><strong>Abstract</strong> - Let others know what the story is about with a brief narrative summary.</p>
 <p><strong>Purpose</strong> - Provide a short description of why the story was created.</p>
 <p><strong>Maintenance frequency</strong> - From the pull down, select how often modifications and deletions are made to the data after it is first published.</p>
-<div class="figure" id="id6">
+<div class="figure" id="id8">
 <img alt="../_images/maintenance-freq.png" src="../_images/maintenance-freq.png" />
 <p class="caption"><span class="caption-text"><em>Maintenance frequency options</em></span></p>
 </div>
@@ -898,7 +1010,7 @@
 <img alt="../_images/restrictions.png" src="../_images/restrictions.png" />
 </div>
 <p><strong>License</strong> - Select data licensing requirements from the list. Not all data has licensing requirements.</p>
-<div class="figure" id="id7">
+<div class="figure" id="id9">
 <img alt="admin/img/license.png" src="admin/img/license.png" />
 <p class="caption"><span class="caption-text"><em>License requirement options</em></span></p>
 </div>
@@ -906,7 +1018,7 @@
 <p><strong>Category</strong> - Data is divided into categories, which assists in the grouping and search of available geographic datasets. These categories correspond to those on the Exchange homepage.</p>
 <p><strong>Spatial representation type</strong> - This explains the method used to represent geographic information in the dataset.</p>
 <blockquote>
-<div><div class="figure" id="id8">
+<div><div class="figure" id="id10">
 <img alt="../_images/spatial-rep.png" src="../_images/spatial-rep.png" />
 <p class="caption"><span class="caption-text"><em>Available spatial representation types</em></span></p>
 </div>
