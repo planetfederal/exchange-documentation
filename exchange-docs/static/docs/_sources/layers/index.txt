@@ -1,7 +1,7 @@
 Working with Layers
 ===================
 
-Exchange allows you to upload layers for better visualization of your data, and to create a more detailed map.
+Uploading layers into Exchange provides better visualization of your data, and helps you create a more detailed map.
 
 Exchange supports the following Vector formats:
 
@@ -42,7 +42,7 @@ Upload a layer
 
 1. Click the :guilabel:`Data` link on the Exchange toolbar, and select **Upload Layers** in the drop-down menu to open the Upload Layers page.
 
-   .. figure:: img/data-menu.png
+    .. figure:: img/upload-layer.png
 
 2. Click the :guilabel:`Choose Files` button. This will open a local file dialog. Navigate to your data folder and select the file(s) for the geospatial layer.
 
@@ -54,9 +54,13 @@ Upload a layer
 
     .. figure:: img/manage-data.png
 
-4. Verify the name of your layer is correct, and click the :guilabel:`Continue` button. A unique identifier will be added to the end of your layer.
+4. Verify the title of your layer is correct. A unique identifier will be added to the end of your layer. Select a Category from the drop-down menu. The category field is mandatory, and should best fit the type of data you are importing.
 
-    .. figure:: img/name-layer.png
+  Provide a brief abstract for your data. Other users will be able to find your data based on this text.
+
+  Click the :guilabel:`Next Step` button when you are finished.
+
+  .. figure:: img/layer-metadata.png
 
 Configure time attributes
 ^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -109,30 +113,32 @@ To remove ambiguity, repeat a code to represent the maximum number of digits. Fo
 
     **Yes -** If your layer has an attribute for time configuration, and you’d like to enable the playback feature, select Yes. Configure the time attribute by selecting which data field is the Start Date. Selecting an end date is optional.
 
-      .. figure:: img/time-config.png
+    .. figure:: img/time-config.png
 
     **No -** Select No if your data does not include temporal information.
 
-    Click the Continue button.
+    Click the :guilabel:`Next Step` button.
 
 Enable version history
 ^^^^^^^^^^^^^^^^^^^^^^
-
-6. Select whether or not you’d like to enable version history.
 
 Exchange uses GeoGig repositories to maintain version control of your vector data. By enabling version history, you can see the history of changes and who made them. Please reference the **Editing and Version Management** section for further information. Establishing permissions for your layers allows you to see edits made to the information through version history. Please see the below section on **Setting Permissions** for more information.
 
 **Note:** Attempting to enable version history for a raster file will cause an error, notifying you to verify your configuration before you can proceed with the import.
 
-  Select Yes or  No, followed by the Continue button.
+6. Select **Yes** or  **No**, followed by the :guilabel:`Next Step` button.
 
-    .. figure:: img/enable-history.png
+    .. figure:: img/version-history.png
 
-7. Click the :guilabel:`Create my layer` button to begin the import. You will be notified that the importer has successfully finished. Select the hyperlink to view your layer, or click the :guilabel:`Close` button to continue importing data.
+7. Click the :guilabel:`Import layer` button to begin the import.
 
-    .. figure:: img/create-layer.png
+    .. figure:: img/import-ready.png
 
-Selecting **View the layer** will take you to the layer’s information page, where you can create permissions for viewing and editing your data.
+8. Click the :guilabel:`Publish Layer` button to make your layer visible to other users.
+
+  .. figure:: img/publish-layer.png
+
+Selecting **Publish layer** will take you to the layer’s information page, where you can create permissions for viewing and editing your data.
 
 Layer information
 -----------------
@@ -150,18 +156,19 @@ Each layer has an information page associated to it, which has several options f
 
 1. To access Layer Information, click the :guilabel:`Data` link on the Exchange toolbar, and select **Layers** from the drop-down menu. This will open the Explore Layers page. Here you will see a list of all of the available layers. Each layer has a thumbnail image, as well as the title, author, and any associated keywords.
 
-  .. figure:: img/layers-info.png
-
 2. Click the title of the layer you want to access.
 
-3. The information page for the layer will open.
+  .. figure:: img/explore-layers1.png
 
-  .. figure:: img/layer-info-page.png
+The information page for the layer will open.
+
+  .. figure:: img/layer-details.png
+
 
 Using the map features
 ^^^^^^^^^^^^^^^^^^^^^^
 
-Within the Map Information page, there are some map features that will help you view the layer more in depth.
+Within the layer details page, there are some map features that will help you view the layer more in depth.
 
 **Zoom -** Select the Zoom In or Zoom Out button to zoom to a specific location. Depending on the basemap, you may be able to zoom in as close as 1:10 meters.
 
@@ -183,9 +190,9 @@ Within the Map Information page, there are some map features that will help you 
 
 **Layers -** Select the Layers button to turn any of your layers off or on.
 
-  .. figure:: img/layers-button.png
+  .. figure:: img/layer-button.png
 
-Click the :guilabel:`Basemap` button to select a different basemap style.
+**Basemap -** Click the Basemap button to select a different basemap style.
 
   .. figure:: img/basemap.png
 
@@ -196,7 +203,7 @@ There are five tabs with information pertaining to the particular layer: Info, A
 
 The Info tab is the default display, and contains basic information about the layer, such as the title, who created it, and when it was published.
 
-  .. figure:: img/details-info.png
+  .. figure:: img/info-tab.png
 
 The Attributes tab displays the layer attribute table. Layer attribute statistics will only display if the value is a numeric attribute, otherwise, no statistics will be calculated.
 
@@ -208,11 +215,11 @@ The Ratings tab displays all ratings given to a layer by other users. Click on a
 
 The Comments tab allows you to see what others are saying about this layer, as well as leave your own comment. Click the :guilabel:`Add Comment` button to leave a comment about the layer. When you’ve finished, click the :guilabel:`Submit Comment` button.
 
-  .. figure:: img/details-comment.png
+  .. figure:: img/comments.png
 
 The GeoGig tab shows you the history of edits that have been made to the layer, when they were made, and by whom.
 
-  .. figure:: img/details-geogig.png
+  .. figure:: img/geogig.png
 
 Editing metadata and managing layers
 ------------------------------------
@@ -249,17 +256,17 @@ Custom images related to your map can be created, and will display next to the m
 Set permissions
 ^^^^^^^^^^^^^^^^^^^
 
-The social design of Exchange allows users to coordinate on projects by sharing access to the same layers and maps; however, there may be instances when you want to limit who has what access to your layers. In Exchange, you can establish permissions for who can view, edit, and manage layers. Permissions can also be set for editing styles and metadata.
+The social design of Exchange allows users to coordinate on projects by sharing access to the same layers and maps; however there may be instances when you want to limit who has what access to your layers. In Exchange, you can establish permissions for who can view, edit, and manage layers. Permissions can also be set for editing styles and metadata.
 
-By default, when a layer is uploaded, the permissions are set so that only the person who uploaded the layer has access to it. If you want other people to view, download, or edit the layer, you must change the permissions to allow it. Without changing permissions, other registered users will not see it listed as an available layer.
+By default, when a layer is uploaded, the permissions are set so that only the person who uploaded the layer has permission to make changes. If you want other people to edit the layer, its styles or metadata, you must change the permissions to allow it.
 
 1. Click the :guilabel:`Change Layer Permissions` button.
 
   .. figure:: img/permissions.png
 
-2. Under the Who can view and Who can download sections, add the name(s) of registered users or groups. This will ensure anonymous view access is disabled, and only those users specified are able to see your layers. You can also leave the checkbox checked to allow all users access to the layer.
+2. Under the **Who can view it** and **Who can download it** sections, add the name(s) of registered users or groups. This will ensure anonymous view access is disabled, and only those users specified are able to see your layers. You can also leave the checkbox checked to allow all users access to the layer.
 
-  .. figure:: img/set-permissions.png
+  .. figure:: img/set-permission.png
 
 3. You can make the same changes for who can edit, change metadata, styles and who can manage the data. Add the names of users or groups who have permission to edit the layer. Click the :guilabel:`Apply Changes` button when you are finished.
 
@@ -274,11 +281,11 @@ Layers can have multiple associated styles. The Styles section tells you which s
 
   .. figure:: img/styles-manage.png
 
-2. Click the name of a style in the left-hand list to select it, and move it to the right-hand list.
+2. Click the name of a style from the list on the left to select it, and move it to the list on the right.
 
   .. figure:: img/manage-styles.png
 
-3. Click a style in the right-hand list, and click the arrows between the lists to remove a style.
+3. Click a style from the list on the right, and click the arrows between the lists to remove a style.
 
 4. Click the :guilabel:`Update available Styles` button to save changes.
 
@@ -298,7 +305,7 @@ Remove a layer
 
 Removing a layer will delete it completely from Boundless Exchange.
 
-1. Click the :guilabel:`Edit Layer` button, and select Remove.
+1. Click the :guilabel:`Edit Layer` button, and select **Remove**.
 
 2. Verify your selection by clicking the :guilabel:`Yes, I am sure` button.
 
@@ -316,7 +323,11 @@ Download data
 
 2. Select the format in which you’d like the data to be downloaded. Exchange currently offers the following formats for use in multiple geospatial platforms:
 
-  .. figure:: img/download-layer-options.png
+  .. figure:: img/download-data.png
+
+Select either data or images.
+
+  .. figure:: img/download-images.png
 
 3. Save the file to your computer when the Save As dialog box opens.
 
@@ -327,6 +338,6 @@ Download metadata
 
 2. Select the format in which you’d like to download the metadata.
 
-  .. figure:: img/download-meta-options.png
+  .. figure:: img/download-metadata.png
 
 3. Save the file to your computer when prompted.

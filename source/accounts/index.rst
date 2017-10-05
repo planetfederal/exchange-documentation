@@ -16,6 +16,15 @@ If the :guilabel:`Register` link is displayed then register a new account by com
 
 #. Depending on how the Exchange site was configured you may have to confirm your email. If this is the case, follow the steps listed in the instructional email you will receive.
 
+Log in to your account
+----------------------
+
+Once you’ve created your account, you’ll simply use the username and password you used to register (or the one provided to you by your site administrator), and click the :guilabel:`Log In` button.
+
+You can also login using your Boundless Connect account. (For more information on Boundless Connect, please visit the website, https://connect.boundlessgeo.com.) If you have registered an account with Connect, simply click the :guilabel:`Log In with connect` button, and enter your email and password information when prompted.
+
+  .. figure:: img/log-in.png
+
 Managing your profile
 ---------------------
 
@@ -25,13 +34,13 @@ To adjust your profile settings complete the following steps:
 
 1. Click on your user name in the top right of the screen. Select :guilabel:`Profile` from the drop-down menu to enter the Profile Settings page. This will display your current profile settings.
 
-   .. figure:: img/test-profile.png
+   .. figure:: img/user-profile1.png
 
 2. To modify your profile, select the :guilabel:`Edit Profile` link.
 
 3. On this page, you can update your information, including your avatar. It is important to include (at a minimum) your **First name**, **Last name** and **Email address**. This is required to properly display history of GeoGig versioned layers.
 
-   .. figure:: img/edit-profile.png
+   .. figure:: img/edit1-profile.png
 
 4. When finished, select the :guilabel:`Update Profile` button.
 
@@ -44,7 +53,7 @@ Once your account is created in Exchange, you will be able to view other user ac
 
   .. figure:: img/about.png
 
-  .. figure:: img/exploring-people.png
+  .. figure:: img/explore-people.png
 
 2. Click on an individual username to see their contact information, and any resources owned by the user. Any layers, maps or documents they have added to Exchange will be listed under Resources.
 
@@ -52,7 +61,7 @@ Once your account is created in Exchange, you will be able to view other user ac
 
 3. You can also click on the :guilabel:`User Activities` link to see the chronological list of that user’s activities.
 
-   .. figure:: img/activity-feed.png
+   .. figure:: img/activity-feed1.png
 
 Managing groups
 ---------------

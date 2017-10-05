@@ -13,15 +13,15 @@ A layer that is able to be edited will have the :guilabel:`Add Feature` button a
 
   .. figure:: img/add-feature-bttn.png
 
-1. Click the :guilabel:`Add Feature` button. The Drawing Geometry dialog will appear at the top of the map.
+1. Click the :guilabel:`Add Feature` button next to the layer that is to get the new feature. The Drawing Geometry dialog will open at the top of the map.
 
 2. Click on the map to add your point feature.
 
 3. Click the :guilabel:`Accept Feature` button to keep the geometry. Click the :guilabel:`Cancel Feature` button to remove the added feature.
 
-#. After the feature is accepted, the Edit Attributes window will open. Fill out the fields, or select values from the dropdowns to add attribute values.
+4. After the feature is accepted, the Edit Attributes window will open. Fill out the fields, or select values from the dropdowns to add attribute values.
 
-#. Click the :guilabel:`Save` button at the bottom of the form to save the feature to the layer.
+5. Click the :guilabel:`Save` button at the bottom of the form to save the feature to the layer.
 
 .. figure:: img/add-point-feature.gif
 
@@ -34,15 +34,15 @@ Add a line to a layer
 
 A line layer consists of lines that represent features such as roads, powerlines, waterways, *etc*.
 
-#. Click the :guilabel:`Add Feature` button. The Drawing Geometry dialog will appear at the top of the screen.
+1. Click the :guilabel:`Add Feature` button next to the layer that will get the new feature. The Drawing Geometry dialog will open at the top of the screen.
 
-#. Click on the map to begin drawing the linear feature. Click additional points to add all of the vertices. Double-click the last vertex to finish drawing the line.
+2. Click on the map to begin drawing the linear feature. Click additional points to add all of the required vertices. Double-click the last vertex to finish drawing the line.
 
-#. Click the :guilabel:`Accept Feature` button to add the geometries to the layer.
+3. Click the :guilabel:`Accept Feature` button to add the geometries to the layer.
 
-#. After accepting the feature, populate the attributes in the Edit Attributes window with any required information.
+4. After accepting the feature, populate the attributes in the Edit Attributes window with any required information.
 
-#. Click the :guilabel:`Save` button to save your changes.
+5. Click the :guilabel:`Save` button to save your changes.
 
   .. figure:: img/add-lines.gif
 
@@ -56,17 +56,17 @@ Add a polygon feature to a layer
 Polygons can be used to represent many different features, including buildings, bodies of water, hazardous areas, *etc.*
 A simple polygon layer has a single polygon per feature.
 
-#. Click the :guilabel:`Add Feature` button. The Drawing Geometry dialog will appear at the top of the screen.
+1. Click the :guilabel:`Add Feature` button. The Drawing Geometry dialog will open at the top of the screen.
 
-#. Click on the map to begin adding the polygon. Continue to click to add all of the vertices. To finalize the polygon, close the geometry by clicking on the first vertex again.
+2. Click on the map to begin adding the polygon. Continue to click to add all of the vertices. To finalize the polygon, close the geometry by clicking on the first vertex again.
 
-#. Click the Right Angles button to create right angle corners on your polygon.
+3. Click the Right Angles button to create right angle corners on your polygon.
 
-#. Click the :guilabel:`Accept Feature` button to add the geometries to the layer.
+4. Click the :guilabel:`Accept Feature` button to add the geometries to the layer.
 
-#. After accepting the feature, populate the attributes in the Edit Attributes window with any required information.
+5. After accepting the feature, populate the attributes in the Edit Attributes window with any required information.
 
-#. Click the :guilabel:`Save` button to save your changes.
+6. Click the :guilabel:`Save` button to save your changes.
 
   .. figure:: img/add-poly.gif
 
@@ -79,13 +79,13 @@ Edit attributes
 
 If a layer is able to be edited, Exchange allows you to make attribute changes directly from the map.
 
-#. Select a feature on the map. The feature info box will appear.
+1. Select a feature on the map. The feature info box will appear.
 
-#. Click the :guilabel:`Edit Attributes` button to open the Edit Attributes window.
+2. Click the :guilabel:`Edit Attributes` button to open the Edit Attributes window.
 
-#. Add attribute information as necessary.
+3. Add attribute information as necessary.
 
-#. Click the :guilabel:`Save` button to save your changes.
+4. Click the :guilabel:`Save` button to save your changes.
 
 .. figure:: img/edit-attributes.gif
 
@@ -94,13 +94,13 @@ Edit point geometries on the map
 
 Point layers can be either simple point or multi-points layers. For simple point layer, there is one point per feature. Multi-point layers will have more than one point per feature.
 
-#. Select a point feature on the map to open the feature info box.
+1. Select a point feature on the map to open the feature info box.
 
-#. Click the :guilabel:`Edit Geometry` button. This will open the Drawing Geometry dialog at the top of the screen. Your selected feature will be highlighted in blue.
+2. Click the :guilabel:`Edit Geometry` button. This will open the Drawing Geometry dialog at the top of the screen. Your selected feature will be highlighted in blue.
 
-#. Click and drag the feature to a new location.
+3. Click and drag the feature to a new location.
 
-#. Click the :guilabel:`Accept Feature` button to save the new feature location. Click the :guilabel:`Cancel` button to cancel your edit.
+4. Click the :guilabel:`Accept Feature` button to save the new feature location. Click the :guilabel:`Cancel` button to cancel your edit.
 
 .. figure:: img/edit-point-geometry.gif
 
@@ -109,13 +109,13 @@ Edit point geometry manually
 
 Coordinates for point geometries can also be edited manually. This is useful when you have the coordinates from another source (such as a report or agency).
 
-#. Select a point feature on the map to open the feature info box.
+1. Select a point feature on the map to open the feature info box.
 
-#. Click the :guilabel:`Edit Attributes` button. The Edit Attributes window will open.
+2. Click the :guilabel:`Edit Attributes` button. The Edit Attributes window will open.
 
-#. Click the Location field to edit the point's coordinates. Add the new location.
+3. Click the Location field to edit the point's coordinates. Add the new location.
 
-#. Click the :guilabel:`Save` button to save your changes.
+4. Click the :guilabel:`Save` button to save your changes.
 
   .. figure:: img/edit-points-manually.gif
 
@@ -124,11 +124,11 @@ Edit line or polygon geometries
 
 Any existing feature in a layer can be modified, if you have permission to edit the layer. A layer that has been saved to GeoGig will maintain a history of all of the edits to ensure the provenance of the data.
 
-#. Select a feature on the map to be edited. This will open the feature info box.
+1. Select a feature on the map to be edited. This will open the feature info box.
 
-#. Click the :guilabel:`Edit Geometry` button. The Editing Geometry dialog will open.
+2. Click the :guilabel:`Edit Geometry` button. The Editing Geometry dialog will open.
 
-#. Mouse over the geometry to highlight the vertex to edit. Click and drag the vertex to a new location. Repeat to edit any additional vertices.
+3. Mouse over the geometry to highlight the vertex to edit. Click and drag the vertex to a new location. Repeat to edit any additional vertices.
 
   .. figure:: img/edit-poly.gif
 
@@ -155,7 +155,7 @@ Notifications
 
 Because Exchange is a real time collaboration tool, it is important for users to be able to see what changes other team members are making to a project. When users upload layers, they are given the option to import the layer(s) into GeoGig, which will show who has made what changes (for more on GeoGig, please reference the Working with Layers Management section). If another user has made modifications to a layer currently on the map, a number will appear next to the Notifications indicating how many unread notifications you have. The more notifications, the more changes that have been made to your map layers.
 
-#. Click on the number of unread notifications to open the Notifications list in the layers menu. This will show you all of the changes that have been made to your layer. If there have been multiple changes, they may be grouped into sections based on when the changes occurred. Click on the grouping you would like to view.
+1. Click on the number of unread notifications to open the Notifications list in the layers menu. This will show you all of the changes that have been made to your layer. If there have been multiple changes, they may be grouped into sections based on when the changes occurred. Click on the grouping you would like to view.
 
   .. figure:: img/notification-list.png
 
@@ -188,23 +188,23 @@ View layer history
 
 You can view all of the changes made to an entire layer from the map.
 
-#. Select the name of the layer you want to view. The menu will expand to show additional layer options.
+1. Select the name of the layer you want to view. The menu will expand to show additional layer options.
 
-#. Click on the :guilabel:`Show History` button. The history will expand.
+2. Click on the :guilabel:`Show History` button. The history will expand.
 
    .. figure:: img/show-history-bttn.png
 
-#. Hover your mouse over a commit to view details about the changes. The color bar next to the commit indicates the type of edits that were made. Green indicates a new feature was added. Yellow indicates a feature was modified. Red indicates a feature was deleted. A commit can have multiple types of edits. In such cases, the bar will have colors representative of the types of edits that were made.
+3. Hover your mouse over a commit to view details about the changes. The color bar next to the commit indicates the type of edits that were made. Green indicates a new feature was added. Yellow indicates a feature was modified. Red indicates a feature was deleted. A commit can have multiple types of edits. In such cases, the bar will have colors representative of the types of edits that were made.
 
    .. figure:: img/show-history-list.png
 
       *History detail for a commit*
 
-#. Click on a commit, and its history will update to show the individual edits within that commit. MapLoom will make one commit per edit.
+4. Click on a commit, and its history will update to show the individual edits within that commit. MapLoom will make one commit per edit.
 
    .. figure:: img/show-layer-history.png
 
-#. Click the :guilabel:`Show Changes` button to bring up a new window, displaying the specific changes that were made. The changes will be highlighted with the same color coding as the commits. Green means something was added. Yellow means the feature was changed. Red means the feature was deleted. In the image below, the feature was added, and so the feature on the map is highlighted in green.
+5. Click the :guilabel:`Show Changes` button to bring up a new window, displaying the specific changes that were made. The changes will be highlighted with the same color coding as the commits. Green means something was added. Yellow means the feature was changed. Red means the feature was deleted. In the image below, the feature was added, and so the feature on the map is highlighted in green.
 
    .. figure:: img/layer-history-changes.png
 
@@ -231,7 +231,7 @@ The changes will be highlighted with the same color coding as the commits. Green
 
   .. figure:: img/show-feature-changes.png
 
-#. Click the :guilabel:`Show Authors` button to see the names and dates for every attribute in the feature. Note that through the lifetime of a feature, there can be several authors. This is a good way to see who has contributed to a feature’s current state.
+5. Click the :guilabel:`Show Authors` button to see the names and dates for every attribute in the feature. Note that through the lifetime of a feature, there can be several authors. This is a good way to see who has contributed to a feature’s current state.
 
    .. figure:: img/show-authors.png
 
@@ -240,44 +240,44 @@ Summarize history
 
 You can visualize a summary of all of the edits within a date range for a layer.
 
-#. Click the :guilabel:`Show History` button for layer you want to summarize.
+1. Click the :guilabel:`Show History` button for layer you want to summarize.
 
    .. figure:: img/show-history-bttn.png
 
-#. Click the :guilabel:`History Summary` button.
+2. Click the :guilabel:`History Summary` button.
 
    .. figure:: img/history-summary.png
 
-#. Enter the date range for the history to summarize.
+3. Enter the date range for the history to summarize.
 
    .. figure:: img/summary-date-range.png
 
-#. Click the :guilabel:`Summarize` button. The edited features will be highlighted, and will be listed under the Summary of Changes field.
+4. Click the :guilabel:`Summarize` button. The edited features will be highlighted, and will be listed under the Summary of Changes field.
 
    .. figure:: img/summary.png
 
-#. Click the :guilabel:`Show Changes` button for one of the edits in the list to see a detailed view.
+5. Click the :guilabel:`Show Changes` button for one of the edits in the list to see a detailed view.
 
 Export history
 ^^^^^^^^^^^^^^
 
 You can export a summary of all of the edits within a date range for a layer.
 
-#. Click the :guilabel:`Show History` button for layer you want to summarize.
+1. Click the :guilabel:`Show History` button for layer you want to summarize.
 
    .. figure:: img/show-history-bttn.png
 
-#. Click on the :guilabel:`History Summary` button
+2. Click on the :guilabel:`History Summary` button
 
    .. figure:: img/history-summary.png
 
-#. Enter the date range for the history to summarize.
+3. Enter the date range for the history to summarize.
 
    .. figure:: img/export-history.png
 
-#. Click the :guilabel:`Export CSV` button.
+4. Click the :guilabel:`Export CSV` button.
 
-#. When prompted to save the file, browse to the location where you want to save it, and click Ok.
+5. When prompted to save the file, browse to the location where you want to save it, and click Ok.
 
 All of the feature change history will be added to the spreadsheet.
 

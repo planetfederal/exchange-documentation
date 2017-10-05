@@ -86,6 +86,7 @@
             <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../accounts/index.html">Accounts, Users and Groups</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../accounts/index.html#creating-a-new-account">Creating a new account</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../accounts/index.html#log-in-to-your-account">Log in to your account</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../accounts/index.html#managing-your-profile">Managing your profile</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../accounts/index.html#viewing-other-user-accounts">Viewing other user accounts</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../accounts/index.html#managing-groups">Managing groups</a></li>
@@ -192,7 +193,7 @@
         	     
   <div class="section" id="working-with-layers">
 <h1>Working with Layers<a class="headerlink" href="#working-with-layers" title="Permalink to this headline">¶</a></h1>
-<p>Exchange allows you to upload layers for better visualization of your data, and to create a more detailed map.</p>
+<p>Uploading layers into Exchange provides better visualization of your data, and helps you create a more detailed map.</p>
 <p>Exchange supports the following Vector formats:</p>
 <ul class="simple">
 <li>ESRI Shapefile</li>
@@ -239,9 +240,11 @@
 <h2>Upload a layer<a class="headerlink" href="#upload-a-layer" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic">
 <li><p class="first">Click the <span class="guilabel">Data</span> link on the Exchange toolbar, and select <strong>Upload Layers</strong> in the drop-down menu to open the Upload Layers page.</p>
-<div class="figure">
-<img alt="../_images/data-menu1.png" src="../_images/data-menu1.png" />
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/upload-layer.png" src="../_images/upload-layer.png" />
 </div>
+</div></blockquote>
 </li>
 <li><p class="first">Click the <span class="guilabel">Choose Files</span> button. This will open a local file dialog. Navigate to your data folder and select the file(s) for the geospatial layer.</p>
 </li>
@@ -260,14 +263,16 @@
 </div>
 </div></blockquote>
 </li>
-<li><p class="first">Verify the name of your layer is correct, and click the <span class="guilabel">Continue</span> button. A unique identifier will be added to the end of your layer.</p>
-<blockquote>
-<div><div class="figure">
-<img alt="../_images/name-layer.png" src="../_images/name-layer.png" />
-</div>
-</div></blockquote>
+<li><p class="first">Verify the title of your layer is correct. A unique identifier will be added to the end of your layer. Select a Category from the drop-down menu. The category field is mandatory, and should best fit the type of data you are importing.</p>
 </li>
 </ol>
+<blockquote>
+<div><p>Provide a brief abstract for your data. Other users will be able to find your data based on this text.</p>
+<p>Click the <span class="guilabel">Next Step</span> button when you are finished.</p>
+<div class="figure">
+<img alt="../_images/layer-metadata.png" src="../_images/layer-metadata.png" />
+</div>
+</div></blockquote>
 <div class="section" id="configure-time-attributes">
 <h3>Configure time attributes<a class="headerlink" href="#configure-time-attributes" title="Permalink to this headline">¶</a></h3>
 <p>A feature can currently support one or two time attributes. If a single attribute is used, the feature is considered relevant at that single point in time (start date). If two attributes are used, the second attribute represents the end of a valid time period for the feature.</p>
@@ -316,42 +321,43 @@
 <img alt="../_images/time-attribute.png" src="../_images/time-attribute.png" />
 </div>
 <p><strong>Yes -</strong> If your layer has an attribute for time configuration, and you’d like to enable the playback feature, select Yes. Configure the time attribute by selecting which data field is the Start Date. Selecting an end date is optional.</p>
-<blockquote>
-<div><div class="figure">
+<div class="figure">
 <img alt="../_images/time-config.png" src="../_images/time-config.png" />
 </div>
-</div></blockquote>
 <p><strong>No -</strong> Select No if your data does not include temporal information.</p>
-<p>Click the Continue button.</p>
+<p>Click the <span class="guilabel">Next Step</span> button.</p>
 </div></blockquote>
 </li>
 </ol>
 </div>
 <div class="section" id="enable-version-history">
 <h3>Enable version history<a class="headerlink" href="#enable-version-history" title="Permalink to this headline">¶</a></h3>
-<ol class="arabic simple" start="6">
-<li>Select whether or not you’d like to enable version history.</li>
-</ol>
 <p>Exchange uses GeoGig repositories to maintain version control of your vector data. By enabling version history, you can see the history of changes and who made them. Please reference the <strong>Editing and Version Management</strong> section for further information. Establishing permissions for your layers allows you to see edits made to the information through version history. Please see the below section on <strong>Setting Permissions</strong> for more information.</p>
 <p><strong>Note:</strong> Attempting to enable version history for a raster file will cause an error, notifying you to verify your configuration before you can proceed with the import.</p>
-<blockquote>
-<div><p>Select Yes or  No, followed by the Continue button.</p>
-<blockquote>
-<div><div class="figure">
-<img alt="../_images/enable-history.png" src="../_images/enable-history.png" />
-</div>
-</div></blockquote>
-</div></blockquote>
-<ol class="arabic" start="7">
-<li><p class="first">Click the <span class="guilabel">Create my layer</span> button to begin the import. You will be notified that the importer has successfully finished. Select the hyperlink to view your layer, or click the <span class="guilabel">Close</span> button to continue importing data.</p>
+<ol class="arabic" start="6">
+<li><p class="first">Select <strong>Yes</strong> or  <strong>No</strong>, followed by the <span class="guilabel">Next Step</span> button.</p>
 <blockquote>
 <div><div class="figure">
-<img alt="../_images/create-layer.png" src="../_images/create-layer.png" />
+<img alt="../_images/version-history.png" src="../_images/version-history.png" />
 </div>
 </div></blockquote>
 </li>
+<li><p class="first">Click the <span class="guilabel">Import layer</span> button to begin the import.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/import-ready.png" src="../_images/import-ready.png" />
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">Click the <span class="guilabel">Publish Layer</span> button to make your layer visible to other users.</p>
+</li>
 </ol>
-<p>Selecting <strong>View the layer</strong> will take you to the layer’s information page, where you can create permissions for viewing and editing your data.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/publish-layer.png" src="../_images/publish-layer.png" />
+</div>
+</div></blockquote>
+<p>Selecting <strong>Publish layer</strong> will take you to the layer’s information page, where you can create permissions for viewing and editing your data.</p>
 </div>
 </div>
 <div class="section" id="layer-information">
@@ -371,24 +377,22 @@
 </div></blockquote>
 <ol class="arabic simple">
 <li>To access Layer Information, click the <span class="guilabel">Data</span> link on the Exchange toolbar, and select <strong>Layers</strong> from the drop-down menu. This will open the Explore Layers page. Here you will see a list of all of the available layers. Each layer has a thumbnail image, as well as the title, author, and any associated keywords.</li>
+<li>Click the title of the layer you want to access.</li>
 </ol>
 <blockquote>
 <div><div class="figure">
-<img alt="../_images/layers-info.png" src="../_images/layers-info.png" />
+<img alt="../_images/explore-layers1.png" src="../_images/explore-layers1.png" />
 </div>
 </div></blockquote>
-<ol class="arabic simple" start="2">
-<li>Click the title of the layer you want to access.</li>
-<li>The information page for the layer will open.</li>
-</ol>
+<p>The information page for the layer will open.</p>
 <blockquote>
 <div><div class="figure">
-<img alt="../_images/layer-info-page.png" src="../_images/layer-info-page.png" />
+<img alt="../_images/layer-details.png" src="../_images/layer-details.png" />
 </div>
 </div></blockquote>
 <div class="section" id="using-the-map-features">
 <h3>Using the map features<a class="headerlink" href="#using-the-map-features" title="Permalink to this headline">¶</a></h3>
-<p>Within the Map Information page, there are some map features that will help you view the layer more in depth.</p>
+<p>Within the layer details page, there are some map features that will help you view the layer more in depth.</p>
 <p><strong>Zoom -</strong> Select the Zoom In or Zoom Out button to zoom to a specific location. Depending on the basemap, you may be able to zoom in as close as 1:10 meters.</p>
 <blockquote>
 <div><div class="figure">
@@ -419,10 +423,10 @@
 <p><strong>Layers -</strong> Select the Layers button to turn any of your layers off or on.</p>
 <blockquote>
 <div><div class="figure">
-<img alt="../_images/layers-button.png" src="../_images/layers-button.png" />
+<img alt="../_images/layer-button.png" src="../_images/layer-button.png" />
 </div>
 </div></blockquote>
-<p>Click the <span class="guilabel">Basemap</span> button to select a different basemap style.</p>
+<p><strong>Basemap -</strong> Click the Basemap button to select a different basemap style.</p>
 <blockquote>
 <div><div class="figure">
 <img alt="../_images/basemap.png" src="../_images/basemap.png" />
@@ -435,7 +439,7 @@
 <p>The Info tab is the default display, and contains basic information about the layer, such as the title, who created it, and when it was published.</p>
 <blockquote>
 <div><div class="figure">
-<img alt="../_images/details-info.png" src="../_images/details-info.png" />
+<img alt="../_images/info-tab.png" src="../_images/info-tab.png" />
 </div>
 </div></blockquote>
 <p>The Attributes tab displays the layer attribute table. Layer attribute statistics will only display if the value is a numeric attribute, otherwise, no statistics will be calculated.</p>
@@ -453,13 +457,13 @@
 <p>The Comments tab allows you to see what others are saying about this layer, as well as leave your own comment. Click the <span class="guilabel">Add Comment</span> button to leave a comment about the layer. When you’ve finished, click the <span class="guilabel">Submit Comment</span> button.</p>
 <blockquote>
 <div><div class="figure">
-<img alt="../_images/details-comment.png" src="../_images/details-comment.png" />
+<img alt="../_images/comments1.png" src="../_images/comments1.png" />
 </div>
 </div></blockquote>
 <p>The GeoGig tab shows you the history of edits that have been made to the layer, when they were made, and by whom.</p>
 <blockquote>
 <div><div class="figure">
-<img alt="../_images/details-geogig.png" src="../_images/details-geogig.png" />
+<img alt="../_images/geogig.png" src="../_images/geogig.png" />
 </div>
 </div></blockquote>
 </div>
@@ -508,8 +512,8 @@
 </div>
 <div class="section" id="set-permissions">
 <h3>Set permissions<a class="headerlink" href="#set-permissions" title="Permalink to this headline">¶</a></h3>
-<p>The social design of Exchange allows users to coordinate on projects by sharing access to the same layers and maps; however, there may be instances when you want to limit who has what access to your layers. In Exchange, you can establish permissions for who can view, edit, and manage layers. Permissions can also be set for editing styles and metadata.</p>
-<p>By default, when a layer is uploaded, the permissions are set so that only the person who uploaded the layer has access to it. If you want other people to view, download, or edit the layer, you must change the permissions to allow it. Without changing permissions, other registered users will not see it listed as an available layer.</p>
+<p>The social design of Exchange allows users to coordinate on projects by sharing access to the same layers and maps; however there may be instances when you want to limit who has what access to your layers. In Exchange, you can establish permissions for who can view, edit, and manage layers. Permissions can also be set for editing styles and metadata.</p>
+<p>By default, when a layer is uploaded, the permissions are set so that only the person who uploaded the layer has permission to make changes. If you want other people to edit the layer, its styles or metadata, you must change the permissions to allow it.</p>
 <ol class="arabic simple">
 <li>Click the <span class="guilabel">Change Layer Permissions</span> button.</li>
 </ol>
@@ -519,11 +523,11 @@
 </div>
 </div></blockquote>
 <ol class="arabic simple" start="2">
-<li>Under the Who can view and Who can download sections, add the name(s) of registered users or groups. This will ensure anonymous view access is disabled, and only those users specified are able to see your layers. You can also leave the checkbox checked to allow all users access to the layer.</li>
+<li>Under the <strong>Who can view it</strong> and <strong>Who can download it</strong> sections, add the name(s) of registered users or groups. This will ensure anonymous view access is disabled, and only those users specified are able to see your layers. You can also leave the checkbox checked to allow all users access to the layer.</li>
 </ol>
 <blockquote>
 <div><div class="figure">
-<img alt="../_images/set-permissions.png" src="../_images/set-permissions.png" />
+<img alt="../_images/set-permission.png" src="../_images/set-permission.png" />
 </div>
 </div></blockquote>
 <ol class="arabic simple" start="3">
@@ -547,7 +551,7 @@
 </div>
 </div></blockquote>
 <ol class="arabic simple" start="2">
-<li>Click the name of a style in the left-hand list to select it, and move it to the right-hand list.</li>
+<li>Click the name of a style from the list on the left to select it, and move it to the list on the right.</li>
 </ol>
 <blockquote>
 <div><div class="figure">
@@ -555,7 +559,7 @@
 </div>
 </div></blockquote>
 <ol class="arabic simple" start="3">
-<li>Click a style in the right-hand list, and click the arrows between the lists to remove a style.</li>
+<li>Click a style from the list on the right, and click the arrows between the lists to remove a style.</li>
 <li>Click the <span class="guilabel">Update available Styles</span> button to save changes.</li>
 </ol>
 </div>
@@ -578,7 +582,7 @@
 <h3>Remove a layer<a class="headerlink" href="#remove-a-layer" title="Permalink to this headline">¶</a></h3>
 <p>Removing a layer will delete it completely from Boundless Exchange.</p>
 <ol class="arabic simple">
-<li>Click the <span class="guilabel">Edit Layer</span> button, and select Remove.</li>
+<li>Click the <span class="guilabel">Edit Layer</span> button, and select <strong>Remove</strong>.</li>
 <li>Verify your selection by clicking the <span class="guilabel">Yes, I am sure</span> button.</li>
 </ol>
 <blockquote>
@@ -599,7 +603,13 @@
 </ol>
 <blockquote>
 <div><div class="figure">
-<img alt="../_images/download-layer-options.png" src="../_images/download-layer-options.png" />
+<img alt="../_images/download-data.png" src="../_images/download-data.png" />
+</div>
+</div></blockquote>
+<p>Select either data or images.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/download-images.png" src="../_images/download-images.png" />
 </div>
 </div></blockquote>
 <ol class="arabic simple" start="3">
@@ -614,7 +624,7 @@
 </ol>
 <blockquote>
 <div><div class="figure">
-<img alt="../_images/download-meta-options.png" src="../_images/download-meta-options.png" />
+<img alt="../_images/download-metadata.png" src="../_images/download-metadata.png" />
 </div>
 </div></blockquote>
 <ol class="arabic simple" start="3">
