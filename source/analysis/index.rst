@@ -10,7 +10,7 @@ To open the **Table View**, click on a layer, and select the :guilabel:`Show Tab
 
    .. figure:: img/show-table.png
 
-All of the data provided for this layer will display in the Table View, though you may need to scroll up and down, or left and right to view all of the data on the page. Select the left or right arrow buttons to move to a different page.
+All of the data provided for this layer will display in the Table View, though you may need to scroll up and down, or left and right to view all of the columns on the page. Select the left or right arrow buttons to move to a different page.
 
   .. figure:: img/table.png
 

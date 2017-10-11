@@ -6,51 +6,46 @@ Maps are comprised of various layers and their styles. Layers are available as l
 Create a map
 ------------
 
-Maps can be created in the Explore Maps section, or from one or more layers in Explore Maps.
+Maps can be created multiple ways within Exchange. If you’re starting a new project, you may want to start with a new, blank map. You can also create maps from existing layers and existing maps. The following steps will help you create the map environment you need.
 
-Create a new map
-^^^^^^^^^^^^^^^^
+Create a new blank map
+^^^^^^^^^^^^^^^^^^^^^^
 
 1. Select the :guilabel:`Maps` link on the Boundless Exchange toolbar.
 
 2. Click **Create Map** in the drop-down menu.
 
-.. figure:: img/maps-menu.png
+  .. figure:: img/maps-menu.png
 
 A new map environment will open, and you can begin working.
 
-Create a new map from a single layer
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Create a new map from layers
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Maps can be created in the Explore Layers section, or from one or more layers in Explore Maps.
+Layers can be used to create maps, and added from either the Explore Layers or Explore Maps section.
 
-#. Select the :guilabel:`Data` link on the Boundless Exchange toolbar, and click **Layers** in the drop-down menu.
+1. Select the :guilabel:`Data` link on the Boundless Exchange toolbar, and click **Layers** in the drop-down menu.
 
-.. figure:: img/data-pull-down.png
+  .. figure:: img/data-menu.png
 
-2. Select the **Create a Map** link under the layer you'd like to add to the map. A new map will open with the layer as part of the map.
+2. Click the **Plus** icon next to the layer you’d like to add to your map. You can select multiple layers. They will display in your workspace until you are ready to build your map.
 
-Create a new map from multiple layers
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+3. Click the :guilabel:`Create a map` button to add the layers in the workspace to a new map.
 
-#. Click the :guilabel:`Shopping Cart` icon next to the layers you'd like to add to your map. They will display in your cart until you are ready to build your map.
+  .. figure:: img/workspace.png
 
-#. Click the :guilabel:`Create a map` button to add all of the layers to a new map.
+    *Remove a layer from the cart by clicking the X button next to its name.*
 
-   .. figure:: img/add-to-workspace.png
-
-*Remove a layer from the cart by clicking the* :guilabel:`X` *next to its name.*
-
-A new map will open with all of the layers displayed.
+A new map will open with all of the layers displayed, and listed in the map menu.
 
 Add layers to a map
 -------------------
 
-You can add layers to the map from within the map environment using the Add Layer feature. Layers can be added from either the local geoserver within Exchange, or from a registry.
+You can add layers to the map from within the map environment using the Add Layer feature. Layers can be added from either the local geoserver within Exchange, or from a remote service.
 
 The local geoserver hosts layers that have been added to Exchange by other registered users. Local layers can be discovered through an advanced search from the Boundless Exchange homepage, from the Explore Layers page, and from within the map.
 
-Registry is a system for building, maintaining, and deploying a public registry of web map services of various types, OGC and Esri services. From a user’s perspective, registry integration is within the mapping client. Rather than having to add multiple services into Exchange, registry exposes external services and allows the user to add them to their map.
+A remote service is a separately-hosted data service of varying type (OGC,  Esri, etc). Remote services appear within the map and in search as layers. Rather than having to re-upload the files found within a particular service to Exchange, an external service’s layers are indexed and allow the user to find them and add them to their map.
 
 #. Click the Add Layer :guilabel:`(+)` button in the Layers field.
 
@@ -58,13 +53,13 @@ Registry is a system for building, maintaining, and deploying a public registry 
 
 The Add Layers window will open. A list of available layers will display on the right, but you can refine your search to find specific information.
 
-   .. figure:: img/add-layers.png
+   .. figure:: img/add-layer.png
 
 2. **Using the map -** Zoom in or out to your area of interest. The list of available layers will change to show you what is within the map extent (minus any layers currently on your map).
 
-Hover your mouse over a layer in the results list. A bounding box will display over the layer’s coverage area. Each layer will tell you whether it is from the local geoserver, or the registry.
+Zoom to limit the search to data that includes features in the displayed area. Hover your mouse over a layer in the results list. A bounding box will display over the layer’s coverage area. Each layer will tell you whether it is from the local geoserver, or a remote service.
 
-  .. figure:: img/add-layer-map.png
+  .. figure:: img/bounding-box.png
 
 3. **Keywords -** Add keywords to find specific layers. Words associated in the metadata, and the title are used for results. Select the Clear link to remove the filter.
 
@@ -255,18 +250,18 @@ A new map will open, populated with all of the layers of the map you copied.
 
 Your new map is now saved, and can be accessed from the maps page.
 
-.. important:: You are only copying the map. Any changes you make to the layer (data set) will affect both maps. Copying the map would primarily be used to make visual changes.
+.. important:: You are only copying the map. Any changes you make to the layer (data set) will affect any maps using that layer. Copying the map would primarily be used to make visual changes. To make changes to the data, it is recommended that you download the layer, and import your own copy.
 
 Managing Maps
 -------------
 
-Every map has its own details page, which provides more information about the map, the metadata and who has what permissions for making edits. To get to the details page for a map, click on the map title.
+Every map has its own details page, which provides more information about the map, the metadata and who has what permissions for making edits.
 
-  .. figure:: img/manage-details.png
+  .. figure:: img/map-details.png
 
 The map details page provides a view of the map, along with information about the map. It also tells you which layers are used in the map.
 
-  .. figure:: img/map-info.png
+  .. figure:: img/map-information.png
 
 Download data layers
 ^^^^^^^^^^^^^^^^^^^^
@@ -277,11 +272,11 @@ Here you can download the contents of a map that is stored in Exchange. It does 
 
 #. Select **Download Data Layers**.
 
-  .. figure:: img/download-data-layers.png
+  .. figure:: img/download-map.png
 
 If multiple layers exist, you will be able to select one or more of the available layers.
 
-  .. figure:: img/map-layers.png
+  .. figure:: img/download-map-layers.png
 
 3. Select the layer(s) you want to download individually, or the :guilabel:`Start downloading this map` button to begin downloading.
 
@@ -294,45 +289,49 @@ The Web Map Context (WMC) is an open geospatial consortium (OGC) standard for me
 
 #. Select **Download Web Map Context** from the menu.
 
-   .. figure:: img/download-data-layers.png
+   .. figure:: img/download-map.png
 
 A new tab will open with the XML for the web map context.
 
 Edit map metadata
 ^^^^^^^^^^^^^^^^^
 
-Metadata plays an important role for maps. It describes the map in a way that the legend does not; why it was created, the date it was published, and who created it, for example. When a map is updated, it is important to update the metadata, as well. You can edit the information about the map if you have the proper permissions.
+Metadata plays an important role for maps. It describes the map in a way that the legend does not; why it was created, the date it was published, and who created it, for example. When a map is updated, it is important to update the metadata, as well.
 
-#. Click the :guilabel:`Edit Map` button
+**Note:** You can only edit the metadata for the map if you have the proper permissions.
 
-#. Click the :guilabel:`Edit` button under Metadata on the Edit Map menu.
+1. Click the :guilabel:`Edit Map` button.
+
+2. Click the :guilabel:`Edit` button under Metadata on the Edit Map menu.
 
    .. figure:: img/edit-map.png
 
-#. In the metadata page, fill in the fields with information about the map. The more information you provide, the better others will understand your map.
+3. In the metadata page, fill in the fields with information about the map. The more information you provide, the better others will understand your map.
 
-#. Click the :guilabel:`Update` button at the top or bottom of the page to save your changes.
+**Note:** The “Category” field is a mandatory field, and if it has not previously been selected, you will be required to select one at that time.
+
+4. Click the :guilabel:`Update` button to save your changes.
 
 Set map thumbnail
 ^^^^^^^^^^^^^^^^^
 
 By default the thumbnail images for maps will only have the vector layers. In order to include the background map you will need to use the Set Map Thumbnail button.
 
-#. Pan and/or zoom the inset map on the **Map Details** page so that it’s centered on the view you would like for the map thumbnail.
+1. Pan and/or zoom the inset map on the **Map Details** page so that it’s centered on the view you would like for the map thumbnail.
 
-#. Click the :guilabel:`Edit Map` button.
+2. Click the :guilabel:`Edit Map` button.
 
-#. Click the :guilabel:`Set` button under Thumbnail on the Edit Map menu.
+3. Click the :guilabel:`Set` button under Thumbnail on the Edit Map menu.
 
    .. figure:: img/edit-map.png
 
 This will set the map thumbnail with the base map and layers included.
 
-.. figure:: img/set-thumbnail.png
+.. figure:: img/map-details.png
 
   *Old Thumbnail*
 
-.. figure:: img/manage-details.png
+.. figure:: img/new-thumbnail.png
 
    *New Thumbnail*
 
@@ -346,6 +345,8 @@ Custom images related to your map can be created, and will display next to the m
   .. figure:: img/edit-map-bttn.png
 
 2. Click the :guilabel:`Set from File` button to browse to the image. Select the image you want to use, and verify it displays in the thumbnail section.
+
+  .. figure:: img/file-thumbnail.png
 
 Edit map permissions
 ^^^^^^^^^^^^^^^^^^^^
