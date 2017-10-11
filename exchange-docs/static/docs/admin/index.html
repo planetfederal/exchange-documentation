@@ -40,7 +40,7 @@
     <!-- Removing search because it doesn't work well
     -->
     <link rel="top" title="Boundless Exchange 1.3.0 documentation" href="../index.html"/>
-        <link rel="next" title="Appendix" href="../appendix/index.html"/>
+        <link rel="next" title="Exchange Support" href="../support/index.html"/>
         <link rel="prev" title="Creating a story" href="../stories/index.html"/> 
 
   
@@ -145,12 +145,9 @@
 <li class="toctree-l2"><a class="reference internal" href="#groups">Groups</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#layers">Layers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#osgeo-importer">Osgeo_Importer</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#working-with-registry">Working with Registry</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#csw-record-administration">CSW Record Administration</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#managing-storyscapes">Managing Storyscapes</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../appendix/index.html">Appendix</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../support/index.html">Exchange Support</a></li>
 </ul>
 
@@ -180,7 +177,7 @@
   
   <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
     
-      <a href="../appendix/index.html" class="btn btn-neutral float-right" title="Appendix">Next <span class="fa fa-arrow-circle-right"></span></a>
+      <a href="../support/index.html" class="btn btn-neutral float-right" title="Exchange Support">Next <span class="fa fa-arrow-circle-right"></span></a>
     
     
       <a href="../stories/index.html" class="btn btn-neutral" title="Creating a story"><span class="fa fa-arrow-circle-left"></span> Previous</a>
@@ -790,186 +787,6 @@
 </ol>
 </div>
 </div>
-<div class="section" id="working-with-registry">
-<h2>Working with Registry<a class="headerlink" href="#working-with-registry" title="Permalink to this headline">¶</a></h2>
-<p>In Exchange, there are two primary types of data that can be added to Registry, a service or a single layer. A service is two or more layers being added to the map at the same time, whereas a single layer is just an individual layer. The form is the same for either one, but you will need to have a relatively good understanding of your data in order to successfully insert your new record.</p>
-<p>Currently, you can add the following services in Exchange:</p>
-<blockquote>
-<div><ul class="simple">
-<li>WMS - Web Map Service</li>
-<li>MapServer - ESRI Map Service</li>
-<li>ImageServer - ESRI Image Service</li>
-</ul>
-</div></blockquote>
-<div class="section" id="add-an-individual-record-to-csw">
-<h3>Add an individual record to CSW<a class="headerlink" href="#add-an-individual-record-to-csw" title="Permalink to this headline">¶</a></h3>
-<p>Exchange users with administrator privileges are able to add <a class="reference external" href="http://www.opengeospatial.org/standards/cat">CSW</a> records through their Exchange webpage.</p>
-<ol class="arabic simple">
-<li>Click on your user name in the toolbar. Select <strong>Registry</strong> from the drop-down menu to open the record form.</li>
-</ol>
-<blockquote>
-<div><div class="figure">
-<img alt="../_images/registry-menu.png" src="../_images/registry-menu.png" />
-</div>
-</div></blockquote>
-<ol class="arabic simple" start="2">
-<li>A list of all items registered in Exchange will open, displaying their status as Complete, Unknown, Pending, or Error. Click the <span class="guilabel">Register a new Record</span> button in the top right corner to add a new record.</li>
-</ol>
-<blockquote>
-<div><div class="figure">
-<img alt="../_images/registered-items.png" src="../_images/registered-items.png" />
-</div>
-</div></blockquote>
-<p>Click the <span class="guilabel">Register a new Record</span> button in the top right corner to add a new record.</p>
-<ol class="arabic simple" start="3">
-<li>Complete the form with all of the necessary information.</li>
-</ol>
-<p><strong>Service URL</strong> - This is the URL address for the endpoint you are trying to add.</p>
-<blockquote>
-<div><dl class="docutils">
-<dt><em>Geoserver Example:</em></dt>
-<dd><em>https://mapstory.org/geoserver/geonode/wms</em></dd>
-<dt><em>ESRI MapServer Example:</em></dt>
-<dd><em>https://ngamaps.geointapps.org/arcgis/rest/services/Hurricane_Matthew/Bahamas_Latest_Damage_Assessments/MapServer</em></dd>
-</dl>
-</div></blockquote>
-<p><strong>Note:</strong> Entering a MapServer url will auto-populate the available services such as WMSServer, WFSServer, FeatureServer.</p>
-<blockquote>
-<div><dl class="docutils">
-<dt><em>ESRI MapServer WMSserver Example:</em></dt>
-<dd><em>https://ngamaps.geointapps.org/arcgis/services/Hurricane_Matthew/Haiti_Latest_Assessments/MapServer/wmsserver</em></dd>
-<dt><em>ESRI ImageServer Example:</em></dt>
-<dd><em>https://gis.ngdc.noaa.gov/arcgis/rest/services/bag_hillshades/ImageServer</em></dd>
-</dl>
-</div></blockquote>
-<p><strong>Title</strong> - This field should populate automatically. The title should be related to the data, but should also be unique enough to find when performing a search. You can change the title if you don’t want what auto-filled.</p>
-<p><strong>Layer Identifier</strong> - For ESRI MapServer Services, this field will be populated automatically; however, for any other service type, the name of the layer is required for this field.</p>
-<p><strong>Category</strong> - Select a category from the list that best describes your data.</p>
-<p><strong>Abstract</strong> - The abstract should provide a brief description of the data being added.</p>
-<p><strong>Agency</strong> - Where did the information come from? This should also auto-populate. If Exchange is unable to detect who the data belongs to from the endpoint, add  the creator/agency information.</p>
-<p><strong>Contact Email</strong> - Please add your email address here.</p>
-<p><strong>Contact Phone</strong> - Please add a contact phone number here.</p>
-<p><strong>Gold</strong> -  Select this checkbox if the data is NGA-approved content.</p>
-<blockquote>
-<div><div class="figure" id="id5">
-<img alt="../_images/register-record.png" src="../_images/register-record.png" />
-<p class="caption"><span class="caption-text">This is an <em>example</em> of a completed new record form.</span></p>
-</div>
-</div></blockquote>
-<p>Additional services types (also called references) can be added by selecting the type from the drop down menu, and adding the URL. Service types discovered from the service URL are also listed at the top of the form.</p>
-<blockquote>
-<div><div class="figure">
-<img alt="../_images/add-types.png" src="../_images/add-types.png" />
-</div>
-</div></blockquote>
-<ol class="arabic simple" start="4">
-<li>Click the <span class="guilabel">Submit Record</span> button to nominate record.</li>
-</ol>
-<p><strong>Note:</strong> Contact your Exchange administrator if the status does not display as Complete. They will need to take a look at your record via Django administration. Please see step 5 in the record administration section below.</p>
-<p>For additional examples of records that have been successfully added in Exchange, please check out the Appendix.</p>
-</div>
-<div class="section" id="verify-the-record">
-<h3>Verify the record<a class="headerlink" href="#verify-the-record" title="Permalink to this headline">¶</a></h3>
-<p>Once you submit your record, you will be directed to the Registered Items page. To verify the record status in Registry, you can search for it using the Exchange search field at the top of the page, or use the Add Layer function from your map.</p>
-</div>
-</div>
-<div class="section" id="csw-record-administration">
-<h2>CSW Record Administration<a class="headerlink" href="#csw-record-administration" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="add-a-csw-record">
-<h3>Add a CSW record<a class="headerlink" href="#add-a-csw-record" title="Permalink to this headline">¶</a></h3>
-<p>Records can also be added through the Django administration site. The form there requires you to add all data manually, and does not have an auto-populate function.</p>
-<ol class="arabic simple">
-<li>Click on your user name in the toolbar. Select <strong>Admin</strong> from the drop-down menu to open the record form.</li>
-<li>Click <strong>Add</strong> next to CSW Records from the Core menu on the Django administration site.</li>
-</ol>
-<blockquote>
-<div><div class="figure">
-<img alt="../_images/core.png" src="../_images/core.png" />
-</div>
-</div></blockquote>
-<ol class="arabic simple" start="3">
-<li>Complete the form with all of the necessary information. All of the fields on the form in <strong>bold</strong> are mandatory.</li>
-</ol>
-<blockquote>
-<div><div class="figure">
-<img alt="../_images/csw-alternative.png" src="../_images/csw-alternative.png" />
-</div>
-</div></blockquote>
-<p><strong>User -</strong> Select a user from the list to be the owner of the record.</p>
-<p><strong>Classification (optional) -</strong> Unless the data resides on a classified system, this will remain blank/UNCLASSIFIED.</p>
-<p><strong>Title -</strong> The title should be related to the data, but should also be unique enough to find when performing a search for data.</p>
-<p><strong>Modified -</strong> This field is filled in by default, but can be edited to match what is true for the data.</p>
-<p><strong>Agency -</strong> Where did the information come from?</p>
-<p><strong>Record Type -</strong> The type field denotes what kind of data is being added.</p>
-<p>For the services listed below, you would use the following information:</p>
-<ul class="simple">
-<li>ESRI map server - ESRI:ArcGIS:MapServer</li>
-<li>ESRI image server - ESRI:ArcGIS:ImageServer</li>
-<li>WMS Services - dataset</li>
-</ul>
-<p><strong>Alternative -</strong> An ESRI service will number each of the layers (starting with zero), and when adding data from a service, the alternative field points to the id individual layer to be pulled from that server. For GeoServer OGC services, the value for the Alternative field can be pulled from the layer name which is a string that does not contain spaces. If you leave the space blank, all of the associated layers will be added.</p>
-<blockquote>
-<div><div class="figure" id="id6">
-<img alt="../_images/mapserver.png" src="../_images/mapserver.png" />
-<p class="caption"><span class="caption-text">List of layers with ID’s for the MapServer. The layer ID for Bridge Out is ‘1’ as indicated by the value in the parenthesis.</span></p>
-</div>
-<div class="figure" id="id7">
-<img alt="../_images/geoserver.png" src="../_images/geoserver.png" />
-<p class="caption"><span class="caption-text">Geoserver typically follows the format of &lt;workspace&gt;:&lt;name&gt;. The &lt;name&gt; portion is all that’s needed for the Alternative field.</span></p>
-</div>
-</div></blockquote>
-<p><strong>Abstract -</strong> The abstract should provide a brief description of the data being added.</p>
-<blockquote>
-<div><div class="figure">
-<img alt="../_images/csw-format.png" src="../_images/csw-format.png" />
-</div>
-</div></blockquote>
-<p><strong>Service Endpoint -</strong> This is the URL address for the endpoint you are trying to add.</p>
-<blockquote>
-<div><dl class="docutils">
-<dt><em>Geoserver Example:</em></dt>
-<dd><em>https://mapstory.org/geoserver/geonode/wms</em></dd>
-<dt><em>ESRI MapServer Example:</em></dt>
-<dd><em>https://ngamaps.geointapps.org/arcgis/rest/services/Hurricane_Matthew/Bahamas_Latest_Damage_Assessments/MapServer</em></dd>
-<dt><em>ESRI MapServer WMSserver Example:</em></dt>
-<dd><em>https://ngamaps.geointapps.org/arcgis/services/Hurricane_Matthew/Haiti_Latest_Assessments/MapServer/wmsserver</em></dd>
-<dt><em>ESRI ImageServer Example:</em></dt>
-<dd><em>https://gis.ngdc.noaa.gov/arcgis/rest/services/bag_hillshades/ImageServer</em></dd>
-</dl>
-</div></blockquote>
-<p><strong>Relation -</strong> This field is not currently used. It is used to associate records to one another</p>
-<p><strong>Record Format -</strong> This can vary depending on the kind of data being added. When registering a WMS service, format must be set to OGC:WMS.</p>
-<blockquote>
-<div><div class="figure">
-<img alt="../_images/csw-status-msg.png" src="../_images/csw-status-msg.png" />
-</div>
-</div></blockquote>
-<p><strong>Bounding Box coordinates: Upper Corner -</strong> The bounding box defaults to an area that will cover what is being added. It is recommended to leave the default settings (85.0 180, -85.0 -180) unless you have specific requirements.</p>
-<p><strong>Bounding Box: Lower Corner -</strong> Same as above.</p>
-<p><strong>Contact Email -</strong> Please add your email address here.</p>
-<p><strong>Contact Phone -</strong> Please add a contact phone number here.</p>
-<p><strong>Gold -</strong>  Select this checkbox if the data is NGA-approved content.</p>
-<p><strong>Category –</strong> Select a category from the drop-down menu.</p>
-<ol class="arabic simple" start="4">
-<li>Once you have completed the form, click the Save button. You will be returned to the CSW record page, and notified that your record was added successfully.</li>
-<li>A record added through the Django administration site will display the status as <strong>Unknown</strong>. Click the checkbox next to your record, and select <strong>Register Selected CSW Record</strong> from the Action menu. Click the <span class="guilabel">Go</span> button.</li>
-</ol>
-<blockquote>
-<div><div class="figure">
-<img alt="../_images/register-rec.png" src="../_images/register-rec.png" />
-</div>
-</div></blockquote>
-</div>
-<div class="section" id="delete-a-record">
-<h3>Delete a record<a class="headerlink" href="#delete-a-record" title="Permalink to this headline">¶</a></h3>
-<ol class="arabic simple">
-<li>Select <strong>CSW Records</strong> from the CORE menu on the Django administration site.</li>
-<li>Click the checkbox next to the record(s) to be deleted.</li>
-<li>Select <strong>Delete selected CSW Records</strong> from the Action menu, and click the :guilabel`Go` button.</li>
-<li>Click the <span class="guilabel">Yes, I’m sure</span> button to verify your selection.</li>
-</ol>
-</div>
-</div>
 <div class="section" id="managing-storyscapes">
 <h2>Managing Storyscapes<a class="headerlink" href="#managing-storyscapes" title="Permalink to this headline">¶</a></h2>
 <p>Through Django, administrators are able to create, delete and manage stories.</p>
@@ -1001,7 +818,7 @@
 <p><strong>Abstract</strong> - Let others know what the story is about with a brief narrative summary.</p>
 <p><strong>Purpose</strong> - Provide a short description of why the story was created.</p>
 <p><strong>Maintenance frequency</strong> - From the pull down, select how often modifications and deletions are made to the data after it is first published.</p>
-<div class="figure" id="id8">
+<div class="figure" id="id5">
 <img alt="../_images/maintenance-freq.png" src="../_images/maintenance-freq.png" />
 <p class="caption"><span class="caption-text"><em>Maintenance frequency options</em></span></p>
 </div>
@@ -1011,7 +828,7 @@
 <img alt="../_images/restrictions.png" src="../_images/restrictions.png" />
 </div>
 <p><strong>License</strong> - Select data licensing requirements from the list. Not all data has licensing requirements.</p>
-<div class="figure" id="id9">
+<div class="figure" id="id6">
 <img alt="admin/img/license.png" src="admin/img/license.png" />
 <p class="caption"><span class="caption-text"><em>License requirement options</em></span></p>
 </div>
@@ -1019,7 +836,7 @@
 <p><strong>Category</strong> - Data is divided into categories, which assists in the grouping and search of available geographic datasets. These categories correspond to those on the Exchange homepage.</p>
 <p><strong>Spatial representation type</strong> - This explains the method used to represent geographic information in the dataset.</p>
 <blockquote>
-<div><div class="figure" id="id10">
+<div><div class="figure" id="id7">
 <img alt="../_images/spatial-rep.png" src="../_images/spatial-rep.png" />
 <p class="caption"><span class="caption-text"><em>Available spatial representation types</em></span></p>
 </div>
@@ -1133,7 +950,7 @@
     
       <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
         
-          <a href="../appendix/index.html" class="btn btn-neutral float-right" title="Appendix">Next <span class="fa fa-arrow-circle-right"></span></a>
+          <a href="../support/index.html" class="btn btn-neutral float-right" title="Exchange Support">Next <span class="fa fa-arrow-circle-right"></span></a>
         
         
           <a href="../stories/index.html" class="btn btn-neutral" title="Creating a story"><span class="fa fa-arrow-circle-left"></span> Previous</a>
