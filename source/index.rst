@@ -15,6 +15,8 @@ User Guide
 
    accounts/index
    discovery/index
+   services/index
+   sources/index
    documents/index
    layers/index
    maps/index
