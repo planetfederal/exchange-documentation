@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Discovering available content &mdash; Boundless Exchange 1.3.0 documentation</title>
+  <title>Working with Services &mdash; Boundless Exchange 1.3.0 documentation</title>
   
 
   
@@ -40,8 +40,8 @@
     <!-- Removing search because it doesn't work well
     -->
     <link rel="top" title="Boundless Exchange 1.3.0 documentation" href="../index.html"/>
-        <link rel="next" title="Working with Services" href="../services/index.html"/>
-        <link rel="prev" title="Accounts, Users and Groups" href="../accounts/index.html"/> 
+        <link rel="next" title="Working with Documents" href="../documents/index.html"/>
+        <link rel="prev" title="Discovering available content" href="../discovery/index.html"/> 
 
   
   
@@ -92,10 +92,10 @@
 <li class="toctree-l2"><a class="reference internal" href="../accounts/index.html#managing-groups">Managing groups</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Discovering available content</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../services/index.html">Working with Services</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../services/index.html#add-a-remote-service">Add a remote service</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../services/index.html#managing-services">Managing services</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../discovery/index.html">Discovering available content</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Working with Services</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#add-a-remote-service">Add a remote service</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#managing-services">Managing services</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../documents/index.html">Working with Documents</a><ul>
@@ -177,15 +177,15 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html"> Boundless Exchange 1.3.0 documentation </a> &raquo;</li>
     
-    <li>Discovering available content</li>
+    <li>Working with Services</li>
   </ul>
   
   <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
     
-      <a href="../services/index.html" class="btn btn-neutral float-right" title="Working with Services">Next <span class="fa fa-arrow-circle-right"></span></a>
+      <a href="../documents/index.html" class="btn btn-neutral float-right" title="Working with Documents">Next <span class="fa fa-arrow-circle-right"></span></a>
     
     
-      <a href="../accounts/index.html" class="btn btn-neutral" title="Accounts, Users and Groups"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      <a href="../discovery/index.html" class="btn btn-neutral" title="Discovering available content"><span class="fa fa-arrow-circle-left"></span> Previous</a>
     
   </div>
   <hr/>
@@ -193,116 +193,93 @@
           <div role="main">
           
         	     
-  <div class="section" id="discovering-available-content">
-<h1>Discovering available content<a class="headerlink" href="#discovering-available-content" title="Permalink to this headline">¶</a></h1>
-<p>There are many different ways to find, filter and display data throughout Exchange. Whether you know exactly what you’re looking for, or you only have a general idea, Exchange helps you find exactly what you need.</p>
-<p><strong>Exchange Search</strong> - Using just one search, you can find all of the maps, layers or documents that have been uploaded into Exchange, as well as external layers added by other users. This makes finding data in Exchange fast and easy.</p>
-<p>From the Boundless Exchange homepage, simply enter your search term in the Search for Content field, and press Enter. Select a resource from the list to open its information page, or use additional filters to refine your search even more.</p>
-<p><strong>Note:</strong> You can use multiple search terms, separated by ‘and’ or ‘or’, but this is a simple search, and does not require wildcards or Boolean operators. For example, if you type “te” in the search box, and press Enter, you will get a list of all of the results that have words beginning with the letter combination “te” in the title or abstract. Typing te*t will return the same results, as it is only going to look for the“te” combination.</p>
+  <div class="section" id="working-with-services">
+<h1>Working with Services<a class="headerlink" href="#working-with-services" title="Permalink to this headline">¶</a></h1>
+<p>Exchange supports the registration of external WMS or ArcGIS REST Service layers. This allows a user to add remote web service layers, and combine them with existing layers to create a better, more detailed map.</p>
+<div class="section" id="add-a-remote-service">
+<h2>Add a remote service<a class="headerlink" href="#add-a-remote-service" title="Permalink to this headline">¶</a></h2>
+<p>Exchange users are able to nominate external services, while those with administrator permissions can then “publish” the layer so that it is available to all users.</p>
+<ol class="arabic simple">
+<li>Click the <span class="guilabel">Data</span> link on the Exchange toolbar, and select Remote Services in the drop-down menu to open the Remote Services page.</li>
+</ol>
 <blockquote>
 <div><div class="figure">
-<img alt="../_images/content-search.png" src="../_images/content-search.png" />
+<img alt="../_images/data-menu2.png" src="../_images/data-menu2.png" />
 </div>
 </div></blockquote>
-<p><strong>Discover the Available Content -</strong> In Exchange, your data is separated into multiple categories based on the content of the information. Your Exchange administrator can configure your datasets and metadata based on your settings and requirements. When searching for data, selecting on one of these available datasets will help you find information faster by returning only those results meeting the category criteria.</p>
+<ol class="arabic simple" start="2">
+<li>Click the <span class="guilabel">Register a new Service</span> button to add a new external layer.</li>
+</ol>
 <blockquote>
 <div><div class="figure">
-<img alt="../_images/discover-content.png" src="../_images/discover-content.png" />
+<img alt="../_images/remote-services.png" src="../_images/remote-services.png" />
 </div>
-<p><em>This is an example of what the content datasets could be for your Boundless Exchange instance. The specific datasets will depend on your settings and requirements. Hover over the individual categories to see what type of data is in each one.</em></p>
 </div></blockquote>
-<p><strong>Featured Content</strong> - Featured datasets are available on the Boundless Exchange homepage, and allow users to immediately see maps, layers or documents which have been highlighted as important. A dataset can be featured by editing its metadata, and ensuring the Featured checkbox is selected.</p>
+<ol class="arabic simple" start="3">
+<li>Fill in the service information with the URL and the Service name. Select the Service type from the drop-down menu. Exchange supports the addition of Web Map Service layers and ArcGIS REST Service layers. When you’re finished, click the <span class="guilabel">Submit</span> button.</li>
+</ol>
+<p>You will be notified that the service was added successfully.</p>
 <blockquote>
 <div><div class="figure">
-<img alt="../_images/featured-content.png" src="../_images/featured-content.png" />
+<img alt="../_images/register-new-service.png" src="../_images/register-new-service.png" />
 </div>
 </div></blockquote>
-<p><strong>Browsing Layers</strong> - To open the Explore Layers page, click on the Data link on the Boundless Exchange toolbar, and select Layers in the drop-down menu. Here you can browse data that has been uploaded into Exchange. Selecting on the layer’s title will take you to the information page where you can download the layer, edit metadata, or view additional information about the layer.</p>
-<p><strong>Browsing Maps</strong> - To open the Explore Maps page, click on the Maps link on the Boundless Exchange toolbar, and select Explore Maps. Like the Layers page, the Maps page lets you browse the available maps that have been created in Exchange. Similar to a layer, selecting on the title of a map will take you to its information page.</p>
-<p><strong>Browsing Documents</strong> - To open the Explore Documents page, click on the Data link on the Boundless Exchange toolbar, and select Documents in the drop-down menu. From here, you can browse through all of the documents that have been uploaded into Exchange.</p>
-<p><strong>Filtering</strong> - All of the content added to Exchange can be filtered to help you better manage the data. Similar to data set categories, filters can be configured by an Exchange administrator to include additional, site specific options. Listed below are several options to refine your search results.</p>
+<p>All of the information for the service, including supported services and the publication date, will be listed on the next page. A contact link will be available, so should you have questions, you can reach the individual who added the service to Exchange.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/remote-layer-preview.png" src="../_images/remote-layer-preview.png" />
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="managing-services">
+<h2>Managing services<a class="headerlink" href="#managing-services" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="publish-services">
+<h3>Publish services<a class="headerlink" href="#publish-services" title="Permalink to this headline">¶</a></h3>
+<p>A user with administrator privileges needs to publish the service to make it available to other users.</p>
+<ol class="arabic simple">
+<li>Select the service from the list of Remote Services to open its information page.</li>
+<li>Click the <span class="guilabel">Manage Services</span> button, and select <strong>Publish Service</strong> from the list.</li>
+</ol>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/manage-service.png" src="../_images/manage-service.png" />
+</div>
+</div></blockquote>
+<p>The service will then be available, and can be discovered through Exchange Search and Explore.</p>
+</div>
+<div class="section" id="edit-service-metadata">
+<h3>Edit Service Metadata<a class="headerlink" href="#edit-service-metadata" title="Permalink to this headline">¶</a></h3>
+<p>Metadata provides the user with more information about the dataset. The more information made available, the better understanding the user will have of the data.</p>
+<ol class="arabic simple">
+<li>From the information page of the service, click the <span class="guilabel">Manage Services</span> button, and select <strong>Edit Service Metadata</strong> from the list.</li>
+<li>Provide as much information as possible. Several of the fields are mandatory, and require your response.</li>
+</ol>
 <blockquote>
 <div><ul class="simple">
-<li><strong>Filter by Text</strong> - Filters results using basic search terms. Type your search terms in the text box, and select your results from the displayed list. Multiple terms can be used, separated by ‘and’ or ‘or’.</li>
+<li><strong>Classification/Caveat</strong> - If your data has a classification, it may be required for that to be populated according to your standard operating procedures.</li>
+<li><strong>Title</strong> - It may be helpful to edit the title of the layer, as many of the services import with very generic titles.</li>
+<li><strong>Category</strong> - Select a corresponding category to your data.</li>
+<li><strong>License</strong> - If your data does not have any associated licenses, select Public Domain from the list.</li>
+<li><strong>Provenance</strong> - Indicates the producer of the data content.</li>
+<li><strong>Fees</strong> - If there are no fees associated to your data, type “none.”</li>
 </ul>
-<blockquote>
-<div><div class="figure">
-<img alt="../_images/text-filter.png" src="../_images/text-filter.png" />
+<div class="figure">
+<img alt="../_images/edit-service.png" src="../_images/edit-service.png" />
 </div>
 </div></blockquote>
-<ul class="simple">
-<li><strong>Filter by Category</strong> - When content is added to Exchange, the user will select a category that best represents what is being added. This is reflected in the Categories panel, and allows other users to refine their search by looking for content belonging to that particular category. Your content can be added to the categories created in your settings:</li>
-</ul>
-<blockquote>
-<div><div class="figure" id="id1">
-<img alt="../_images/metadata-category.png" src="../_images/metadata-category.png" />
-<p class="caption"><span class="caption-text"><em>This is an example of what the categories will look like. They will correspond with the available datasets from the homepage, but may differ among Exchange instances.</em></span></p>
+<ol class="arabic simple" start="3">
+<li>When you’re finished, click the <span class="guilabel">Save</span> button.</li>
+</ol>
 </div>
-</div></blockquote>
-<p>When filtering, select on a category to limit the results list to the content tagged with that category title. Selecting another available category expands your results to include those layers in the results list. Click on the category a second time to remove it from the layer results list. Active filters will display in blue.</p>
-<blockquote>
-<div><div class="figure">
-<img alt="../_images/category-filter-resize.png" src="../_images/category-filter-resize.png" />
+<div class="section" id="remove-a-service">
+<h3>Remove a service<a class="headerlink" href="#remove-a-service" title="Permalink to this headline">¶</a></h3>
+<p>If a service is no longer needed, or the information becomes obsolete, an administrator can easily remove it from Exchange.</p>
+<ol class="arabic simple">
+<li>From the information page of the service, click the <span class="guilabel">Manage Services</span> button, and select <strong>Remove Service</strong> from the list.</li>
+<li>Click the <span class="guilabel">Yes, I am sure</span> button to verify your selection.</li>
+</ol>
 </div>
-</div></blockquote>
-<ul class="simple">
-<li><strong>Filter by Type</strong> - You can filter by the type of content added to Exchange.</li>
-</ul>
-<blockquote>
-<div><div class="figure">
-<img alt="../_images/type-filter1.png" src="../_images/type-filter1.png" />
 </div>
-</div></blockquote>
-<ul class="simple">
-<li><strong>Filter by Host</strong> - Select registry layers and remote services based on where the data is hosted. This may be useful if you are looking for data from a specific organization.</li>
-</ul>
-<blockquote>
-<div><div class="figure">
-<img alt="../_images/host-filter1.png" src="../_images/host-filter1.png" />
-</div>
-</div></blockquote>
-<ul class="simple">
-<li><strong>Filter by Keywords</strong> - If a user has associated keywords to the layer in the metadata, you can filter layers by those terms. Select on a keyword to limit results to those layers with associated keywords.</li>
-</ul>
-<blockquote>
-<div><div class="figure">
-<img alt="../_images/keywords-filter1.png" src="../_images/keywords-filter1.png" />
-</div>
-</div></blockquote>
-<ul class="simple">
-<li><strong>Filter by Owner</strong> - You can select data based on the owner of the product. This may be useful if you are trying to quickly find products created by individuals on a joint project.</li>
-</ul>
-<blockquote>
-<div><div class="figure">
-<img alt="../_images/filter-owners.png" src="../_images/filter-owners.png" />
-</div>
-</div></blockquote>
-<ul class="simple">
-<li><strong>Filter by Date</strong> - This will limit the list of products by a date range. In the Date panel, select the start date and the end date for the date range. The list will update to reflect those layers, documents or maps created within that timeframe.</li>
-</ul>
-<p>If you want to find layers which have been Time Enabled, select the <strong>Yes</strong> checkbox to eliminate layers from your search that do not have time enabled attributes.</p>
-<blockquote>
-<div><div class="figure">
-<img alt="../_images/date-filter.png" src="../_images/date-filter.png" />
-</div>
-<ul class="simple">
-<li><strong>Filter by Regions</strong> - Type a geographical region in the textbox to find data only associated to that region.</li>
-</ul>
-<blockquote>
-<div><div class="figure">
-<img alt="../_images/filter-region.png" src="../_images/filter-region.png" />
-</div>
-</div></blockquote>
-</div></blockquote>
-<ul class="simple">
-<li><strong>Filter by Extent</strong> - Zoom in and out to find products pertaining only to the extent displayed on the map.</li>
-</ul>
-<blockquote>
-<div><div class="figure">
-<img alt="../_images/filter-extent.png" src="../_images/filter-extent.png" />
-</div>
-</div></blockquote>
-</div></blockquote>
 </div>
 
 
@@ -313,10 +290,10 @@
     
       <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
         
-          <a href="../services/index.html" class="btn btn-neutral float-right" title="Working with Services">Next <span class="fa fa-arrow-circle-right"></span></a>
+          <a href="../documents/index.html" class="btn btn-neutral float-right" title="Working with Documents">Next <span class="fa fa-arrow-circle-right"></span></a>
         
         
-          <a href="../accounts/index.html" class="btn btn-neutral" title="Accounts, Users and Groups"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+          <a href="../discovery/index.html" class="btn btn-neutral" title="Discovering available content"><span class="fa fa-arrow-circle-left"></span> Previous</a>
         
       </div>
     
