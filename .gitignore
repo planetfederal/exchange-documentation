@@ -3,3 +3,6 @@ venv/
 .DS_Store
 dist/
 django_exchange_docs.egg-info/
+exchange-docs/static/docs/_sources/*/*.txt
+exchange-docs/static/docs/_sources/*.txt
+exchange-docs/static/docs/_static/jquery-*
