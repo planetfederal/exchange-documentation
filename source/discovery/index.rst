@@ -15,7 +15,7 @@ From the Boundless Exchange homepage, simply enter your search term in the Searc
 
   .. figure:: img/discover-content.png
 
-  *This is an example of what the content datasets could be for your Boundless Exchange instance. The specific datasets will depend on your settings and requirements. Hover over the individual categories to see what type of data is in each one.*
+  *This is an example of what the content datasets could be for your Boundless Exchange instance. The specific datasets will depend on your settings and requirements.*
 
 **Featured Content** - Featured datasets are available on the Boundless Exchange homepage, and allow users to immediately see maps, layers or documents which have been highlighted as important. A dataset can be featured by editing its metadata, and ensuring the Featured checkbox is selected.
 
