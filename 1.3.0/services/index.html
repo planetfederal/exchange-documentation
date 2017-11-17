@@ -1,0 +1,358 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Working with Services &mdash; Boundless Exchange 1.3.0 documentation</title>
+  
+
+  
+
+  
+  
+  
+
+  
+     <link rel="shortcut icon" href="../_static/img/exchange.ico"/>
+  
+
+  
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,700,600,800,300|Montserrat:400,700|Source+Code+Pro:300,400,500,700' rel='stylesheet' type='text/css'>
+
+<!-- Removing search because it doesn't work well
+  
+  
+    
+  
+-->
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <!-- Removing search because it doesn't work well
+    -->
+    <link rel="top" title="Boundless Exchange 1.3.0 documentation" href="../index.html"/>
+        <link rel="next" title="Working with Documents" href="../documents/index.html"/>
+        <link rel="prev" title="Discovering available content" href="../discovery/index.html"/> 
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/zenbox.css" type="text/css" media="screen, projection" />
+  
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+    
+
+      <div id="header" class="selfclear">
+        
+        <div class="exchange_logo"><a href="/">Boundless Exchange 1.3.0 documentation</a></div>
+        
+
+        <div class="version_info">1.3.0</div>
+      </div>
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <!-- Removing search because it doesn't work well
+      <div class="wy-side-nav-search">
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+      </div>
+      -->
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../accounts/index.html">Accounts, Users and Groups</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../accounts/index.html#creating-a-new-account">Creating a new account</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../accounts/index.html#log-in-to-your-account">Log in to your account</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../accounts/index.html#managing-your-profile">Managing your profile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../accounts/index.html#viewing-other-user-accounts">Viewing other user accounts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../accounts/index.html#managing-groups">Managing groups</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../discovery/index.html">Discovering available content</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Working with Services</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#add-a-remote-service">Add a remote service</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#managing-services">Managing services</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../documents/index.html">Working with Documents</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../documents/index.html#uploading-documents">Uploading documents</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../documents/index.html#browsing-documents">Browsing documents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../layers/index.html">Working with Layers</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../layers/index.html#upload-a-layer">Upload a layer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../layers/index.html#layer-information">Layer information</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../layers/index.html#editing-metadata-and-managing-layers">Editing metadata and managing layers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../layers/index.html#downloading-data-from-a-layer">Downloading data from a layer</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../maps/index.html">Working with Maps</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../maps/index.html#create-a-map">Create a map</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../maps/index.html#add-layers-to-a-map">Add layers to a map</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../maps/index.html#managing-maps">Managing Maps</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../editing/index.html">Editing and Version Management</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../editing/index.html#edit-features">Edit Features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../editing/index.html#version-management">Version Management</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../analysis/index.html">Analyzing data with Exchange</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../analysis/index.html#working-within-the-attribute-table">Working within the attribute table</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analysis/index.html#view-attribute-statistics">View attribute statistics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analysis/index.html#create-a-heat-map">Create a heat map</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analysis/index.html#search-all-attributes">Search all attributes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analysis/index.html#advanced-filters">Advanced filters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analysis/index.html#filter-features-using-spatial-filters">Filter features using spatial filters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analysis/index.html#delete-a-spatial-filter">Delete a spatial filter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analysis/index.html#combine-filters-for-deeper-analysis">Combine filters for deeper analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analysis/index.html#filter-features-by-timeline">Filter features by timeline</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../stories/index.html">Creating a story</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../stories/index.html#compose-a-story">Compose a story</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../stories/index.html#add-additional-chapters">Add additional chapters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../stories/index.html#publish-your-story">Publish your story</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../admin/index.html">Administration</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../admin/index.html#django-administration">Django Administration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../admin/index.html#accounts">Accounts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../admin/index.html#actstream-activity-stream">Actstream (Activity Stream)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../admin/index.html#audit-trail">Audit trail</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../admin/index.html#announcements">Announcements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../admin/index.html#avatars">Avatars</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../admin/index.html#documents">Documents</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../admin/index.html#groups">Groups</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../admin/index.html#layers">Layers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../admin/index.html#osgeo-importer">Osgeo_Importer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../admin/index.html#managing-storyscapes">Managing Storyscapes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../support/index.html">Exchange Support</a></li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">Boundless Exchange documentation </a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html"> Boundless Exchange 1.3.0 documentation </a> &raquo;</li>
+    
+    <li>Working with Services</li>
+  </ul>
+  
+  <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+    
+      <a href="../documents/index.html" class="btn btn-neutral float-right" title="Working with Documents">Next <span class="fa fa-arrow-circle-right"></span></a>
+    
+    
+      <a href="../discovery/index.html" class="btn btn-neutral" title="Discovering available content"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+    
+  </div>
+  <hr/>
+</div>
+          <div role="main">
+          
+        	     
+  <div class="section" id="working-with-services">
+<h1>Working with Services<a class="headerlink" href="#working-with-services" title="Permalink to this headline">¶</a></h1>
+<p>Exchange supports the registration of external WMS or ArcGIS REST Service layers. This allows a user to add remote web service layers, and combine them with existing layers to create a better, more detailed map.</p>
+<div class="section" id="add-a-remote-service">
+<h2>Add a remote service<a class="headerlink" href="#add-a-remote-service" title="Permalink to this headline">¶</a></h2>
+<p>Exchange users are able to nominate external services, while those with administrator permissions can then “publish” the layer so that it is available to all users.</p>
+<ol class="arabic simple">
+<li>Click the <span class="guilabel">Data</span> link on the Exchange toolbar, and select Remote Services in the drop-down menu to open the Remote Services page.</li>
+</ol>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/data-menu2.png" src="../_images/data-menu2.png" />
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li>Click the <span class="guilabel">Register a new Service</span> button to add a new external layer.</li>
+</ol>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/remote-services.png" src="../_images/remote-services.png" />
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li>Fill in the service information with the URL and the Service name. Select the Service type from the drop-down menu. Exchange supports the addition of Web Map Service layers and ArcGIS REST Service layers. When you’re finished, click the <span class="guilabel">Submit</span> button.</li>
+</ol>
+<p>You will be notified that the service was added successfully.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/register-new-service.png" src="../_images/register-new-service.png" />
+</div>
+</div></blockquote>
+<p>All of the information for the service, including supported services and the publication date, will be listed on the next page. A contact link will be available, so should you have questions, you can reach the individual who added the service to Exchange.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/remote-layer-preview.png" src="../_images/remote-layer-preview.png" />
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="managing-services">
+<h2>Managing services<a class="headerlink" href="#managing-services" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="publish-services">
+<h3>Publish services<a class="headerlink" href="#publish-services" title="Permalink to this headline">¶</a></h3>
+<p>A user with administrator privileges needs to publish the service to make it available to other users.</p>
+<ol class="arabic simple">
+<li>Select the service from the list of Remote Services to open its information page.</li>
+<li>Click the <span class="guilabel">Manage Services</span> button, and select <strong>Publish Service</strong> from the list.</li>
+</ol>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/manage-service.png" src="../_images/manage-service.png" />
+</div>
+</div></blockquote>
+<p>The service will then be available, and can be discovered through Exchange Search and Explore.</p>
+</div>
+<div class="section" id="edit-service-metadata">
+<h3>Edit Service Metadata<a class="headerlink" href="#edit-service-metadata" title="Permalink to this headline">¶</a></h3>
+<p>Metadata provides the user with more information about the dataset. The more information made available, the better understanding the user will have of the data.</p>
+<ol class="arabic simple">
+<li>From the information page of the service, click the <span class="guilabel">Manage Services</span> button, and select <strong>Edit Service Metadata</strong> from the list.</li>
+<li>Provide as much information as possible. Several of the fields are mandatory, and require your response.</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><strong>Classification/Caveat</strong> - If your data has a classification, it may be required for that to be populated according to your standard operating procedures.</li>
+<li><strong>Title</strong> - It may be helpful to edit the title of the layer, as many of the services import with very generic titles.</li>
+<li><strong>Category</strong> - Select a corresponding category to your data.</li>
+<li><strong>License</strong> - If your data does not have any associated licenses, select Public Domain from the list.</li>
+<li><strong>Provenance</strong> - Indicates the producer of the data content.</li>
+<li><strong>Fees</strong> - If there are no fees associated to your data, type “none.”</li>
+</ul>
+<div class="figure">
+<img alt="../_images/edit-service.png" src="../_images/edit-service.png" />
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li>When you’re finished, click the <span class="guilabel">Save</span> button.</li>
+</ol>
+</div>
+<div class="section" id="remove-a-service">
+<h3>Remove a service<a class="headerlink" href="#remove-a-service" title="Permalink to this headline">¶</a></h3>
+<p>If a service is no longer needed, or the information becomes obsolete, an administrator can easily remove it from Exchange.</p>
+<ol class="arabic simple">
+<li>From the information page of the service, click the <span class="guilabel">Manage Services</span> button, and select <strong>Remove Service</strong> from the list.</li>
+<li>Click the <span class="guilabel">Yes, I am sure</span> button to verify your selection.</li>
+</ol>
+</div>
+</div>
+</div>
+
+
+          
+          </div>
+          <footer>
+  
+    
+      <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        
+          <a href="../documents/index.html" class="btn btn-neutral float-right" title="Working with Documents">Next <span class="fa fa-arrow-circle-right"></span></a>
+        
+        
+          <a href="../discovery/index.html" class="btn btn-neutral" title="Discovering available content"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        
+      </div>
+    
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <div class="info">
+      <a class="logo-link" href="http://boundlessgeo.com">
+        <div class="boundless-logo"></div>
+      </a>
+      <div class="copyright">
+      
+        Copyright &copy; 2016, Boundless
+      
+      </div>
+    </div>
+    <div class="footer-aside">
+      <a href="https://connect.boundlessgeo.com/Community/Questions-Answers">Ask a Question</a>
+      </div>
+  </div>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div> 
+   
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1.3.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+   
+  
+
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+  
+
+</body>
+</html>

@@ -1,0 +1,416 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Creating a story &mdash; Boundless Exchange 1.3.0 documentation</title>
+  
+
+  
+
+  
+  
+  
+
+  
+     <link rel="shortcut icon" href="../_static/img/exchange.ico"/>
+  
+
+  
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,700,600,800,300|Montserrat:400,700|Source+Code+Pro:300,400,500,700' rel='stylesheet' type='text/css'>
+
+<!-- Removing search because it doesn't work well
+  
+  
+    
+  
+-->
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <!-- Removing search because it doesn't work well
+    -->
+    <link rel="top" title="Boundless Exchange 1.3.0 documentation" href="../index.html"/>
+        <link rel="next" title="Administration" href="../admin/index.html"/>
+        <link rel="prev" title="Analyzing data with Exchange" href="../analysis/index.html"/> 
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/zenbox.css" type="text/css" media="screen, projection" />
+  
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+    
+
+      <div id="header" class="selfclear">
+        
+        <div class="exchange_logo"><a href="/">Boundless Exchange 1.3.0 documentation</a></div>
+        
+
+        <div class="version_info">1.3.0</div>
+      </div>
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <!-- Removing search because it doesn't work well
+      <div class="wy-side-nav-search">
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+      </div>
+      -->
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../accounts/index.html">Accounts, Users and Groups</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../accounts/index.html#creating-a-new-account">Creating a new account</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../accounts/index.html#log-in-to-your-account">Log in to your account</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../accounts/index.html#managing-your-profile">Managing your profile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../accounts/index.html#viewing-other-user-accounts">Viewing other user accounts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../accounts/index.html#managing-groups">Managing groups</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../discovery/index.html">Discovering available content</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../services/index.html">Working with Services</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../services/index.html#add-a-remote-service">Add a remote service</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../services/index.html#managing-services">Managing services</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../documents/index.html">Working with Documents</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../documents/index.html#uploading-documents">Uploading documents</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../documents/index.html#browsing-documents">Browsing documents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../layers/index.html">Working with Layers</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../layers/index.html#upload-a-layer">Upload a layer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../layers/index.html#layer-information">Layer information</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../layers/index.html#editing-metadata-and-managing-layers">Editing metadata and managing layers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../layers/index.html#downloading-data-from-a-layer">Downloading data from a layer</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../maps/index.html">Working with Maps</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../maps/index.html#create-a-map">Create a map</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../maps/index.html#add-layers-to-a-map">Add layers to a map</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../maps/index.html#managing-maps">Managing Maps</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../editing/index.html">Editing and Version Management</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../editing/index.html#edit-features">Edit Features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../editing/index.html#version-management">Version Management</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../analysis/index.html">Analyzing data with Exchange</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../analysis/index.html#working-within-the-attribute-table">Working within the attribute table</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analysis/index.html#view-attribute-statistics">View attribute statistics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analysis/index.html#create-a-heat-map">Create a heat map</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analysis/index.html#search-all-attributes">Search all attributes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analysis/index.html#advanced-filters">Advanced filters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analysis/index.html#filter-features-using-spatial-filters">Filter features using spatial filters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analysis/index.html#delete-a-spatial-filter">Delete a spatial filter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analysis/index.html#combine-filters-for-deeper-analysis">Combine filters for deeper analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analysis/index.html#filter-features-by-timeline">Filter features by timeline</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Creating a story</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#compose-a-story">Compose a story</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#add-additional-chapters">Add additional chapters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#publish-your-story">Publish your story</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../admin/index.html">Administration</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../admin/index.html#django-administration">Django Administration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../admin/index.html#accounts">Accounts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../admin/index.html#actstream-activity-stream">Actstream (Activity Stream)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../admin/index.html#audit-trail">Audit trail</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../admin/index.html#announcements">Announcements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../admin/index.html#avatars">Avatars</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../admin/index.html#documents">Documents</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../admin/index.html#groups">Groups</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../admin/index.html#layers">Layers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../admin/index.html#osgeo-importer">Osgeo_Importer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../admin/index.html#managing-storyscapes">Managing Storyscapes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../support/index.html">Exchange Support</a></li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">Boundless Exchange documentation </a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html"> Boundless Exchange 1.3.0 documentation </a> &raquo;</li>
+    
+    <li>Creating a story</li>
+  </ul>
+  
+  <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+    
+      <a href="../admin/index.html" class="btn btn-neutral float-right" title="Administration">Next <span class="fa fa-arrow-circle-right"></span></a>
+    
+    
+      <a href="../analysis/index.html" class="btn btn-neutral" title="Analyzing data with Exchange"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+    
+  </div>
+  <hr/>
+</div>
+          <div role="main">
+          
+        	     
+  <div class="section" id="creating-a-story">
+<h1>Creating a story<a class="headerlink" href="#creating-a-story" title="Permalink to this headline">¶</a></h1>
+<p>In the section Analyzing Data with Exchange, you learned how to display features with a temporal attribute, detailing the specific time an event occurred, or when a feature changed. Exchange now offers a feature that allows you to combine geographic data, text, pictures and multimedia to tell a story.</p>
+<p>StoryScapes allows you to compile multiple temporal layers to create your own spatial narrative. Data is added to chapters, which can be separate, but related topics, or can they build off of each other, developing throughout the story. StoryScapes helps you visualize the changes in your data over time.</p>
+<div class="section" id="compose-a-story">
+<h2>Compose a story<a class="headerlink" href="#compose-a-story" title="Permalink to this headline">¶</a></h2>
+<p>Before creating any story, you will need to ensure you have uploaded all of the layers you will use to create your chapters.</p>
+<ol class="arabic simple">
+<li>Select the <strong>Maps</strong> link on the Boundless Exchange toolbar.</li>
+<li>Click <strong>Compose Story</strong> in the drop-down menu.</li>
+</ol>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/maps-drop-down.png" src="../_images/maps-drop-down.png" />
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li>Click the <span class="guilabel">Compose Story</span> button in the Welcome to the Exchange Composer window.</li>
+<li>Fill out the Story Properties form. Provide as much information as possible, so that others will know what the story is showing. Click the <span class="guilabel">Save</span> button when you are finished with your changes. The story saves as a Map in Exchange.</li>
+</ol>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/story-properties.png" src="../_images/story-properties.png" />
+</div>
+</div></blockquote>
+<div class="section" id="create-chapters">
+<h3>Create chapters<a class="headerlink" href="#create-chapters" title="Permalink to this headline">¶</a></h3>
+<p>Like a book, map stories are comprised of chapters. You can have one chapter, or multiple chapters to tell your story.</p>
+<ol class="arabic simple">
+<li>Click the <span class="guilabel">1</span> button to begin working on your first chapter.</li>
+</ol>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/chapter-info.png" src="../_images/chapter-info.png" />
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li>Click the <span class="guilabel">Chapter Info</span> button. Give your chapter a title, and provide a brief summary explaining what the data is showing. You can select a base map appropriate to your data, if you’ve got multiple maps available.</li>
+</ol>
+<p><strong>Note:</strong> Talk to your Exchange administrator for additional basemap services.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/chapter.png" src="../_images/chapter.png" />
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li>Click the <span class="guilabel">Save Chapter Info</span> button to create your chapter.</li>
+<li>Click the <span class="guilabel">Back</span> button to return, and continue creating your chapter.</li>
+</ol>
+</div>
+<div class="section" id="add-story-layers">
+<h3>Add Story Layers<a class="headerlink" href="#add-story-layers" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>Click the <span class="guilabel">StoryLayers</span> button, and select <strong>Add a New StoryLayer</strong>.</li>
+</ol>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/story-layers.png" src="../_images/story-layers.png" />
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li>Select layers from the Explore Layers window to add to your story. You can search for specific layers, browser through all of the layers, just yours, or those you’ve saved as favorites. Click the View button to preview the layer in the map viewer, or select Use to add this layer to your story.</li>
+</ol>
+<p>You can edit the settings of your individual layers by clicking on the title of the layer. This will open settings that allow you to edit the layer’s style, view the attribute table, turn off/on individual attribute visibility, or remove the layer.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/edit-story-layer.png" src="../_images/edit-story-layer.png" />
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li>Once you have added all of the layers to your story, select the <span class="guilabel">Save</span> button to save your draft, and click the <span class="guilabel">Back to Selected Chapter</span> button.</li>
+</ol>
+</div>
+<div class="section" id="create-story-boxes">
+<h3>Create Story Boxes<a class="headerlink" href="#create-story-boxes" title="Permalink to this headline">¶</a></h3>
+<p>A StoryBox creates a sort of visual boundary for your story. This tells the viewer that all of the events in this chapter take place within this particular area.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/story-box.png" src="../_images/story-box.png" />
+</div>
+</div></blockquote>
+<ol class="arabic simple">
+<li>Click the <span class="guilabel">StoryBoxes</span> button, and select <strong>Add a New StoryBox</strong>.</li>
+<li>Give your StoryBox a title and brief description. Your StoryBox will appear in the timeline.</li>
+<li>Pan and zoom on the map, and select <strong>Update Map Bounds</strong> to create a border area for your map.</li>
+<li>Create a Time Frame for your story.</li>
+</ol>
+<p>Every StoryBox needs a start and end time. Select start and end times that correspond to the times listed with your features.</p>
+<ol class="arabic simple" start="5">
+<li>Click the Save StoryBox button to save your changes, and click the Back to StoryBoxes List to continue your story. Your StoryBox will display.</li>
+<li>Click the Save button to save your draft, and select Back to  Selected Chapter to return to your chapter and continue your story.</li>
+</ol>
+</div>
+<div class="section" id="add-a-storypin">
+<h3>Add a StoryPin<a class="headerlink" href="#add-a-storypin" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>Click the <span class="guilabel">StoryPins</span> button, and select <strong>Add a New StoryPin</strong>.</li>
+<li>Fill in a title and a brief description of the content of your StoryPin.</li>
+</ol>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/story-pin-top.png" src="../_images/story-pin-top.png" />
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li>Copy and paste the URL of your StoryPin in the StoryPin Media textbox. This can be from YouTube, Flickr, Vimeo, Vine, Twitter, Instagram, etc.</li>
+<li>Click the Add Story Pin to the Map button to add a location where your media will display. You’ll want to add a start and end time to ensure it displays at the proper point of your story. Leaving this blank will display your story point throughout the duration of the chapter.</li>
+<li>Once you have selected the location for your pin, click the <span class="guilabel">Accept Feature</span> button. This will be where your pin displays.</li>
+<li>Select the corresponding checkboxes to display your pin on the map, timeline, or both.</li>
+</ol>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/story-pin-bottom.png" src="../_images/story-pin-bottom.png" />
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="7">
+<li>Once you have filled in all of the necessary information, select the Save button to save your draft, and the Save StoryPin button, followed by the Back to Selected Chapter to continue your Story.</li>
+</ol>
+</div>
+</div>
+<div class="section" id="add-additional-chapters">
+<h2>Add additional chapters<a class="headerlink" href="#add-additional-chapters" title="Permalink to this headline">¶</a></h2>
+<p>Telling a complete story will likely involve adding more layers and chapters. To add the next chapter, click the Index link, and repeat the steps above. Once you have added everything to your story, select the Save button a final time to ensure your story has saved.</p>
+</div>
+<div class="section" id="publish-your-story">
+<h2>Publish your story<a class="headerlink" href="#publish-your-story" title="Permalink to this headline">¶</a></h2>
+<p>All that is left now is to share your story.</p>
+<ol class="arabic simple">
+<li>Click the <span class="guilabel">Publish</span> button to make your story available to others. Confirm that you are finished, and select the blue <span class="guilabel">Publish</span> button.</li>
+</ol>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/story-buttons.png" src="../_images/story-buttons.png" />
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li>You will receive a congratulatory message once your story has saved. Click the <strong>View your Story</strong> hyperlink to open your completed project.</li>
+</ol>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/story.png" src="../_images/story.png" />
+</div>
+</div></blockquote>
+<p>From here, you can press the play button to watch your story play out. Your chapters will be listed in the index on the left. You can also click on the title of the story, and open the viewer in full screen.</p>
+</div>
+</div>
+
+
+          
+          </div>
+          <footer>
+  
+    
+      <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        
+          <a href="../admin/index.html" class="btn btn-neutral float-right" title="Administration">Next <span class="fa fa-arrow-circle-right"></span></a>
+        
+        
+          <a href="../analysis/index.html" class="btn btn-neutral" title="Analyzing data with Exchange"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        
+      </div>
+    
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <div class="info">
+      <a class="logo-link" href="http://boundlessgeo.com">
+        <div class="boundless-logo"></div>
+      </a>
+      <div class="copyright">
+      
+        Copyright &copy; 2016, Boundless
+      
+      </div>
+    </div>
+    <div class="footer-aside">
+      <a href="https://connect.boundlessgeo.com/Community/Questions-Answers">Ask a Question</a>
+      </div>
+  </div>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div> 
+   
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1.3.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+   
+  
+
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+  
+
+</body>
+</html>
