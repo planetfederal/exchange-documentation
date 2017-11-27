@@ -22,6 +22,7 @@ User Guide
    maps/index
    metadata/index
    editing/index
+   styles/index
    analysis/index
    stories/index
    admin/index

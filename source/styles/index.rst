@@ -71,7 +71,7 @@ The Unique style format classifies the individual values for an attribute, and r
 
 Understanding the dataset becomes increasingly important at this step, as you need to know how many unique values are represented for that attribute.
 
-**Prot Tip:** For a fast count of how many unique values are available within a particular attribute, use the View Statistics feature from the Analyzing Data with Exchange section. It will give a quick count of unique values for the attribute.
+**Prot Tip:** For a fast count of how many unique values are available within a particular attribute, use the View Statistics feature from the **Analyzing Data with Exchange** section. It will give a quick count of unique values for the attribute.
 
 6. Select a color palette option from the drop down menu to represent each unique value.
 
