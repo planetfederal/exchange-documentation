@@ -163,7 +163,7 @@ Because Exchange is a real time collaboration tool, it is important for users to
 
 2. From here you can either select :guilabel:`View on Map` or :guilabel:`Show Changes` to see what has been modified. View on Map will show you where the changes have been made on the map.
 
-  .. figure:: img/view-change-map.png
+  .. figure:: img/view-on-map.png
 
   .. figure:: img/show-changes-bttn.png
 
@@ -173,11 +173,11 @@ Because Exchange is a real time collaboration tool, it is important for users to
 
 You will see a detailed side-by-side comparison of the features that have been edited.
 
-  .. figure:: img/notification-changes.png
+  .. figure:: img/side-by-side.png
 
-4. Changes made to the feature attributes will be highlighted in red, green or yellow, depending on whether the change was a deletion, addition or edit. Click the :guilabel:`Show Authors` button and hover your mouse over the highlighted area to open a detailed description of the individual edit.
+4. Changes made to the feature attributes will be highlighted in red, green or yellow, depending on whether the change was a deletion, addition or edit. Click the :guilabel:`Show Authors` button, and hover your mouse over the highlighted area to open a detailed description of the individual edit.
 
-  .. figure:: img/notification-changes-details.png
+  .. figure:: img/show-author.png
 
 5. If you do not approve of the changes, or feel they were made in error, you are able to select the :guilabel:`Undo Changes` button at the bottom of the details window to revert to the original feature.
 
@@ -196,17 +196,17 @@ You can view all of the changes made to an entire layer from the map.
 
 3. Hover your mouse over a commit to view details about the changes. The color bar next to the commit indicates the type of edits that were made. Green indicates a new feature was added. Yellow indicates a feature was modified. Red indicates a feature was deleted. A commit can have multiple types of edits. In such cases, the bar will have colors representative of the types of edits that were made.
 
-   .. figure:: img/show-history-list.png
+   .. figure:: img/show-history.png
 
       *History detail for a commit*
 
 4. Click on a commit, and its history will update to show the individual edits within that commit. MapLoom will make one commit per edit.
 
-   .. figure:: img/show-layer-history.png
+   .. figure:: img/summary-changes.png
 
-5. Click the :guilabel:`Show Changes` button to bring up a new window, displaying the specific changes that were made. The changes will be highlighted with the same color coding as the commits. Green means something was added. Yellow means the feature was changed. Red means the feature was deleted. In the image below, the feature was added, and so the feature on the map is highlighted in green.
+5. Click the :guilabel:`Show Changes` button to bring up a new window, displaying the specific changes that were made. The changes will be highlighted with the same color coding as the commits. Green means a feature was added. Yellow indicates the feature was changed. Redindicates the feature was deleted. In the image below, the feature was added, and so the feature on the map is highlighted in green.
 
-   .. figure:: img/layer-history-changes.png
+   .. figure:: img/feature-history-changes.png
 
 View feature history
 ^^^^^^^^^^^^^^^^^^^^
@@ -221,15 +221,15 @@ In addition to viewing the history of edits on a GeoGig layer, you can also view
 
 3. Click the specific commit whose history you’d like to view. The history will update to show the edits made to the feature for that commit. Information about the feature will display as you hover your mouse over the changes.
 
-   .. figure:: img/commit-history-feature.png
+   .. figure:: img/feature-history.png
 
 4. Click the :guilabel:`Show Changes` button to bring up a new window, displaying the specific changes that were made.
 
-   .. figure:: img/summary-changes-feature.png
+   .. figure:: img/summary-of-changes.png
 
 The changes will be highlighted with the same color coding as the commits. Green means something was added. Yellow means the feature was changed. Red means the feature was deleted. In the image below, the feature was added, and so the feature on the map and its attributes are highlighted in green.
 
-  .. figure:: img/show-feature-changes.png
+  .. figure:: img/feature-history-diffs.png
 
 5. Click the :guilabel:`Show Authors` button to see the names and dates for every attribute in the feature. Note that through the lifetime of a feature, there can be several authors. This is a good way to see who has contributed to a feature’s current state.
 
@@ -250,7 +250,7 @@ You can visualize a summary of all of the edits within a date range for a layer.
 
 3. Enter the date range for the history to summarize.
 
-   .. figure:: img/summary-date-range.png
+   .. figure:: img/date-summary.png
 
 4. Click the :guilabel:`Summarize` button. The edited features will be highlighted, and will be listed under the Summary of Changes field.
 

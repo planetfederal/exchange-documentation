@@ -30,11 +30,11 @@ Layers can be used to create maps, and added from either the Explore Layers or E
 
 2. Click the **Plus** icon next to the layer you’d like to add to your map. You can select multiple layers. They will display in your workspace until you are ready to build your map.
 
-3. Click the :guilabel:`Create a map` button to add the layers in the workspace to a new map.
+3. Click the :guilabel:`Open Workspace in map` button to add the layers in the workspace to a new map.
 
   .. figure:: img/workspace.png
 
-    *Remove a layer from the cart by clicking the X button next to its name.*
+    *Remove a layer from the workspace by clicking the X button next to its name.*
 
 A new map will open with all of the layers displayed, and listed in the map menu.
 
@@ -49,9 +49,9 @@ A remote service is a separately-hosted data service of varying type (OGC,  Esri
 
 #. Click the Add Layer :guilabel:`(+)` button in the Layers field.
 
-   .. figure:: img/add-layer-button.png
+   .. figure:: img/add-layer-bttn.png
 
-The Add Layers window will open. A list of available layers will display on the right, but you can refine your search to find specific information.
+The Add Layers window will open, and you can begin your search using the settings on the left side of the screen.
 
    .. figure:: img/add-layer.png
 
@@ -106,7 +106,7 @@ The Zoom to data button allows you to center the map quickly on a particular lay
 
 #. Click the :guilabel:`Zoom to data` button. The map will zoom in and center on that particular layer's extent.
 
-  .. figure:: img/zoom-to-data.png
+  .. figure:: img/zoom-data.png
 
 .. important:: If a layer’s visibility is dependent on scale, and the data extent is at a lower scale, you will need to zoom in to view the data.
 
@@ -119,11 +119,11 @@ Information about a layer is available in the map by clicking the Show Layer Inf
 
 #. Click the :guilabel:`Show Layer Info` button.
 
-  .. figure:: img/show-layer-info.png
+  .. figure:: img/show-info.png
 
 The Layer Info window will display.
 
-   .. figure:: img/show-info.png
+   .. figure:: img/layer-info.png
 
 Remove a layer from the map
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -152,18 +152,18 @@ Individual attribute visibility can be turned off and on in a feature window. Th
 
 2. Click the :guilabel:`Show Attribute Visibility` button to open the list of attributes for the layer.
 
-  .. figure:: img/show-attribute-visibility.png
+  .. figure:: img/attribute-visibility.png
 
 3. Click on the :guilabel:`Toggle Visibility` button for an attribute to turn it off and on.
 
-  .. figure:: img/toggle-attribute-visibility.png
+  .. figure:: img/layer-attribute-visibility.png
 
 4. Select a feature on the map from that layer. The attribute will no longer appear in the feature information window, as it has been toggled off. Repeat these steps to toggle it back on.
 
 Search for locations
 ^^^^^^^^^^^^^^^^^^^^
 
-FFind a specific location on the map simply by typing the name of a place, zip code, address or lat/long (DMS or DD) in the Search Locations text box. Click the search button to return a list of possible matches. Scroll through the list, and select one of the matches. The map will recenter on that location. This is a simple search, and does not allow wildcards.
+FFind a specific location on the map simply by typing the name of a place, zip code, address or lat/long (DMS or DD) in the Search Locations textbox. Click the search button to return a list of possible matches. Scroll through the list, and select one of the matches. The map will recenter on that location. This is a simple search, and does not allow wildcards.
 
   .. figure:: img/search-locations.png
 
@@ -232,21 +232,21 @@ Create a copy of a map
 
 You can use an existing map as a starting point for another map. This allows you to incorporate the work others have done without changing their maps.
 
-#. Click **Maps** on the  Boundless Exchange toolbar, and select Explore Maps in the drop-down menu.
+1. Click **Maps** on the  Boundless Exchange toolbar, and select Explore Maps in the drop-down menu.
 
 2. Select on the map you would like to copy. This will open the map details page.
 
-Click the :guilabel:`Create a New Map` button under the Copy this map section.
+3. Click the :guilabel:`Create a New Map` button under the Copy this map section.
 
-   .. figure:: img/copy-this-map.png
+   .. figure:: img/copy-map.png
 
 A new map will open, populated with all of the layers of the map you copied.
 
-3. Click the :guilabel:`Save this map` button on the toolbar.
+4. Click the :guilabel:`Save this map` button on the toolbar.
 
-4. Add a new title and an abstract, possibly indicating this is a copy of another map.
+5. Add a new title and an abstract, possibly indicating this is a copy of another map.
 
-5. Click the :guilabel:`Save Copy` button.
+6. Click the :guilabel:`Save Copy` button.
 
 Your new map is now saved, and can be accessed from the maps page.
 
@@ -257,11 +257,17 @@ Managing Maps
 
 Every map has its own details page, which provides more information about the map, the metadata and who has what permissions for making edits.
 
-  .. figure:: img/map-details.png
+Click the **View Details** link to open the details page.
 
-The map details page provides a view of the map, along with information about the map. It also tells you which layers are used in the map.
+  .. figure:: img/view-details.png
 
-  .. figure:: img/map-information.png
+The map details page provides a view of the map, and displays any associated comments or ratings.
+
+  .. figure:: img/details-page.png
+
+All associated layers and documents will be listed, with links to their respective details pages. Simply click the title of the associated file to open the page.
+
+  .. figure:: img/associated.png
 
 Download data layers
 ^^^^^^^^^^^^^^^^^^^^
