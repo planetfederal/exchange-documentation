@@ -333,7 +333,7 @@ By default the thumbnail images for maps will only have the vector layers. In or
 
 This will set the map thumbnail with the base map and layers included.
 
-.. figure:: img/map-details.png
+.. figure:: img/view-details.png
 
   *Old Thumbnail*
 
