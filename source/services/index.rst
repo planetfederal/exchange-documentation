@@ -6,7 +6,7 @@ Exchange supports the registration of external WMS or ArcGIS REST Service layers
 Add a remote service
 --------------------
 
-Exchange users are able to nominate external services, while those with administrator permissions can then “publish” the layer so that it is available to all users.
+Exchange users are able to nominate external services, while those with administrator permissions, or those belonging to the csw_manager group, can then “publish” the layer so that it is available to all users.
 
 1. Click the :guilabel:`Data` link on the Exchange toolbar, and select Remote Services in the drop-down menu to open the Remote Services page.
 
