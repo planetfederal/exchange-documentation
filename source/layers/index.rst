@@ -60,7 +60,7 @@ Upload a layer
 
   Click the :guilabel:`Next Step` button when you are finished.
 
-  .. figure:: img/layer-metadata.png
+  .. figure:: img/summary-info.png
 
 Configure time attributes
 ^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -109,7 +109,7 @@ To remove ambiguity, repeat a code to represent the maximum number of digits. Fo
 
 5. Select a time attribute option for your layer.
 
-    .. figure:: img/time-attribute.png
+    .. figure:: img/time-attributes.png
 
     **Yes -** If your layer has an attribute for time configuration, and you’d like to enable the playback feature, select Yes. Configure the time attribute by selecting which data field is the Start Date. Selecting an end date is optional.
 
@@ -119,7 +119,7 @@ To remove ambiguity, repeat a code to represent the maximum number of digits. Fo
 
     Click the :guilabel:`Next Step` button.
 
-Enable version history
+Enable version control
 ^^^^^^^^^^^^^^^^^^^^^^
 
 Exchange uses GeoGig repositories to maintain version control of your vector data. By enabling version history, you can see the history of changes and who made them. Please reference the **Editing and Version Management** section for further information. Establishing permissions for your layers allows you to see edits made to the information through version history. Please see the below section on **Setting Permissions** for more information.
@@ -128,17 +128,26 @@ Exchange uses GeoGig repositories to maintain version control of your vector dat
 
 6. Select **Yes** or  **No**, followed by the :guilabel:`Next Step` button.
 
-    .. figure:: img/version-history.png
+    .. figure:: img/version-control.png
 
-7. Click the :guilabel:`Import layer` button to begin the import.
+Enable layer viewing
+^^^^^^^^^^^^^^^^^^^^
 
-    .. figure:: img/import-ready.png
+Determine who is able to view your layer. Selecting :guilabel:`Everyone` allows all users to view the data. This does not establish editing permissions, which can be created later.
 
-8. Click the :guilabel:`Publish Layer` button to make your layer visible to other users.
+7. Click either the :guilabel:`Everyone` button or :guilabel:`Just Me`.
 
-  .. figure:: img/publish-layer.png
+  .. figure:: img/view-layer.png
 
-Selecting **Publish layer** will take you to the layer’s information page, where you can create permissions for viewing and editing your data.
+8. Review the configuration, and click the :guilabel:`Start Import` button to begin the import.
+
+    .. figure:: img/start-import.png
+
+9. Click the :guilabel:`View Layer` button to make your layer visible to other users.
+
+  .. figure:: img/import-complete.png
+
+Selecting **View Layer** will take you to the layer’s information page, where you can create permissions for editing your data.
 
 Layer information
 -----------------
@@ -153,16 +162,17 @@ Each layer has an information page associated to it, which has several options f
   * Permissions – How others can see or modify this layer
   * Styles – What styles are associated to the layer
   * About – Provides information on the owner, Point of Contact and Metadata Author
+  * Maps using this layer – Indicates which maps are using this layer
 
 1. To access Layer Information, click the :guilabel:`Data` link on the Exchange toolbar, and select **Layers** from the drop-down menu. This will open the Explore Layers page. Here you will see a list of all of the available layers. Each layer has a thumbnail image, as well as the title, author, and any associated keywords.
 
-2. Click the title of the layer you want to access.
+2. Click the **View Details** link below the layer you want to access.
 
-  .. figure:: img/explore-layers1.png
+  .. figure:: img/view-details.png
 
 The information page for the layer will open.
 
-  .. figure:: img/layer-details.png
+  .. figure:: img/details-page.png
 
 
 Using the map features
@@ -180,21 +190,21 @@ Within the layer details page, there are some map features that will help you vi
 
   .. figure:: img/initial-extent.png
 
-**Switch to Globe (3D) -** Select this button to view this map as 3D.
-
-  .. figure:: img/switch-globe.png
-
 **Print Map -** Select Print Map to print a copy of the layer.
 
   .. figure:: img/print-map.png
 
 **Layers -** Select the Layers button to turn any of your layers off or on.
 
-  .. figure:: img/layer-button.png
+  .. figure:: img/layers-details.png
 
-**Basemap -** Click the Basemap button to select a different basemap style.
+3. Click the :guilabel:`Basemap` button in the lower left corner to select a different basemap style.
 
-  .. figure:: img/basemap.png
+  .. figure:: img/basemap-bttn.png
+
+Exchange comes with the mapnik openstreetmap by default. Contact your Exchange administrator for additional basemaps.
+
+  .. figure:: img/basemaps.png
 
 Layer detail tabs
 ^^^^^^^^^^^^^^^^^
@@ -270,25 +280,6 @@ By default, when a layer is uploaded, the permissions are set so that only the p
 
 3. You can make the same changes for who can edit, change metadata, styles and who can manage the data. Add the names of users or groups who have permission to edit the layer. Click the :guilabel:`Apply Changes` button when you are finished.
 
-Manage styles
-^^^^^^^^^^^^^
-
-Layers can have multiple associated styles. The Styles section tells you which style(s) is currently associated to the layer.
-
-  .. figure:: img/styles.png
-
-1. Click the :guilabel:`Edit Layer` button, and then **Manage** under Styles
-
-  .. figure:: img/styles-manage.png
-
-2. Click the name of a style from the list on the left to select it, and move it to the list on the right.
-
-  .. figure:: img/manage-styles.png
-
-3. Click a style from the list on the right, and click the arrows between the lists to remove a style.
-
-4. Click the :guilabel:`Update available Styles` button to save changes.
-
 Replace a layer
 ^^^^^^^^^^^^^^^
 
@@ -341,3 +332,16 @@ Download metadata
   .. figure:: img/download-metadata.png
 
 3. Save the file to your computer when prompted.
+
+View layer on the map
+^^^^^^^^^^^^^^^^^^^^^
+
+If a layer has been saved to a map, the names of the map(s) using the layer will be listed.
+
+Click the :guilabel:`Create a Map` button to open the layer in the map viewer.
+
+  .. figure:: img/maps-layer.png
+
+You can also simply click the :guilabel:`Open in Map Viewer` button. The map will open, and the layer will be available in the layers list.
+
+  .. figure:: img/mapviewer.png

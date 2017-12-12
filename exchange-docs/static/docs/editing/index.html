@@ -37,10 +37,7 @@
   
 
   
-        <link rel="index" title="Index"
-              href="../genindex.html"/>
     <!-- Removing search because it doesn't work well
-        <link rel="search" title="Search" href="../search.html"/>
     -->
     <link rel="top" title="Boundless Exchange 1.3.0 documentation" href="../index.html"/>
         <link rel="next" title="Styling Layers" href="../styles/index.html"/>
@@ -143,11 +140,12 @@
 <li class="toctree-l1"><a class="reference internal" href="../analysis/index.html">Analyzing data with Exchange</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../analysis/index.html#working-within-the-attribute-table">Working within the attribute table</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../analysis/index.html#view-attribute-statistics">View attribute statistics</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../analysis/index.html#create-a-heat-map">Create a heat map</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../analysis/index.html#search-all-attributes">Search all attributes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../analysis/index.html#advanced-filters">Advanced filters</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../analysis/index.html#filter-features-using-spatial-filters">Filter features using spatial filters</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../analysis/index.html#delete-a-spatial-filter">Delete a spatial filter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analysis/index.html#create-a-heat-map">Create a heat map</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analysis/index.html#remove-a-heatmap">Remove a heatmap</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../analysis/index.html#combine-filters-for-deeper-analysis">Combine filters for deeper analysis</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../analysis/index.html#filter-features-by-timeline">Filter features by timeline</a></li>
 </ul>
@@ -216,7 +214,7 @@
 <h1>Editing and Version Management<a class="headerlink" href="#editing-and-version-management" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="edit-features">
 <h2>Edit Features<a class="headerlink" href="#edit-features" title="Permalink to this headline">¶</a></h2>
-<p>Vector layer permissions can be set so the layer can be edited by other users. The editing tools will be available to you in the map, if you have permissions to edit a layer. If a layer was saved as a GeoGig layer, then you can work with the layer’s edit history as well.</p>
+<p>Vector layer permissions can be set so the layer can be edited by other users. The editing tools will be available to you in the map, if you have permissions to edit a layer. If a layer was saved as a GeoGig layer, then you can work with the layer&#8217;s edit history as well.</p>
 <div class="section" id="add-a-point-feature-to-a-layer">
 <h3>Add a point feature to a layer<a class="headerlink" href="#add-a-point-feature-to-a-layer" title="Permalink to this headline">¶</a></h3>
 <p>A layer that is able to be edited will have the <span class="guilabel">Add Feature</span> button available.</p>
@@ -320,7 +318,7 @@ A simple polygon layer has a single polygon per feature.</p>
 <ol class="arabic simple">
 <li>Select a point feature on the map to open the feature info box.</li>
 <li>Click the <span class="guilabel">Edit Attributes</span> button. The Edit Attributes window will open.</li>
-<li>Click the Location field to edit the point’s coordinates. Add the new location.</li>
+<li>Click the Location field to edit the point&#8217;s coordinates. Add the new location.</li>
 <li>Click the <span class="guilabel">Save</span> button to save your changes.</li>
 </ol>
 <blockquote>
@@ -376,7 +374,7 @@ A simple polygon layer has a single polygon per feature.</p>
 </ol>
 <blockquote>
 <div><div class="figure">
-<img alt="../_images/view-change-map.png" src="../_images/view-change-map.png" />
+<img alt="../_images/view-on-map.png" src="../_images/view-on-map.png" />
 </div>
 <div class="figure">
 <img alt="../_images/show-changes-bttn.png" src="../_images/show-changes-bttn.png" />
@@ -393,15 +391,15 @@ A simple polygon layer has a single polygon per feature.</p>
 <p>You will see a detailed side-by-side comparison of the features that have been edited.</p>
 <blockquote>
 <div><div class="figure">
-<img alt="../_images/notification-changes.png" src="../_images/notification-changes.png" />
+<img alt="../_images/side-by-side.png" src="../_images/side-by-side.png" />
 </div>
 </div></blockquote>
 <ol class="arabic simple" start="4">
-<li>Changes made to the feature attributes will be highlighted in red, green or yellow, depending on whether the change was a deletion, addition or edit. Click the <span class="guilabel">Show Authors</span> button and hover your mouse over the highlighted area to open a detailed description of the individual edit.</li>
+<li>Changes made to the feature attributes will be highlighted in red, green or yellow, depending on whether the change was a deletion, addition or edit. Click the <span class="guilabel">Show Authors</span> button, and hover your mouse over the highlighted area to open a detailed description of the individual edit.</li>
 </ol>
 <blockquote>
 <div><div class="figure">
-<img alt="../_images/notification-changes-details.png" src="../_images/notification-changes-details.png" />
+<img alt="../_images/show-author.png" src="../_images/show-author.png" />
 </div>
 </div></blockquote>
 <ol class="arabic simple" start="5">
@@ -426,18 +424,18 @@ A simple polygon layer has a single polygon per feature.</p>
 </li>
 <li><p class="first">Hover your mouse over a commit to view details about the changes. The color bar next to the commit indicates the type of edits that were made. Green indicates a new feature was added. Yellow indicates a feature was modified. Red indicates a feature was deleted. A commit can have multiple types of edits. In such cases, the bar will have colors representative of the types of edits that were made.</p>
 <div class="figure" id="id3">
-<img alt="../_images/show-history-list.png" src="../_images/show-history-list.png" />
+<img alt="../_images/show-history.png" src="../_images/show-history.png" />
 <p class="caption"><span class="caption-text"><em>History detail for a commit</em></span></p>
 </div>
 </li>
 <li><p class="first">Click on a commit, and its history will update to show the individual edits within that commit. MapLoom will make one commit per edit.</p>
 <div class="figure">
-<img alt="../_images/show-layer-history.png" src="../_images/show-layer-history.png" />
+<img alt="editing/img/summary-changes.png" src="editing/img/summary-changes.png" />
 </div>
 </li>
-<li><p class="first">Click the <span class="guilabel">Show Changes</span> button to bring up a new window, displaying the specific changes that were made. The changes will be highlighted with the same color coding as the commits. Green means something was added. Yellow means the feature was changed. Red means the feature was deleted. In the image below, the feature was added, and so the feature on the map is highlighted in green.</p>
+<li><p class="first">Click the <span class="guilabel">Show Changes</span> button to bring up a new window, displaying the specific changes that were made. The changes will be highlighted with the same color coding as the commits. Green means a feature was added. Yellow indicates the feature was changed. Redindicates the feature was deleted. In the image below, the feature was added, and so the feature on the map is highlighted in green.</p>
 <div class="figure">
-<img alt="../_images/layer-history-changes.png" src="../_images/layer-history-changes.png" />
+<img alt="../_images/feature-history-changes.png" src="../_images/feature-history-changes.png" />
 </div>
 </li>
 </ol>
@@ -455,19 +453,19 @@ A simple polygon layer has a single polygon per feature.</p>
 </li>
 <li><p class="first">Click the specific commit whose history you’d like to view. The history will update to show the edits made to the feature for that commit. Information about the feature will display as you hover your mouse over the changes.</p>
 <div class="figure">
-<img alt="../_images/commit-history-feature.png" src="../_images/commit-history-feature.png" />
+<img alt="../_images/feature-history.png" src="../_images/feature-history.png" />
 </div>
 </li>
 <li><p class="first">Click the <span class="guilabel">Show Changes</span> button to bring up a new window, displaying the specific changes that were made.</p>
 <div class="figure">
-<img alt="../_images/summary-changes-feature.png" src="../_images/summary-changes-feature.png" />
+<img alt="../_images/summary-of-changes.png" src="../_images/summary-of-changes.png" />
 </div>
 </li>
 </ol>
 <p>The changes will be highlighted with the same color coding as the commits. Green means something was added. Yellow means the feature was changed. Red means the feature was deleted. In the image below, the feature was added, and so the feature on the map and its attributes are highlighted in green.</p>
 <blockquote>
 <div><div class="figure">
-<img alt="../_images/show-feature-changes.png" src="../_images/show-feature-changes.png" />
+<img alt="../_images/feature-history-diffs.png" src="../_images/feature-history-diffs.png" />
 </div>
 </div></blockquote>
 <ol class="arabic" start="5">
@@ -494,7 +492,7 @@ A simple polygon layer has a single polygon per feature.</p>
 </li>
 <li><p class="first">Enter the date range for the history to summarize.</p>
 <div class="figure">
-<img alt="../_images/summary-date-range.png" src="../_images/summary-date-range.png" />
+<img alt="../_images/date-summary.png" src="../_images/date-summary.png" />
 </div>
 </li>
 <li><p class="first">Click the <span class="guilabel">Summarize</span> button. The edited features will be highlighted, and will be listed under the Summary of Changes field.</p>

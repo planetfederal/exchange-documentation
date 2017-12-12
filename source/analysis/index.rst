@@ -41,24 +41,6 @@ The View Statistics feature will give you a count of all of the features within 
 
   .. figure:: img/pie-chart.png
 
-Create a heat map
------------------
-
-A heat map is a visual representation of your data, and allows you to see where your data is concentrated.
-
-1. Select a point feature layer from your layers list.
-
-2. Click the :guilabel:`Show heatmap` button to create a heat map layer.
-
-  .. figure:: img/show-heatmap.png
-
-On the heat map, red indicates a high area of data concentration.
-
-  .. figure:: img/heatmap.png
-
-  *In this example, the heat map indicates the areas where the Department of Health facilities are concentrated in Louisiana. The red areas are areas of higher population.*
-
-
 Search all attributes
 ---------------------
 
@@ -152,6 +134,28 @@ Once you are finished with your spatial filter, you may want to clear the result
 #. From the Table View of your filtered results, select the :guilabel:`Spatial Filter` button. This will clear the filter, and  show all features within the layer. Close the Table View window.
 
 #. Click on the feature you used in your spatial filter, and select the :guilabel:`Delete Feature` button. Confirm that you want to delete the feature.
+
+Create a heat map
+-----------------
+
+A heat map is a visual representation of your data, and allows you to see where your data is concentrated.
+
+1. Select a point feature layer from your layers list.
+
+2. Click the :guilabel:`Show heatmap` button to create a heat map layer.
+
+  .. figure:: img/show-heatmap.png
+
+On the heat map, red indicates a high area of data concentration.
+
+   .. figure:: img/heatmap.png
+
+Remove a heatmap
+----------------
+
+Quickly remove a heatmap from the display by selecting the heatmap layer, and clicking the :guilabel:`Remove Layer` button.
+
+  .. figure:: img/remove-heatmap.png
 
 Combine filters for deeper analysis
 -----------------------------------

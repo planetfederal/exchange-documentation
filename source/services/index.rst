@@ -10,7 +10,7 @@ Exchange users are able to nominate external services, while those with administ
 
 1. Click the :guilabel:`Data` link on the Exchange toolbar, and select Remote Services in the drop-down menu to open the Remote Services page.
 
-  .. figure:: img/data-menu.png
+  .. figure:: img/remote-services-menu.png
 
 2. Click the :guilabel:`Register a new Service` button to add a new external layer.
 

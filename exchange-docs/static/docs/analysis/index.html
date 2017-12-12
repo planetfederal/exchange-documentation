@@ -37,10 +37,7 @@
   
 
   
-        <link rel="index" title="Index"
-              href="../genindex.html"/>
     <!-- Removing search because it doesn't work well
-        <link rel="search" title="Search" href="../search.html"/>
     -->
     <link rel="top" title="Boundless Exchange 1.3.0 documentation" href="../index.html"/>
         <link rel="next" title="Creating a story" href="../stories/index.html"/>
@@ -143,11 +140,12 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Analyzing data with Exchange</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#working-within-the-attribute-table">Working within the attribute table</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#view-attribute-statistics">View attribute statistics</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#create-a-heat-map">Create a heat map</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#search-all-attributes">Search all attributes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#advanced-filters">Advanced filters</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#filter-features-using-spatial-filters">Filter features using spatial filters</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#delete-a-spatial-filter">Delete a spatial filter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#create-a-heat-map">Create a heat map</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#remove-a-heatmap">Remove a heatmap</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#combine-filters-for-deeper-analysis">Combine filters for deeper analysis</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#filter-features-by-timeline">Filter features by timeline</a></li>
 </ul>
@@ -269,26 +267,6 @@
 </div>
 </div></blockquote>
 </div>
-<div class="section" id="create-a-heat-map">
-<h2>Create a heat map<a class="headerlink" href="#create-a-heat-map" title="Permalink to this headline">¶</a></h2>
-<p>A heat map is a visual representation of your data, and allows you to see where your data is concentrated.</p>
-<ol class="arabic simple">
-<li>Select a point feature layer from your layers list.</li>
-<li>Click the <span class="guilabel">Show heatmap</span> button to create a heat map layer.</li>
-</ol>
-<blockquote>
-<div><div class="figure">
-<img alt="../_images/show-heatmap.png" src="../_images/show-heatmap.png" />
-</div>
-</div></blockquote>
-<p>On the heat map, red indicates a high area of data concentration.</p>
-<blockquote>
-<div><div class="figure">
-<img alt="../_images/heatmap.png" src="../_images/heatmap.png" />
-</div>
-<p><em>In this example, the heat map indicates the areas where the Department of Health facilities are concentrated in Louisiana. The red areas are areas of higher population.</em></p>
-</div></blockquote>
-</div>
 <div class="section" id="search-all-attributes">
 <h2>Search all attributes<a class="headerlink" href="#search-all-attributes" title="Permalink to this headline">¶</a></h2>
 <p>The Search All Fields search examines all of the attributes in a layer, and returns all features that have your search term in <em>any</em> of its attribute fields. It is a simple search that will find results from any location.</p>
@@ -391,6 +369,34 @@
 <li>From the Table View of your filtered results, select the <span class="guilabel">Spatial Filter</span> button. This will clear the filter, and  show all features within the layer. Close the Table View window.</li>
 <li>Click on the feature you used in your spatial filter, and select the <span class="guilabel">Delete Feature</span> button. Confirm that you want to delete the feature.</li>
 </ol>
+</div>
+<div class="section" id="create-a-heat-map">
+<h2>Create a heat map<a class="headerlink" href="#create-a-heat-map" title="Permalink to this headline">¶</a></h2>
+<p>A heat map is a visual representation of your data, and allows you to see where your data is concentrated.</p>
+<ol class="arabic simple">
+<li>Select a point feature layer from your layers list.</li>
+<li>Click the <span class="guilabel">Show heatmap</span> button to create a heat map layer.</li>
+</ol>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/show-heatmap.png" src="../_images/show-heatmap.png" />
+</div>
+</div></blockquote>
+<p>On the heat map, red indicates a high area of data concentration.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/heatmap.png" src="../_images/heatmap.png" />
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="remove-a-heatmap">
+<h2>Remove a heatmap<a class="headerlink" href="#remove-a-heatmap" title="Permalink to this headline">¶</a></h2>
+<p>Quickly remove a heatmap from the display by selecting the heatmap layer, and clicking the <span class="guilabel">Remove Layer</span> button.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/remove-heatmap.png" src="../_images/remove-heatmap.png" />
+</div>
+</div></blockquote>
 </div>
 <div class="section" id="combine-filters-for-deeper-analysis">
 <h2>Combine filters for deeper analysis<a class="headerlink" href="#combine-filters-for-deeper-analysis" title="Permalink to this headline">¶</a></h2>

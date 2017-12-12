@@ -61,13 +61,9 @@ From the Boundless Exchange homepage, simply enter your search term in the Searc
 
   * **Filter by Date** - This will limit the list of products by a date range. In the Date panel, select the start date and the end date for the date range. The list will update to reflect those layers, documents or maps created within that timeframe.
 
-  If you want to find layers which have been Time Enabled, select the **Yes** checkbox to eliminate layers from your search that do not have time enabled attributes.
+  To find layers which have been Time Enabled, select the **Yes** checkbox to eliminate layers from your search that do not have time enabled attributes.
 
    .. figure:: img/date-filter.png
-
-   * **Filter by Regions** - Type a geographical region in the textbox to find data only associated to that region.
-
-    .. figure:: img/filter-region.png
 
   * **Filter by Extent** - Zoom in and out to find products pertaining only to the extent displayed on the map.
 
