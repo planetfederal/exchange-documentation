@@ -139,9 +139,15 @@ Remove a layer from the map
 Get feature information
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-To get information in a vector layer, simply click a feature on the map. Once you click the feature, the information window will display. The point of the information window will touch the feature you clicked.
+To get information for a feature, simply click the feature on the map. Once you select a feature, the information window will display. The point of the information window will touch the feature you clicked.
 
 .. figure:: img/get-feature-info.png
+
+**Note:** Get feature information is now available for a WMS remote service, but external services do not provide as much data as other layers and will have a more simplified display.
+
+  .. figure:: img/wms-popup.png
+
+    *This is an example of a feature from a WMS layer*
 
 Change attribute visibility
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
