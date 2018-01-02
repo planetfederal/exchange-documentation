@@ -21,7 +21,7 @@ From the Boundless Exchange homepage, simply enter your search term in the Searc
 
   .. figure:: img/featured-content.png
 
-**Browsing Layers** - To open the Explore Layers page, click on the Data link on the Boundless Exchange toolbar, and select Layers in the drop-down menu. Here you can browse data that has been uploaded into Exchange.  Selecting on the view details link will take you to the information information page where you can download the layer, edit metadata, or view additional information about the layer.
+**Browsing Layers** - To open the Explore Layers page, click on the Data link on the Boundless Exchange toolbar, and select Layers in the drop-down menu. Here you can browse data that has been uploaded into Exchange.  Selecting on the view details link will take you to the information page where you can download the layer, edit metadata, or view additional information about the layer.
 
 **Browsing Maps** - To open the Explore Maps page, click on the Maps link on the Boundless Exchange toolbar, and select Explore Maps. Like the Layers page, the Maps page lets you browse the available maps that have been created in Exchange. Similar to a layer, selecting on the title of a map will take you to its information page.
 
