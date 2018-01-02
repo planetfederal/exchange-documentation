@@ -21,7 +21,7 @@ From the Boundless Exchange homepage, simply enter your search term in the Searc
 
   .. figure:: img/featured-content.png
 
-**Browsing Layers** - To open the Explore Layers page, click on the Data link on the Boundless Exchange toolbar, and select Layers in the drop-down menu. Here you can browse data that has been uploaded into Exchange. Selecting on the layer’s title will take you to the information page where you can download the layer, edit metadata, or view additional information about the layer.
+**Browsing Layers** - To open the Explore Layers page, click on the Data link on the Boundless Exchange toolbar, and select Layers in the drop-down menu. Here you can browse data that has been uploaded into Exchange.  Selecting on the layer’s title the view details link will take you to the information information page where you can download the layer, edit metadata, or view additional information about the layer.
 
 **Browsing Maps** - To open the Explore Maps page, click on the Maps link on the Boundless Exchange toolbar, and select Explore Maps. Like the Layers page, the Maps page lets you browse the available maps that have been created in Exchange. Similar to a layer, selecting on the title of a map will take you to its information page.
 
@@ -59,7 +59,7 @@ From the Boundless Exchange homepage, simply enter your search term in the Searc
 
    .. figure:: img/filter-owners.png
 
-  * **Filter by Date** - This will limit the list of products by a date range. In the Date panel, select the start date and the end date for the date range. The list will update to reflect those layers, documents or maps created within that timeframe.
+  * **Filter by Date** - This will limit the list of products by a date range. In the Date panel, select the start date and the end date for the date range. The list will update to reflect those layers, documents or maps created within that time frame.
 
   To find layers which have been Time Enabled, select the **Yes** checkbox to eliminate layers from your search that do not have time enabled attributes.
 
